@@ -88,10 +88,28 @@ const formConfig = {
             },
             readyToContinueComplaint: {
               "ui:title":
-                "I understand, and I’m ready to continue with the form.",
-              "view:textObject": {
-                "ui:description": "Tell us how to contact you."
+                "I understand, and I’m ready to continue with the form."
+            }
+          }
+        },
+        blarg: {
+          path: "blarg",
+          title: "Blarg",
+          schema: {
+            type: "object",
+            properties: {
+              blarg: {
+                type: "string",
+                enum: ["complaint", "compliment"],
+                enumNames: ["Submit a complaint", "Send a compliment"]
               }
+            }
+          },
+          uiSchema: {
+            "ui:title": "Tell us what experience you would like to share",
+            experienceType: {
+              "ui:title": "I'd like to:",
+              "ui:widget": "radio"
             }
           }
         }
