@@ -1,3 +1,4 @@
+import React from "react";
 import Introduction from "../components/Introduction.jsx";
 
 const formConfig = {
@@ -38,6 +39,7 @@ const formConfig = {
         },
         beginComplaint: {
           path: "begin-complaint",
+          title: "Begin Complaint",
           depends: {
             experienceType: "complaint"
           },
@@ -59,9 +61,34 @@ const formConfig = {
           uiSchema: {
             "ui:title":
               "We’re sorry you had a poor experience with the Austin Police Department",
+            "view:textObject": {
+              "ui:description": () => (
+                <div>
+                  <h1>Here’s what to expect</h1>
+                  <h2>Process</h2>
+                  <p>
+                    Your complaint will be investigated by Internal Affairs at
+                    the Austin Police Department and overseen by the Civilian
+                    Office of Police Oversight and Accountability.
+                  </p>
+                  <h2>Timeframe</h2>
+                  <p>
+                    Investigations could take as little as 30 days or up to six
+                    months to complete. It may require 1-4 hours of your time
+                    over the course of those months.
+                  </p>
+                  <h2>Outcomes</h2>
+                  <p>
+                    The nature of your case will determine if any policy change
+                    or punishment of the officer(s) occurs. Find out more on
+                    potential outcomes here.
+                  </p>
+                </div>
+              )
+            },
             readyToContinueComplaint: {
               "ui:title":
-                " I understand, and I’m ready to continue with the form.",
+                "I understand, and I’m ready to continue with the form.",
               "view:textObject": {
                 "ui:description": "Tell us how to contact you."
               }
