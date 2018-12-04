@@ -1,45 +1,72 @@
-import Introduction from '../components/Introduction.jsx';
+import Introduction from "../components/Introduction.jsx";
 
 const formConfig = {
-  title: 'Form',
-  subTitle: 'Test',
-  formId: '',
-  urlPrefix: '/',
-  trackingPrefix: 'form-',
-  transformForSubmit: '',
-  submitUrl: '',
+  title: "Police Oversight and Accountability Form",
+  subTitle: "",
+  formId: "",
+  urlPrefix: "/",
+  trackingPrefix: "form-",
+  transformForSubmit: "",
+  submitUrl: "",
   introduction: Introduction,
-  confirmation: '',
+  confirmation: "",
   defaultDefinitions: {},
   chapters: {
     firstChapter: {
-      title: 'First Chapter',
+      title: "Tell us what experience you would like to share",
       pages: {
-        firstPage: {
-          path: 'first-chapter/first-page',
-          title: 'First Page',
-          uiSchema: {},
+        experienceType: {
+          path: "experience-type",
+          title: "Experience Type",
           schema: {
-            type: 'object',
-            properties: {}
+            type: "object",
+            required: ["experienceType"],
+            properties: {
+              experienceType: {
+                type: "string",
+                enum: ["complaint", "compliment"],
+                enumNames: ["Submit a complaint", "Send a compliment"]
+              }
+            }
+          },
+          uiSchema: {
+            experienceType: {
+              "ui:title": "I'd like to:",
+              "ui:widget": "radio"
+            }
           }
         },
-        secondPage: {
-          path: 'first-chapter/second-page',
-          title: 'Second Page',
-          uiSchema: {},
+        beginComplaint: {
+          path: "beginComplaint",
+          title:
+            "We’re sorry you had a poor experience with the Austin Police Department",
+          depends: {
+            experienceType: "complaint"
+          },
           schema: {
-            type: 'object',
-            properties: {}
+            type: "object",
+            required: ["readyToContinueComplaint"],
+            properties: {
+              readyToContinueComplaint: {
+                type: "boolean"
+              }
+            }
+          },
+          uiSchema: {
+            readyToContinueComplaint: {
+              "ui:title":
+                " I understand, and I’m ready to continue with the form."
+            }
           }
         }
       }
     },
     secondChapter: {
-      title: 'Second Chapter',
-      pages: {
-
-      }
+      title: "Second Chapter",
+      depends: {
+        experienceType: "complaint"
+      },
+      pages: {}
     }
   }
 };
