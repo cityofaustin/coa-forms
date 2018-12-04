@@ -13,7 +13,7 @@ const formConfig = {
   confirmation: "",
   defaultDefinitions: {},
   chapters: {
-    firstChapter: {
+    experienceChapter: {
       pages: {
         experienceType: {
           path: "experience-type",
@@ -36,7 +36,11 @@ const formConfig = {
               "ui:widget": "radio"
             }
           }
-        },
+        }
+      }
+    },
+    beginComplaintChapter: {
+      pages: {
         beginComplaint: {
           path: "begin-complaint",
           title: "Begin Complaint",
@@ -91,25 +95,35 @@ const formConfig = {
                 "I understand, and I’m ready to continue with the form."
             }
           }
-        },
-        blarg: {
-          path: "blarg",
-          title: "Blarg",
+        }
+      }
+    },
+    whatHappenedChapter: {
+      pages: {
+        whatHappened: {
+          path: "what-happened",
+          title: "Tell us what happened",
           schema: {
             type: "object",
+            required: ["description"],
             properties: {
-              blarg: {
-                type: "string",
-                enum: ["complaint", "compliment"],
-                enumNames: ["Submit a complaint", "Send a compliment"]
+              description: {
+                type: "string"
+              },
+              datetime: {
+                type: "date-time"
               }
             }
           },
           uiSchema: {
-            "ui:title": "Tell us what experience you would like to share",
-            experienceType: {
-              "ui:title": "I'd like to:",
-              "ui:widget": "radio"
+            "ui:title": "Tell us what happened",
+            description: {
+              "ui:title": "Description",
+              "ui:description":
+                "Please provide a detailed description of your experience with the Austin Police Department"
+            },
+            datetime: {
+              "ui:title": "Date and time, if known"
             }
           }
         }
