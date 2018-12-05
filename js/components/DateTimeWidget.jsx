@@ -1,8 +1,6 @@
 import React from "react";
 import classnames from "classnames";
 
-const numberTypes = new Set(["number", "integer"]);
-
 export default function DateTimeWidget(props) {
   return (
     <input
@@ -21,7 +19,3 @@ export default function DateTimeWidget(props) {
     />
   );
 }
-
-DateTimeWidget.defaultProps = {
-  type: "text"
-};

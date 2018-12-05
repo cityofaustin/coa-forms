@@ -1,6 +1,7 @@
 import React from "react";
 import Introduction from "../components/Introduction.jsx";
 import DateTimeWidget from "../components/DateTimeWidget.jsx";
+import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
@@ -113,6 +114,9 @@ const formConfig = {
               },
               datetime: {
                 type: "string"
+              },
+              location: {
+                type: "string"
               }
             }
           },
@@ -126,6 +130,10 @@ const formConfig = {
             datetime: {
               "ui:title": "Date and time, if known",
               "ui:widget": DateTimeWidget
+            },
+            location: {
+              "ui:title": "Location, if known",
+              "ui:widget": LocationPickerWidget
             }
           }
         }
