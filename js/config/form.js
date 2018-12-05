@@ -165,6 +165,12 @@ const formConfig = {
               "ui:widget": "radio"
             },
             evidenceFiles: {
+              "ui:title":
+                "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
+              "ui:options": {
+                expandUnder: "awareOfEvidence",
+                expandUnderCondition: true
+              },
               "ui:widget": FileUploadWidget
             }
           }
