@@ -150,9 +150,17 @@ const formConfig = {
             required: ["awareOfEvidence"],
             properties: {
               awareOfEvidence: {
-                type: "boolean"
+                type: "boolean",
+                enumNames: ["Yes", "No"]
               },
               evidenceFiles: {
+                type: "string"
+              },
+              awareOfMoreEvidence: {
+                type: "boolean",
+                enumNames: ["Yes", "No"]
+              },
+              moreEvidence: {
                 type: "string"
               }
             }
@@ -172,6 +180,20 @@ const formConfig = {
                 expandUnderCondition: true
               },
               "ui:widget": FileUploadWidget
+            },
+            awareOfMoreEvidence: {
+              "ui:title":
+                "Do you know of any other evidence that may exist (security camera footage, witness recordings, etc.)?",
+              "ui:options": {
+                expandUnder: "awareOfEvidence"
+              },
+              "ui:widget": "radio"
+            },
+            moreEvidence: {
+              "ui:title": "Where could we find that evidence?",
+              "ui:options": {
+                expandUnder: "awareOfEvidence"
+              }
             }
           }
         }
