@@ -139,6 +139,31 @@ const formConfig = {
         }
       }
     },
+    shareEvidenceChapter: {
+      pages: {
+        shareEvidence: {
+          path: "share-evidence",
+          title: "Share your evidence",
+          schema: {
+            type: "object",
+            required: ["awareOfEvidence"],
+            properties: {
+              awareOfEvidence: {
+                type: "boolean"
+              }
+            }
+          },
+          uiSchema: {
+            "ui:title": "Share your evidence",
+            awareOfEvidence: {
+              "ui:title":
+                "Are you aware of any video, audio, or written evidence? (video files, audio files, photos, police report, hospital record, etc)?",
+              "ui:widget": "radio"
+            }
+          }
+        }
+      }
+    },
     secondChapter: {
       title: "Second Chapter",
       pages: {}
