@@ -2,6 +2,7 @@ import React from "react";
 import Introduction from "../components/Introduction.jsx";
 import DateTimeWidget from "../components/DateTimeWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
+import FileUploadWidget from "../components/FileUploadWidget.jsx";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
@@ -150,6 +151,9 @@ const formConfig = {
             properties: {
               awareOfEvidence: {
                 type: "boolean"
+              },
+              evidenceFiles: {
+                type: "string"
               }
             }
           },
@@ -159,6 +163,9 @@ const formConfig = {
               "ui:title":
                 "Are you aware of any video, audio, or written evidence? (video files, audio files, photos, police report, hospital record, etc)?",
               "ui:widget": "radio"
+            },
+            evidenceFiles: {
+              "ui:widget": FileUploadWidget
             }
           }
         }
