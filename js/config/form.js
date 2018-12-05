@@ -1,5 +1,6 @@
 import React from "react";
 import Introduction from "../components/Introduction.jsx";
+import DateTimeWidget from "../components/DateTimeWidget.jsx";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
@@ -111,7 +112,7 @@ const formConfig = {
                 type: "string"
               },
               datetime: {
-                type: "date-time"
+                type: "string"
               }
             }
           },
@@ -123,7 +124,8 @@ const formConfig = {
                 "Please provide a detailed description of your experience with the Austin Police Department"
             },
             datetime: {
-              "ui:title": "Date and time, if known"
+              "ui:title": "Date and time, if known",
+              "ui:widget": DateTimeWidget
             }
           }
         }
