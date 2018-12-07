@@ -435,6 +435,7 @@ const formConfig = {
             }
           },
           uiSchema: {
+            "ui:title": "Tell us about you",
             "view:textObject": {
               "ui:description": () => (
                 <div>
@@ -460,6 +461,45 @@ const formConfig = {
                 "ui:title":
                   "I would like to speak to a Police Department supervisor directly to discuss my complaint."
               }
+            }
+          }
+        }
+      }
+    },
+    howYouFoundUsChapter: {
+      pages: {
+        howYouFoundUs: {
+          path: "how-you-found-us",
+          title: "Tell us how you found us",
+          schema: {
+            type: "object",
+            properties: {
+              howDidYouGetHere: {
+                type: "string",
+                enum: [
+                  "search",
+                  "officer",
+                  "austindotgov",
+                  "apd",
+                  "communityorg",
+                  "other"
+                ],
+                enumNames: [
+                  "Search engine (Google, Bing, etc.)",
+                  "The officer",
+                  "Austin.gov",
+                  "Email, text, or paper material from Austin Police Department",
+                  "Community Organization",
+                  "Other"
+                ]
+              }
+            }
+          },
+          uiSchema: {
+            "ui:title": "Tell us how you found us",
+            howDidYouGetHere: {
+              "ui:title": "How did you get to this form?",
+              "ui:widget": "radio"
             }
           }
         }
