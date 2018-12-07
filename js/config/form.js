@@ -3,6 +3,7 @@ import Introduction from "../components/Introduction.jsx";
 import DateTimeWidget from "../components/DateTimeWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
 import FileUploadWidget from "../components/FileUploadWidget.jsx";
+import OfficerDetailsDisplayWidget from "../components/OfficerDetailsDisplayWidget.jsx";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
@@ -245,6 +246,38 @@ const formConfig = {
                         "Other",
                         "Prefer not to say"
                       ]
+                    },
+                    gender: {
+                      type: "string",
+                      enum: ["male", "female", "nonBinary", "preferNot"],
+                      enumNames: [
+                        "Male",
+                        "Female",
+                        "Non-binary",
+                        "Prefer not to say"
+                      ]
+                    },
+                    badgeNumber: {
+                      type: "string"
+                    },
+                    uniformed: {
+                      type: "boolean",
+                      enumNames: ["In uniform", "In regular clothes"]
+                    },
+                    transportation: {
+                      type: "string",
+                      enum: ["patrol", "unmarked", "horse", "bicycle", "other"],
+                      enumNames: [
+                        "Patrol car",
+                        "Unmarked car",
+                        "Horse",
+                        "Bicycle",
+                        "Other"
+                      ]
+                    },
+                    turnedOffCamera: {
+                      type: "boolean",
+                      enumNames: ["Yes", "No"]
                     }
                   }
                 }
@@ -253,7 +286,6 @@ const formConfig = {
           },
           uiSchema: {
             "ui:title": "Tell us about the officer(s)",
-
             hasOfficerDetails: {
               "ui:title":
                 "Do you remember or have access to any details about the officer(s) you’d like to share?",
@@ -261,13 +293,31 @@ const formConfig = {
             },
             officers: {
               "ui:options": {
-                viewField: DateTimeWidget,
+                viewField: OfficerDetailsDisplayWidget,
+                addable: true,
                 expandUnder: "hasOfficerDetails"
               },
               items: {
-                name: { "ui:title": "blarg" },
-                description: { "ui:title": "blarg" },
-                race: { "ui:title": "blarg" }
+                name: { "ui:title": "Officer Name" },
+                description: { "ui:title": "Officer Description" },
+                race: { "ui:title": "Officer Race", "ui:widget": "radio" },
+                gender: { "ui:title": "Officer Gender", "ui:widget": "radio" },
+                badgeNumber: { "ui:title": "Officer badge number" },
+                uniformed: {
+                  "ui:title":
+                    "Was the officer in uniform or in regular clothes?",
+                  "ui:widget": "radio"
+                },
+                transportation: {
+                  "ui:title":
+                    "What kind of car or transportation was the officer in?",
+                  "ui:widget": "radio"
+                },
+                turnedOffCamera: {
+                  "ui:title":
+                    "Did you see the officer turn their body camera off?",
+                  "ui:widget": "radio"
+                }
               }
             }
           }
