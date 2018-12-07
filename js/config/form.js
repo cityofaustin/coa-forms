@@ -324,10 +324,10 @@ const formConfig = {
         }
       }
     },
-    haveWitnessInformationChapter: {
+    witnessDetailsChapter: {
       pages: {
-        haveWitnessInformation: {
-          path: "have-witness-information",
+        witnessDetails: {
+          path: "witness-details",
           title: "Tell us about any witness(es)",
           schema: {
             type: "object",
@@ -336,6 +336,19 @@ const formConfig = {
               hasWitnessInformation: {
                 type: "boolean",
                 enumNames: ["Yes", "No"]
+              },
+              witnesses: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    name: { type: "string" },
+                    email: { type: "string" },
+                    phoneNumber: { type: "string" },
+                    zipCode: { type: "string" },
+                    anythingElse: { type: "string" }
+                  }
+                }
               }
             }
           },
@@ -345,6 +358,23 @@ const formConfig = {
               "ui:title":
                 "Do you remember or have access to any details about witness(es) you'd like to share?",
               "ui:widget": "radio"
+            },
+            witnesses: {
+              "ui:options": {
+                viewField: OfficerDetailsDisplayWidget,
+                addable: true,
+                expandUnder: "hasWitnessInformation"
+              },
+              items: {
+                name: { "ui:title": "Witness name" },
+                email: { "ui:title": "Witness email" },
+                phoneNumber: { "ui:title": "Witness phone number" },
+                zipCode: { "ui:title": "Witness zip code" },
+                anythingElse: {
+                  "ui:title":
+                    "Is there anything we should know about this witness?"
+                }
+              }
             }
           }
         }
