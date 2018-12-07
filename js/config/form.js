@@ -324,6 +324,32 @@ const formConfig = {
         }
       }
     },
+    haveWitnessInformationChapter: {
+      pages: {
+        haveWitnessInformation: {
+          path: "have-witness-information",
+          title: "Tell us about any witness(es)",
+          schema: {
+            type: "object",
+            required: ["hasWitnessInformation"],
+            properties: {
+              hasWitnessInformation: {
+                type: "boolean",
+                enumNames: ["Yes", "No"]
+              }
+            }
+          },
+          uiSchema: {
+            "ui:title": "Tell us about any witness(es)",
+            hasWitnessInformation: {
+              "ui:title":
+                "Do you remember or have access to any details about witness(es) you'd like to share?",
+              "ui:widget": "radio"
+            }
+          }
+        }
+      }
+    },
     secondChapter: {
       title: "Second Chapter",
       pages: {}
