@@ -146,6 +146,9 @@ const formConfig = {
         shareEvidence: {
           path: "share-evidence",
           title: "Share your evidence",
+          depends: {
+            experienceType: "complaint"
+          },
           schema: {
             type: "object",
             required: ["awareOfEvidence"],
@@ -329,6 +332,9 @@ const formConfig = {
         witnessDetails: {
           path: "witness-details",
           title: "Tell us about any witness(es)",
+          depends: {
+            experienceType: "complaint"
+          },
           schema: {
             type: "object",
             required: ["hasWitnessInformation"],
