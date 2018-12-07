@@ -199,6 +199,81 @@ const formConfig = {
         }
       }
     },
+    officerDetailsChapter: {
+      pages: {
+        officerDetails: {
+          path: "officer-details",
+          title: "Tell us about the officer(s)",
+          schema: {
+            type: "object",
+            required: ["hasOfficerDetails"],
+            properties: {
+              hasOfficerDetails: {
+                type: "boolean",
+                enumNames: ["Yes", "No"]
+              },
+              officers: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    name: { type: "string" },
+                    description: { type: "string" },
+                    race: {
+                      type: "string",
+                      enum: [
+                        "white",
+                        "latino",
+                        "black",
+                        "asian",
+                        "indian",
+                        "arab",
+                        "native",
+                        "hawaiian",
+                        "other",
+                        "preferNot"
+                      ],
+                      enumNames: [
+                        "White or Euro-American",
+                        "Latino or Hispanic American",
+                        "Black, Afro-Caribbean, or African American",
+                        "East Asian or Asian American",
+                        "South Asian or Indian American",
+                        "Middle Eastern or Arab American",
+                        "Native American or Alaskan Native",
+                        "Native Hawaiian or Other Pacific Islander",
+                        "Other",
+                        "Prefer not to say"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          uiSchema: {
+            "ui:title": "Tell us about the officer(s)",
+
+            hasOfficerDetails: {
+              "ui:title":
+                "Do you remember or have access to any details about the officer(s) you’d like to share?",
+              "ui:widget": "radio"
+            },
+            officers: {
+              "ui:options": {
+                viewField: DateTimeWidget,
+                expandUnder: "hasOfficerDetails"
+              },
+              items: {
+                name: { "ui:title": "blarg" },
+                description: { "ui:title": "blarg" },
+                race: { "ui:title": "blarg" }
+              }
+            }
+          }
+        }
+      }
+    },
     secondChapter: {
       title: "Second Chapter",
       pages: {}
