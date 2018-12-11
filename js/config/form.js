@@ -236,8 +236,8 @@ const formConfig = {
                         "arab",
                         "native",
                         "hawaiian",
-                        "other",
-                        "preferNot"
+                        "preferNot",
+                        "other"
                       ],
                       enumNames: [
                         "White or Euro-American",
@@ -248,10 +248,11 @@ const formConfig = {
                         "Middle Eastern or Arab American",
                         "Native American or Alaskan Native",
                         "Native Hawaiian or Other Pacific Islander",
-                        "Other",
-                        "Prefer not to say"
+                        "Prefer not to say",
+                        "Other"
                       ]
                     },
+                    otherRace: { type: "string" },
                     gender: {
                       type: "string",
                       enum: ["male", "female", "nonBinary", "preferNot"],
@@ -280,6 +281,7 @@ const formConfig = {
                         "Other"
                       ]
                     },
+                    otherTransportation: { type: "string" },
                     turnedOffCamera: {
                       type: "boolean",
                       enumNames: ["Yes", "No"]
@@ -306,6 +308,21 @@ const formConfig = {
                 name: { "ui:title": "Officer Name" },
                 description: { "ui:title": "Officer Description" },
                 race: { "ui:title": "Officer Race", "ui:widget": "radio" },
+                otherRace: {
+                  "ui:title": " ",
+                  "ui:options": {
+                    expandUnder: "race",
+                    expandUnderCondition: "other"
+                    // expandUnderCondition: field => {
+                    //   debugger;
+                    //   return field === "other";
+                    // }
+                    // hideIf: function(formData, index) {
+                    //   debugger;
+                    //   return true;
+                    // }
+                  }
+                },
                 gender: { "ui:title": "Officer Gender", "ui:widget": "radio" },
                 badgeNumber: { "ui:title": "Officer badge number" },
                 uniformed: {
