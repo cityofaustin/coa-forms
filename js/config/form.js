@@ -180,8 +180,7 @@ const formConfig = {
               "ui:title":
                 "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
               "ui:options": {
-                expandUnder: "awareOfEvidence",
-                expandUnderCondition: true
+                expandUnder: "awareOfEvidence"
               },
               "ui:widget": FileUploadWidget
             },
@@ -196,7 +195,10 @@ const formConfig = {
             moreEvidence: {
               "ui:title": "Where could we find that evidence?",
               "ui:options": {
-                expandUnder: "awareOfEvidence"
+                expandUnder: "awareOfEvidence",
+                hideIf: function(formData, index) {
+                  return !formData.awareOfMoreEvidence;
+                }
               }
             }
           }
