@@ -507,7 +507,17 @@ const formConfig = {
             "ui:title": "Tell us how you found us",
             howDidYouGetHere: {
               "ui:title": "How did you get to this form?",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                nestedContent: {
+                  other: (
+                    <input
+                      type="text"
+                      placeholder="Not sure how to get data out of this"
+                    />
+                  )
+                }
+              }
             }
           }
         }
