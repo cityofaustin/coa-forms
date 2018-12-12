@@ -4,10 +4,12 @@ import Dropzone from "react-dropzone";
 export default class FileUploadWidget extends React.Component {
   constructor() {
     super();
-    this.state = { files: [], val: "blarg" };
+    this.state = { files: [] };
   }
 
   onDrop(files) {
+    const value = JSON.stringify(files.map(f => `${f.name} - ${f.size} bytes`));
+    this.props.onChange(value);
     this.setState({
       files
     });

@@ -5,6 +5,7 @@ import DateTimeReviewWidget from "../components/DateTimeReviewWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
 import LocationReviewWidget from "../components/LocationReviewWidget.jsx";
 import FileUploadWidget from "../components/FileUploadWidget.jsx";
+import FileUploadReviewWidget from "../components/FileUploadReviewWidget.jsx";
 import OfficerDetailsDisplayWidget from "../components/OfficerDetailsDisplayWidget.jsx";
 import WitnessDetailsDisplayWidget from "../components/WitnessDetailsDisplayWidget.jsx";
 
@@ -172,6 +173,8 @@ const formConfig = {
               },
               evidenceFiles: {
                 type: "string"
+                // type: "array",
+                // items: { type: "string" }
               },
               awareOfMoreEvidence: {
                 type: "boolean",
@@ -195,8 +198,9 @@ const formConfig = {
               "ui:options": {
                 expandUnder: "awareOfEvidence"
               },
-              "ui:widget": FileUploadWidget
+              "ui:widget": FileUploadWidget,
               // "ui:widget": "file" - Using a custom widget instead for added functionality
+              "ui:reviewWidget": FileUploadReviewWidget
             },
             awareOfMoreEvidence: {
               "ui:title":
