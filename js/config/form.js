@@ -19,6 +19,7 @@ const formConfig = {
   defaultDefinitions: {},
   chapters: {
     experienceChapter: {
+      title: "Experience Type",
       pages: {
         experienceType: {
           path: "experience-type",
@@ -38,13 +39,17 @@ const formConfig = {
             "ui:title": "Tell us what experience you would like to share",
             experienceType: {
               "ui:title": "I'd like to:",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReview: true
+              }
             }
           }
         }
       }
     },
     beginComplaintChapter: {
+      title: "Here’s what to expect",
       pages: {
         beginComplaint: {
           path: "begin-complaint",
@@ -104,6 +109,7 @@ const formConfig = {
       }
     },
     whatHappenedChapter: {
+      title: "Tell us what happened",
       pages: {
         whatHappened: {
           path: "what-happened",
@@ -144,6 +150,7 @@ const formConfig = {
       }
     },
     shareEvidenceChapter: {
+      title: "Share your evidence",
       pages: {
         shareEvidence: {
           path: "share-evidence",
@@ -209,6 +216,7 @@ const formConfig = {
       }
     },
     officerDetailsChapter: {
+      title: "Tell us about the officer(s)",
       pages: {
         officerDetails: {
           path: "officer-details",
@@ -349,6 +357,7 @@ const formConfig = {
       }
     },
     witnessDetailsChapter: {
+      title: "Tell us about any witness(es)",
       pages: {
         witnessDetails: {
           path: "witness-details",
@@ -409,6 +418,7 @@ const formConfig = {
       }
     },
     aboutYouChapter: {
+      title: "Tell us about you",
       pages: {
         aboutYou: {
           path: "about-you",
@@ -503,6 +513,7 @@ const formConfig = {
       }
     },
     howYouFoundUsChapter: {
+      title: "Tell us how you found us",
       pages: {
         howYouFoundUs: {
           path: "how-you-found-us",
