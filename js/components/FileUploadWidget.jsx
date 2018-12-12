@@ -8,7 +8,9 @@ export default class FileUploadWidget extends React.Component {
   }
 
   onDrop(files) {
-    const value = JSON.stringify(files.map(f => `${f.name} - ${f.size} bytes`));
+    const value = files.length
+      ? JSON.stringify(files.map(f => `${f.name} - ${f.size} bytes`))
+      : false;
     this.props.onChange(value);
     this.setState({
       files

@@ -196,7 +196,8 @@ const formConfig = {
               "ui:title":
                 "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
               "ui:options": {
-                expandUnder: "awareOfEvidence"
+                expandUnder: "awareOfEvidence",
+                hideOnReviewIfFalse: true
               },
               "ui:widget": FileUploadWidget,
               // "ui:widget": "file" - Using a custom widget instead for added functionality
