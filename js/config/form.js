@@ -190,7 +190,10 @@ const formConfig = {
             awareOfEvidence: {
               "ui:title":
                 "Are you aware of any video, audio, or written evidence? (video files, audio files, photos, police report, hospital record, etc)?",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReview: true
+              }
             },
             evidenceFiles: {
               "ui:title":
@@ -207,17 +210,19 @@ const formConfig = {
               "ui:title":
                 "Do you know of any other evidence that may exist (security camera footage, witness recordings, etc.)?",
               "ui:options": {
-                expandUnder: "awareOfEvidence"
+                expandUnder: "awareOfEvidence",
+                hideOnReview: true
               },
               "ui:widget": "radio"
             },
             moreEvidence: {
-              "ui:title": "Where could we find that evidence?",
+              "ui:title": "Where could we find evidence?",
               "ui:options": {
                 expandUnder: "awareOfEvidence",
                 hideIf: function(formData, index) {
                   return !formData.awareOfMoreEvidence;
-                }
+                },
+                hideOnReviewIfFalse: true
               }
             }
           }
@@ -316,7 +321,10 @@ const formConfig = {
             hasOfficerDetails: {
               "ui:title":
                 "Do you remember or have access to any details about the officer(s) you’d like to share?",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReview: true
+              }
             },
             officers: {
               "ui:options": {
