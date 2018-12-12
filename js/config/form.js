@@ -312,11 +312,12 @@ const formConfig = {
                   "ui:title": " ",
                   "ui:options": {
                     expandUnder: "race",
-                    expandUnderCondition: "other"
-                    // expandUnderCondition: field => {
-                    //   debugger;
-                    //   return field === "other";
-                    // }
+                    // expandUnderCondition: "other"
+                    expandUnderCondition: field => {
+                      console.log("BLARG");
+                      debugger;
+                      return field && field === "other";
+                    }
                     // hideIf: function(formData, index) {
                     //   debugger;
                     //   return true;
