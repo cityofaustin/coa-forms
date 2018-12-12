@@ -4,6 +4,7 @@ import DateTimeWidget from "../components/DateTimeWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
 import FileUploadWidget from "../components/FileUploadWidget.jsx";
 import OfficerDetailsDisplayWidget from "../components/OfficerDetailsDisplayWidget.jsx";
+import WitnessDetailsDisplayWidget from "../components/WitnessDetailsDisplayWidget.jsx";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
@@ -127,7 +128,8 @@ const formConfig = {
             description: {
               "ui:title": "Description",
               "ui:description":
-                "Please provide a detailed description of your experience with the Austin Police Department"
+                "Please provide a detailed description of your experience with the Austin Police Department",
+              "ui:widget": "textarea"
             },
             datetime: {
               "ui:title": "Date and time, if known",
@@ -183,6 +185,7 @@ const formConfig = {
                 expandUnder: "awareOfEvidence"
               },
               "ui:widget": FileUploadWidget
+              // "ui:widget": "file" - Using a custom widget instead for added functionality
             },
             awareOfMoreEvidence: {
               "ui:title":
@@ -312,16 +315,7 @@ const formConfig = {
                   "ui:title": " ",
                   "ui:options": {
                     expandUnder: "race",
-                    // expandUnderCondition: "other"
-                    expandUnderCondition: field => {
-                      console.log("BLARG");
-                      debugger;
-                      return field && field === "other";
-                    }
-                    // hideIf: function(formData, index) {
-                    //   debugger;
-                    //   return true;
-                    // }
+                    expandUnderCondition: "other"
                   }
                 },
                 gender: { "ui:title": "Officer Gender", "ui:widget": "radio" },
@@ -335,6 +329,13 @@ const formConfig = {
                   "ui:title":
                     "What kind of car or transportation was the officer in?",
                   "ui:widget": "radio"
+                },
+                otherTransportation: {
+                  "ui:title": " ",
+                  "ui:options": {
+                    expandUnder: "transportation",
+                    expandUnderCondition: "other"
+                  }
                 },
                 turnedOffCamera: {
                   "ui:title":
@@ -387,7 +388,7 @@ const formConfig = {
             },
             witnesses: {
               "ui:options": {
-                viewField: OfficerDetailsDisplayWidget,
+                viewField: WitnessDetailsDisplayWidget,
                 addable: true,
                 expandUnder: "hasWitnessInformation"
               },
@@ -398,7 +399,8 @@ const formConfig = {
                 zipCode: { "ui:title": "Witness zip code" },
                 anythingElse: {
                   "ui:title":
-                    "Is there anything we should know about this witness?"
+                    "Is there anything we should know about this witness?",
+                  "ui:widget": "textarea"
                 }
               }
             }
@@ -429,8 +431,8 @@ const formConfig = {
                   "arab",
                   "native",
                   "hawaiian",
-                  "other",
-                  "preferNot"
+                  "preferNot",
+                  "other"
                 ],
                 enumNames: [
                   "White or Euro-American",
@@ -441,10 +443,11 @@ const formConfig = {
                   "Middle Eastern or Arab American",
                   "Native American or Alaskan Native",
                   "Native Hawaiian or Other Pacific Islander",
-                  "Other",
-                  "Prefer not to say"
+                  "Prefer not to say",
+                  "Other"
                 ]
               },
+              otherRace: { type: "string" },
               gender: {
                 type: "string",
                 enum: ["male", "female", "nonBinary", "preferNot"],
@@ -475,6 +478,13 @@ const formConfig = {
               )
             },
             race: { "ui:title": "Your race", "ui:widget": "radio" },
+            otherRace: {
+              "ui:title": " ",
+              "ui:options": {
+                expandUnder: "race",
+                expandUnderCondition: "other"
+              }
+            },
             gender: { "ui:title": "Your gender", "ui:widget": "radio" },
             zipCode: { "ui:title": "Your zip code" },
             "view:contactPreferences": {
@@ -518,23 +528,21 @@ const formConfig = {
                   "Community Organization",
                   "Other"
                 ]
-              }
+              },
+              howDidYouGetHereOther: { type: "string" }
             }
           },
           uiSchema: {
             "ui:title": "Tell us how you found us",
             howDidYouGetHere: {
               "ui:title": "How did you get to this form?",
-              "ui:widget": "radio",
+              "ui:widget": "radio"
+            },
+            howDidYouGetHereOther: {
+              "ui:title": " ",
               "ui:options": {
-                nestedContent: {
-                  other: (
-                    <input
-                      type="text"
-                      placeholder="Not sure how to get data out of this"
-                    />
-                  )
-                }
+                expandUnder: "howDidYouGetHere",
+                expandUnderCondition: "other"
               }
             }
           }
