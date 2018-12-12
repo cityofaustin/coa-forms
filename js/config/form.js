@@ -2,6 +2,7 @@ import React from "react";
 import Introduction from "../components/Introduction.jsx";
 import DateTimeWidget from "../components/DateTimeWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
+import LocationReviewWidget from "../components/LocationReviewWidget.jsx";
 import FileUploadWidget from "../components/FileUploadWidget.jsx";
 import OfficerDetailsDisplayWidget from "../components/OfficerDetailsDisplayWidget.jsx";
 import WitnessDetailsDisplayWidget from "../components/WitnessDetailsDisplayWidget.jsx";
@@ -143,7 +144,8 @@ const formConfig = {
             },
             location: {
               "ui:title": "Location, if known",
-              "ui:widget": LocationPickerWidget
+              "ui:widget": LocationPickerWidget,
+              "ui:reviewWidget": LocationReviewWidget
             }
           }
         }
