@@ -1,6 +1,7 @@
 import React from "react";
 import Introduction from "../components/Introduction.jsx";
 import DateTimeWidget from "../components/DateTimeWidget.jsx";
+import DateTimeReviewWidget from "../components/DateTimeReviewWidget.jsx";
 import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
 import LocationReviewWidget from "../components/LocationReviewWidget.jsx";
 import FileUploadWidget from "../components/FileUploadWidget.jsx";
@@ -140,7 +141,8 @@ const formConfig = {
             },
             datetime: {
               "ui:title": "Date and time, if known",
-              "ui:widget": DateTimeWidget
+              "ui:widget": DateTimeWidget,
+              "ui:reviewWidget": DateTimeReviewWidget
             },
             location: {
               "ui:title": "Location, if known",
