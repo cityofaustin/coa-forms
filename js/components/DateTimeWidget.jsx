@@ -6,8 +6,9 @@ import Flatpickr from "react-flatpickr";
 export default class DateTimeWidget extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      date: null
+      dates: [props.value]
     };
 
     this.onChange = this.onChange.bind(this);
