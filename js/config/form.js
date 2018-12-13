@@ -577,25 +577,49 @@ const formConfig = {
                 </div>
               )
             },
-            race: { "ui:title": "Your race", "ui:widget": "radio" },
+            race: {
+              "ui:title": "Your race",
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
+            },
             otherRace: {
               "ui:title": " ",
               "ui:options": {
                 expandUnder: "race",
-                expandUnderCondition: "other"
+                expandUnderCondition: "other",
+                hideOnReviewIfFalse: true
               }
             },
-            gender: { "ui:title": "Your gender", "ui:widget": "radio" },
-            zipCode: { "ui:title": "Your zip code" },
+            gender: {
+              "ui:title": "Your gender",
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
+            },
+            zipCode: {
+              "ui:title": "Your zip code",
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
+            },
             "view:contactPreferences": {
               "ui:title": "Contact Preferences",
               willingToBeContacted: {
                 "ui:title":
-                  "I am willing to be contacted by the Civilian Office of Police Oversight and Accountability"
+                  "I am willing to be contacted by the Civilian Office of Police Oversight and Accountability",
+                "ui:options": {
+                  hideOnReviewIfFalse: true
+                }
               },
               wouldLikeToSpeakDirectly: {
                 "ui:title":
-                  "I would like to speak to a Police Department supervisor directly to discuss my complaint."
+                  "I would like to speak to a Police Department supervisor directly to discuss my complaint.",
+                "ui:options": {
+                  hideOnReviewIfFalse: true
+                }
               }
             }
           }
