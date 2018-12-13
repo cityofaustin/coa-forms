@@ -1,21 +1,32 @@
-import React from "react";
-import classnames from "classnames";
+import "flatpickr/dist/themes/material_green.css";
 
-export default function DateTimeWidget(props) {
-  return (
-    <input
-      type="datetime-local"
-      id={props.id}
-      name={props.id}
-      disabled={props.disabled}
-      maxLength={props.schema.maxLength}
-      autoComplete={props.options.autocomplete || false}
-      className={classnames(props.options.widgetClassNames)}
-      value={typeof props.value === "undefined" ? "" : props.value}
-      onBlur={() => props.onBlur(props.id)}
-      onChange={event =>
-        props.onChange(event.target.value ? event.target.value : undefined)
-      }
-    />
-  );
+import React from "react";
+import Flatpickr from "react-flatpickr";
+
+export default class DateTimeWidget extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: null
+    };
+
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange({ dates, datestring }) {
+    this.props.onChange(datestring);
+    this.setState({
+      dates
+    });
+  }
+
+  render() {
+    return (
+      <Flatpickr
+        data-enable-time
+        value={this.state.dates}
+        onChange={(dates, datestring) => this.onChange({ dates, datestring })}
+      />
+    );
+  }
 }
