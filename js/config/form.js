@@ -143,12 +143,18 @@ const formConfig = {
             datetime: {
               "ui:title": "Date and time, if known",
               "ui:widget": DateTimeWidget,
-              "ui:reviewWidget": DateTimeReviewWidget
+              "ui:reviewWidget": DateTimeReviewWidget,
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
             },
             location: {
               "ui:title": "Location, if known",
               "ui:widget": LocationPickerWidget,
-              "ui:reviewWidget": LocationReviewWidget
+              "ui:reviewWidget": LocationReviewWidget,
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
             }
           }
         }
