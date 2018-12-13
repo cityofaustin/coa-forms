@@ -277,7 +277,7 @@ const formConfig = {
                         "Other"
                       ]
                     },
-                    otherRace: { type: "string" },
+                    otherRace: { type: "string", "ui:collapsed": true },
                     gender: {
                       type: "string",
                       enum: ["male", "female", "nonBinary", "preferNot"],
@@ -306,7 +306,10 @@ const formConfig = {
                         "Other"
                       ]
                     },
-                    otherTransportation: { type: "string" },
+                    otherTransportation: {
+                      type: "string",
+                      "ui:collapsed": true
+                    },
                     turnedOffCamera: {
                       type: "boolean",
                       enumNames: ["Yes", "No"]
@@ -474,7 +477,7 @@ const formConfig = {
                   "Other"
                 ]
               },
-              otherRace: { type: "string" },
+              otherRace: { type: "string", "ui:collapsed": true },
               gender: {
                 type: "string",
                 enum: ["male", "female", "nonBinary", "preferNot"],
@@ -557,7 +560,7 @@ const formConfig = {
                   "Other"
                 ]
               },
-              howDidYouGetHereOther: { type: "string" }
+              howDidYouGetHereOther: { type: "string", "ui:collapsed": true }
             }
           },
           uiSchema: {
