@@ -457,7 +457,10 @@ const formConfig = {
             hasWitnessInformation: {
               "ui:title":
                 "Do you remember or have access to any details about witness(es) you'd like to share?",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReview: true
+              }
             },
             witnesses: {
               "ui:options": {
@@ -466,14 +469,37 @@ const formConfig = {
                 expandUnder: "hasWitnessInformation"
               },
               items: {
-                name: { "ui:title": "Witness name" },
-                email: { "ui:title": "Witness email" },
-                phoneNumber: { "ui:title": "Witness phone number" },
-                zipCode: { "ui:title": "Witness zip code" },
+                name: {
+                  "ui:title": "Witness name",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                email: {
+                  "ui:title": "Witness email",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                phoneNumber: {
+                  "ui:title": "Witness phone number",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                zipCode: {
+                  "ui:title": "Witness zip code",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
                 anythingElse: {
                   "ui:title":
                     "Is there anything we should know about this witness?",
-                  "ui:widget": "textarea"
+                  "ui:widget": "textarea",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
                 }
               }
             }
