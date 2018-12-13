@@ -661,13 +661,17 @@ const formConfig = {
             "ui:title": "Tell us how you found us",
             howDidYouGetHere: {
               "ui:title": "How did you get to this form?",
-              "ui:widget": "radio"
+              "ui:widget": "radio",
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
             },
             howDidYouGetHereOther: {
               "ui:title": " ",
               "ui:options": {
                 expandUnder: "howDidYouGetHere",
-                expandUnderCondition: "other"
+                expandUnderCondition: "other",
+                hideOnReviewIfFalse: true
               }
             }
           }
