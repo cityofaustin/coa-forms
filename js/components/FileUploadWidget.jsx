@@ -1,52 +1,47 @@
 import React from "react";
-import Dropzone from "react-dropzone";
+import { FilePond, File, registerPlugin } from "react-filepond";
+
+import "filepond/dist/filepond.min.css";
+
+import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
+import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+
+registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 export default class FileUploadWidget extends React.Component {
   constructor() {
     super();
     this.state = { files: [] };
+
+    this.filesUpdated = this.filesUpdated.bind(this);
   }
 
-  onDrop(files) {
-    const value = files.length
-      ? JSON.stringify(files.map(f => `${f.name} - ${f.size} bytes`))
+  filesUpdated({ fileItems }) {
+    const value = fileItems.length
+      ? JSON.stringify(
+          fileItems.map(f => `${f.filename} - ${f.fileSize} bytes`)
+        )
       : false;
     this.props.onChange(value);
-    this.setState({
-      files
-    });
-  }
 
-  onCancel() {
+    // Set current file objects to this.state
     this.setState({
-      files: []
+      files: fileItems.map(fileItem => fileItem.file)
     });
   }
 
   render() {
     return (
-      <section>
-        <div className="dropzone">
-          <Dropzone
-            onDrop={this.onDrop.bind(this)}
-            onFileDialogCancel={this.onCancel.bind(this)}
-          >
-            <p>
-              Try dropping some files here, or click to select files to upload.
-            </p>
-          </Dropzone>
-        </div>
-        <aside>
-          <h2>Dropped files</h2>
-          <ul>
-            {this.state.files.map(f => (
-              <li key={f.name}>
-                {f.name} - {f.size} bytes
-              </li>
-            ))}
-          </ul>
-        </aside>
-      </section>
+      <FilePond
+        allowMultiple={true}
+        onupdatefiles={fileItems => this.filesUpdated({ fileItems })}
+      >
+        {/* Update current files  */}
+        {this.state.files.map(file => (
+          <File key={file} src={file} origin="local" />
+        ))}
+      </FilePond>
     );
   }
 }
