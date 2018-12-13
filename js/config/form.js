@@ -342,39 +342,77 @@ const formConfig = {
                 expandUnder: "hasOfficerDetails"
               },
               items: {
-                name: { "ui:title": "Officer Name" },
-                description: { "ui:title": "Officer Description" },
-                race: { "ui:title": "Officer Race", "ui:widget": "radio" },
+                name: {
+                  "ui:title": "Officer Name",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                description: {
+                  "ui:title": "Officer Description",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                race: {
+                  "ui:title": "Officer Race",
+                  "ui:widget": "radio",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
                 otherRace: {
                   "ui:title": " ",
                   "ui:options": {
                     expandUnder: "race",
-                    expandUnderCondition: "other"
+                    expandUnderCondition: "other",
+                    hideOnReviewIfFalse: true
                   }
                 },
-                gender: { "ui:title": "Officer Gender", "ui:widget": "radio" },
-                badgeNumber: { "ui:title": "Officer badge number" },
+                gender: {
+                  "ui:title": "Officer Gender",
+                  "ui:widget": "radio",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
+                badgeNumber: {
+                  "ui:title": "Officer badge number",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
+                },
                 uniformed: {
                   "ui:title":
                     "Was the officer in uniform or in regular clothes?",
-                  "ui:widget": "radio"
+                  "ui:widget": "radio",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
                 },
                 transportation: {
                   "ui:title":
                     "What kind of car or transportation was the officer in?",
-                  "ui:widget": "radio"
+                  "ui:widget": "radio",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
                 },
                 otherTransportation: {
                   "ui:title": " ",
                   "ui:options": {
                     expandUnder: "transportation",
-                    expandUnderCondition: "other"
+                    expandUnderCondition: "other",
+                    hideOnReviewIfFalse: true
                   }
                 },
                 turnedOffCamera: {
                   "ui:title":
                     "Did you see the officer turn their body camera off?",
-                  "ui:widget": "radio"
+                  "ui:widget": "radio",
+                  "ui:options": {
+                    hideOnReviewIfFalse: true
+                  }
                 }
               }
             }
