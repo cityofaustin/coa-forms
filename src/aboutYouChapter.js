@@ -1,3 +1,5 @@
+import React from "react";
+
 const aboutYouChapter = {
   title: "Tell us about you",
   pages: {
