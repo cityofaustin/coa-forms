@@ -1,6 +1,8 @@
 import {
   DateTimeWidget,
-  DateTimeReviewWidget
+  DateTimeReviewWidget,
+  LocationPickerWidget,
+  LocationReviewWidget
 } from "@cityofaustin/usfs-components";
 
 const whatHappenedChapter = {
