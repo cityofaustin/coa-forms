@@ -18,23 +18,8 @@ class Introduction extends React.Component {
   render() {
     return (
       <div className="schemaform-intro">
-        <FormTitle title="Police Oversight and Accountability Form" />
-        <h1>Tell us about your experience with the Austin Police Department</h1>
-        <p>
-          We are the Civilian Office of Police Oversight and Accountability. We
-          are an independent and unbiased office. In other words, we are not a
-          part of the Police Department.
-        </p>
-        <p>
-          By telling us about your experience, you help us hold officers
-          accountable and advise on policing best practices. We understand that
-          fear of police retaliation but we’d like to assure you
-        </p>
-        <p>
-          Police are not allowed to retaliate against you. We will facilitate
-          this process so that you are as comfortable as possible. Find out more
-          about who we are and what we do.
-        </p>
+        <h1>Officer Thanks Form</h1>
+        <p>Thanks 😃</p>
         <ProgressButton
           onButtonClick={this.startForm}
           buttonText="Fill out the online form"
