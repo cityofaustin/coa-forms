@@ -902,7 +902,7 @@
 
 "@cityofaustin/usfs-components@https://github.com/cityofaustin/usfs-components":
   version "0.0.1"
-  resolved "https://github.com/cityofaustin/usfs-components#2f4aca020f89d9931f680a8b43fc0d7d5b14f476"
+  resolved "https://github.com/cityofaustin/usfs-components#b9f7b7fa1466f95d35d82398e99b7eb493c16189"
   dependencies:
     classnames "^2.2.6"
     date-fns "^1.30.1"
