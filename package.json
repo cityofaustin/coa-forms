@@ -11,7 +11,9 @@
   },
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@cityofaustin/usfs-components": "https://github.com/cityofaustin/usfs-components",
@@ -19,6 +21,10 @@
     "webpack": "^4.27.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^4.1.2",
+    "@storybook/addon-links": "^4.1.2",
+    "@storybook/addons": "^4.1.2",
+    "@storybook/react": "^4.1.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "7",
@@ -26,7 +32,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.0.1",
+    "redux-mock-store": "^1.5.3",
     "style-loader": "^0.23.1",
+    "us-forms-system": "^1.2.0",
     "webpack-cli": "^3.1.2"
   }
 }
