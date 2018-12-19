@@ -2,19 +2,32 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import FormApp from "us-forms-system/lib/js/containers/FormApp";
+import FormPage from "us-forms-system/lib/js/containers/FormPage";
 import formConfig from "./usfsFormConfig";
 
 import configureStore from "redux-mock-store";
 
+import "us-forms-system/lib/css/styles.css";
+
 const mockStore = configureStore([]);
 
-export default function Form({ location, children }) {
-  const store = mockStore({ form: { data: {} } });
+export default function Form({ location, chapter, page }) {
+  const store = mockStore({ form: chapter });
+  debugger;
 
   return (
-    <FormApp formConfig={formConfig} currentLocation={location} store={store}>
-      {children}
-    </FormApp>
+    <div>
+      <FormApp formConfig={formConfig} currentLocation={location} store={store}>
+        <FormPage
+          store={store}
+          route={{
+            pageConfig: { pageKey: page, title: "Blarg" },
+            pageList: [{ path: location }]
+          }}
+          location={{ pathname: location }}
+        />
+      </FormApp>
+    </div>
   );
 }
 

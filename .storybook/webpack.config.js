@@ -12,7 +12,45 @@ module.exports = {
   ],
   module: {
     rules: [
-      // add your custom rules.
-    ],
-  },
+      {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.svg/,
+        loaders: ["svg-url-loader"]
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 4096,
+            name: "images/[name].[ext]"
+          }
+        }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 4096,
+            name: "fonts/[name].[ext]",
+            mimetype: "application/font-woff"
+          }
+        }
+      },
+      {
+        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            limit: 4096,
+            name: "fonts/[name].[ext]"
+          }
+        }
+      }
+    ]
+  }
 };
