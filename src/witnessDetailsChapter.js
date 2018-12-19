@@ -6,9 +6,6 @@ const witnessDetailsChapter = {
     witnessDetails: {
       path: "witness-details",
       title: "Tell us about any witness(es)",
-      depends: {
-        experienceType: "complaint"
-      },
       schema: {
         type: "object",
         required: ["hasWitnessInformation"],

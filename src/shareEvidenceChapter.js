@@ -9,9 +9,6 @@ const shareEvidenceChapter = {
     shareEvidence: {
       path: "share-evidence",
       title: "Share your evidence",
-      depends: {
-        experienceType: "complaint"
-      },
       schema: {
         type: "object",
         required: ["awareOfEvidence"],
