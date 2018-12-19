@@ -97,6 +97,14 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters.git":
+  version "0.0.1"
+  resolved "https://github.com/cityofaustin/officer-form-chapters.git#68ae5dfc92bcc72cfe4d870e427d18116d841ba3"
+  dependencies:
+    "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
+    react "^16.6.3"
+    webpack "^4.27.1"
+
 "@cityofaustin/usfs-components@https://github.com/cityofaustin/usfs-components":
   version "0.0.1"
   resolved "https://github.com/cityofaustin/usfs-components#da8a93d7feb50c6c18f29f93fc057192255398c8"
