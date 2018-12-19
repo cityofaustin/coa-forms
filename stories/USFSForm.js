@@ -13,10 +13,10 @@ const mockStore = configureStore([]);
 
 export default function Form({ location, chapter, page }) {
   const store = mockStore({ form: chapter });
-  debugger;
 
   return (
     <div>
+      <script src="https://maps.googleapis.com/maps/api/js?&v=3.exp&libraries=geometry,drawing,places" />
       <FormApp formConfig={formConfig} currentLocation={location} store={store}>
         <FormPage
           store={store}

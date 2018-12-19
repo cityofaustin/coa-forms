@@ -7,32 +7,36 @@ import Form from "./USFSForm";
 
 import { Button, Welcome } from "@storybook/react/demo";
 
+import whatHappenedChapter from "../src/whatHappenedChapter";
 import howYouFoundUsChapter from "../src/howYouFoundUsChapter";
 
-storiesOf("blarg", module).add("blargy", () => {
+storiesOf("Chapter: What happened?", module).add("Page: What happened?", () => {
   const currentLocation = {
-    // pathname: "/share-evidence"
-    pathname: "/how-you-found-us"
+    pathname: "/what-happened"
   };
-  debugger;
 
   return (
     <Form
       location={currentLocation}
-      chapter={howYouFoundUsChapter}
-      page="howYouFoundUs"
+      chapter={whatHappenedChapter}
+      page="whatHappened"
     />
   );
 });
 
-storiesOf("Button", module)
-  .add("with text", () => (
-    <Button onClick={action("clicked")}>Hello Button</Button>
-  ))
-  .add("with some emoji", () => (
-    <Button onClick={action("clicked")}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+storiesOf("Chapter: How you found us", module).add(
+  "Page: How you found us",
+  () => {
+    const currentLocation = {
+      pathname: "/how-you-found-us"
+    };
+
+    return (
+      <Form
+        location={currentLocation}
+        chapter={howYouFoundUsChapter}
+        page="howYouFoundUs"
+      />
+    );
+  }
+);
