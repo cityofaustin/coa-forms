@@ -1,13 +1,16 @@
 import React from "react";
 import Introduction from "../components/Introduction.jsx";
-import DateTimeWidget from "../components/DateTimeWidget.jsx";
-import DateTimeReviewWidget from "../components/DateTimeReviewWidget.jsx";
-import LocationPickerWidget from "../components/LocationPickerWidget.jsx";
-import LocationReviewWidget from "../components/LocationReviewWidget.jsx";
-import FileUploadWidget from "../components/FileUploadWidget.jsx";
-import FileUploadReviewWidget from "../components/FileUploadReviewWidget.jsx";
-import OfficerDetailsDisplayWidget from "../components/OfficerDetailsDisplayWidget.jsx";
-import WitnessDetailsDisplayWidget from "../components/WitnessDetailsDisplayWidget.jsx";
+
+import {
+  DateTimeWidget,
+  DateTimeReviewWidget,
+  LocationPickerWidget,
+  LocationReviewWidget,
+  FileUploadWidget,
+  FileUploadReviewWidget,
+  OfficerDetailsDisplayWidget,
+  WitnessDetailsDisplayWidget
+} from "@cityofaustin/usfs-components";
 
 const formConfig = {
   title: "Police Oversight and Accountability Form",
