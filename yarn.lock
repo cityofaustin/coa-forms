@@ -99,7 +99,7 @@
 
 "@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters.git":
   version "0.0.1"
-  resolved "https://github.com/cityofaustin/officer-form-chapters.git#f6ed0ea9a1d48fb63569680a8121a06f063affc1"
+  resolved "https://github.com/cityofaustin/officer-form-chapters.git#3291e0ae842f7711e77993769c676b5ab412f05c"
   dependencies:
     "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
     react "^16.6.3"

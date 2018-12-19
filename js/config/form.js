@@ -2,17 +2,6 @@ import React from "react";
 import Introduction from "../components/Introduction.jsx";
 
 import {
-  DateTimeWidget,
-  DateTimeReviewWidget,
-  LocationPickerWidget,
-  LocationReviewWidget,
-  FileUploadWidget,
-  FileUploadReviewWidget,
-  OfficerDetailsDisplayWidget,
-  WitnessDetailsDisplayWidget
-} from "@cityofaustin/usfs-components";
-
-import {
   whatHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
