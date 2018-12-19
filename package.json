@@ -1,0 +1,32 @@
+{
+  "name": "@cityofaustin/officer-form-chapters",
+  "version": "0.0.1",
+  "description": "Chapters for the officer USFS forms",
+  "main": "build/index.js",
+  "repository": "https://github.com/cityofaustin/officer-form-chapters",
+  "author": "Brian Smith <briaguya@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.6.3"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@cityofaustin/usfs-components": "https://github.com/cityofaustin/usfs-components",
+    "react": "^16.6.3",
+    "webpack": "^4.27.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.0.1",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
