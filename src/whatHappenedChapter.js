@@ -5,6 +5,12 @@ import {
   LocationReviewWidget
 } from "@cityofaustin/usfs-components";
 
+
+const locationJSON = JSON.stringify({
+  address: "800 Guadalupe St, Austin, TX 78701",
+  position: { lat: 30.271272, lng: -97.745934 }
+});
+
 const whatHappenedChapter = {
   title: "Tell us what happened",
   pages: {
@@ -22,7 +28,8 @@ const whatHappenedChapter = {
             type: "string"
           },
           location: {
-            type: "string"
+            type: "string",
+            formData: locationJSON
           }
         }
       },
