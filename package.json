@@ -6,9 +6,7 @@
   "repository": "https://github.com/cityofaustin/officer-form-chapters",
   "author": "Brian Smith <briaguya@gmail.com>",
   "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.6.3"
-  },
+  "peerDependencies": {},
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
@@ -17,7 +15,8 @@
   },
   "dependencies": {
     "@cityofaustin/usfs-components": "https://github.com/cityofaustin/usfs-components",
-    "react": "^16.6.3",
+    "react": "15",
+    "react-dom": "15",
     "webpack": "^4.27.1"
   },
   "devDependencies": {
