@@ -99,19 +99,12 @@
 
 "@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters":
   version "0.0.1"
-  resolved "https://github.com/cityofaustin/officer-form-chapters#dea910fff2de3f52e22a9aa1426710144e63d2a7"
+  resolved "https://github.com/cityofaustin/officer-form-chapters#b0ea6b371ed9d4f5b3ada3015c740b131e35fe41"
   dependencies:
     "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
+    "@cityofaustin/usfs-schema-blocks" "https://github.com/cityofaustin/usfs-schema-blocks"
     react "15"
     react-dom "15"
-    webpack "^4.27.1"
-
-"@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters.git":
-  version "0.0.1"
-  resolved "https://github.com/cityofaustin/officer-form-chapters.git#68ae5dfc92bcc72cfe4d870e427d18116d841ba3"
-  dependencies:
-    "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
-    react "^16.6.3"
     webpack "^4.27.1"
 
 "@cityofaustin/usfs-components@https://github.com/cityofaustin/usfs-components":
@@ -127,6 +120,15 @@
     react-filepond "^5.0.0"
     react-flatpickr "^3.6.4"
     react-location-picker "^1.3.0"
+    webpack "^4.27.1"
+
+"@cityofaustin/usfs-schema-blocks@https://github.com/cityofaustin/usfs-schema-blocks":
+  version "0.0.1"
+  resolved "https://github.com/cityofaustin/usfs-schema-blocks#f9230dc352da4c7e67b7f670a2dea5bbe0de8c4c"
+  dependencies:
+    "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
+    react "15"
+    react-dom "15"
     webpack "^4.27.1"
 
 "@department-of-veterans-affairs/react-jsonschema-form@^1.0.0":
