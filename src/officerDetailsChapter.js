@@ -62,7 +62,8 @@ const officerDetailsChapter = {
             "Do you remember or have access to any details about the officer(s) you’d like to share?",
           "ui:widget": "radio",
           "ui:options": {
-            hideOnReview: true
+            hideOnReview: true,
+            classNames: "big-button-radio"
           }
         },
         officers: {
