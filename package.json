@@ -49,7 +49,6 @@
   },
   "dependencies": {
     "@cityofaustin/officer-form-chapters": "https://github.com/cityofaustin/officer-form-chapters.git",
-    "@cityofaustin/usfs-components": "https://github.com/cityofaustin/usfs-components",
     "date-fns": "^1.30.1",
     "filepond": "^3.5.0",
     "filepond-plugin-image-exif-orientation": "^1.0.3",

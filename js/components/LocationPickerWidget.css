@@ -1,0 +1,8 @@
+.mapboxgl-map {
+  overflow: visible !important;
+  /*height: 200px;*/
+}
+
+h1 {
+  color: red !important;
+}
