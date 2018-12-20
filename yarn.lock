@@ -917,7 +917,7 @@
 
 "@cityofaustin/usfs-schema-blocks@https://github.com/cityofaustin/usfs-schema-blocks":
   version "0.0.1"
-  resolved "https://github.com/cityofaustin/usfs-schema-blocks#f9230dc352da4c7e67b7f670a2dea5bbe0de8c4c"
+  resolved "https://github.com/cityofaustin/usfs-schema-blocks#4a4a4f9e87f652105c4487df76142d8a609893bc"
   dependencies:
     "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
     react "15"
