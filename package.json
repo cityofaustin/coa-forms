@@ -48,7 +48,7 @@
     "webpack-merge": "^4.1.3"
   },
   "dependencies": {
-    "@cityofaustin/officer-form-chapters": "https://github.com/cityofaustin/officer-form-chapters.git",
+    "@cityofaustin/officer-form-chapters": "https://github.com/cityofaustin/officer-form-chapters",
     "date-fns": "^1.30.1",
     "filepond": "^3.5.0",
     "filepond-plugin-image-exif-orientation": "^1.0.3",

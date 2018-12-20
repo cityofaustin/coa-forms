@@ -97,9 +97,18 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters":
+  version "0.0.1"
+  resolved "https://github.com/cityofaustin/officer-form-chapters#dea910fff2de3f52e22a9aa1426710144e63d2a7"
+  dependencies:
+    "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
+    react "15"
+    react-dom "15"
+    webpack "^4.27.1"
+
 "@cityofaustin/officer-form-chapters@https://github.com/cityofaustin/officer-form-chapters.git":
   version "0.0.1"
-  resolved "https://github.com/cityofaustin/officer-form-chapters.git#3291e0ae842f7711e77993769c676b5ab412f05c"
+  resolved "https://github.com/cityofaustin/officer-form-chapters.git#68ae5dfc92bcc72cfe4d870e427d18116d841ba3"
   dependencies:
     "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
     react "^16.6.3"
@@ -6164,7 +6173,7 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^15.6.2:
+react-dom@15, react-dom@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
   integrity sha1-Qc+t9pO3V/rycIRDodH9WgK+9zA=
@@ -6272,7 +6281,7 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@^15.6.2:
+react@15, react@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
   integrity sha1-26BDSrQ5z+gvEI8PURZjkIF5qnI=
