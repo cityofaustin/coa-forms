@@ -1,4 +1,5 @@
 import React from "react";
+import { raceBlocks, genderBlocks } from "@cityofaustin/usfs-schema-blocks";
 
 const aboutYouChapter = {
   title: "Tell us about you",
@@ -13,39 +14,8 @@ const aboutYouChapter = {
             type: "object",
             properties: {}
           },
-          race: {
-            type: "string",
-            enum: [
-              "white",
-              "latino",
-              "black",
-              "asian",
-              "indian",
-              "arab",
-              "native",
-              "hawaiian",
-              "preferNot",
-              "other"
-            ],
-            enumNames: [
-              "White or Euro-American",
-              "Latino or Hispanic American",
-              "Black, Afro-Caribbean, or African American",
-              "East Asian or Asian American",
-              "South Asian or Indian American",
-              "Middle Eastern or Arab American",
-              "Native American or Alaskan Native",
-              "Native Hawaiian or Other Pacific Islander",
-              "Prefer not to say",
-              "Other"
-            ]
-          },
-          otherRace: { type: "string", "ui:collapsed": true },
-          gender: {
-            type: "string",
-            enum: ["male", "female", "nonBinary", "preferNot"],
-            enumNames: ["Male", "Female", "Non-binary", "Prefer not to say"]
-          },
+          ...raceBlocks.schema,
+          ...genderBlocks.schema,
           zipCode: { type: "string" },
           "view:contactPreferences": {
             type: "object",
@@ -70,28 +40,8 @@ const aboutYouChapter = {
             </div>
           )
         },
-        race: {
-          "ui:title": "Your race",
-          "ui:widget": "radio",
-          "ui:options": {
-            hideOnReviewIfFalse: true
-          }
-        },
-        otherRace: {
-          "ui:title": " ",
-          "ui:options": {
-            expandUnder: "race",
-            expandUnderCondition: "other",
-            hideOnReviewIfFalse: true
-          }
-        },
-        gender: {
-          "ui:title": "Your gender",
-          "ui:widget": "radio",
-          "ui:options": {
-            hideOnReviewIfFalse: true
-          }
-        },
+        ...raceBlocks.ui,
+        ...genderBlocks.ui,
         zipCode: {
           "ui:title": "Your zip code",
           "ui:options": {

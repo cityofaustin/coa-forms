@@ -915,6 +915,15 @@
     react-mapbox-gl "3.9.2"
     webpack "^4.27.1"
 
+"@cityofaustin/usfs-schema-blocks@https://github.com/cityofaustin/usfs-schema-blocks":
+  version "0.0.1"
+  resolved "https://github.com/cityofaustin/usfs-schema-blocks#f9230dc352da4c7e67b7f670a2dea5bbe0de8c4c"
+  dependencies:
+    "@cityofaustin/usfs-components" "https://github.com/cityofaustin/usfs-components"
+    react "15"
+    react-dom "15"
+    webpack "^4.27.1"
+
 "@department-of-veterans-affairs/react-jsonschema-form@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-jsonschema-form/-/react-jsonschema-form-1.0.0.tgz#dc69722f49088edac5a74d9effdf0d118f854703"

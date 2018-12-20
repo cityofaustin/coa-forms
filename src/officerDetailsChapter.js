@@ -1,4 +1,5 @@
 import { OfficerDetailsDisplayWidget } from "@cityofaustin/usfs-components";
+import { raceBlocks, genderBlocks } from "@cityofaustin/usfs-schema-blocks";
 
 const officerDetailsChapter = {
   title: "Tell us about the officer(s)",
@@ -21,44 +22,8 @@ const officerDetailsChapter = {
               properties: {
                 name: { type: "string" },
                 description: { type: "string" },
-                race: {
-                  type: "string",
-                  enum: [
-                    "white",
-                    "latino",
-                    "black",
-                    "asian",
-                    "indian",
-                    "arab",
-                    "native",
-                    "hawaiian",
-                    "preferNot",
-                    "other"
-                  ],
-                  enumNames: [
-                    "White or Euro-American",
-                    "Latino or Hispanic American",
-                    "Black, Afro-Caribbean, or African American",
-                    "East Asian or Asian American",
-                    "South Asian or Indian American",
-                    "Middle Eastern or Arab American",
-                    "Native American or Alaskan Native",
-                    "Native Hawaiian or Other Pacific Islander",
-                    "Prefer not to say",
-                    "Other"
-                  ]
-                },
-                otherRace: { type: "string", "ui:collapsed": true },
-                gender: {
-                  type: "string",
-                  enum: ["male", "female", "nonBinary", "preferNot"],
-                  enumNames: [
-                    "Male",
-                    "Female",
-                    "Non-binary",
-                    "Prefer not to say"
-                  ]
-                },
+                ...raceBlocks.schema,
+                ...genderBlocks.schema,
                 badgeNumber: {
                   type: "string"
                 },
@@ -119,28 +84,8 @@ const officerDetailsChapter = {
                 hideOnReviewIfFalse: true
               }
             },
-            race: {
-              "ui:title": "Officer Race",
-              "ui:widget": "radio",
-              "ui:options": {
-                hideOnReviewIfFalse: true
-              }
-            },
-            otherRace: {
-              "ui:title": " ",
-              "ui:options": {
-                expandUnder: "race",
-                expandUnderCondition: "other",
-                hideOnReviewIfFalse: true
-              }
-            },
-            gender: {
-              "ui:title": "Officer Gender",
-              "ui:widget": "radio",
-              "ui:options": {
-                hideOnReviewIfFalse: true
-              }
-            },
+            ...raceBlocks.ui,
+            ...genderBlocks.ui,
             badgeNumber: {
               "ui:title": "Officer badge number",
               "ui:options": {
