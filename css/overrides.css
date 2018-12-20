@@ -42,3 +42,23 @@
 .progress-box-schemaform {
   margin-top: 3rem;
 }
+
+.form-radio-buttons label {
+  background: #f0f0f0;
+  border: solid 9px #f0f0f0;
+  border-radius: 13px;
+  margin-top: 1.2rem;
+}
+
+.va-growable-background {
+  border: 1px solid #5b616b;
+  border-radius: 5px;
+  background: white;
+}
+
+.big-button-radio .form-radio-buttons label {
+  border: solid 1px #0071bc;
+  background-color: #ffffff;
+  color: #0071bc;
+  padding: 9px;
+}
