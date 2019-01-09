@@ -21,6 +21,7 @@ const formConfig = {
   introduction: Introduction,
   confirmation: "",
   defaultDefinitions: {},
+  openAllChaptersOnReview: true,
   chapters: {
     whatHappenedChapter,
     shareEvidenceChapter,
