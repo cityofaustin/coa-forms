@@ -1,3 +1,13 @@
 .filepond--root {
   font-size: 1.6rem !important;
 }
+
+.schemaform-required-span {
+  color: #FA9441;
+}
+
+/* input style dosen't affect description widget atm */
+input, textarea {
+  border-radius: 4px;
+  border-color: #ADADAD;
+}
