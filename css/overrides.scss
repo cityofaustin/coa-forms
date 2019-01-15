@@ -1,0 +1,10 @@
+$font-prefix: "../node_modules/@ibm/plex/";
+@import "node_modules/@ibm/plex/scss/ibm-plex.scss";
+
+.filepond--root {
+  font-size: 1.6rem !important;
+}
+
+.schemaform-title h1 {
+  font-family: "IBM Plex Sans";
+}
