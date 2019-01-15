@@ -1,3 +1,12 @@
 .filepond--root {
   font-size: 1.6rem !important;
 }
+
+@font-face {
+  font-family: "MarioFont";
+  src: url("SuperMario256.ttf") format("truetype"); /* IE9 Compat Modes */
+}
+
+.schemaform-title h1 {
+  font-family: "MarioFont";
+}
