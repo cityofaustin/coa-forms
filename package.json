@@ -5,7 +5,7 @@
   "main": "app.js",
   "directories": {},
   "scripts": {
-    "start": "export API_URL='http://localhost:5000';webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
     "test": "BABEL_ENV=test mocha --compilers js:babel-core/register ./test/**/*.spec.jsx",
