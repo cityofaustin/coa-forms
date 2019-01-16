@@ -12,6 +12,27 @@ import "us-forms-system/lib/css/styles.css";
 const mockStore = configureStore([]);
 
 export default function Form({ location, chapter, page }) {
+  const pageObject = Object.values(chapter.pages)[0];
+  let properties = {};
+  for (const propertyKey in pageObject.schema.properties) {
+    properties[propertyKey] =
+      pageObject.schema.properties[propertyKey].type == "array"
+        ? {
+            items: [],
+            type: "array",
+            additionalItems: pageObject.schema.properties[propertyKey].items
+          }
+        : pageObject.schema.properties[propertyKey];
+  }
+  pageObject.schema.properties = properties;
+
+  const chapterThatWorksWithArraysToo = chapter => ({
+    title: chapter.title,
+    pages: {
+      [Object.keys(chapter.pages)[0]]: pageObject
+    }
+  });
+
   const store = mockStore({ form: chapter });
 
   return (
