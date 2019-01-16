@@ -1,23 +1,34 @@
 $font-prefix: "../node_modules/@ibm/plex/";
 @import "node_modules/@ibm/plex/scss/ibm-plex.scss";
 
+$color-primary: #0050D8;
+$font-sans: "IBM Plex Sans", sans-serif;
+$font-serif: "IBM Plex Sans", sans-serif;
+$georgia: "IBM Plex Sans", sans-serif;
+
+// not sure if these need to be here?
+@import "../node_modules/us-forms-system/src/scss/base/_b-variables";
+@import '../node_modules/uswds/src/stylesheets/core/variables';
+
+
 .filepond--root {
   font-size: 1.6rem !important;
 }
 
-$font-sans: "IBM Plex Sans", sans-serif;
+
 
 // this should work but dosen't
 [class^="schemaform"] {
   font-family: $font-sans;
 }
 
+// these work
 body, h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
 }
-.schemaform-required-span {
-  color: #FA9441;
-}
+
+
+
 
 /* input style dosen't affect description widget atm */
 input, textarea {

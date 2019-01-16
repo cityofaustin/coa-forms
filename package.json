@@ -1,7 +1,7 @@
 {
-  "name": "us-forms-system-starter-app",
+  "name": "officer-compliant-form",
   "version": "1.0.0",
-  "description": "Test US Forms System",
+  "description": "Officer Compliant Form",
   "main": "app.js",
   "directories": {},
   "scripts": {
