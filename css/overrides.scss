@@ -5,10 +5,16 @@ $font-prefix: "../node_modules/@ibm/plex/";
   font-size: 1.6rem !important;
 }
 
-.schemaform-title h1 {
-  font-family: "IBM Plex Sans";
+$font-sans: "IBM Plex Sans", sans-serif;
+
+// this should work but dosen't
+[class^="schemaform"] {
+  font-family: $font-sans;
 }
 
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+}
 .schemaform-required-span {
   color: #FA9441;
 }
