@@ -42,8 +42,13 @@ export default function Form({ location, chapter, page }) {
         <FormPage
           store={store}
           route={{
-            pageConfig: { pageKey: page, title: "Blarg" },
-            pageList: [{ path: location }]
+            pageConfig: {
+              pageKey: page,
+              title: "Blarg",
+              schema: Object.values(chapter.pages)[0].schema,
+              uiSchema: Object.values(chapter.pages)[0].uiSchema
+            },
+            pageList: [{ path: location.pathname }]
           }}
           location={{ pathname: location }}
         />
