@@ -1,37 +1,80 @@
-$font-prefix: "../node_modules/@ibm/plex/";
-@import "node_modules/@ibm/plex/scss/ibm-plex.scss";
-
-$color-primary: #0050D8;
-$font-sans: "IBM Plex Sans", sans-serif;
-$font-serif: "IBM Plex Sans", sans-serif;
-$georgia: "IBM Plex Sans", sans-serif;
+/*
+sass/config/variables stuff
+ */
+$font-prefix: '../node_modules/@ibm/plex/';
+@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+// these sass variables aren't all working (at least color isn't)
+$color-primary: #0050d8;
+$font-sans: 'IBM Plex Sans', sans-serif;
 
 // not sure if these need to be here?
-@import "../node_modules/us-forms-system/src/scss/base/_b-variables";
-@import '../node_modules/uswds/src/stylesheets/core/variables';
+// @import "../node_modules/us-forms-system/src/scss/base/_b-variables";
+// @import '../node_modules/uswds/src/stylesheets/core/variables';
 
+@import '../node_modules/us-forms-system/lib/css/styles.css';
 
-.filepond--root {
-  font-size: 1.6rem !important;
-}
-
-
-
-// this should work but dosen't
-[class^="schemaform"] {
-  font-family: $font-sans;
-}
-
-// these work
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: $font-sans;
-}
-
-
-
+/*
+general/global overrides,
+these might be bad depending where the form ends up
+*/
 
 /* input style dosen't affect description widget atm */
-input, textarea {
+input,
+textarea {
   border-radius: 4px;
-  border-color: #ADADAD;
+  border-color: #adadad;
+}
+
+input[type='radio'] {
+  border-color: #dbdee1;
+  opacity: 1;
+}
+
+[type='checkbox'] + label,
+[type='radio'] + label {
+  padding: 10px 13px 11px 12px;
+}
+
+[type='radio'] + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #dbdee1;
+}
+
+label {
+  margin-top: 0px;
+}
+
+/*
+form overrides
+ */
+
+[class^='schemaform'] {
+  font-family: $font-sans;
+}
+
+.schemaform-widget-wrapper {
+  margin-top: 46px;
+}
+
+// affect nested children while hopefully avoiding future collision probs
+[class^='schemaform'] > body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-sans;
+}
+
+//this is really more the container for buttons not the buttons themselves
+//leaving it here for refrence becuase it has some goofy relationships with
+//the other stuff being overidden
+.form-radio-buttons {
+}
+
+/*
+miscellaneous overrides
+ */
+.filepond--root {
+  font-size: 1.6rem !important;
 }
