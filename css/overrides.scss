@@ -4,14 +4,15 @@ sass/config/variables stuff
 $font-prefix: '../node_modules/@ibm/plex/';
 @import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
 // these sass variables aren't all working (at least color isn't)
-$color-primary: #0050d8;
+
+// MADE IT RED SO WE CAN SEE IT WORKING A LOT
+// $color-primary: #0050d8;
+$color-primary: red;
+
 $font-sans: 'IBM Plex Sans', sans-serif;
 
-// not sure if these need to be here?
-// @import "../node_modules/us-forms-system/src/scss/base/_b-variables";
-// @import '../node_modules/uswds/src/stylesheets/core/variables';
-
-@import '../node_modules/us-forms-system/lib/css/styles.css';
+$asset-path: '../node_modules/uswds/src/';
+@import '../node_modules/us-forms-system/src/scss/styles.scss';
 
 /*
 general/global overrides,
