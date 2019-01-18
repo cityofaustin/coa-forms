@@ -11,7 +11,7 @@ import {
 } from "@cityofaustin/officer-form-chapters";
 
 const formConfig = {
-  title: "File a compliant",
+  title: "File a complaint",
   subTitle: "",
   formId: "",
   urlPrefix: "/",

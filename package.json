@@ -1,7 +1,7 @@
 {
-  "name": "officer-compliant-form",
+  "name": "officer-complaint-form",
   "version": "1.0.0",
-  "description": "Officer Compliant Form",
+  "description": "Officer complaint Form",
   "main": "app.js",
   "directories": {},
   "scripts": {
