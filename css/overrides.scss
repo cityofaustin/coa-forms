@@ -4,13 +4,11 @@ sass/config/variables stuff
 $font-prefix: '../node_modules/@ibm/plex/';
 @import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
 
-
-$color-primary: #0050D8;
+$color-primary: #0050d8;
 
 $odd-font: 'IBM Plex Sans', sans-serif;
 $font-sans: $odd-font;
 $font-serif: $odd-font;
-
 
 // THIS IS IMPORTANT to use SASS
 $asset-path: '../node_modules/uswds/src/';
@@ -21,12 +19,9 @@ general/global overrides,
 these might be bad depending where the form ends up
 */
 
-[class*="usa-button"] {
-  width: 145px;
+[class*='usa-button'] {
   height: 40px;
-
 }
-
 
 /* input style dosen't affect description widget atm */
 input,
@@ -48,8 +43,8 @@ input[type='radio'] {
   box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #dbdee1;
 }
 
-input[type="radio"]:checked+label {
-   background-color: #D9E8F6;
+input[type='radio']:checked + label {
+  background-color: #d9e8f6;
 }
 
 label {
@@ -60,20 +55,27 @@ label {
 form overrides
  */
 .schemaform-title {
-  background-color: #D9E8F6;
+  background-color: #d9e8f6;
   align-content: center;
   text-align: center;
   display: block;
   width: 100%;
   min-height: 58px;
   box-shadow: 0px 1px 3px $color-shadow;
-
 }
 
 // might fight a losing battle here changing the h1 style
 .schemaform-title > h1 {
   font-size: 14px;
   padding-top: 17px;
+  font-weight: 500;
+  color: #162E51;
+}
+
+.schemaform-block-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #171717;
 }
 
 .schemaform-widget-wrapper {
@@ -101,12 +103,13 @@ form overrides
 
 // 'de-segment' that progress bar
 .progress-segment {
-  margin: 0px;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 
 .form-radio-buttons {
- box-shadow: 0 0 0 1px #dbdee1;
- border-radius: 4px;
+  box-shadow: 0 0 0 1px #dbdee1;
+  border-radius: 4px;
 }
 
 /*
