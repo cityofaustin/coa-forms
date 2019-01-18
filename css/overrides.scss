@@ -1,0 +1,120 @@
+/*
+sass/config/variables stuff
+ */
+$font-prefix: '../node_modules/@ibm/plex/';
+@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+
+$color-primary: #0050d8;
+
+$odd-font: 'IBM Plex Sans', sans-serif;
+$font-sans: $odd-font;
+$font-serif: $odd-font;
+
+// THIS IS IMPORTANT to use SASS
+$asset-path: '../node_modules/uswds/src/';
+@import '../node_modules/us-forms-system/src/scss/styles.scss';
+
+/*
+general/global overrides,
+these might be bad depending where the form ends up
+*/
+
+[class*='usa-button'] {
+  height: 40px;
+}
+
+/* input style dosen't affect description widget atm */
+input,
+textarea {
+  border-radius: 4px;
+  border-color: #adadad;
+}
+
+input[type='radio'] {
+  border-color: #dbdee1;
+}
+
+[type='checkbox'] + label,
+[type='radio'] + label {
+  padding: 10px 13px 11px 12px;
+}
+
+[type='radio'] + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #dbdee1;
+}
+
+input[type='radio']:checked + label {
+  background-color: #d9e8f6;
+}
+
+label {
+  margin-top: 0px;
+}
+
+/*
+form overrides
+ */
+.schemaform-title {
+  background-color: #d9e8f6;
+  align-content: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  min-height: 58px;
+  box-shadow: 0px 1px 3px $color-shadow;
+}
+
+// might fight a losing battle here changing the h1 style
+.schemaform-title > h1 {
+  font-size: 14px;
+  padding-top: 17px;
+  font-weight: 500;
+  color: #162E51;
+}
+
+.schemaform-block-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #171717;
+}
+
+.schemaform-widget-wrapper {
+  margin-top: 46px;
+}
+
+.schemaform-chapter-progress {
+  display: none;
+}
+
+.progress-bar-segmented {
+  padding: 0px 60px 0px 60px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 13px;
+}
+
+.progress-segment:first-child {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.progress-segment:last-child {
+  border-radius: 0px 7px 7px 0px;
+}
+
+// 'de-segment' that progress bar
+.progress-segment {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.form-radio-buttons {
+  box-shadow: 0 0 0 1px #dbdee1;
+  border-radius: 4px;
+}
+
+/*
+miscellaneous overrides
+ */
+.filepond--root {
+  font-size: 1.6rem !important;
+}
