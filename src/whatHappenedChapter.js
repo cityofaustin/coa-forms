@@ -38,11 +38,11 @@ const whatHappenedChapter = {
         description: {
           "ui:title": "Description",
           "ui:description":
-            "Please provide a detailed description of your experience with the Austin Police Department",
+            "Describe your experience with the Austin Police Department.",
           "ui:widget": "textarea"
         },
         datetime: {
-          "ui:title": "Date and time, if known",
+          "ui:title": "Date and time, if known?",
           "ui:widget": DateTimeWidget,
           "ui:reviewWidget": DateTimeReviewWidget,
           "ui:options": {
@@ -50,7 +50,7 @@ const whatHappenedChapter = {
           }
         },
         location: {
-          "ui:title": "Location, if known",
+          "ui:title": "Location",
           "ui:widget": LocationPickerWidget,
           "ui:reviewWidget": LocationReviewWidget,
           "ui:options": {
