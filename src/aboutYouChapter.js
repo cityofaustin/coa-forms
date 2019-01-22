@@ -14,14 +14,13 @@ const aboutYouChapter = {
             type: "object",
             properties: {}
           },
-          ...raceBlocks.schema,
           ...genderBlocks.schema,
+          ...raceBlocks.schema,
           zipCode: { type: "string" },
           "view:contactPreferences": {
             type: "object",
             properties: {
-              willingToBeContacted: { type: "boolean" },
-              wouldLikeToSpeakDirectly: { type: "boolean" }
+              willingToBeContacted: { type: "boolean" }
             }
           }
         }
@@ -33,15 +32,14 @@ const aboutYouChapter = {
             <div>
               <h2>Demographic information</h2>
               <p>
-                This information helps us recognize police behavior trends
-                across the City that lead to policy, cultural, and training
-                changes.
+This information helps us recognize trends across the City that lead to policy and training recommendations.
               </p>
             </div>
           )
         },
-        ...raceBlocks.ui,
         ...genderBlocks.ui,
+        ...raceBlocks.ui,
+
         zipCode: {
           "ui:title": "Your zip code",
           "ui:options": {
@@ -52,14 +50,7 @@ const aboutYouChapter = {
           "ui:title": "Contact Preferences",
           willingToBeContacted: {
             "ui:title":
-              "I am willing to be contacted by the Civilian Office of Police Oversight and Accountability",
-            "ui:options": {
-              hideOnReviewIfFalse: true
-            }
-          },
-          wouldLikeToSpeakDirectly: {
-            "ui:title":
-              "I would like to speak to a Police Department supervisor directly to discuss my complaint.",
+              "I am willing to be contacted by the Office of Police Oversight in two to four business days.",
             "ui:options": {
               hideOnReviewIfFalse: true
             }
