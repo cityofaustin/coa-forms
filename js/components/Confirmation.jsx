@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ProgressButton from "us-forms-system/lib/js/components/ProgressButton";
 import FormTitle from "us-forms-system/lib/js/components/FormTitle";
 
-class Introduction extends React.Component {
+class Confirmation extends React.Component {
   constructor(props) {
     super(props);
     this.startForm = this.startForm.bind(this);
@@ -58,15 +58,16 @@ class Introduction extends React.Component {
           onButtonClick={this.startForm}
           buttonText="I agree, begin form"
           buttonClass="usa-button-primary schemaform-start-button"
+          afterText="»"
         />
       </div>
     );
   }
 }
 
-Introduction.propTypes = {
+Confirmation.propTypes = {
   route: PropTypes.object,
   router: PropTypes.object
 };
 
-export default Introduction;
+export default Confirmation;

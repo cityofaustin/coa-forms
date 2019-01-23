@@ -1,5 +1,6 @@
 import React from "react";
 import Introduction from "../components/Introduction.jsx";
+import Confirmation from "../components/Confirmation.jsx";
 
 import {
   whatHappenedChapter,
@@ -19,9 +20,10 @@ const formConfig = {
   transformForSubmit: "",
   submitUrl: "",
   introduction: Introduction,
-  confirmation: "",
+  confirmation: Confirmation,
   defaultDefinitions: {},
   openAllChaptersOnReview: true,
+  hideNavArrows: true,
   chapters: {
     whatHappenedChapter,
     shareEvidenceChapter,
