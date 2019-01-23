@@ -19,7 +19,19 @@ class Introduction extends React.Component {
   render() {
     return (
       <div className="schemaform-intro">
-        <FormTitle title="Officer Complaint Form" />
+        <h6 className="usa-heading-alt"> Office of Police Oversight </h6>
+        <hr />
+        <h2> File a Complaint </h2>
+        <hr />
+        <p>
+          You DO NOT have to give personal information in order to file a
+          complaint.
+        </p>
+        <p>
+          By telling us about your experience, you help us better serve you and
+          your community. Thank you.
+        </p>
+        <h4>Select an option</h4>
 
         <ul className="usa-accordion-bordered">
           <li>
@@ -28,7 +40,7 @@ class Introduction extends React.Component {
               aria-expanded="true"
               aria-controls="b-a1"
             >
-              First Amendment
+              Online
             </button>
             <div
               id="b-a1"
