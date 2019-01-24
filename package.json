@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@cityofaustin/usfs-components": "https://github.com/cityofaustin/usfs-components",
-    "@cityofaustin/usfs-schema-blocks": "https://github.com/cityofaustin/usfs-schema-blocks",
     "react": "15",
     "react-dom": "15",
     "webpack": "^4.27.1"
