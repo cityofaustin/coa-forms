@@ -35,20 +35,18 @@ const officerDetailsChapter = {
                   type: "string",
                   enum: ["patrol", "unmarked", "horse", "bicycle", "other"],
                   enumNames: [
-                    "Patrol car",
-                    "Unmarked car",
+                    "Patrol car or motorcycle",
+                    "Unmarked car or motorcycle",
                     "Horse",
                     "Bicycle",
+                    "On foot",
+                    "I don't know",
                     "Other"
                   ]
                 },
                 otherTransportation: {
                   type: "string",
                   "ui:collapsed": true
-                },
-                turnedOffCamera: {
-                  type: "boolean",
-                  enumNames: ["Yes", "No"]
                 }
               }
             }
@@ -59,7 +57,7 @@ const officerDetailsChapter = {
         "ui:title": "Tell us about the officer(s)",
         hasOfficerDetails: {
           "ui:title":
-            "Do you remember or have access to any details about the officer(s) you’d like to share?",
+            "Do you remember any details about the officer(s) you’d like to share?",
           "ui:widget": "radio",
           "ui:options": {
             hideOnReview: true,
@@ -74,13 +72,13 @@ const officerDetailsChapter = {
           },
           items: {
             name: {
-              "ui:title": "Officer Name",
+              "ui:title": "Name",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
             },
             description: {
-              "ui:title": "Officer Description",
+              "ui:title": "Physical Description",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
@@ -88,13 +86,13 @@ const officerDetailsChapter = {
             ...raceBlocks.ui,
             ...genderBlocks.ui,
             badgeNumber: {
-              "ui:title": "Officer badge number",
+              "ui:title": "Badge Number",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
             },
             uniformed: {
-              "ui:title": "Was the officer in uniform or in regular clothes?",
+              "ui:title": "What was the officer wearing?",
               "ui:widget": "radio",
               "ui:options": {
                 hideOnReviewIfFalse: true
@@ -102,7 +100,7 @@ const officerDetailsChapter = {
             },
             transportation: {
               "ui:title":
-                "What kind of car or transportation was the officer in?",
+                "What kind of car or transportation was the officer using?",
               "ui:widget": "radio",
               "ui:options": {
                 hideOnReviewIfFalse: true
@@ -113,13 +111,6 @@ const officerDetailsChapter = {
               "ui:options": {
                 expandUnder: "transportation",
                 expandUnderCondition: "other",
-                hideOnReviewIfFalse: true
-              }
-            },
-            turnedOffCamera: {
-              "ui:title": "Did you see the officer turn their body camera off?",
-              "ui:widget": "radio",
-              "ui:options": {
                 hideOnReviewIfFalse: true
               }
             }

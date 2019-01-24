@@ -1,11 +1,11 @@
 import { WitnessDetailsDisplayWidget } from "@cityofaustin/usfs-components";
 
 const witnessDetailsChapter = {
-  title: "Tell us about any witness(es)",
+  title: "Tell us about any witnesses",
   pages: {
     witnessDetails: {
       path: "witness-details",
-      title: "Tell us about any witness(es)",
+      title: "Tell us about any witnesses",
       schema: {
         type: "object",
         required: ["hasWitnessInformation"],
@@ -22,7 +22,6 @@ const witnessDetailsChapter = {
                 name: { type: "string" },
                 email: { type: "string" },
                 phoneNumber: { type: "string" },
-                zipCode: { type: "string" },
                 anythingElse: { type: "string" }
               }
             }
@@ -30,10 +29,10 @@ const witnessDetailsChapter = {
         }
       },
       uiSchema: {
-        "ui:title": "Tell us about any witness(es)",
+        "ui:title": "Tell us about any witnesses",
         hasWitnessInformation: {
           "ui:title":
-            "Do you remember or have access to any details about witness(es) you'd like to share?",
+            "Do you remember any details about witness(es) you’d like to share?",
           "ui:widget": "radio",
           "ui:options": {
             hideOnReview: true
@@ -47,25 +46,19 @@ const witnessDetailsChapter = {
           },
           items: {
             name: {
-              "ui:title": "Witness name",
+              "ui:title": "Name",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
             },
             email: {
-              "ui:title": "Witness email",
+              "ui:title": "Email",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
             },
             phoneNumber: {
-              "ui:title": "Witness phone number",
-              "ui:options": {
-                hideOnReviewIfFalse: true
-              }
-            },
-            zipCode: {
-              "ui:title": "Witness zip code",
+              "ui:title": "Phone number",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }
