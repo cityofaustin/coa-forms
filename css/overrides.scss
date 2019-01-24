@@ -167,3 +167,72 @@ miscellaneous overrides
 .usa-accordion-content {
   border-radius: 4px;
 }
+
+.pin {
+  z-index: 20;
+}
+
+// .geocoder-pin-right  {
+//   background-color:#fff;
+//   z-index:2;
+//   position:relative;
+//   right:10px;
+//   top:10px;
+//   display:none;
+//   }
+
+.mapboxgl-ctrl-top-left {
+  max-width: 300px;
+}
+
+.mapboxgl-ctrl-geolocate {
+
+  position: absolute;
+  z-index: 20;
+  left: 270px;
+  top: 15px;
+  background-color: #ffffff;
+
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+  position: absolute;
+  z-index: 2;
+  left: 210px;
+  top: 15px;
+  box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group > button {
+  position: absolute;
+  z-index: 2;
+  left: 280px;
+  top: 15px;
+  box-shadow: none;
+}
+
+.mapboxgl-ctrl-group {
+  box-shadow: none;
+  width: 300px;
+
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
+  width: 90%;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+  box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+display: inline-block;
+width: 30px;
+top: 8px;
+left: 250px;
+box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+  box-shadow: none;
+}
