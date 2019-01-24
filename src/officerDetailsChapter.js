@@ -1,5 +1,5 @@
 import { OfficerDetailsDisplayWidget } from "@cityofaustin/usfs-components";
-import { raceBlocks, genderBlocks } from "@cityofaustin/usfs-schema-blocks";
+import { raceBlocks, genderBlocks } from "./schema-blocks";
 
 const officerDetailsChapter = {
   title: "Tell us about the officer(s)",
