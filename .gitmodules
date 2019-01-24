@@ -1,0 +1,3 @@
+[submodule "src/schema-blocks"]
+	path = src/schema-blocks
+	url = git@github.com:cityofaustin/usfs-schema-blocks.git
