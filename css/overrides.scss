@@ -23,6 +23,10 @@ these might be bad depending where the form ends up
   height: 40px;
 }
 
+.body{
+  font-weight: 400;
+}
+
 /* input style dosen't affect description widget atm */
 input,
 textarea {
@@ -72,6 +76,10 @@ form overrides
   color: #162E51;
 }
 
+.schemaform-intro h2 {
+  font-weight: 500;
+}
+
 .schemaform-block-title {
   font-size: 24px;
   font-weight: 400;
@@ -112,9 +120,50 @@ form overrides
   border-radius: 4px;
 }
 
+/* intro page */
+
+.intro-rule {
+  border-color: #0050D8;
+}
+
+.accordion-rule {
+  border-color: rgba(#005ea2, 0.25);
+}
+
+.accordion-list {
+  list-style-type: disc;
+}
+
+.intro-nav-container, .intro-select, .intro-about {
+  color: $color-primary;
+}
+
+.nav-heading {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+
+
 /*
 miscellaneous overrides
  */
 .filepond--root {
   font-size: 1.6rem !important;
+}
+
+#root > div > div > div > div.schemaform-intro > div.usa-grid > ul > li {
+  border-radius: 4px;
+}
+
+
+.usa-accordion-button {
+  font-weight: 500;
+  border-radius: 4px;
+  min-height: 65.28px;
+}
+
+.usa-accordion-content {
+  border-radius: 4px;
 }
