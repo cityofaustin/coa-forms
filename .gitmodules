@@ -1,3 +1,3 @@
-[submodule "Chapters"]
-  path = chapters
-  url = git@github.com:cityofaustin/officer-form-chapters.git
+[submodule "chapters"]
+	path = chapters
+	url = git@github.com:cityofaustin/officer-form-chapters.git
