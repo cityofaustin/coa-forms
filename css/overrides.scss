@@ -23,6 +23,10 @@ these might be bad depending where the form ends up
   height: 40px;
 }
 
+.body{
+  font-weight: 400;
+}
+
 /* input style dosen't affect description widget atm */
 input,
 textarea {
@@ -49,6 +53,7 @@ input[type='radio']:checked + label {
 
 label {
   margin-top: 0px;
+  font-size: 18px;
 }
 
 /*
@@ -72,6 +77,10 @@ form overrides
   color: #162E51;
 }
 
+.schemaform-intro h2 {
+  font-weight: 500;
+}
+
 .schemaform-block-title {
   font-size: 24px;
   font-weight: 400;
@@ -79,7 +88,12 @@ form overrides
 }
 
 .schemaform-widget-wrapper {
-  margin-top: 46px;
+  // margin-top: 20px;
+  border-radius: 4px;
+}
+
+.schemaform-field-template {
+  margin-bottom: 20px;
 }
 
 .schemaform-chapter-progress {
@@ -112,9 +126,119 @@ form overrides
   border-radius: 4px;
 }
 
+/* intro page */
+
+.intro-rule {
+  border-color: #0050D8;
+}
+
+.accordion-rule {
+  border-color: rgba(#005ea2, 0.25);
+}
+
+.accordion-list {
+  list-style-type: disc;
+}
+
+.intro-nav-container, .intro-select, .intro-about {
+  color: $color-primary;
+}
+
+.nav-heading {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+
+
 /*
 miscellaneous overrides
  */
 .filepond--root {
   font-size: 1.6rem !important;
+}
+
+#root > div > div > div > div.schemaform-intro > div.usa-grid > ul > li {
+  border-radius: 4px;
+}
+
+
+.usa-accordion-button {
+  font-weight: 500;
+  border-radius: 4px;
+  min-height: 65.28px;
+}
+
+.usa-accordion-content {
+  border-radius: 4px;
+}
+
+.pin {
+  z-index: 20;
+}
+
+// .geocoder-pin-right  {
+//   background-color:#fff;
+//   z-index:2;
+//   position:relative;
+//   right:10px;
+//   top:10px;
+//   display:none;
+//   }
+
+.mapboxgl-ctrl-top-left {
+  max-width: 300px;
+}
+
+.mapboxgl-ctrl-geolocate {
+
+  position: absolute;
+  z-index: 20;
+  left: 270px;
+  top: 15px;
+  background-color: #ffffff;
+
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+  position: absolute;
+  z-index: 2;
+  left: 210px;
+  top: 15px;
+  box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group > button {
+  position: absolute;
+  z-index: 2;
+  left: 280px;
+  top: 15px;
+  box-shadow: none;
+}
+
+.mapboxgl-ctrl-group {
+  box-shadow: none;
+  width: 300px;
+
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
+  width: 90%;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+  box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+display: inline-block;
+width: 30px;
+top: 8px;
+left: 250px;
+box-shadow: none;
+}
+
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+  box-shadow: none;
 }
