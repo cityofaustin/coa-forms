@@ -1,5 +1,5 @@
 import React from "react";
-import { raceBlocks, genderBlocks } from "./schema-blocks";
+import { raceBlocks, genderBlocks } from "@cityofaustin/usfs-schema-blocks";
 
 const aboutYouChapter = {
   title: "Tell us about you",
@@ -32,8 +32,7 @@ const aboutYouChapter = {
             <div>
               <h2>Demographic information</h2>
               <p>
-                This information helps us recognize trends across the City that
-                lead to policy and training recommendations.
+This information helps us recognize trends across the City that lead to policy and training recommendations.
               </p>
             </div>
           )
