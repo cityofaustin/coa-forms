@@ -53,6 +53,7 @@ input[type='radio']:checked + label {
 
 label {
   margin-top: 0px;
+  font-size: 18px;
 }
 
 /*
@@ -87,7 +88,12 @@ form overrides
 }
 
 .schemaform-widget-wrapper {
-  margin-top: 46px;
+  // margin-top: 20px;
+  border-radius: 4px;
+}
+
+.schemaform-field-template {
+  margin-bottom: 20px;
 }
 
 .schemaform-chapter-progress {
