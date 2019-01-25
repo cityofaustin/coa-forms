@@ -21,7 +21,7 @@ const officerDetailsChapter = {
               type: "object",
               properties: {
                 name: { type: "string" },
-                description: { type: "string" },
+                physicalDescription: { type: "string" },
                 ...raceBlocks.schema,
                 ...genderBlocks.schema,
                 badgeNumber: {
@@ -77,8 +77,9 @@ const officerDetailsChapter = {
                 hideOnReviewIfFalse: true
               }
             },
-            description: {
+            physicalDescription: {
               "ui:title": "Physical Description",
+              "ui:description": "Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.",
               "ui:options": {
                 hideOnReviewIfFalse: true
               }

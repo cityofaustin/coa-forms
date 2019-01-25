@@ -29,12 +29,14 @@ const aboutYouChapter = {
         'ui:title': 'Tell us about you',
         'view:textObject': {
           'ui:description': () => (
-            <div>
-              <h2>Demographic information</h2>
-              <p>
+            <div className="usa-alert  usa-alert-info">
+              <div className="usa-alert-body">
+              <h2 className="usa-alert-heading">Demographic information</h2>
+              <p className="usa-alert-text">
                 This information helps us recognize trends across the City that
                 lead to policy and training recommendations.
               </p>
+            </div>
             </div>
           ),
         },
