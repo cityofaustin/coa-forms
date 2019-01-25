@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-- 8
+  - 8
 install:
-- yarn
+  - yarn
 script:
-- yarn build
+  - yarn build
 deploy:
   provider: s3
   access_key_id: AKIAJD4TCOWVGNQKXPDQ
   secret_access_key:
     secure: LybL0D3ZyYDfFx8KhyHBnZA1Pyr79IKyxRvJrbVj8O3K1FzrB3d9ldc+7hMqDc0xNA9hnNVZaFTYBwH7LevzHY4vxbRRDyR+t3S8wjYCxsozc6oyuFQGVwUS4eaLdeXEMuqhkp56krSkhFzal7tLp6Qt07Xq1zuaa54aOKGMXY2kRY4vtjvgJ+Z7lHdv+FZ09AVpoC1YQbBNfwS/b3dt6Gtu9LVz5hWQ5kxUr4MleFIyq/B3YjUODHJUgnQrdeHjHaVU8z1vIwYTahtBsXexxINU1xDQpEupu8aCw74IL3rKWZFEpR0NErel6/Dt2gTN8eqI1I1fmxiot10AJ/7NoUQwx+aWXOBJSVboJN96TyCv5RfKKCaHHP4ctcJhzwJJwVfWk99ey4596LhjtwsE1YyE3ED2dpeoWDhIIaJ4g7kU0NWWrpk2CsSZ5CpPoZNx/mUundwqMvSaK8VzOYU8t1ksHci9J0Xk34cmo9vDw9SoLtk7mcFhzEiLuSHo5IQW+c5Yk2L3purZb/da2rAwcCwNJF+pkUSURedBsPHou9XmtrWihmzolwEXxTNrc9x5Du7CYU+MbMeKK0j7I3hn3PnOgt4++8SJlvS7ti//i3Lnh84QCPwEQgEpTaND2QfqbfZRsmConUXAvfeI54gzB/hZc5Ml3Y0JlIi0M0P+fQ0=
-  bucket: officer-complaint-form
+  bucket: officer-complaint-form-try
   local-dir: build
   acl: public_read
   on:
