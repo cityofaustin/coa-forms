@@ -1,10 +1,67 @@
-# US Forms System Starter App
-Starter app using [US Forms System](https://github.com/usds/us-forms-system/).
+# City of Austin: Office of Police Oversight - Complaint Form
+Started by using the [US Forms System Starter App](https://github.com/usds/us-forms-system-starter-app).
 
-***THIS IS A WORK IN PROGRESS.***
+## Running the form locally
+### Set up your development environment
+💾 [Install yarn](https://yarnpkg.com/en/docs/install)
 
-## About this project
-This repository provides the basic files and configuration needed to get started building a form using the US Forms System.
+👯 Clone the repo
+```
+git clone https://github.com/cityofaustin/officer-complaint-form
+cd officer-complaint-form
+```
 
-## Using the US Forms System Starter App
-For information about setting up and using the US Forms System Starter App, see the *[US Forms System Documentation](https://github.com/usds/us-forms-system/tree/master/docs#us-forms-system-documentation)*.
+### Install dependencies and run
+
+💾 Install dependencies
+```
+yarn
+```
+⌨️ Run
+```
+yarn start
+```
+
+## Building for production
+
+🏗 Build
+```
+yarn build
+```
+
+## Modifying Chapters
+The schema definitions for chapters are in `/js/config/chapters`. This is a gitmodule that pulls from https://github.com/cityofaustin/officer-form-chapters. If you make changes in this directory, you'll need to commit them to this repo. Either `cd` to `/js/config/chapters` and use the git CLI from there, or open the folder in your favorite git GUI.
+
+Once you've committed your changes to chapters, you should notice the `Subproject commit` for the chapters directory in the parent directory has changed. If you don't check this in then an old version of the chapters will appear on the form outside of your local environment.
+
+## Schema Blocks and Custom Components
+We import schema blocks and custom components via npm: https://www.npmjs.com/package/@cityofaustin/usfs-schema-blocks, https://www.npmjs.com/package/@cityofaustin/usfs-components. We plan to use these across many forms, and publishing them this way allows for sensible versioning. If you'd like to make and see changes locally, you can utilize [yarn link](https://yarnpkg.com/lang/en/docs/cli/link/).
+
+### Using yarn link (for components in this example)
+
+👯 Clone the repo
+```
+git clone https://github.com/cityofaustin/usfs-components
+cd usfs-components
+```
+💾 Install dependencies
+```
+yarn
+```
+🏗 Build
+```
+yarn build
+```
+🔗Link
+```
+yarn link
+cd ../officer-complaint-form
+yarn link "@cityofaustin/usfs-components"
+```
+
+By doing this, instead of using the version of the components from npm, your local form will use the linked version you can modify locally. We do not currently have live updating implemented, so when you want to see how your changes behave in the form you will need to run `yarn build` first.
+
+## Deploying
+*TODO*
+
+We currently have preview apps configured on heroku for PRs, but there's still quite a bit to figure out around a full deployment pipeline.
