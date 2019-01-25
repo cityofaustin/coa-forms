@@ -11,8 +11,7 @@
     "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
     "postinstall": "git submodule update --init --recursive",
     "serve-prod": "npx http-server ./public",
-    "heroku-prebuild": "git submodule update --init --recursive",
-    "heroku-postbuild": "yarn build"
+    "heroku-postbuild": "git submodule update --init --recursive && yarn build"
   },
   "repository": {
     "type": "git",
