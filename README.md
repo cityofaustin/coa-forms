@@ -5,9 +5,9 @@ Started by using the [US Forms System Starter App](https://github.com/usds/us-fo
 ### Set up your development environment
 💾 [Install yarn](https://yarnpkg.com/en/docs/install)
 
-👯 Clone the repo
+👯 Clone the repo (recommended: --recursive to also pull submodules)
 ```
-git clone https://github.com/cityofaustin/officer-complaint-form
+git clone --recursive https://github.com/cityofaustin/officer-complaint-form
 cd officer-complaint-form
 ```
 
