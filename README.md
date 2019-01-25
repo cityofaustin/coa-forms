@@ -17,6 +17,14 @@ cd officer-complaint-form
 ```
 yarn
 ```
+
+If you're cloning for the first time, you'll need pull in our submodules and update them: 
+
+```
+git submodule update --init --recursive
+```
+
+Then you're ready to go! 
 ⌨️ Run
 ```
 yarn start
