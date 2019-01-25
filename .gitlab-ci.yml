@@ -1,5 +1,8 @@
 image: node
 
+variables:
+  GIT_SUBMODULE_STRATEGY: 'recursive'
+
 Build My App:
   stage: build
   before_script:
