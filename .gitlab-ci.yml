@@ -1,0 +1,6 @@
+Build My App:
+  stage: build
+  before_script:
+    - yarn
+  script:
+    - yarn build
