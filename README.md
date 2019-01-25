@@ -64,4 +64,4 @@ By doing this, instead of using the version of the components from npm, your loc
 ## Deploying
 *TODO*
 
-We currently have preview apps configured on heroku for PRs, but there's still quite a bit to figure out around a full deployment pipeline.
+After encountering issues with heroku and travis, I decided to try out using GitLab for some deployment stuff. It's currently living here: https://gitlab.com/briaguya/officer-complaint-form but I'm more than open to changing it.
