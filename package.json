@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
     "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
-    "serve-prod": "npx http-server ./public",
+    "serve-prod": "git submodule update --init --recursive && npx http-server ./public",
     "heroku-postbuild": "yarn build"
   },
   "repository": {
