@@ -6,6 +6,7 @@ install:
 script:
   - yarn build
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJD4TCOWVGNQKXPDQ
   secret_access_key:
