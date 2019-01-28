@@ -32,10 +32,14 @@ yarn start
 
 ## Building for production
 
+The app outputs as a static build.
+
 🏗 Build
 ```
 yarn build
 ```
+
+Puts a static build in the public folder. You can serve this anywhere you'd deploy static html. 
 
 ## Modifying Chapters
 The schema definitions for chapters are in `/js/config/chapters`. This is a gitmodule that pulls from https://github.com/cityofaustin/officer-form-chapters. If you make changes in this directory, you'll need to commit them to this repo. Either `cd` to `/js/config/chapters` and use the git CLI from there, or open the folder in your favorite git GUI.
