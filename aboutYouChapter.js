@@ -71,18 +71,18 @@ const aboutYouChapter = {
           'ui:options': {
             hideIf: formData => !formData.willingToBeContacted,
           },
-          yourName: { "ui:title": "Your name" },
-          yourPhone: { "ui:title": "Your phone number" },
+          yourName: { 'ui:title': 'Your name' },
+          yourPhone: { 'ui:title': 'Your phone number' },
           yourEmail: {
-            "ui:title": "Your email address",
-            "ui:description": "Required if you want the case number confirmation sent to your email."
+            'ui:title': 'Your email address',
+            'ui:description':
+              'Required if you want the case number confirmation sent to your email.',
           },
           needTranslator: {
-            "ui:title": "I would like a translator for all my future interactions."
+            'ui:title':
+              'I would like a translator for all my future interactions.',
           },
-
         },
-
       },
     },
   },
