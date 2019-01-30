@@ -89,9 +89,13 @@ const aboutYouChapter = {
 };
 
 /* hacky feeling overrides to change titles in schema blocks
-  went with this option as it feels the least destructive */
+  went with this option as it feels the least destructive
+  ...and actually still causes problems. Gonna comment this out to avoid
+  confusion for user testing
 
 aboutYouChapter.pages.aboutYou.uiSchema.gender['ui:title'] = 'Your gender';
 aboutYouChapter.pages.aboutYou.uiSchema.race['ui:title'] = 'Your race';
+*/
+
 
 export default aboutYouChapter;
