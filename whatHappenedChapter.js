@@ -27,6 +27,12 @@ const whatHappenedChapter = {
           datetime: {
             type: "string"
           },
+          hasTicket: {
+            type: "boolean"
+          },
+          ticket: {
+            type: "string"
+          },
           location: {
             type: "string",
             formData: locationJSON
@@ -49,8 +55,20 @@ const whatHappenedChapter = {
             hideOnReviewIfFalse: true
           }
         },
+        hasTicket: {
+          "ui:title": "I received a ticket during this interaction."
+        },
+        ticket: {
+          "ui:title": "Your name as it appears on the ticket",
+          "ui:description": "We'll need your name in order to find the ticket you’re referencing.",
+          "ui:options" : {
+            expandUnder: 'hasTicket',
+            expandUnderCondition: true
+          }
+        },
         location: {
           "ui:title": "Location",
+          "ui:description": "Type in the location or drag the map to the location.",
           "ui:widget": LocationPickerWidget,
           "ui:reviewWidget": LocationReviewWidget,
           "ui:options": {
