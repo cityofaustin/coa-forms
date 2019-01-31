@@ -1,5 +1,11 @@
-import React from 'react';
+import React from "react";
 import { raceBlocks, genderBlocks } from '@cityofaustin/usfs-schema-blocks';
+// we need to override this for labels, but need to make deep copys hence the JSON stuff
+let yourRace = JSON.parse(JSON.stringify(raceBlocks.ui));
+let yourGender = JSON.parse(JSON.stringify(genderBlocks.ui));
+
+yourRace.race['ui:title'] = 'Your race';
+yourGender.gender['ui:title'] = 'Your gender';
 
 const aboutYouChapter = {
   title: 'Tell us about you',
@@ -48,8 +54,10 @@ const aboutYouChapter = {
             </div>
           ),
         },
-        ...genderBlocks.ui,
-        ...raceBlocks.ui,
+        // ...genderBlocks.ui,
+        ...yourGender,
+        // ...raceBlocks.ui,
+        ...yourRace,
         zipCode: {
           'ui:title': 'Your zip code',
           'ui:options': {
@@ -87,15 +95,6 @@ const aboutYouChapter = {
     },
   },
 };
-
-/* hacky feeling overrides to change titles in schema blocks
-  went with this option as it feels the least destructive
-  ...and actually still causes problems. Gonna comment this out to avoid
-  confusion for user testing
-
-aboutYouChapter.pages.aboutYou.uiSchema.gender['ui:title'] = 'Your gender';
-aboutYouChapter.pages.aboutYou.uiSchema.race['ui:title'] = 'Your race';
-*/
 
 
 export default aboutYouChapter;
