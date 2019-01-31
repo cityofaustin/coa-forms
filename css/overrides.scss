@@ -29,7 +29,7 @@ these might be bad depending where the form ends up
 
 /* input style dosen't affect description widget atm */
 input,
-textarea {
+textarea, select {
   border-radius: 4px;
   border-color: #adadad;
 }
@@ -178,14 +178,6 @@ miscellaneous overrides
   z-index: 20;
 }
 
-// .geocoder-pin-right  {
-//   background-color:#fff;
-//   z-index:2;
-//   position:relative;
-//   right:10px;
-//   top:10px;
-//   display:none;
-//   }
 
 .mapboxgl-ctrl-top-left {
   max-width: 300px;
@@ -201,7 +193,7 @@ miscellaneous overrides
 
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
   position: absolute;
   z-index: 2;
   left: 210px;
@@ -209,7 +201,7 @@ miscellaneous overrides
   box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group > button {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group > button {
   position: absolute;
   z-index: 2;
   left: 280px;
@@ -223,15 +215,15 @@ miscellaneous overrides
 
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
   width: 90%;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
   box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
 display: inline-block;
 width: 30px;
 top: 8px;
@@ -239,6 +231,6 @@ left: 250px;
 box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(4) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
   box-shadow: none;
 }
