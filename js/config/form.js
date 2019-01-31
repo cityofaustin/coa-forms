@@ -6,7 +6,6 @@ import {
   whatHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
-  howYouFoundUsChapter,
   shareEvidenceChapter,
   witnessDetailsChapter,
 } from './chapters';
@@ -30,7 +29,6 @@ const formConfig = {
     officerDetailsChapter,
     witnessDetailsChapter,
     aboutYouChapter,
-    howYouFoundUsChapter,
   },
 };
 
