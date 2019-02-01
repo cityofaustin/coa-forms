@@ -11,7 +11,6 @@ const shareEvidenceChapter = {
       title: "Share your evidence",
       schema: {
         type: "object",
-        required: ["awareOfEvidence"],
         properties: {
           awareOfEvidence: {
             type: "boolean",
