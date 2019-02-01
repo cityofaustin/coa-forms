@@ -8,7 +8,6 @@ const witnessDetailsChapter = {
       title: 'Tell us about any witnesses',
       schema: {
         type: 'object',
-        required: ['hasWitnessInformation'],
         properties: {
           hasWitnessInformation: {
             type: 'boolean',

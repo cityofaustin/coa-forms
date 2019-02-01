@@ -9,7 +9,6 @@ const officerDetailsChapter = {
       title: "Tell us about the officer(s)",
       schema: {
         type: "object",
-        required: ["hasOfficerDetails"],
         properties: {
           hasOfficerDetails: {
             type: "boolean",
