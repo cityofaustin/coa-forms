@@ -8,7 +8,7 @@ yourRace.race['ui:title'] = 'Your race';
 yourGender.gender['ui:title'] = 'Your gender';
 
 const aboutYouChapter = {
-  title: 'Tell us about you',
+  title: 'Tell us about you (optional)',
   pages: {
     aboutYou: {
       path: 'about-you',
@@ -54,9 +54,7 @@ const aboutYouChapter = {
             </div>
           ),
         },
-        // ...genderBlocks.ui,
         ...yourGender,
-        // ...raceBlocks.ui,
         ...yourRace,
         zipCode: {
           'ui:title': 'Your zip code',
