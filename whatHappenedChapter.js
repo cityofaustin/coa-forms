@@ -56,7 +56,10 @@ const whatHappenedChapter = {
           }
         },
         hasTicket: {
-          "ui:title": "I received a ticket during this interaction."
+          "ui:title": "I received a ticket during this interaction.",
+          "ui:options": {
+            hideOnReviewIfFalse: true
+          }
         },
         ticket: {
           "ui:title": "Your name as it appears on the ticket",
