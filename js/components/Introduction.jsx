@@ -88,11 +88,17 @@ class Introduction extends React.Component {
                 className="usa-accordion-content"
                 aria-hidden="true"
               >
-                Call the Office of Police Oversight at 512-972-2676. We’d be
-                happy to speak with you. If you need language translation, you
-                can call with a friend to translate for you or ask for a
-                translator. Just tell us the language you prefer. Office hours
-                are Monday through Friday, 9 am to 5 pm.
+                <p>
+                  Call the Office of Police Oversight at 512-972-2676. We’d be
+                  happy to speak with you.
+                </p>
+
+                <p>
+                  If you need language translation, you can call with a friend
+                  to translate for you or ask for a translator. Just tell us the
+                  language you prefer.
+                </p>
+                <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
               </div>
             </li>
             <li>
@@ -108,11 +114,20 @@ class Introduction extends React.Component {
                 className="usa-accordion-content"
                 aria-hidden="true"
               >
-                Call the Office of Police Oversight at 512-972-2676. We’d be
-                happy to speak with you. If you need language translation, you
-                can call with a friend to translate for you or ask for a
-                translator. Just tell us the language you prefer. Office hours
-                are Monday through Friday, 9 am to 5 pm.
+                <p>
+                  You can complete the form in person at the Office of Police
+                  Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in
+                  Building 1, on the 2nd floor, Suite 211. Visitor parking is in
+                  front of the main entrance. You will need to check in with
+                  building security at the front desk.
+                </p>
+
+                <p>
+                  If you need language translation, you can bring a friend to
+                  translate for you or ask for a translator. Just tell us the
+                  language you prefer.
+                </p>
+                <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
               </div>
             </li>
             <li>
@@ -128,14 +143,17 @@ class Introduction extends React.Component {
                 className="usa-accordion-content"
                 aria-hidden="true"
               >
-                You can complete the form in person at the Office of Police
-                Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in
-                Building 1, on the 2nd floor, Suite 211. Visitor parking is in
-                front of the main entrance. You will need to check in with
-                building security at the front desk. If you need language
-                translation, you can bring a friend to translate for you or ask
-                for a translator. Just tell us the language you prefer. Office
-                hours are Monday through Friday, 9 am to 5 pm.
+                <p>
+                  Download the compliant form (PDF). Print and fill out the
+                  form, then mail it to:
+                </p>
+                <address>
+                  Office of Police Oversight
+                  <br />
+                  P.O. Box 1088
+                  <br />
+                  Austin, TX 78767
+                </address>
               </div>
             </li>
           </ul>
