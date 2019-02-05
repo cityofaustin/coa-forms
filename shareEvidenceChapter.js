@@ -18,13 +18,11 @@ const shareEvidenceChapter = {
           },
           evidenceFiles: {
             type: "string"
-            // type: "array",
-            // items: { type: "string" }
           },
         }
       },
       uiSchema: {
-        "ui:title": "Share your evidence",
+        "ui:title": "Share your photos or video",
         awareOfEvidence: {
           "ui:title":
             "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.",
