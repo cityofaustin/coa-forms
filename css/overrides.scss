@@ -23,13 +23,18 @@ these might be bad depending where the form ends up
   height: 40px;
 }
 
-.body{
+* {
+  font-family: $odd-font;
+}
+
+.body {
   font-weight: 400;
 }
 
 /* input style dosen't affect description widget atm */
 input,
-textarea, select {
+textarea,
+select {
   border-radius: 4px;
   border-color: #adadad;
 }
@@ -73,12 +78,21 @@ form overrides
 .schemaform-title > h1 {
   font-size: 14px;
   padding-top: 17px;
-  font-weight: 500;
-  color: #162E51;
+  font-weight: 400;
+  color: #162e51;
 }
 
 .schemaform-intro h2 {
+  font-size: 24px;
   font-weight: 500;
+}
+
+.schemaform-intro h3 {
+  font-size: 18px;
+}
+
+.schemaform-intro h4 {
+  font-size: 16px;
 }
 
 .schemaform-block-title {
@@ -87,8 +101,11 @@ form overrides
   color: #171717;
 }
 
+.schemaform-block-header {
+  text-align: center;
+}
+
 .schemaform-widget-wrapper {
-  // margin-top: 20px;
   border-radius: 4px;
 }
 
@@ -129,7 +146,7 @@ form overrides
 /* intro page */
 
 .intro-rule {
-  border-color: #0050D8;
+  border-color: #0050d8;
 }
 
 .accordion-rule {
@@ -140,7 +157,9 @@ form overrides
   list-style-type: disc;
 }
 
-.intro-nav-container, .intro-select, .intro-about {
+.intro-nav-container,
+.intro-select,
+.intro-about {
   color: $color-primary;
 }
 
@@ -151,10 +170,52 @@ form overrides
   letter-spacing: 0.075em;
 }
 
+.usa-alert {
+  padding: 0px;
+}
 
-/*
-miscellaneous overrides
- */
+.usa-alert-info .usa-alert-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.usa-alert-info::before {
+  background-color: #d9e8f6;
+  width: 0px;
+}
+
+.usa-alert-info {
+  padding-left: 0px;
+  padding-top: 70px;
+  background-color: #d9e8f6;
+  background-position: 50% 24px;
+}
+
+.usa-alert-heading {
+  color: #162e51;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.usa-alert-text {
+  color: #162e51;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+legend.schemaform-label {
+  font-size: 18px;
+}
+
+.schemaform-block-subtitle {
+  text-align: left;
+}
+
+.accordion-header.clearfix.schemaform-chapter-accordion-header > button {
+  color: #0050d8;
+  font-weight: 500;
+}
+
 .filepond--root {
   font-size: 1.6rem !important;
 }
@@ -162,7 +223,6 @@ miscellaneous overrides
 #root > div > div > div > div.schemaform-intro > div.usa-grid > ul > li {
   border-radius: 4px;
 }
-
 
 .usa-accordion-button {
   font-weight: 500;
@@ -178,22 +238,63 @@ miscellaneous overrides
   z-index: 20;
 }
 
-
 .mapboxgl-ctrl-top-left {
   max-width: 300px;
 }
 
 .mapboxgl-ctrl-geolocate {
-
   position: absolute;
   z-index: 20;
   left: 270px;
   top: 15px;
   background-color: #ffffff;
-
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+/*
+hacky overrides
+ */
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div:nth-child(3)
+  > div
+  > div
+  > p {
+  color: #757575;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
   position: absolute;
   z-index: 2;
   left: 210px;
@@ -201,7 +302,27 @@ miscellaneous overrides
   box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group > button {
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group
+  > button {
   position: absolute;
   z-index: 2;
   left: 280px;
@@ -212,25 +333,107 @@ miscellaneous overrides
 .mapboxgl-ctrl-group {
   box-shadow: none;
   width: 300px;
-
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > input[type='text'] {
   width: 90%;
+  font-size: 1.6rem;
+  font-family: $odd-font;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
   box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > div > button {
-display: inline-block;
-width: 30px;
-top: 8px;
-left: 250px;
-box-shadow: none;
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
+  display: inline-block;
+  width: 30px;
+  top: 8px;
+  left: 250px;
+  box-shadow: none;
 }
 
-#root > div > div > div > div.progress-box.progress-box-schemaform > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
   box-shadow: none;
 }
