@@ -9094,7 +9094,7 @@ url@^0.11.0, url@~0.11.0:
 
 us-forms-system@cityofaustin/us-forms-system:
   version "1.1.0"
-  resolved "https://codeload.github.com/cityofaustin/us-forms-system/tar.gz/d8d14b77d8b1b85c96a002b2a3b41cc1187df32e"
+  resolved "https://codeload.github.com/cityofaustin/us-forms-system/tar.gz/ac0253cd1974245beeca7ca97f2315981a98a8c3"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     classnames "^2.2.6"

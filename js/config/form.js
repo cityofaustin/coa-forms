@@ -12,7 +12,7 @@ import {
 
 const formConfig = {
   type: "complaint",
-  language: "es",
+  language: "en",
   title: 'File a complaint',
   subTitle: '',
   formId: '',

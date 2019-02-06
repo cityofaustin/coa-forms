@@ -73,7 +73,17 @@ yarn link "@cityofaustin/usfs-components"
 
 By doing this, instead of using the version of the components from npm, your local form will use the linked version you can modify locally. We do not currently have live updating implemented, so when you want to see how your changes behave in the form you will need to run `yarn build` first.
 
-## Deploying
-*TODO*
+## Yarn Lock
 
-After encountering issues with heroku and travis, I decided to try out using GitLab for some deployment stuff. It's currently living here: https://gitlab.com/briaguya/officer-complaint-form but I'm more than open to changing it.
+*Keep the yarn.lock updated for every commit done to the dependency libraries.*  
+
+We encountered some issues of the forms building with outdated components, as a general rule of thumb, when referencing any repo in package.json, it is important to re-render `yarn.lock`. The quickest way to do this is by removing the library and adding it back through the yarn command, for example:
+
+```
+yarn remove "cityofaustin/us-forms-system"
+
+--and then--
+
+yarn add "cityofaustin/us-forms-system"
+```
+
