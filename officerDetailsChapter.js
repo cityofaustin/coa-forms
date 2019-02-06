@@ -36,15 +36,14 @@ const officerDetailsChapter = {
                 },
                 transportation: {
                   type: 'string',
-                  enum: ['patrol', 'unmarked', 'horse', 'bicycle', 'other'],
+                  enum: ['patrol', 'unmarked', 'horse', 'bicycle', 'foot', 'unknown'],
                   enumNames: [
                     'Patrol car or motorcycle',
                     'Unmarked car or motorcycle',
                     'Horse',
                     'Bicycle',
                     'On foot',
-                    "I don't know",
-                    'Other',
+                    "I don't know"
                   ],
                 },
                 otherTransportation: {
