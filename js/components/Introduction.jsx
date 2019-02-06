@@ -19,16 +19,19 @@ class Introduction extends React.Component {
   render() {
     return (
       <div className="schemaform-intro">
+        <a href="">
         <div className="intro-nav-container">
-          <i className="material-icons ">arrow_back</i>
-          <h6 className="usa-heading-alt nav-heading">
+          <i className="material-icons arrow_back">arrow_back</i>
+          <h6 className="nav-heading">
             Office of Police Oversight
           </h6>
         </div>
+      </a>
         <hr className="intro-rule" />
         <div className="usa-grid">
-          <h2> File a Complaint </h2>
-          <hr className="intro-rule" />
+          <div className="intro-container">
+          <h2 className="intro-heading"> File a Complaint </h2>
+          <hr className="form-rule" />
           <p>
             You DO NOT have to give personal information in order to file a
             complaint.
@@ -38,7 +41,7 @@ class Introduction extends React.Component {
             and your community. Thank you.
           </p>
           <h4 className="intro-select">Select an option</h4>
-
+          </div>
           <ul className="usa-accordion-bordered">
             <li>
               <button

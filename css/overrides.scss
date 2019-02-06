@@ -146,8 +146,9 @@ form overrides
 
 /* intro page */
 
-.intro-rule {
-  border-color: #0050d8;
+
+.form-rule {
+  border-color: $color-primary;
 }
 
 .accordion-rule {
@@ -164,6 +165,12 @@ form overrides
   color: $color-primary;
 }
 
+.intro-nav-container {
+  padding: 20px 14px 20px 14px;
+  height: 65.28px;
+  // padding: 1.5rem 5.5rem 1.5rem 2rem;
+}
+
 .nav-heading {
   display: inline-block;
   font-size: 12px;
@@ -171,8 +178,20 @@ form overrides
   letter-spacing: 0.075em;
 }
 
+.arrow_back {
+  color: #adadad;
+  position: relative;
+  top: 5px;
+  padding-right: 16px;
+}
+
+.intro-heading {
+  margin-top: 15.7px;
+}
+
 .usa-alert {
   padding: 0px;
+  border-radius: 4px;
 }
 
 .usa-alert-info .usa-alert-body {
