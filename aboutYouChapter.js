@@ -87,7 +87,7 @@ const aboutYouChapter = {
           },
           needTranslator: {
             'ui:title':
-              'I would like a translator for all my future interactions.',
+              'I would like an interpreter for all my future interactions.',
           },
         },
       },
