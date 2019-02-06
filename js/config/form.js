@@ -16,7 +16,7 @@ const formConfig = {
   title: 'File a complaint',
   subTitle: '',
   formId: '',
-  urlPrefix: '/',
+  urlPrefix: '/police-oversight/complaint/',
   trackingPrefix: 'form-',
   submit: (formData, formConfig) => {
     console.log("Appending formConfig to formData");
