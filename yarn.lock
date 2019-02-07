@@ -765,10 +765,10 @@
     uswds "^1.6.9"
     webpack "^4.27.1"
 
-"@cityofaustin/usfs-schema-blocks@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-schema-blocks/-/usfs-schema-blocks-0.0.3.tgz#062ba2ec7895e99528e5e3738f474cfea5fce307"
-  integrity sha512-tzaTGJKYq7+wAF25V7BPcKIkQgG27bSvpoQpiTC89H3pYJ5PAEe6G8y13BdYAcA53AzRuIZLDlCYTwk1yTkZpQ==
+"@cityofaustin/usfs-schema-blocks@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-schema-blocks/-/usfs-schema-blocks-0.0.4.tgz#5bb8322f961328b80dff46cfdb94fe8c14ab5989"
+  integrity sha512-/rXKFVZNKywHxfZErksWCoctfEs5i742ic0/7l71V8xAf09hxC1NQqx/WHROdrUuoUk+qREoCH0xJGh9Uqkqvg==
   dependencies:
     "@cityofaustin/usfs-components" "^0.0.2"
     react "15"
