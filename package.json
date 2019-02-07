@@ -26,6 +26,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@cityofaustin/usfs-components": "^0.0.4",
+    "@cityofaustin/usfs-schema-blocks": "^0.0.4",
     "babel-loader": "^8.0.0",
     "chai": "^4.1.1",
     "css-loader": "^0.28.11",
