@@ -68,7 +68,7 @@ class Introduction extends React.Component {
                   <li>Witness(es) </li>
                   <li>
                     Your contact information for us to follow up with you
-                    (translators available)
+                    (interpreters available)
                   </li>
                 </ul>
                 <ProgressButton
