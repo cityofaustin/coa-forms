@@ -1,0 +1,543 @@
+{
+
+	"You DO NOT have to give personal information in order to file a complaint.":  {
+    "es": "Usted NO TIENE que proveer informacion personal para poder enviar una queja."
+  },
+
+	"By telling us about your experience, you help us better serve you and your community. Thank you.": {
+    "es": "Al decirnos de su experiencia, usted nos ayuda a servirle mejor a usted y a su comunidad. Gracias."
+  },
+
+	"Required information": {
+    "es": "Informacion Requerida"
+  },
+
+  "What happened": {
+    "es": "Que sucedio"
+  },
+
+  "Optional information": {
+    "es": "Informacion Opcional"
+  },
+
+  "Officer(s) involved": {
+    "es": "Agentes de policia involucrados"
+  },
+
+  "%We are the Office of Police Oversight, impartial and separate from the Austin Police Department.%": {
+    "es": "%Somos la Oficina de la Fiscalizacion de Policia, somos imparciales y separados del Departamento de Policia de Austin%"
+  },
+
+  "Learn more about who we are and what we do.": {
+    "es": "Aprenda mas sobre quienes somos y que es lo que hacemos."
+  },
+
+
+
+
+  "Your contact information for us to follow up with you (translators available)": {
+    "es": "Su informacion de contacto es para poder dar seguimiento con usted (traductores disponibles)"
+  },
+  "Call the Office of Police Oversight at 512-972-2676. We’d be happy to speak with you.": {
+    "es": "Llame a la Oficina de la Fiscalizacion de Policia al 512-972-2676. Esperamos su llamada. "
+  },
+  "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.": {
+    "es": "Usted puede completar la forma en persona en la Oficina de la Fiscalizacion de Policia en la direccion 1520 Rutherford Lane, Austin, TX 78754. Estamos en el Edificio No. 1, segundo piso, en la Suite 211. Estacionamiento de visitante es justo en frente de la entrada principal. Usted necesitara verificar su presencia con la oficina de seguridad en la recepcion."
+  },
+  "If you need language translation, you can call with a friend to translate for you or ask for a translator. Just tell us the language you prefer.": {
+    "es": "Si usted necesita traduccion en su idioma, usted puede pedirle a un amigo que llame por usted para solicitar a un traductor. Tan solo indique que idioma prefiere usted."
+  },
+  "Office hours are Monday through Friday, 9 am to 5 pm.": {
+    "es": "Las horas de la oficina son Lunes a Viernes, 9 am a 5 pm"
+  },
+  "Download the compliant form (PDF). Print and fill out the form, then mail it to:": {
+    "es": "Descargue el formulario de queja en PDF. Imprima y llene el formulario, despues mandar a la siguiente direccion:"
+  },
+
+
+
+  "Tell us what happened": {
+    "es": "Diganos que sucedio"
+  },
+
+  "Describe your experience with the Austin Police Department.": {
+    "es": "Describa su experiencia con el Departamento de Policia de Austin."
+  },
+
+  "Date and time, if known?": {
+    "es": "Fecha y hora (si usted lo sabe)"
+  },
+
+  "Your name as it appears on the ticket": {
+    "es": "Su nombre asi como aparece en el ticket"
+  },
+
+  "I received a ticket during this interaction.": {
+    "es": "Recibi un ticket durante esta interaccion"
+  },
+
+  "We'll need your name in order to find the ticket you’re referencing.": {
+    "es": "Nosotros necesitamos saber su numbre para poder encontrar el ticket del que usted menciona."
+  },
+
+  "Type in the location or drag the map to the location.": {
+    "es": "Escriba la ubicacion o mueva el mapa a la ubicacion correcta."
+  },
+
+
+  "Share your photos or video": {
+    "es": "Comparta sus fotos o video"
+  },
+
+  "Share your evidence": {
+    "es": "Comparta su evidencia"
+  },
+
+  "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.": {
+    "es": "Tiene informacion adicional? Esto puede incluir video, audio, fotos, reportes de policia, registros del hospital, o cualquier otra cosa que desee compartir."
+  },
+
+  "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)": {
+    "es": "Envie cualquier evidencia que tenga (videos, audio, fotos, reportes de policia, registros de hospital, etc.)"
+  },
+
+
+
+  "Drag & Drop your files or ": {
+    "es": "Arrastre los archivos aqui o "
+  },
+
+  "Tell us about the officer(s)": {
+    "es": "Diganos de los oficial(es)"
+  },
+
+  "Do you remember any details about the officer(s) you’d like to share?": {
+    "es": "Recuerda algunos detalles acerca de los oficiales que quiera compartir?"
+  },
+
+  "Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.": {
+    "es": "Ejemplos: color de cabello, color de ojos, peso, altura, cabello facial, tatuajes, cicatrices, etc."
+  },
+
+  "What was the officer wearing?": {
+    "es": "Que tenia puesto el oficial?"
+  },
+
+  "What kind of car or transportation was the officer using?": {
+    "es": "Que tipo de transporte usaba el oficial?"
+  },
+
+  "Placeholder Officer Details": {
+    "es": "Detalles del Oficial"
+  },
+
+  "Tell us about any witnesses": {
+    "es": "Detalles del Testigo"
+  },
+
+  "Do you remember any details about witness(es) you’d like to share?": {
+    "es": "Recuerta algunos detalles acerca de testigos que quiera compartir?"
+  },
+
+  "Is there anything we should know about this witness?": {
+    "es": "Hay algo que debamos saber acerca de este testigo?"
+  },
+
+  "Examples: Examples: were they injured, were they harassed, how were they involved, etc.": {
+    "es": "Ejemplos: Fueron lastimados, fueron molestados, como se involucraron, etc."
+  },
+
+  "Placeholder Witness Details": {
+    "es": "Detalles del Testigo"
+  },
+
+
+  "Tell us about you": {
+    "es": "Diganos de usted"
+  },
+
+  "I am willing to be contacted by the Office of Police Oversight in two to four business days.": {
+    "es": "Estoy dispuesto a ser contactado por la Oficina de la Fiscalizacion de Policia en dos a cuatro dias habiles."
+  },
+
+  "Your name": {
+    "es": "Su Nombre"
+  },
+
+  "Your phone number": {
+    "es": "Su Numero de Telefono"
+  },
+
+  "Your email address": {
+    "es": "Su Direccion de E-Mail"
+  },
+
+  "Required if you want the case number confirmation sent to your email.": {
+    "es": "Requerido si desea recibir un numero de confirmacion a su direccion de email."
+  },
+
+  "I would like an interpreter for all my future interactions.": {
+    "es": "Me gustaria recibir la ayuda de un interprete en todas mis interacciones."
+  },
+
+
+
+  "File a Complaint": {
+    "es": "Envie una queja"
+  },
+
+  "File a complaint": {
+    "es": "Enviar una queja"
+  },
+
+  "Patrol car or motorcycle": {
+    "es": "Patrulla o motocicleta"
+  },
+
+  "Unmarked car or motorcycle": {
+    "es": "Carro o motocicleta normal"
+  },
+
+  "Horse": {
+    "es": "Caballo"
+  },
+
+  "Bicycle": {
+    "es": "Bicicleta"
+  },
+
+  "On foot": {
+    "es": "A pie"
+  },
+
+  "I don't know": {
+    "es": "No lo se"
+  },
+
+  "Add Another": {
+    "es": "Agregar Otro"
+  },
+
+  "In person": {
+    "es": "En Persona"
+  },
+
+  "Witness(es) ": {
+    "es": "Testigo(s)"
+  },
+
+  "Over the phone": {
+    "es": "Llamada Telefonica"
+  },
+
+  "By mail": {
+    "es": "Por Correo"
+  },
+
+  "About Us": {
+    "es": "Acerca de Nosotros"
+  },
+
+  "Select an option": {
+    "es": "Seleccione una opcion"
+  },
+
+
+
+  "Phone number": {
+    "es": "Numero de Telefono"
+  },
+
+  "Your gender": {
+    "es": "Su Genero"
+  },
+
+  "Non-binary": {
+    "es": "No-binario"
+  },
+  "Prefer not to say": {
+    "es": "Prefiero no decir"
+  },
+
+  "Your race": {
+    "es": "Su Grupo Etnico"
+  },
+
+  "Your zip code": {
+    "es": "Su Codigo Postal"
+  },
+
+  "Contact preferences": {
+    "es": "Preferencias de Contacto"
+  },
+
+  "Submit Application": {
+    "es": "Enviar Queja"
+  },
+
+  "Please provide a response": {
+    "es": "Por favor provea una respuesta"
+  },
+
+  "%Demographic information%": {
+    "es": "%Informacion Demografica%"
+  },
+
+  "This information helps us recognize trends across the City that lead to policy and training recommendations.": {
+    "es": "Esta informacion nos ayuda a reconocer tendencias a lo largo de la ciudad que pueden llevar a crear recomendaciones para cambios en la ley y de entrenamiento."
+  },
+
+
+  "Race": {
+    "es": "Raza"
+  },
+
+  "Gender": {
+    "es": "Genero"
+  },
+
+  "Male": {
+    "es": "Masculino"
+  },
+
+  "Female": {
+    "es": "Femenino"
+  },
+
+  "Badge Number": {
+    "es": "Numero de Placa"
+  },
+
+  "In uniform": {
+    "es": "En Uniforme"
+  },
+
+  "In regular clothes": {
+    "es": "En Ropa Regular"
+  },
+
+  "Physical Description": {
+    "es": "Descripcion Fisica"
+  },
+
+
+
+  "We have received your complaint": {
+    "es": "Hemos recibido su queja"
+  },
+
+
+  "Your case number:": {
+    "es": "Su numero de confirmacion:"
+  },
+
+  "Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.": {
+    "es": "Nuestro trabajo es asegurar que queja sea investigada de manera justa y completea. Gracias por compartir su experienca con nosotros. Esto nos ayuda a servirle mejor a usted y a su comunidad."
+  },
+
+  "You will receive an email with a copy of your complaint and a confirmation number. You can email us at ": {
+    "es": "Usted recibira un email con una copya de su queja y un numero de confirmacion. Usted nos puede contactar a "
+  },
+
+  " or call us at ": {
+    "es": " o llamando a "
+  },
+
+  " with your confirmation number to find where your complaint is in this process.": {
+    "es": " con su numero de confirmacion para saber en que parte del proceso se encuentra su queja."
+  },
+
+  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within two to four business days.": {
+    "es": "Si usted ha provehido su informacion de contacto, una personal de Oficina de la Fiscalizacion de la Policia se comunicara con usted en dos a cuatro dias habiles."
+  },
+
+
+  "What happens next": {
+    "es": "Que sigue despues?"
+  },
+
+
+
+
+
+
+  "%Enter a location here%": {
+    "es": "%Introduzca una ubicación aquí%"
+  },
+
+  "Update Page": {
+    "es": "Actualizar"
+  },
+
+  "Back": {
+    "es": "Atras"
+  },
+
+  "Continue": {
+    "es": "Continuar"
+  },
+
+  ">Browse<": {
+    "es": ">Seleccionar<"
+  },
+
+  "Required": {
+    "es": "Requerido"
+  },
+
+  "Yes": {
+    "es": "Si"
+  },
+
+  "No": {
+    "es": "No"
+  },
+
+  "%Uploading%": {
+    "es": "%Enviando archivo%"
+  },
+
+  "%Upload complete%": {
+    "es": "%Envio completo%"
+  },
+
+  "%Upload cancelled%": {
+    "es": "%Envio completo%"
+  },
+
+  "%Error during upload%": {
+    "es": "%tap to cancel%"
+  },
+
+  "%tap to cancel%": {
+    "es": "%presione para cancelar%"
+  },
+
+  "%tap to retry%": {
+    "es": "%presione para re-intentar%"
+  },
+
+  "%tap to undo%": {
+    "es": "%presione para borrar%"
+  },
+
+  "%Remove%": {
+    "es": "%Remover%"
+  },
+
+  "%Abort%": {
+    "es": "%Abortar%"
+  },
+
+  "%Retry%": {
+    "es": "%Re-Intentar%"
+  },
+
+  "%Cancel%": {
+    "es": "%Cancelar%"
+  },
+
+  "%Undo%": {
+    "es": "%Deshacer%"
+  },
+
+  "%Upload%": {
+    "es": "%Enviar%"
+  },
+
+  "%Edit%": {
+    "es": "%Editar%"
+  },
+
+  ">Edit<": {
+    "es": ">Editar<"
+  },
+
+  "%Other%": {
+    "es": "%Otro%"
+  },
+
+  "%Start%": {
+    "es": "%Comenzar%"
+  },
+
+  "%Location%": {
+    "es": "%Ubicacion%"
+  },
+
+  "%Online%": {
+    "es": "%En-Linea%"
+  },
+
+  ":%Name%": {
+    "es": ":%Nombre%"
+  },
+
+  "%Time %": {
+    "es": "%Tiempo%"
+  },
+
+  "%Email%": {
+    "es": "%E-Mail%"
+  },
+
+  "%True%": {
+    "es": "%Si%"
+  },
+
+  "language:%en%": {
+    "es": "language:%es%"
+  },
+
+  "%White or Euro-American%": {
+    "es": "%Anglosajon o Euro-Americano%"
+  },
+
+  "%Latino or Hispanic American%": {
+    "es": "%Latino o Hispano Americano%"
+  },
+
+  "%Black, Afro-Caribbean, or African American%": {
+    "es": "%Afro-Caribeno, Afro-Americano, Ascendencia Africana%"
+  },
+
+  "%East Asian or Asian American%": {
+    "es": "%Asiatico del Este or Asiatico-Americano%"
+  },
+
+  "%South Asian or Indian American%": {
+    "es": "%Asiatico del Sur o Indu-Americano%"
+  },
+
+  "%Middle Eastern or Arab American%": {
+    "es": "%Medio-Oriente o Arabe-Americano%"
+  },
+
+  "%Native American or Alaskan Native%": {
+    "es": "%Nativo Americano o Nativo de Alaska%"
+  },
+
+  "%Native Hawaiian or Other Pacific Islander%": {
+    "es": "%Nativo Hawaiiano o Isleno del Pacifico%"
+  },
+
+  "%January%,%February%,%March%,%April%,%May%,%June%,%July%,%August%,%September%,%October%,%November%,%December%": {
+    "es": "%Enero%,%Febrero%,%Marzo%,%Abril%,%Mayo%,%Junio%,%Julio%,%Agosto%,%Septiembre%,%Octubre%,%Noviembre%,%Diciembre%"
+  },
+
+  "%Jan%,%Feb%,%Mar%,%Apr%,%May%,%Jun%,%Jul%,%Aug%,%Sep%,%Oct%,%Nov%,%Dec%": {
+    "es": "%Ene%,%Feb%,%Mar%,%Abr%,%May%,%Jun%,%Jul%,%Ago%,%Sep%,%Oct%,%Nov%,%Dic%"
+  },
+
+  "%Sunday%,%Monday%,%Tuesday%,%Wednesday%,%Thursday%,%Friday%,%Saturday%": {
+    "es": "%Domingo%,%Lunes%,%Martes%,%Miercoles%,%Jueves%,%Viernes%,%Sabado%"
+  },
+
+  "%Sun%,%Mon%,%Tue%,%Wed%,%Thu%,%Fri%,%Sat%": {
+    "es": "%Dom%,%Lun%,%Mar%,%Mie%,%Jue%,%Vie%,%Sab%"
+  },
+
+  "Office of Police Oversight": {
+    "es": "Oficina de Fiscalizacion de la Policia"
+  }
+}

@@ -290,7 +290,36 @@ function forms_build {
   forms_reset_cwd;
 }
 
+function forms_translate {
+  print_header "Translating Form"
+  
+  for LANGUAGE in $(jq -r ".supported_languages[]" "./locale/settings.json");
+  do
+    echo "Switching back to default directory";
+    forms_reset_cwd;
+    echo "Directory now: $PWD";
 
+    echo "Current Language code: ${LANGUAGE}"; 
+    ORIGIN_PATH="public"; 
+    TRANSLATION_PATH="${ORIGIN_PATH}_${LANGUAGE}"; 
+
+    echo "Copying: ${ORIGIN_PATH} to ${TRANSLATION_PATH}"; 
+    echo "cp -r $ORIGIN_PATH $TRANSLATION_PATH;"
+    cp -r $ORIGIN_PATH $TRANSLATION_PATH;
+
+    echo "First, let's translate the routes:"; 
+    python3 "./.travis/translate.py" "./locale/routes.json" "./${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}" --routes
+
+    echo "Then, let's translate the rest of the form:"
+    python3 "./.travis/translate.py" "./locale/translations.json" "./${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
+
+    DEPLOYMENT_PATH=$(jq -r ".deployment_path.${LANGUAGE}"  "./locale/routes.json")
+
+    forms_change_dir $TRANSLATION_PATH;
+
+    forms_sync_form_aws $DEPLOYMENT_PATH;
+  done;
+}
 
 function forms_postrelease {
   CURRENT_BRANCH=$1

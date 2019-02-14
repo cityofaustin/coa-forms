@@ -1,0 +1,39 @@
+{
+  "deployment_path": {
+    "es": "fiscalizacion-de-policia/queja"
+  },
+
+  "routes":  {
+    "%/police-oversight/complaint/%": {
+        "es": "%/fiscalizacion-de-policia/queja/%"
+    },
+
+    "%introduction%": {
+      "es": "%introduccion%"
+    },
+
+    "%what-happened%": {
+      "es": "%que-sucedio%"
+    },
+
+    "%share-evidence%": {
+      "es": "%compartir-evidencia%"
+    },
+
+    "%officer-details%": {
+      "es": "%detalles-oficial%"
+    },
+
+    "%witness-details%": {
+      "es": "%detalles-testigos%"
+    },
+
+    "%about-you%": {
+      "es": "%acerca-de-usted%"
+    },
+
+    "%review-and-submit%": {
+      "es": "%revisar-y-enviar%"
+    }
+  }
+}
