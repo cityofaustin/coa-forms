@@ -1,26 +1,26 @@
 {
   "You DO NOT have to give personal information in order to file a complaint.": {
-    "es": "Usted NO TIENE que proveer informacion personal para poder enviar una queja."
+    "es": "NO tiene que proveer su información personal para presentar una queja."
   },
 
   "By telling us about your experience, you help us better serve you and your community. Thank you.": {
-    "es": "Al decirnos de su experiencia, usted nos ayuda a servirle mejor a usted y a su comunidad. Gracias."
+    "es": "Al contarnos su experiencia, nos está ayudando a servirles mejor a usted y a su comunidad. Muchas gracias."
   },
 
   "Required information": {
-    "es": "Informacion Requerida"
+    "es": "Información requerida"
   },
 
   "What happened": {
-    "es": "Que sucedio"
+    "es": "Qué sucedió"
   },
 
   "Optional information": {
-    "es": "Informacion Opcional"
+    "es": "Información opcional"
   },
 
   "Officer(s) involved": {
-    "es": "Agentes de policia involucrados"
+    "es": "Oficial(es) involucrado(s)"
   },
 
   "%We are the Office of Police Oversight, impartial and separate from the Austin Police Department.%": {
@@ -31,8 +31,8 @@
     "es": "Aprenda mas sobre quienes somos y que es lo que hacemos."
   },
 
-  "Your contact information for us to follow up with you (translators available)": {
-    "es": "Su informacion de contacto es para poder dar seguimiento con usted (traductores disponibles)"
+  "Your contact information for us to follow up with you (interpreters available)": {
+    "es": "Su información de contacto para poder comunicarnos con usted (hay traductores disponibles)"
   },
   "Call the Office of Police Oversight at 512-972-2676. We’d be happy to speak with you.": {
     "es": "Llame a la Oficina de la Fiscalizacion de Policia al 512-972-2676. Esperamos su llamada. "
@@ -171,11 +171,11 @@
   },
 
   "File a Complaint": {
-    "es": "Envie una queja"
+    "es": "Presente una queja"
   },
 
   "File a complaint": {
-    "es": "Enviar una queja"
+    "es": "Presente una queja"
   },
 
   "Patrol car or motorcycle": {
@@ -227,7 +227,7 @@
   },
 
   "Select an option": {
-    "es": "Seleccione una opcion"
+    "es": "Seleccione una opción"
   },
 
   "Phone number": {
@@ -438,7 +438,7 @@
   },
 
   "%Start%": {
-    "es": "%Comenzar%"
+    "es": "%Inicio%"
   },
 
   "%Location%": {
@@ -446,7 +446,7 @@
   },
 
   "%Online%": {
-    "es": "%En-Linea%"
+    "es": "%En línea%"
   },
 
   ":%Name%": {
@@ -454,7 +454,7 @@
   },
 
   "%Time %": {
-    "es": "%Tiempo%"
+    "es": "%Hora%"
   },
 
   "%Email%": {
