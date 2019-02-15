@@ -20,27 +20,25 @@ class Introduction extends React.Component {
     return (
       <div className="schemaform-intro">
         <a href="">
-        <div className="intro-nav-container">
-          <i className="material-icons arrow_back">arrow_back</i>
-          <h6 className="nav-heading">
-            Office of Police Oversight
-          </h6>
-        </div>
-      </a>
+          <div className="intro-nav-container">
+            <i className="material-icons arrow_back">arrow_back</i>
+            <h6 className="nav-heading">Office of Police Oversight</h6>
+          </div>
+        </a>
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-          <h2 className="intro-heading"> File a Complaint </h2>
-          <hr className="form-rule" />
-          <p>
-            You DO NOT have to give personal information in order to file a
-            complaint.
-          </p>
-          <p>
-            By telling us about your experience, you help us better serve you
-            and your community. Thank you.
-          </p>
-          <h4 className="intro-select">Select an option</h4>
+            <h2 className="intro-heading"> File a Complaint </h2>
+            <hr className="form-rule" />
+            <p>
+              You DO NOT have to give personal information in order to file a
+              complaint.
+            </p>
+            <p>
+              By telling us about your experience, you help us better serve you
+              and your community. Thank you.
+            </p>
+            <h4 className="intro-select">Select an option</h4>
           </div>
           <ul className="usa-accordion-bordered">
             <li>
@@ -97,8 +95,8 @@ class Introduction extends React.Component {
                 </p>
 
                 <p>
-                  If you need language translation, you can call with a friend
-                  to translate for you or ask for a translator. Just tell us the
+                  If you need an interpreter, you can call with a friend to
+                  interpret for you or ask for an interpreter. Just tell us the
                   language you prefer.
                 </p>
                 <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
@@ -126,8 +124,8 @@ class Introduction extends React.Component {
                 </p>
 
                 <p>
-                  If you need language translation, you can bring a friend to
-                  translate for you or ask for a translator. Just tell us the
+                  If you need an interpreter, you can come with a friend to
+                  interpret for you or ask for an interpreter. Just tell us the
                   language you prefer.
                 </p>
                 <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
@@ -147,7 +145,7 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  Download the compliant form (PDF). Print and fill out the
+                  Download the complaint form (PDF). Print and fill out the
                   form, then mail it to:
                 </p>
                 <address>
