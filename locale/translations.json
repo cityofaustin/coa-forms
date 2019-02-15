@@ -146,8 +146,8 @@
     "es": "Detalles del testigo"
   },
 
-  "Tell us about you": {
-    "es": "¿Qué nos puede decir sobre usted?"
+  "Tell us about you (optional)": {
+    "es": "¿Qué nos puede decir sobre usted? (opcional)"
   },
 
   "I am willing to be contacted by the Office of Police Oversight in two to four business days.": {
@@ -174,6 +174,10 @@
     "es": "¿Le gustaría que buscáramos un traductor para que esté presente en las futuras comunicaciones?"
   },
 
+  "Review your answers before submitting": {
+    "es": "Revise sus respuestas antes de enviar"
+  },
+  
   "File a Complaint": {
     "es": "Presente una queja"
   },
@@ -322,31 +326,31 @@
   },
 
   "Your case number:": {
-    "es": "Su numero de confirmacion:"
+    "es": "Número de confirmación:"
   },
 
   "Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.": {
-    "es": "Nuestro trabajo es asegurar que queja sea investigada de manera justa y completea. Gracias por compartir su experienca con nosotros. Esto nos ayuda a servirle mejor a usted y a su comunidad."
+    "es": "Nuestro trabajo es asegurarnos de que su queja sea investigada justa y completamente. Muchas gracias por compartir su experiencia con nosotros, esto nos ayuda a servirles mejor a usted y a su comunidad."
   },
 
   "You will receive an email with a copy of your complaint and a confirmation number. You can email us at ": {
-    "es": "Usted recibira un email con una copya de su queja y un numero de confirmacion. Usted nos puede contactar a "
+    "es": "Recibirá un correo electrónico con una copia de su queja y un número de confirmación. Nos puede enviar un correo electrónico a "
   },
 
   " or call us at ": {
-    "es": " o llamando a "
+    "es": " o llamarnos al "
   },
 
   " with your confirmation number to find where your complaint is in this process.": {
-    "es": " con su numero de confirmacion para saber en que parte del proceso se encuentra su queja."
+    "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
 
   "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within two to four business days.": {
-    "es": "Si usted ha provehido su informacion de contacto, una personal de Oficina de la Fiscalizacion de la Policia se comunicara con usted en dos a cuatro dias habiles."
+    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de dos a cuatro días laborales."
   },
 
   "What happens next": {
-    "es": "Que sigue despues?"
+    "es": "Qué sucederá ahora"
   },
 
   "Description": {
@@ -369,6 +373,14 @@
     "es": "Atrás"
   },
 
+  "Submit": {
+    "es": "Enviar"
+  },
+  
+  "Sending": {
+    "es": "Enviando"
+  },
+  
   "Continue": {
     "es": "Continuar"
   },
