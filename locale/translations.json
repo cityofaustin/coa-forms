@@ -55,31 +55,31 @@
   },
   
   "Tell us what happened": {
-    "es": "Diganos que sucedio"
+    "es": "Díganos lo que sucedió"
   },
 
   "Describe your experience with the Austin Police Department.": {
-    "es": "Describa su experiencia con el Departamento de Policia de Austin."
+    "es": "Describa su experiencia con el Departamento de Policía de Austin."
   },
 
   "Date and time, if known?": {
-    "es": "Fecha y hora (si usted lo sabe)"
+    "es": "¿Qué día sucedió?"
   },
 
   "Your name as it appears on the ticket": {
-    "es": "Su nombre asi como aparece en el ticket"
+    "es": "Su nombre como aparece en la multa"
   },
 
   "I received a ticket during this interaction.": {
-    "es": "Recibi un ticket durante esta interaccion"
+    "es": "¿Recibió una multa?"
   },
 
   "We'll need your name in order to find the ticket you’re referencing.": {
-    "es": "Nosotros necesitamos saber su numbre para poder encontrar el ticket del que usted menciona."
+    "es": "Necesitamos su nombre para encontrar la multa a la que se está refiriendo."
   },
 
   "Type in the location or drag the map to the location.": {
-    "es": "Escriba la ubicacion o mueva el mapa a la ubicacion correcta."
+    "es": "Escriba la ubicación o mueva el mapa a la ubicación correcta."
   },
 
   "Share your photos or video": {
@@ -345,6 +345,10 @@
     "es": "Que sigue despues?"
   },
 
+  "Description": {
+    "es": "Descripción"
+  },
+
   "- Select race -": {
     "es": "- seleccionar raza -"
   },
@@ -358,7 +362,7 @@
   },
 
   "Back": {
-    "es": "Atras"
+    "es": "Atrás"
   },
 
   "Continue": {
@@ -370,9 +374,13 @@
   },
 
   "Required": {
-    "es": "Requerido"
+    "es": "obligatoria"
   },
 
+  "required": {
+    "es": "obligatoria"
+  },
+  
   "Yes": {
     "es": "Si"
   },
@@ -450,7 +458,7 @@
   },
 
   "%Location%": {
-    "es": "%Ubicacion%"
+    "es": "%¿Dónde sucedió?%"
   },
 
   "%Online%": {
