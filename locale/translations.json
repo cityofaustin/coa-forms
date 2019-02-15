@@ -1,14 +1,13 @@
 {
-
-	"You DO NOT have to give personal information in order to file a complaint.":  {
+  "You DO NOT have to give personal information in order to file a complaint.": {
     "es": "Usted NO TIENE que proveer informacion personal para poder enviar una queja."
   },
 
-	"By telling us about your experience, you help us better serve you and your community. Thank you.": {
+  "By telling us about your experience, you help us better serve you and your community. Thank you.": {
     "es": "Al decirnos de su experiencia, usted nos ayuda a servirle mejor a usted y a su comunidad. Gracias."
   },
 
-	"Required information": {
+  "Required information": {
     "es": "Informacion Requerida"
   },
 
@@ -32,9 +31,6 @@
     "es": "Aprenda mas sobre quienes somos y que es lo que hacemos."
   },
 
-
-
-
   "Your contact information for us to follow up with you (translators available)": {
     "es": "Su informacion de contacto es para poder dar seguimiento con usted (traductores disponibles)"
   },
@@ -53,8 +49,6 @@
   "Download the compliant form (PDF). Print and fill out the form, then mail it to:": {
     "es": "Descargue el formulario de queja en PDF. Imprima y llene el formulario, despues mandar a la siguiente direccion:"
   },
-
-
 
   "Tell us what happened": {
     "es": "Diganos que sucedio"
@@ -84,7 +78,6 @@
     "es": "Escriba la ubicacion o mueva el mapa a la ubicacion correcta."
   },
 
-
   "Share your photos or video": {
     "es": "Comparta sus fotos o video"
   },
@@ -100,8 +93,6 @@
   "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)": {
     "es": "Envie cualquier evidencia que tenga (videos, audio, fotos, reportes de policia, registros de hospital, etc.)"
   },
-
-
 
   "Drag & Drop your files or ": {
     "es": "Arrastre los archivos aqui o "
@@ -151,7 +142,6 @@
     "es": "Detalles del Testigo"
   },
 
-
   "Tell us about you": {
     "es": "Diganos de usted"
   },
@@ -179,8 +169,6 @@
   "I would like an interpreter for all my future interactions.": {
     "es": "Me gustaria recibir la ayuda de un interprete en todas mis interacciones."
   },
-
-
 
   "File a Complaint": {
     "es": "Envie una queja"
@@ -242,8 +230,6 @@
     "es": "Seleccione una opcion"
   },
 
-
-
   "Phone number": {
     "es": "Numero de Telefono"
   },
@@ -287,7 +273,6 @@
     "es": "Esta informacion nos ayuda a reconocer tendencias a lo largo de la ciudad que pueden llevar a crear recomendaciones para cambios en la ley y de entrenamiento."
   },
 
-
   "Race": {
     "es": "Raza"
   },
@@ -320,12 +305,9 @@
     "es": "Descripcion Fisica"
   },
 
-
-
   "We have received your complaint": {
     "es": "Hemos recibido su queja"
   },
-
 
   "Your case number:": {
     "es": "Su numero de confirmacion:"
@@ -351,15 +333,13 @@
     "es": "Si usted ha provehido su informacion de contacto, una personal de Oficina de la Fiscalizacion de la Policia se comunicara con usted en dos a cuatro dias habiles."
   },
 
-
   "What happens next": {
     "es": "Que sigue despues?"
   },
 
-
-
-
-
+  "- Select race -": {
+    "es": "- seleccionar raza -"
+  },
 
   "%Enter a location here%": {
     "es": "%Introduzca una ubicación aquí%"
