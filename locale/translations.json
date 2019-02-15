@@ -83,7 +83,7 @@
   },
 
   "Share your photos or video": {
-    "es": "Comparta sus fotos o video"
+    "es": "Comparta fotos o videos"
   },
 
   "Share your evidence": {
@@ -91,15 +91,15 @@
   },
 
   "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.": {
-    "es": "Tiene informacion adicional? Esto puede incluir video, audio, fotos, reportes de policia, registros del hospital, o cualquier otra cosa que desee compartir."
+    "es": "¿Tiene información adicional? Podría ser un video, audio, fotos, reportes de policía, registros de hospital o cualquier cosa que desee compartir."
   },
 
   "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)": {
-    "es": "Envie cualquier evidencia que tenga (videos, audio, fotos, reportes de policia, registros de hospital, etc.)"
+    "es": "Envie cualquier evidencia que tenga (videos, audios, fotos, reportes de policía, registros de hospital, etc.)"
   },
 
   "Drag & Drop your files or ": {
-    "es": "Arrastre los archivos aqui o "
+    "es": "Arrastre los archivos aquí o "
   },
 
   "Tell us about the officer(s)": {
@@ -382,7 +382,7 @@
   },
   
   "Yes": {
-    "es": "Si"
+    "es": "Sí"
   },
 
   "No": {
