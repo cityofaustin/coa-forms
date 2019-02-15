@@ -103,31 +103,31 @@
   },
 
   "Tell us about the officer(s)": {
-    "es": "Diganos de los oficial(es)"
+    "es": "¿Qué nos puede decir sobre el oficial?"
   },
 
   "Do you remember any details about the officer(s) you’d like to share?": {
-    "es": "Recuerda algunos detalles acerca de los oficiales que quiera compartir?"
+    "es": "¿Recuerda algún detalles sobre el(los) oficial(es) que desee compartir?"
   },
 
   "Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.": {
-    "es": "Ejemplos: color de cabello, color de ojos, peso, altura, cabello facial, tatuajes, cicatrices, etc."
+    "es": "Ejemplos: Ejemplos: color de cabello, color de ojos, peso, estatura, vello facial, tatuajes, cicatrices, etc."
   },
 
   "What was the officer wearing?": {
-    "es": "Que tenia puesto el oficial?"
+    "es": "¿Qué ropa tenía puesta el oficial?"
   },
 
   "What kind of car or transportation was the officer using?": {
-    "es": "Que tipo de transporte usaba el oficial?"
+    "es": "¿Qué tipo de medio de transporte usaba el oficial?"
   },
 
   "Placeholder Officer Details": {
-    "es": "Detalles del Oficial"
+    "es": "Detalles del oficial"
   },
 
   "Tell us about any witnesses": {
-    "es": "Detalles del Testigo"
+    "es": "Detalles del testigo"
   },
 
   "Do you remember any details about witness(es) you’d like to share?": {
@@ -183,11 +183,11 @@
   },
 
   "Patrol car or motorcycle": {
-    "es": "Patrulla o motocicleta"
+    "es": "Patrulla o motocicleta de policía"
   },
 
   "Unmarked car or motorcycle": {
-    "es": "Carro o motocicleta normal"
+    "es": "Automóvil o motocicleta particular"
   },
 
   "Horse": {
@@ -203,13 +203,17 @@
   },
 
   "I don't know": {
-    "es": "No lo se"
+    "es": "No sé"
   },
 
   "Add Another": {
     "es": "Agregar Otro"
   },
 
+  "Add another": {
+    "es": "Añadir un oficial"
+  },
+  
   "In person": {
     "es": "En persona"
   },
@@ -286,31 +290,35 @@
   },
 
   "Gender": {
-    "es": "Genero"
+    "es": "Sexo"
   },
 
   "Male": {
-    "es": "Masculino"
+    "es": "Hombre"
   },
 
   "Female": {
-    "es": "Femenino"
+    "es": "Mujer"
   },
 
   "Badge Number": {
-    "es": "Numero de Placa"
+    "es": "Número de credencial"
   },
 
+  "Badge number": {
+    "es": "Número de credencial"
+  },
+  
   "In uniform": {
-    "es": "En Uniforme"
+    "es": "Uniforme"
   },
 
   "In regular clothes": {
-    "es": "En Ropa Regular"
+    "es": "Ropa regular"
   },
 
   "Physical Description": {
-    "es": "Descripcion Fisica"
+    "es": "Descripción"
   },
 
   "We have received your complaint": {
@@ -450,7 +458,7 @@
   },
 
   "%Other%": {
-    "es": "%Otro%"
+    "es": "%Otra%"
   },
 
   "%Start%": {
@@ -486,35 +494,35 @@
   },
 
   "%White or Euro-American%": {
-    "es": "%Anglosajon o Euro-Americano%"
+    "es": "%Blanco o euro-americano%"
   },
 
   "%Latino or Hispanic American%": {
-    "es": "%Latino o Hispano Americano%"
+    "es": "%Latino o hispano-americano%"
   },
 
   "%Black, Afro-Caribbean, or African American%": {
-    "es": "%Afro-Caribeno, Afro-Americano, Ascendencia Africana%"
+    "es": "%Negro, afrocaribeño o afroamericano%"
   },
 
   "%East Asian or Asian American%": {
-    "es": "%Asiatico del Este or Asiatico-Americano%"
+    "es": "%Asiático oriental o asiático-americano%"
   },
 
   "%South Asian or Indian American%": {
-    "es": "%Asiatico del Sur o Indu-Americano%"
+    "es": "%Asiático del sur o americano de origen indio%"
   },
 
   "%Middle Eastern or Arab American%": {
-    "es": "%Medio-Oriente o Arabe-Americano%"
+    "es": "%Americano del medio oriente o árabe-americano%"
   },
 
   "%Native American or Alaskan Native%": {
-    "es": "%Nativo Americano o Nativo de Alaska%"
+    "es": "%Indio americano o nativo de Alaska%"
   },
 
   "%Native Hawaiian or Other Pacific Islander%": {
-    "es": "%Nativo Hawaiiano o Isleno del Pacifico%"
+    "es": "%Hawaiano o nativo de otra isla del pacífico%"
   },
 
   "%January%,%February%,%March%,%April%,%May%,%June%,%July%,%August%,%September%,%October%,%November%,%December%": {
