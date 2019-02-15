@@ -1,8 +1,8 @@
 # Translations
 
-The translations script for this form depend on these three files:
+The translations script for this form depends on these three files:
 
-1. `settings.json` which the deployment system will look at first to see which languages it needs to translate too, at the time of this writing only Spanish.
+1. `settings.json` which the deployment system will look at first to see which languages it needs to translate to, at the time of this writing only Spanish.
 2. `routes.json` which contains the url path of all stages of the form.
 3. `translations.json` which contains all translations in all languages.
 
@@ -12,7 +12,7 @@ The translations script for this form depend on these three files:
 
 If you plan on making changes, I would suggest using these tools:
 
-- [Smart Json Editor](http://www.smartjsoneditor.com/) which has a free version. Graphic-User Interface which should prevent problems with wrong syntax.
+- [Smart Json Editor](http://www.smartjsoneditor.com/) which has a free version, it has a Graphic User Interface which should prevent problems with wrong syntax.
 - [JSON Lint](https://jsonlint.com) is really useful if you decide to go commando and make the changes manually.
 
 
@@ -33,7 +33,7 @@ Sample Content:
 
 
 
-The translation process looks at this file first, the form will not be translated if the languate is not listed here. For context, the form in english is built into a folder called `public`,  this file's data is used to create a loop that helps copy the existing public folder into a separate directory called `public_es` (`es` being the language code being processed, then patches the contents of that folder and publishes the files on s3. 
+The translation process looks at this file first, the form will not be translated if the language is not listed here. For context, the form in english is built into a folder called `public`,  settings.json is used to create a loop that helps copy the existing public folder into a separate directory called `public_es` (`es` being the language code being processed, then patches the contents of that folder and then publishes the files on s3. 
 
 You can add another language, for example `vi` for Vietnameese, `ar` for Arabic, etc. Which would look like this:
 
@@ -93,18 +93,18 @@ Sample Content:
 }
 ```
 
-The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/fiscalizacion-de-policia/queja. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, simply add you could make it look like this:
+The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/fiscalizacion-de-policia/queja. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, you could make it look like this:
 
 ```
 "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja"
-	"vi": "your-vietnamese/complaint-path"
-  },
+    "es": "fiscalizacion-de-policia/queja",
+    "vi": "your-vietnamese/complaint-path"
+},
 ```
 
 
 
-The `routes` key contains an array of other key => Value elements. Each of these elements is identified by a strange-looking key with the percentage symbol '%', this is to replace double-quote character in the application. For example, if we provide this key: `%review-and-submit%` it means the translator will search for `"review-and-submit"` and replace it in spanish with `"revisar-y-enviar"`This helps us prevent breaking javascript code, this is very important. If you were to add a Vietnamese translation to that specific route, you could make it look like this:
+The `routes` key section contains an array of other "key => value" elements. Each of these elements is identified by a strange-looking key with the percentage symbol '%', (no need to understand this) but it is used replace double-quote characters in the translation process. For example, if we provide this key: `%review-and-submit%` it means the translator will search for `"review-and-submit"` and replace it in spanish with `"revisar-y-enviar"`This helps us prevent breaking the javascript code and crash the app, this is very important. If you were to add a Vietnamese translation to that specific route, you could make it look like this:
 
 ```
 "%review-and-submit%": {
@@ -180,8 +180,8 @@ We would simply have to add another line like this:
 ```
 "Required information": {
     "es": "Informacion Requerida",
-	"vi": "Thông tin bắt buộc"
-  },
+    "vi": "Thông tin bắt buộc"
+},
 ```
 
 And Arabic:
@@ -189,9 +189,9 @@ And Arabic:
 ```
 "Required information": {
     "es": "Informacion Requerida",
-	"vi": "Thông tin bắt buộc",
-	"ar": "معلومات مطلوبة"
-  },
+    "vi": "Thông tin bắt buộc",
+    "ar": "معلومات مطلوبة"
+},
 ```
 
 ** Notice the last element for 'ar' does not need a comma at the end.
@@ -210,9 +210,10 @@ You are encouraged to look at the `public/js/app.bundle.json` you can find it on
 
    ```
    "%Find us on Facebook%": {
-       "es": "Encuentranos en Facebook"
+       "es": "%Encuentranos en Facebook%"
    }
    ```
+**\*\*Notice that the translation also needs to have the percentage characters.\*\***
 
 3. Add spaces if necessary, if for example you see `scrambled.code("Find us on Facebook ")` (notice the whitespace after Facebook) you will need to modify the rule to `%Find us on Facebook %` (notice the white space before the `%` symbol)
 
