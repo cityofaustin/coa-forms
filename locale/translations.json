@@ -127,51 +127,51 @@
   },
 
   "Tell us about any witnesses": {
-    "es": "Detalles del testigo"
+    "es": "¿Qué nos puede decir sobre posibles testigos?"
   },
 
   "Do you remember any details about witness(es) you’d like to share?": {
-    "es": "Recuerta algunos detalles acerca de testigos que quiera compartir?"
+    "es": "¿Recuerda algún detalle sobre el(los) testigo(s) que desee compartir?"
   },
 
   "Is there anything we should know about this witness?": {
-    "es": "Hay algo que debamos saber acerca de este testigo?"
+    "es": "¿Hay algo más que deberíamos saber sobre el testigo?"
   },
 
   "Examples: Examples: were they injured, were they harassed, how were they involved, etc.": {
-    "es": "Ejemplos: Fueron lastimados, fueron molestados, como se involucraron, etc."
+    "es": "Ejemplos: resultó herido, fue acosado, cómo estuvo involucrado, etc."
   },
 
   "Placeholder Witness Details": {
-    "es": "Detalles del Testigo"
+    "es": "Detalles del testigo"
   },
 
   "Tell us about you": {
-    "es": "Diganos de usted"
+    "es": "¿Qué nos puede decir sobre usted?"
   },
 
   "I am willing to be contacted by the Office of Police Oversight in two to four business days.": {
-    "es": "Estoy dispuesto a ser contactado por la Oficina de la Fiscalizacion de Policia en dos a cuatro dias habiles."
+    "es": "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre dos y cuatro días laborales."
   },
 
   "Your name": {
-    "es": "Su Nombre"
+    "es": "Su nombre"
   },
 
   "Your phone number": {
-    "es": "Su Numero de Telefono"
+    "es": "Su número de teléfono"
   },
 
   "Your email address": {
-    "es": "Su Direccion de E-Mail"
+    "es": "Su dirección de correo electrónico"
   },
 
   "Required if you want the case number confirmation sent to your email.": {
-    "es": "Requerido si desea recibir un numero de confirmacion a su direccion de email."
+    "es": "Obligatorio si desea que le enviemos el número de confirmación por correo electrónico."
   },
 
   "I would like an interpreter for all my future interactions.": {
-    "es": "Me gustaria recibir la ayuda de un interprete en todas mis interacciones."
+    "es": "¿Le gustaría que buscáramos un traductor para que esté presente en las futuras comunicaciones?"
   },
 
   "File a Complaint": {
@@ -206,14 +206,10 @@
     "es": "No sé"
   },
 
-  "Add Another": {
-    "es": "Agregar Otro"
+  "Add another": {
+    "es": "Agregar otro"
   },
 
-  "Add another": {
-    "es": "Añadir un oficial"
-  },
-  
   "In person": {
     "es": "En persona"
   },
@@ -243,15 +239,15 @@
   },
 
   "Phone number": {
-    "es": "Numero de Telefono"
+    "es": "Número de teléfono"
   },
 
   "Your gender": {
-    "es": "Su Genero"
+    "es": "Su sexo"
   },
 
   "Non-binary": {
-    "es": "No-binario"
+    "es": "No binario"
   },
   "Prefer not to say": {
     "es": "Prefiero no decir"
@@ -262,11 +258,11 @@
   },
 
   "Your zip code": {
-    "es": "Su Codigo Postal"
+    "es": "Su código postal"
   },
 
   "Contact preferences": {
-    "es": "Preferencias de Contacto"
+    "es": "Preferencias de contacto"
   },
 
   "Submit Application": {
@@ -278,11 +274,11 @@
   },
 
   "%Demographic information%": {
-    "es": "%Informacion Demografica%"
+    "es": "%Información demográfica%"
   },
 
   "This information helps us recognize trends across the City that lead to policy and training recommendations.": {
-    "es": "Esta informacion nos ayuda a reconocer tendencias a lo largo de la ciudad que pueden llevar a crear recomendaciones para cambios en la ley y de entrenamiento."
+    "es": "Esta información nos ayuda a reconocer las tendencias en toda la ciudad para presentar recomendaciones a las políticas y entrenamientos."
   },
 
   "Race": {
@@ -482,7 +478,7 @@
   },
 
   "%Email%": {
-    "es": "%E-Mail%"
+    "es": "%Correo electrónico%"
   },
 
   "%True%": {
