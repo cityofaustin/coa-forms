@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://maps.googleapis.com/maps/api/js?&v=3.exp&libraries=geometry,drawing,places"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?&v=3.exp&libraries=geometry,drawing,places"></script>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      .language-nav {
+        padding: 13px 0px 17px 0px;
+        border-bottom: .5px solid #B3D9E8F6;
+      }
+      .language-nav > a.active {
+        color: white;
+        margin-right: 22px;
+      }
+      .language-nav > a.second {
+        color: #B3ffffff;
+      }
+      .form-nav {
+        color: white;
+      }
+      .site-nav {
+        font-size: 18px;
+        padding: 14px 0px 18px 0px;
+      }
+      .site-header {
+        width:100%;
+        background-color: #0050d8;
+      }
+
+    </style>
     <title>Officer Complaint Form</title>
   </head>
   <body>
-    <div id='root'></div>
-    <script src='/js/app.bundle.js'></script>
+    <header class="schemaform-block-header site-header" role="banner">
+      <div class="usa-nav-container form-nav">
+        <nav class="language-nav">
+          <a class="active language" href="">English</a>
+          <a href="" class="second">Español</a>
+        </nav>
+        <nav class="site-nav">City of Austin</nav>
+      </div>
+    </header>
+
+    <div id="root"></div>
+    <script src="/js/app.bundle.js"></script>
   </body>
 </html>
