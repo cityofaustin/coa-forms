@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   FileUploadWidget,
   FileUploadReviewWidget
@@ -34,6 +36,9 @@ const shareEvidenceChapter = {
         evidenceFiles: {
           "ui:title":
             "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
+            'ui:description': () => (
+              <a class="usa-external_link" target="_blank" href="https://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif">How we store and use your information</a>
+            ),
           "ui:options": {
             expandUnder: "awareOfEvidence",
             hideOnReviewIfFalse: true

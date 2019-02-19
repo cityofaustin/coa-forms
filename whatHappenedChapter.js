@@ -63,7 +63,8 @@ const whatHappenedChapter = {
         },
         ticket: {
           "ui:title": "Your name as it appears on the ticket",
-          "ui:description": "We'll need your name in order to find the ticket you’re referencing.",
+          "ui:description": "We need your name in order to find the ticket you’re referencing.",
+          "ui:help": "Skip this if you prefer to remain anonymous.",
           "ui:options" : {
             expandUnder: 'hasTicket',
             expandUnderCondition: true
