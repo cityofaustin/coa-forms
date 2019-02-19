@@ -744,10 +744,10 @@
     uswds "^1.6.9"
     webpack "^4.27.1"
 
-"@cityofaustin/usfs-components@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.4.tgz#47460f2392d48b21dfcc085f50c965ae24261348"
-  integrity sha512-fdYDkv5m+EwrLx5DYUsjeEngBsUwstU419de9BscLSLoQVdoichAngRJTlNyA67TavhZImHlIgWBn/gJ5/ownQ==
+"@cityofaustin/usfs-components@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.6.tgz#b91df71d3687f9f6e168f1f99bb52742b4ba281a"
+  integrity sha512-547gn0tJXHR8BUV7MBj6vjGhsvUgGCmXiUuI1/2PE8oKgsZ9+qLwjHdt0shgg1XWD6RYdQ8bYhGs9rXt8PAwwg==
   dependencies:
     "@dump247/storybook-state" "^1.5.2"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
