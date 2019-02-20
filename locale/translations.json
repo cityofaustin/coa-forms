@@ -43,17 +43,17 @@
   "If you need language translation, you can call with a friend to translate for you or ask for a translator. Just tell us the language you prefer.": {
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
-  "Office hours are Monday through Friday, 9 am to 5 pm.": {
-    "es": "Horario de oficina de lunes a viernes, de 9 am a 5 pm."
+  "If you need language translation, you can bring a friend to translate for you or ask for a translator. Just tell us the language you prefer.": {
+    "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
-  "Download the compliant form (PDF). Print and fill out the form, then mail it to:": {
-    "es": "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
+  "Office hours are Monday through Friday, 8 am to 5 pm.": {
+    "es": "Horario de oficina de lunes a viernes, de 8 am a 5 pm."
   },
-  
+
   "Download the complaint form (PDF). Print and fill out the form, then mail it to:": {
     "es": "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
   },
-  
+
   "Tell us what happened": {
     "es": "Díganos lo que sucedió"
   },
@@ -146,8 +146,8 @@
     "es": "Detalles del testigo"
   },
 
-  "Tell us about you (optional)": {
-    "es": "¿Qué nos puede decir sobre usted? (opcional)"
+  "Tell us about you": {
+    "es": "¿Qué nos puede decir sobre usted?"
   },
 
   "I am willing to be contacted by the Office of Police Oversight in two to four business days.": {
@@ -177,13 +177,9 @@
   "Review your answers before submitting": {
     "es": "Revise sus respuestas antes de enviar"
   },
-  
-  "File a Complaint": {
-    "es": "Presente una queja"
-  },
 
-  "File a complaint": {
-    "es": "Presente una queja"
+  "% File a Complaint %": {
+    "es": "% Presente Una Queja %"
   },
 
   "Patrol car or motorcycle": {
@@ -210,7 +206,7 @@
     "es": "No sé"
   },
 
-  "Add another": {
+  "Add Another": {
     "es": "Añadir otro"
   },
 
@@ -237,7 +233,7 @@
   "About us": {
     "es": "Información sobre nosotros"
   },
-  
+
   "Select an option": {
     "es": "Seleccione una opción"
   },
@@ -285,40 +281,36 @@
     "es": "Esta información nos ayuda a reconocer las tendencias en toda la ciudad para presentar recomendaciones a las políticas y entrenamientos."
   },
 
-  "Race": {
-    "es": "Raza"
+  "%Race%": {
+    "es": "%Raza%"
   },
 
-  "Gender": {
-    "es": "Sexo"
+  "%Gender%": {
+    "es": "%Sexo%"
   },
 
-  "Male": {
-    "es": "Hombre"
+  "%Male%": {
+    "es": "%Hombre%"
   },
 
-  "Female": {
-    "es": "Mujer"
-  },
-
-  "Badge Number": {
-    "es": "Número de credencial"
+  "%Female%": {
+    "es": "%Mujer%"
   },
 
   "Badge number": {
     "es": "Número de credencial"
   },
-  
-  "In uniform": {
-    "es": "Uniforme"
+
+  "%In uniform%": {
+    "es": "%Uniforme%"
   },
 
-  "In regular clothes": {
-    "es": "Ropa regular"
+  "%In regular clothes%": {
+    "es": "%Ropa regular%"
   },
 
-  "Physical Description": {
-    "es": "Descripción"
+  "%Physical Description%": {
+    "es": "%Descripción%"
   },
 
   "We have received your complaint": {
@@ -349,60 +341,60 @@
     "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de dos a cuatro días laborales."
   },
 
-  "What happens next": {
-    "es": "Qué sucederá ahora"
+  "%What happens next%": {
+    "es": "%Qué sucederá ahora%"
   },
 
-  "Description": {
-    "es": "Descripción"
+  "%Description%": {
+    "es": "%Descripción%"
   },
 
   "- Select race -": {
-    "es": "- seleccionar raza -"
+    "es": "- Seleccionar raza -"
   },
 
   "%Enter a location here%": {
     "es": "%Introduzca una ubicación aquí%"
   },
 
-  "Update Page": {
+  "%Update Page%": {
     "es": "Actualizar"
   },
 
-  "Back": {
-    "es": "Atrás"
+  "%Back%": {
+    "es": "%Atrás%"
   },
 
-  "Submit": {
-    "es": "Enviar"
+  "%Submit%": {
+    "es": "%Enviar%"
   },
-  
-  "Sending": {
-    "es": "Enviando"
+
+  "%Sending%": {
+    "es": "%Enviando%"
   },
-  
-  "Continue": {
-    "es": "Continuar"
+
+  "%Continue%": {
+    "es": "%Continuar%"
   },
 
   ">Browse<": {
     "es": ">Seleccionar<"
   },
 
-  "Required": {
-    "es": "obligatoria"
+  "%(*Required)%": {
+    "es": "%(*Obligatoria)%"
   },
 
-  "required": {
-    "es": "obligatoria"
-  },
-  
-  "Yes": {
-    "es": "Sí"
+  "%required%": {
+    "es": "%obligatoria%"
   },
 
-  "No": {
-    "es": "No"
+  "%Yes%": {
+    "es": "%Sí%"
+  },
+
+  "%No%": {
+    "es": "%No%"
   },
 
   "%Uploading%": {
@@ -547,6 +539,10 @@
 
   "%Sun%,%Mon%,%Tue%,%Wed%,%Thu%,%Fri%,%Sat%": {
     "es": "%Dom%,%Lun%,%Mar%,%Mie%,%Jue%,%Vie%,%Sab%"
+  },
+
+  "%optional%": {
+    "es": "%opcional%"
   },
 
   "Office of Police Oversight": {
