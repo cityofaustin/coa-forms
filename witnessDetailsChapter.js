@@ -66,7 +66,7 @@ const witnessDetailsChapter = {
               'ui:title':
                 'Is there anything we should know about this witness?',
               'ui:description':
-                'Examples: Examples: were they injured, were they harassed, how were they involved, etc.',
+                'Examples: were they injured, were they harassed, how were they involved, etc.',
               'ui:widget': 'textarea',
               'ui:options': {
                 hideOnReviewIfFalse: true,
