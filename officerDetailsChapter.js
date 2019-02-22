@@ -28,7 +28,7 @@ const officerDetailsChapter = {
                   enumNames: ['Male', 'Female'],
                 },
                 badgeNumber: {
-                  type: 'string',
+                  type: 'number',
                 },
                 uniformed: {
                   type: 'boolean',
@@ -36,14 +36,21 @@ const officerDetailsChapter = {
                 },
                 transportation: {
                   type: 'string',
-                  enum: ['patrol', 'unmarked', 'horse', 'bicycle', 'foot', 'unknown'],
+                  enum: [
+                    'patrol',
+                    'unmarked',
+                    'horse',
+                    'bicycle',
+                    'foot',
+                    'unknown',
+                  ],
                   enumNames: [
                     'Patrol car or motorcycle',
                     'Unmarked car or motorcycle',
                     'Horse',
                     'Bicycle',
                     'On foot',
-                    "I don't know"
+                    "I don't know",
                   ],
                 },
                 otherTransportation: {

@@ -1,5 +1,7 @@
 import { WitnessDetailsDisplayWidget } from '@cityofaustin/usfs-components';
 
+import { phoneConfig } from 'us-forms-system/lib/js/definitions/phone';
+
 const witnessDetailsChapter = {
   title: 'Tell us about any witnesses',
   pages: {
@@ -51,17 +53,14 @@ const witnessDetailsChapter = {
               },
             },
             email: {
+              'ui:widget': 'email',
               'ui:title': 'Email',
               'ui:options': {
                 hideOnReviewIfFalse: true,
+                inputType: 'email',
               },
             },
-            phoneNumber: {
-              'ui:title': 'Phone number',
-              'ui:options': {
-                hideOnReviewIfFalse: true,
-              },
-            },
+            phoneNumber: phoneConfig.uiSchema(),
             anythingElse: {
               'ui:title':
                 'Is there anything we should know about this witness?',

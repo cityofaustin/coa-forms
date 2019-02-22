@@ -1,5 +1,8 @@
-import React from "react";
+import React from 'react';
 import { raceBlocks, genderBlocks } from '@cityofaustin/usfs-schema-blocks';
+
+import PhoneNumberWidget from 'us-forms-system/lib/js/widgets/PhoneNumberWidget';
+import PhoneNumberReviewWidget from 'us-forms-system/lib/js/review/PhoneNumberWidget';
 
 // we need to override this for labels, but need to make deep copys hence the JSON stuff
 let yourRace = JSON.parse(JSON.stringify(raceBlocks.ui));
@@ -23,7 +26,7 @@ const aboutYouChapter = {
           },
           ...genderBlocks.schema,
           ...raceBlocks.schema,
-          zipCode: { type: 'string' },
+          zipCode: { type: 'number' },
           'view:contactHeader': {
             type: 'object',
             properties: {},
@@ -33,7 +36,7 @@ const aboutYouChapter = {
             type: 'object',
             properties: {
               yourName: { type: 'string' },
-              yourPhone: { type: 'number' },
+              yourPhone: { type: 'string' },
               yourEmail: { type: 'string' },
               needTranslator: { type: 'boolean' },
             },
@@ -79,11 +82,22 @@ const aboutYouChapter = {
             hideIf: formData => !formData.willingToBeContacted,
           },
           yourName: { 'ui:title': 'Your name' },
-          yourPhone: { 'ui:title': 'Your phone number' },
+          yourPhone: {
+            'ui:title': 'Your phone number',
+            'ui:widget': PhoneNumberWidget,
+            'ui:reviewWidget': PhoneNumberReviewWidget,
+            'ui:options': {
+              inputType: 'tel',
+            },
+          },
           yourEmail: {
             'ui:title': 'Your email address',
+            'ui:widget': 'email',
             'ui:description':
               'Required if you want the case number confirmation sent to your email.',
+            'ui:options': {
+              inputType: 'email',
+            },
           },
           needTranslator: {
             'ui:title':
@@ -94,6 +108,5 @@ const aboutYouChapter = {
     },
   },
 };
-
 
 export default aboutYouChapter;
