@@ -10,7 +10,7 @@ class Confirmation extends React.Component {
     return (
       <div className="schemaform-intro">
         <SegmentedProgressBar total={2} current={2}/>
-        <h2 style={{textAlign: "center"}}>We have received your complaint.</h2>
+        <h2 style={{textAlign: "center"}}>We have received your complaint</h2>
         <h3 style={{color: "#164ED2", textAlign: "center"}}>Your case number: {confirmationCaseNumber}</h3>
         <p style={{fontSize: "1.4rem"}}>Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.</p>
         <hr/>

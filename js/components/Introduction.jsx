@@ -28,7 +28,7 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> File a Complaint </h2>
+            <h2 className="intro-heading"> File a complaint </h2>
             <hr className="form-rule" />
             <p>
               You DO NOT have to give personal information in order to file a
@@ -90,7 +90,7 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  Call the Office of Police Oversight at 512-972-2676. We’d be
+                  Call the Office of Police Oversight at (512) 972-2676. We’d be
                   happy to speak with you.
                 </p>
 
@@ -99,7 +99,7 @@ class Introduction extends React.Component {
                   interpret for you or ask for an interpreter. Just tell us the
                   language you prefer.
                 </p>
-                <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
+                <p>Office hours are Monday through Friday, 8 am to 5 pm.</p>
               </div>
             </li>
             <li>
@@ -158,7 +158,7 @@ class Introduction extends React.Component {
               </div>
             </li>
           </ul>
-          <h3 className="intro-about">About Us</h3>
+          <h3 className="intro-about">About us</h3>
           <p>
             We are the Office of Police Oversight, impartial and separate from
             the Austin Police Department.

@@ -44,11 +44,11 @@
   "If you need an interpreter, you can call with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
-  
+
   "If you need an interpreter, you can come with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
-  
+
   "Office hours are Monday through Friday, 8 am to 5 pm.": {
     "es": "Horario de oficina de lunes a viernes, de 8 am a 5 pm."
   },
@@ -117,7 +117,7 @@
   },
 
   "Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.": {
-    "es": "Ejemplos: Ejemplos: color de cabello, color de ojos, peso, estatura, vello facial, tatuajes, cicatrices, etc."
+    "es": "Ejemplos: color de cabello, color de ojos, peso, estatura, vello facial, tatuajes, cicatrices, etc."
   },
 
   "What was the officer wearing?": {
@@ -128,7 +128,7 @@
     "es": "¿Qué tipo de medio de transporte usaba el oficial?"
   },
 
-  "Placeholder Officer Details": {
+  "Officer details": {
     "es": "Detalles del oficial"
   },
 
@@ -345,7 +345,7 @@
   "How we store and use your information": {
     "es": "Cómo almacenamos y usamos su información"
   },
-  
+
   " with your confirmation number to find where your complaint is in this process.": {
     "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
