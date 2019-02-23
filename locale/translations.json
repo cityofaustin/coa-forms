@@ -40,14 +40,20 @@
   "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.": {
     "es": "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal. Deberá presentarse con el personal de seguridad en la entrada."
   },
-  "If you need language translation, you can call with a friend to translate for you or ask for a translator. Just tell us the language you prefer.": {
+
+  "If you need an interpreter, you can call with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
-  "If you need language translation, you can bring a friend to translate for you or ask for a translator. Just tell us the language you prefer.": {
+  
+  "If you need an interpreter, you can come with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
+  
   "Office hours are Monday through Friday, 8 am to 5 pm.": {
     "es": "Horario de oficina de lunes a viernes, de 8 am a 5 pm."
+  },
+  "Office hours are Monday through Friday, 9 am to 5 pm.": {
+    "es": "Horario de oficina de lunes a viernes, de 9 am a 5 pm."
   },
 
   "Download the complaint form (PDF). Print and fill out the form, then mail it to:": {
@@ -254,7 +260,7 @@
   },
 
   "Your race": {
-    "es": "Su Grupo Etnico"
+    "es": "Su raza"
   },
 
   "Your zip code": {
@@ -300,7 +306,9 @@
   "Badge number": {
     "es": "Número de credencial"
   },
-
+  "Badge Number": {
+    "es": "Número de credencial"
+  },
   "%In uniform%": {
     "es": "%Uniforme%"
   },
@@ -333,6 +341,11 @@
     "es": " o llamarnos al "
   },
 
+
+  "How we store and use your information": {
+    "es": "Cómo almacenamos y usamos su información"
+  },
+  
   " with your confirmation number to find where your complaint is in this process.": {
     "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
@@ -358,7 +371,7 @@
   },
 
   "%Update Page%": {
-    "es": "Actualizar"
+    "es": "%Actualizar%"
   },
 
   "%Back%": {
