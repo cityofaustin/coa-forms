@@ -87,7 +87,7 @@ const officerDetailsChapter = {
               },
             },
             physicalDescription: {
-              'ui:title': 'Physical Description',
+              'ui:title': 'Physical description',
               'ui:description':
                 'Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.',
               'ui:options': {
@@ -103,7 +103,7 @@ const officerDetailsChapter = {
               },
             },
             badgeNumber: {
-              'ui:title': 'Badge Number',
+              'ui:title': 'Badge number',
               'ui:options': {
                 hideOnReviewIfFalse: true,
               },
