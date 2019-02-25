@@ -19,7 +19,7 @@ class Introduction extends React.Component {
   render() {
     return (
       <div className="schemaform-intro">
-        <a href="">
+        <a href="https://alpha.austin.gov/police-oversight">
           <div className="intro-nav-container">
             <i className="material-icons arrow_back">arrow_back</i>
             <h6 className="nav-heading">Office of Police Oversight</h6>
