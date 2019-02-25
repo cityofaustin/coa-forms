@@ -273,12 +273,12 @@ legend.schemaform-label {
 
 .mapboxgl-ctrl-geocoder .geocoder-pin-right * {
   background-color: #fff;
-      z-index: 2;
-      position: absolute;
-      left: 245px !important;
-      top: 10px;
-      width: 50px ;
-  }
+  z-index: 2;
+  position: absolute;
+  left: 245px !important;
+  top: 10px;
+  width: 50px;
+}
 
 /*
 hacky overrides
@@ -329,6 +329,30 @@ hacky overrides
   z-index: 2;
   left: 210px;
   top: 15px;
+  box-shadow: none;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.usa-width-two-thirds.medium-8.columns.centered-form-two-thirds
+  > div.progress-box.progress-box-schemaform.centered-form-schemaforms
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
   box-shadow: none;
 }
 
