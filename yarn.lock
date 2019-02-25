@@ -744,16 +744,17 @@
     uswds "^1.6.9"
     webpack "^4.27.1"
 
-"@cityofaustin/usfs-components@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.6.tgz#b91df71d3687f9f6e168f1f99bb52742b4ba281a"
-  integrity sha512-547gn0tJXHR8BUV7MBj6vjGhsvUgGCmXiUuI1/2PE8oKgsZ9+qLwjHdt0shgg1XWD6RYdQ8bYhGs9rXt8PAwwg==
+"@cityofaustin/usfs-components@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.9.tgz#fad59b72464a5c49d483777401c76d6be29c65be"
+  integrity sha512-uZQL34wvPT+G2qxk/K+YaP/3ABP+T+1roKvNFuEFj5XX/o3gvq4DuoCBKNS8crQ+ffje4bZmk2cnlKWRHBG7gQ==
   dependencies:
     "@dump247/storybook-state" "^1.5.2"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
     classnames "^2.2.6"
     date-fns "^1.30.1"
     filepond "^3.6.0"
+    filepond-plugin-file-validate-size "^2.1.1"
     filepond-plugin-image-exif-orientation "^1.0.3"
     filepond-plugin-image-preview "^3.1.4"
     react "15"
@@ -3882,6 +3883,11 @@ file-loader@1.1.11:
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.4.5"
+
+filepond-plugin-file-validate-size@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/filepond-plugin-file-validate-size/-/filepond-plugin-file-validate-size-2.1.1.tgz#b44f04a575d3eda38c184ba38cfa18b2420858e7"
+  integrity sha512-5SoykRvFaZ2h65JpjyKXGnvTUeNvMIjfNm2nrGsVIYRPVFguNeO7Kp/jBMhIVuhsF44gIR/ETLuazEXD87tLdg==
 
 filepond-plugin-image-exif-orientation@^1.0.3:
   version "1.0.3"
@@ -9146,7 +9152,7 @@ url@^0.11.0, url@~0.11.0:
 
 "us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
   version "1.1.0"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#f11108275439c0bac1705187a38fd42d1bac9bb8"
+  resolved "https://github.com/cityofaustin/us-forms-system.git#da301d522a3d37aaefc9c522c9b3e367277ec3f9"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     classnames "^2.2.6"
