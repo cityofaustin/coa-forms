@@ -7,20 +7,24 @@
     "es": "Al contarnos su experiencia, nos está ayudando a servirles mejor a usted y a su comunidad. Muchas gracias."
   },
 
-  "Required information": {
-    "es": "Información requerida"
+  "%File is too large%": {
+  	"es": "%El archivo es demasiado grande%"
   },
 
-  "What happened": {
-    "es": "Qué sucedió"
+  "%File is too large to be uploaded%": {
+    "es": "%El archivo es demasiado grande para enviar%"
   },
 
-  "Optional information": {
-    "es": "Información opcional"
+  "%Maximum file size is {filesize}%": {
+  	"es": "%El tamaño máximo de un archivo es {filesize}%"
   },
 
-  "Officer(s) involved": {
-    "es": "Oficial(es) involucrado(s)"
+  "%Maximum total size exceeded%": {
+  	"es": "%Tamaño total máximo excedido%"
+  },
+
+  "%Maximum total file size is {filesize}%": {
+  	"es": "%El tamaño máximo total de archivo es {filesize}%"
   },
 
   "%We are the Office of Police Oversight, impartial and separate from the Austin Police Department.%": {
