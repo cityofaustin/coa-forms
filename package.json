@@ -1,14 +1,15 @@
 {
-  "name": "us-forms-system-starter-app",
+  "name": "officer-thanks-form",
   "version": "1.0.0",
-  "description": "Test US Forms System",
+  "description": "Officer thanks Form",
   "main": "app.js",
   "directories": {},
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack-dev-server --open --public http://localhost:8080/police-oversight/thanks --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
-    "test": "BABEL_ENV=test mocha --compilers js:babel-core/register ./test/**/*.spec.jsx",
+    "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
+    "postinstall": "git submodule update --init --recursive",
     "serve-prod": "npx http-server ./public",
     "heroku-postbuild": "yarn build"
   },
@@ -20,10 +21,12 @@
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@cityofaustin/usfs-components": "^0.0.9",
+    "babel-loader": "^8.0.0",
     "chai": "^4.1.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
@@ -35,7 +38,9 @@
     "eslint-plugin-scanjs-rules": "^0.1.4",
     "eslint-stats": "^1.0.0",
     "mocha": "^5.2.0",
+    "node-sass": "^4.11.0",
     "react-test-renderer": "^15.5.4",
+    "sass-loader": "^7.1.0",
     "skin-deep": "^1.0.0",
     "style-loader": "^0.21.0",
     "svg-url-loader": "^2.3.2",
@@ -48,18 +53,26 @@
     "webpack-merge": "^4.1.3"
   },
   "dependencies": {
-    "@cityofaustin/officer-form-chapters": "https://github.com/cityofaustin/officer-form-chapters.git",
+    "@cityofaustin/usfs-schema-blocks": "^0.0.4",
+    "@ibm/plex": "^1.2.3",
     "date-fns": "^1.30.1",
     "filepond": "^3.5.0",
     "filepond-plugin-image-exif-orientation": "^1.0.3",
     "filepond-plugin-image-preview": "^3.1.4",
+    "foundation-sites": "^5.5.3",
     "prop-types": "^15.6.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-filepond": "^5.0.0",
     "react-flatpickr": "^3.6.4",
     "react-location-picker": "^1.3.0",
-    "us-forms-system": "^1.1.0",
+    "redux-thunk": "^2.3.0",
+    "us-forms-system": "https://github.com/cityofaustin/us-forms-system.git",
     "uswds": "^1.6.3"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }

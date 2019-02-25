@@ -1,1 +1,18 @@
-node_modules
+# Directories to ignore
+node_modules/
+.babelcache/
+build/
+
+# Build artifacts
+public/css
+public/fonts
+public/images
+public/js
+public/stats
+
+# Files to ignore
+._*
+.cache
+.DS_Store
+npm-debug.log
+*.log

@@ -44,7 +44,8 @@ module.exports = merge(require('./webpack.common.js'), {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production')
+        NODE_ENV: JSON.stringify('production'),
+        API_URL: JSON.stringify(process.env.API_URL)
       },
     }),
     new BundleAnalyzerPlugin({

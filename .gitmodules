@@ -1,0 +1,6 @@
+[submodule "chapters"]
+  path = js/config/chapters
+  url = https://github.com/cityofaustin/officer-form-chapters.git
+[submodule "officer-form-chapters"]
+	path = officer-form-chapters
+	url = https://github.com/cityofaustin/officer-form-chapters
