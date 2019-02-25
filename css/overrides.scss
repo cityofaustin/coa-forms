@@ -79,7 +79,6 @@ form overrides
   color: #162e51;
 }
 
-
 .schemaform-intro h2 {
   font-size: 24px;
   font-weight: 500;
@@ -143,11 +142,10 @@ form overrides
 .form-radio-buttons {
   box-shadow: 0 0 0 1px #dbdee1;
   border-radius: 4px;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /* intro page */
-
 
 .form-rule {
   border-color: $color-primary;
@@ -240,7 +238,7 @@ legend.schemaform-label {
 
 .filepond--root {
   font-size: 1.6rem !important;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 #root > div > div > div > div.schemaform-intro > div.usa-grid > ul > li {
@@ -272,6 +270,15 @@ legend.schemaform-label {
   top: 15px;
   background-color: #ffffff;
 }
+
+.mapboxgl-ctrl-geocoder .geocoder-pin-right * {
+  background-color: #fff;
+      z-index: 2;
+      position: absolute;
+      left: 245px !important;
+      top: 10px;
+      width: 50px ;
+  }
 
 /*
 hacky overrides
@@ -438,6 +445,31 @@ hacky overrides
   box-shadow: none;
 }
 
+// #root
+//   > div
+//   > div
+//   > div
+//   > div.usa-width-two-thirds.medium-8.columns
+//   > div.progress-box.progress-box-schemaform
+//   > div
+//   > div
+//   > form
+//   > fieldset
+//   > div
+//   > div:nth-child(5)
+//   > div
+//   > div
+//   > div.schemaform-widget-wrapper
+//   > div
+//   > div
+//   > div
+//   > div.mapboxgl-control-container
+//   > div.mapboxgl-ctrl-top-left
+//   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+//   > div {
+//   display: none;
+// }
+
 #root
   > div
   > div
@@ -461,20 +493,19 @@ hacky overrides
   box-shadow: none;
 }
 
-
 @media only screen and (min-width: 520px) {
   .centered-form-two-thirds {
     width: 100%;
   }
 
   .centered-form-schemaforms {
-    width:75%;
-    margin:0 auto 0 auto !important;
+    width: 75%;
+    margin: 0 auto 0 auto !important;
   }
 }
 
 // make textareas full-width within container
 textarea {
-  width:100% !important;
-  max-width:none !important;
+  width: 100% !important;
+  max-width: none !important;
 }
