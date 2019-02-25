@@ -442,6 +442,22 @@
     "es": "%presione para borrar%"
   },
 
+  "File is too large": {
+  	"es": "El archivo es demasiado grande."
+  },
+
+  "Maximum file size is {filesize}": {
+  	"es": "El tamaño máximo de un archivo es {filesize}"
+  },
+
+  "Maximum total size exceeded": {
+  	"es": "Tamaño total máximo excedido."
+  },
+
+  "Maximum total file size is {filesize}": {
+  	"es": "El tamaño máximo total de archivo es {filesize}"
+  },
+
   "%Remove%": {
     "es": "%Remover%"
   },
