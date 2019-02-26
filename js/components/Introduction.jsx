@@ -28,11 +28,10 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> File a thanks </h2>
+            <h2 className="intro-heading"> Thank the APD </h2>
             <hr className="form-rule" />
             <p>
-              You DO NOT have to give personal information in order to file a
-              thanks.
+              You DO NOT have to give personal information in order to thank the APD.
             </p>
             <p>
               By telling us about your experience, you help us better serve you
@@ -57,17 +56,12 @@ class Introduction extends React.Component {
                 <h4>Required information</h4>
                 <ul className="accordion-list">
                   <li>What happened</li>
-                  <li>Time </li>
+                  <li>Location and Time </li>
                 </ul>
                 <hr className="accordion-rule" />
                 <h4>Optional information</h4>
                 <ul className="accordion-list">
                   <li>Officer(s) involved</li>
-                  <li>Witness(es) </li>
-                  <li>
-                    Your contact information for us to follow up with you
-                    (interpreters available)
-                  </li>
                 </ul>
                 <ProgressButton
                   onButtonClick={this.startForm}

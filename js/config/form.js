@@ -11,7 +11,7 @@ import {
 const formConfig = {
   type: "thanks",
   language: "en",
-  title: 'File a thanks',
+  title: 'Thank the APD',
   subTitle: '',
   formId: '',
   urlPrefix: '/police-thank/',
