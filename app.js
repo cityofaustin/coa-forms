@@ -24,10 +24,10 @@ ReactDOM.render(
     <header className="schemaform-block-header site-header" role="banner">
       <div className="usa-nav-container form-nav">
         <nav className="language-nav">
-          <a className="active language" href="/police-oversight/complaint">
+          <a className="active language" href="/police-complain">
             English
           </a>
-          <a href="/fiscalizacion-de-policia/queja" className="second">
+          <a href="/policia-queja" className="second">
             Español
           </a>
         </nav>
