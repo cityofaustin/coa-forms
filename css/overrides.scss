@@ -79,17 +79,21 @@ form overrides
   color: #162e51;
 }
 
-.schemaform-intro h2 {
+.schemaform-intro h1 {
   font-size: 24px;
   font-weight: 500;
 }
 
-.schemaform-intro h3 {
+.schemaform-intro h2 {
   font-size: 18px;
 }
 
-.schemaform-intro h4 {
+.schemaform-intro h3 {
   font-size: 16px;
+}
+
+.schemaform-intro a:visited {
+  color: $color-primary;
 }
 
 .schemaform-block-title {

@@ -28,7 +28,7 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> File a complaint </h2>
+            <h1 className="intro-heading"> File a complaint </h1>
             <hr className="form-rule" />
             <p>
               You DO NOT have to give personal information in order to file a
@@ -38,7 +38,7 @@ class Introduction extends React.Component {
               By telling us about your experience, you help us better serve you
               and your community. Thank you.
             </p>
-            <h4 className="intro-select">Select an option</h4>
+            <h2 className="intro-select">Select an option</h2>
           </div>
           <ul className="usa-accordion-bordered">
             <li>
@@ -54,13 +54,13 @@ class Introduction extends React.Component {
                 className="usa-accordion-content"
                 aria-hidden="false"
               >
-                <h4>Required information</h4>
+                <h3>Required information</h3>
                 <ul className="accordion-list">
                   <li>What happened</li>
                   <li>Time </li>
                 </ul>
                 <hr className="accordion-rule" />
-                <h4>Optional information</h4>
+                <h3>Optional information</h3>
                 <ul className="accordion-list">
                   <li>Officer(s) involved</li>
                   <li>Witness(es) </li>
@@ -158,12 +158,12 @@ class Introduction extends React.Component {
               </div>
             </li>
           </ul>
-          <h3 className="intro-about">About us</h3>
+          <h2 className="intro-about">About us</h2>
           <p>
             We are the Office of Police Oversight, impartial and separate from
             the Austin Police Department.
           </p>
-          <a href="">Learn more about who we are and what we do.</a>
+          <a href="https://alpha.austin.gov/police-oversight">Learn more about who we are and what we do.</a>
         </div>
       </div>
     );
