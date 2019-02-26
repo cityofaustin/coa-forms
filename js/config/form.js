@@ -14,7 +14,7 @@ const formConfig = {
   title: 'File a thanks',
   subTitle: '',
   formId: '',
-  urlPrefix: '/police-oversight/thanks/',
+  urlPrefix: '/police-thank/',
   trackingPrefix: 'form-',
   submit: (formData, formConfig) => {
     console.log("Appending formConfig to formData");
