@@ -54,12 +54,12 @@ Sample Content:
 ```
 {
   "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja"
+    "es": "policia-queja"
   },
 
   "routes":  {
-    "%/police-oversight/complaint/%": {
-        "es": "%/fiscalizacion-de-policia/queja/%"
+    "%/police-complain/%": {
+        "es": "%/policia-queja/%"
     },
 
     "%introduction%": {
@@ -93,11 +93,11 @@ Sample Content:
 }
 ```
 
-The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/fiscalizacion-de-policia/queja. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, you could make it look like this:
+The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/policia-queja. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, you could make it look like this:
 
 ```
 "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja",
+    "es": "policia-queja",
     "vi": "your-vietnamese/complaint-path"
 },
 ```
@@ -202,7 +202,7 @@ And Arabic:
 
 Until we find a better way to translate the website, this is the process I have followed to translate it. While you do not need to understand programming, it could help a lot if you can follow these steps:
 
-You are encouraged to look at the `public/js/app.bundle.json` you can find it online [here](https://forms.austintexas.io/police-oversight/complaint/js/app.bundle.js) or [here](https://forms.austin.gov/police-oversight/complaint/js/app.bundle.js).
+You are encouraged to look at the `public/js/app.bundle.json` you can find it online [here](https://forms.austintexas.io/police-complain/js/app.bundle.js) or [here](https://forms.austin.gov/police-complain/js/app.bundle.js).
 
 1. Find the string in the `app.bundle.json` file you want to translate (in English). For example, you want to translate a phrase `Find us on Facebook`. Open one of the links above in the browser, and find text using the keyboard shortcut [Ctrl]+[F] which will propmt you to enter a string to find in the mangled source code. You would type "Find us on Facebook" with the exact capitalization. 
 

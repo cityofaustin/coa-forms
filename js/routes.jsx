@@ -6,7 +6,7 @@ import Form from './components/Form.jsx';
 const routes = createRoutes(formConfig);
 
 const route = {
-  path: '/police-oversight/complaint/',
+  path: '/police-complain/',
   component: Form,
   indexRoute: {
     onEnter: (nextState, replace) => replace(formConfig.urlPrefix + routes[0].path)
