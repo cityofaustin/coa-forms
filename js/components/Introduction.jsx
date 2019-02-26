@@ -28,10 +28,10 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> Thank the APD </h2>
+            <h2 className="intro-heading"> Thank the Austin Police Department </h2>
             <hr className="form-rule" />
             <p>
-              You DO NOT have to give personal information in order to thank the APD.
+              You DO NOT have to give personal information in order to say thanks to the APD.
             </p>
             <p>
               By telling us about your experience, you help us better serve you
