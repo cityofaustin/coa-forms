@@ -33,7 +33,7 @@ Sample Content:
 
 
 
-The translation process looks at this file first, the form will not be translated if the language is not listed here. For context, the form in english is built into a folder called `public`,  settings.json is used to create a loop that helps copy the existing public folder into a separate directory called `public_es` (`es` being the language code being processed, then patches the contents of that folder and then publishes the files on s3. 
+The translation process looks at this file first, the form will not be translated if the language is not listed here. For context, the form in english is built into a folder called `public`,  settings.json is used to create a loop that helps copy the existing public folder into a separate directory called `public_es` (`es` being the language code being processed, then patches the contents of that folder and then publishes the files on s3.
 
 You can add another language, for example `vi` for Vietnameese, `ar` for Arabic, etc. Which would look like this:
 
@@ -54,12 +54,12 @@ Sample Content:
 ```
 {
   "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja"
+    "es": "policia-agradezca"
   },
 
   "routes":  {
-    "%/police-oversight/complaint/%": {
-        "es": "%/fiscalizacion-de-policia/queja/%"
+    "%/police-thank/%": {
+        "es": "%/policia-agradezca/%"
     },
 
     "%introduction%": {
@@ -93,11 +93,11 @@ Sample Content:
 }
 ```
 
-The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/fiscalizacion-de-policia/queja. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, you could make it look like this:
+The `deployment-path` key contains the url where the translation will be deployed to in s3, this is the actual url that will be used in forms.austin.gov, in the example above, the result would be: https://forms.austin.gov/policia-agradezca. For example, if you were to make a correction and change the value to `"something-else/in-spanish"` the end result would be https://forms.austin.gov/something-else/in-spanish and the form would live there. If you were to add a vietnamese deployment path, you could make it look like this:
 
 ```
 "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja",
+    "es": "policia-agradezca",
     "vi": "your-vietnamese/complaint-path"
 },
 ```
@@ -161,7 +161,7 @@ The translation script will iterate through each of the keys and the current lan
 
 5. Always check your syntax with JsonLint.
 
-**\*\*Update: the script automatically sorts the english keys longest first to shortest last; however, it is still good practice to arrange them in a way that makes sense to the human translaton.\*\*** 
+**\*\*Update: the script automatically sorts the english keys longest first to shortest last; however, it is still good practice to arrange them in a way that makes sense to the human translaton.\*\***
 
 Why do short strings need to be last? Imagine you have a long paragraph you want to translate: `This is my great rainbow paragraph I need to translate first.` But you placed a short translation first for the word `rainbow` to `arcoiris` in spanish. So the translator will translate all text in the form, including the paragraph you want translated to `This is my great arcoiris paragraph I need to translate first` , then the script will try to find `This is my great rainbow paragraph I need to translate first` but it will not be able to find it and it will move on. This means the paragraph will not be translated, it will remain with the 'arcoiris' text.
 
@@ -204,7 +204,7 @@ Until we find a better way to translate the website, this is the process I have 
 
 You are encouraged to look at the `public/js/app.bundle.json` you can find it online [here](https://forms.austintexas.io/police-oversight/complaint/js/app.bundle.js) or [here](https://forms.austin.gov/police-oversight/complaint/js/app.bundle.js).
 
-1. Find the string in the `app.bundle.json` file you want to translate (in English). For example, you want to translate a phrase `Find us on Facebook`. Open one of the links above in the browser, and find text using the keyboard shortcut [Ctrl]+[F] which will propmt you to enter a string to find in the mangled source code. You would type "Find us on Facebook" with the exact capitalization. 
+1. Find the string in the `app.bundle.json` file you want to translate (in English). For example, you want to translate a phrase `Find us on Facebook`. Open one of the links above in the browser, and find text using the keyboard shortcut [Ctrl]+[F] which will propmt you to enter a string to find in the mangled source code. You would type "Find us on Facebook" with the exact capitalization.
 
 2. If you can find the string, in the mangled code, and it looks like, for instance `scrambled.code("Find us on Facebook")).some(other).scrable(here) `You can see that the string is contained in quotation marks, this would be a great case for us to use  the percentage symbol '%', and this rule:
 
@@ -222,6 +222,3 @@ You are encouraged to look at the `public/js/app.bundle.json` you can find it on
 While this approach is less than ideal, it is very functional and fast. It translates EVERYTHING, including the date-time controls, upload controls, etc. If there is text on the page, it can be translated without needing development skills.
 
 Why the percentage symbol? We cannot use quotation marks in json format. Actually, we can, but it would be a royal mixup (worse than it already is).
-
-
-

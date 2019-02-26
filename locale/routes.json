@@ -1,11 +1,11 @@
 {
   "deployment_path": {
-    "es": "fiscalizacion-de-policia/queja"
+    "es": "policia-agradezca"
   },
 
   "routes":  {
-    "%/police-oversight/complaint/%": {
-        "es": "%/fiscalizacion-de-policia/queja/%"
+    "%/police-thank/%": {
+        "es": "%/policia-agradezca/%"
     },
 
     "%introduction%": {
