@@ -128,7 +128,7 @@ class Introduction extends React.Component {
                   interpret for you or ask for an interpreter. Just tell us the
                   language you prefer.
                 </p>
-                <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
+                <p>Office hours are Monday through Friday, 8 am to 5 pm.</p>
               </div>
             </li>
             <li>
