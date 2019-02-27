@@ -19,7 +19,7 @@ const whatHappenedChapter = {
       title: "Tell us what happened",
       schema: {
         type: "object",
-        required: ["description"],
+        required: ["description", "datetime"],
         properties: {
           description: {
             type: "string"
