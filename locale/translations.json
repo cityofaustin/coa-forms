@@ -1,5 +1,5 @@
 {
-  "Thank the APD": {
+  "Thank an Austin police officer": {
     "es": "Agradezca a APD"
   },
 
@@ -306,7 +306,7 @@
 
   "%Please enter a valid email address%": {
     "es": "%Por favor provea una dirección válida%"
-  }
+  },
 
   "%Demographic information%": {
     "es": "%Información demográfica%"
