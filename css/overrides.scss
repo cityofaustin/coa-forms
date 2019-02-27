@@ -393,29 +393,35 @@ hacky overrides
   width: 300px;
 }
 
-#root
-  > div
-  > div
-  > div
-  > div.progress-box.progress-box-schemaform
-  > div
-  > div
-  > form
-  > fieldset
-  > div
-  > div:nth-child(5)
-  > div
-  > div
-  > div.schemaform-widget-wrapper
-  > div
-  > div
-  > div
-  > div.mapboxgl-control-container
-  > div.mapboxgl-ctrl-top-left
-  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
-  > input[type='text'] {
+// #root
+//   > div
+//   > div
+//   > div
+//   > div.progress-box.progress-box-schemaform
+//   > div
+//   > div
+//   > form
+//   > fieldset
+//   > div
+//   > div:nth-child(6)
+//   > div
+//   > div
+//   > div.schemaform-widget-wrapper
+//   > div
+//   > div
+//   > div
+//   > div.mapboxgl-control-container
+//   > div.mapboxgl-ctrl-top-left
+//   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+//   > input[type='text'] {
+//   width: 90%;
+//   font-size: 16px;
+//   font-family: $odd-font;
+// }
+
+#root > div > div > div > div.usa-width-two-thirds.medium-8.columns.centered-form-two-thirds > div.progress-box.progress-box-schemaform.centered-form-schemaforms > div > div > form > fieldset > div > div:nth-child(5) > div > div > div.schemaform-widget-wrapper > div > div > div > div.mapboxgl-control-container > div.mapboxgl-ctrl-top-left > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl > input[type="text"] {
   width: 90%;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-family: $odd-font;
 }
 
