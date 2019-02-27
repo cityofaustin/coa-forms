@@ -117,7 +117,7 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  Download the thanks form (PDF). Print and fill out the
+                  <a href="/files/OPO_thanks-form_print_English.pdf">Download the thanks form (PDF)</a>. Print and fill out the
                   form, then mail it to:
                 </p>
                 <address>

@@ -62,8 +62,16 @@
     "es": "Horario de oficina de lunes a viernes, de 9 am a 5 pm."
   },
 
-  "Download the thanks form (PDF). Print and fill out the form, then mail it to:": {
-    "es": "Descargue el formulario de agradecimiento (PDF). Imprima y llene el formulario, luego envíelo por correo a la Oficina de Fiscalización de la Policía a:"
+  "%/files/OPO_thanks-form_print_English.pdf%": {
+    "es": "%/files/OPO_thanks-form_print_Spanish.pdf%"
+  }, 
+
+  "%Download the thanks form (PDF)%": {
+    "es": "Descargue el formulario de agradecimiento (PDF)"
+  },
+
+  "Print and fill out the form, then mail it to:": {
+    "es": "Imprima y llene el formulario, luego envíelo por correo a la Oficina de Fiscalización de la Policía a:"
   },
 
   "Tell us what happened": {
