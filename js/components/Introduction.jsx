@@ -28,15 +28,8 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> Thank the Austin Police Department </h2>
+            <h2 className="intro-heading"> Thank the APD </h2>
             <hr className="form-rule" />
-            <p>
-              You DO NOT have to give personal information in order to say thanks to the APD.
-            </p>
-            <p>
-              By telling us about your experience, you help us better serve you
-              and your community. Thank you.
-            </p>
             <h4 className="intro-select">Select an option</h4>
           </div>
           <ul className="usa-accordion-bordered">
@@ -76,7 +69,7 @@ class Introduction extends React.Component {
                 aria-expanded="false"
                 aria-controls="b-a2"
               >
-                Over the phone
+                By phone
               </button>
               <div
                 id="b-a2"
@@ -88,11 +81,6 @@ class Introduction extends React.Component {
                   happy to speak with you.
                 </p>
 
-                <p>
-                  If you need an interpreter, you can call with a friend to
-                  interpret for you or ask for an interpreter. Just tell us the
-                  language you prefer.
-                </p>
                 <p>Office hours are Monday through Friday, 8 am to 5 pm.</p>
               </div>
             </li>
@@ -110,19 +98,9 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  You can complete the form in person at the Office of Police
-                  Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in
-                  Building 1, on the 2nd floor, Suite 211. Visitor parking is in
-                  front of the main entrance. You will need to check in with
-                  building security at the front desk.
+                  You can share thanks in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.
                 </p>
-
-                <p>
-                  If you need an interpreter, you can come with a friend to
-                  interpret for you or ask for an interpreter. Just tell us the
-                  language you prefer.
-                </p>
-                <p>Office hours are Monday through Friday, 9 am to 5 pm.</p>
+                <p>Office hours are Monday through Friday, 8 am to 5 pm. .</p>
               </div>
             </li>
             <li>
