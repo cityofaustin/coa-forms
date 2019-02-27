@@ -67,7 +67,7 @@
   }, 
 
   "%Download the thanks form (PDF)%": {
-    "es": "Descargue el formulario de agradecimiento (PDF)"
+    "es": "%Descargue el formulario de agradecimiento (PDF)%"
   },
 
   "Print and fill out the form, then mail it to:": {
