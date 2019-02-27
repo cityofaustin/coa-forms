@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
 
 import {
-  whatHappenedChapter,
+  whatHappenedThanksChapter,
   officerDetailsChapter,
   aboutYouChapter,
 } from './chapters';
@@ -73,7 +73,7 @@ const formConfig = {
   openAllChaptersOnReview: true,
   hideNavArrows: true,
   chapters: {
-    whatHappenedChapter,
+    whatHappenedThanksChapter,
     officerDetailsChapter,
     aboutYouChapter,
   },
