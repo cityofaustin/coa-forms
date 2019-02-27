@@ -145,7 +145,7 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  Download the complaint form (PDF). Print and fill out the
+                  <a href="/files/OPO_complaint-form_print_English.pdf">Download the complaint form (PDF)</a>. Print and fill out the
                   form, then mail it to:
                 </p>
                 <address>

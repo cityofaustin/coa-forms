@@ -64,6 +64,18 @@
     "es": "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
   },
 
+  "%/files/OPO_complaint-form_print_English.pdf%": {
+    "es": "%/files/OPO_complaint-form_print_Spanish.pdf%"
+  },
+
+  "%Download the complaint form (PDF)%": {
+    "es": "%Descargue el formulario de queja (PDF)%"
+  },
+
+  "Print and fill out the form, then mail it to:": {
+    "es": "Imprima y llene el formulario, luego envíelo por correo a la Oficina de Fiscalización de la Policía a:"
+  },
+
   "Tell us what happened": {
     "es": "Díganos lo que sucedió"
   },
@@ -87,7 +99,7 @@
   "Skip this if you prefer to remain anonymous.": {
     "es": "Pase a la siguiente si desea permanecer anónimo."
   },
-  
+
   "We'll need your name in order to find the ticket you’re referencing.": {
     "es": "Necesitamos su nombre para encontrar la multa a la que se está refiriendo."
   },
@@ -119,7 +131,7 @@
   "Drag & drop your files or ": {
     "es": "Arrastre y suelte sus archivos o "
   },
-  
+
   "Tell us about the officer(s)": {
     "es": "¿Qué nos puede decir sobre el oficial?"
   },
@@ -235,7 +247,7 @@
   "Add another": {
     "es": "Añadir otro"
   },
-  
+
   "In person": {
     "es": "En persona"
   },
@@ -341,7 +353,7 @@
     "es": "%Descripción%"
   },
 
-  
+
   "We have received your complaint": {
     "es": "Hemos recibido su queja"
   },
@@ -381,12 +393,12 @@
 
   "%Optional information%": {
     "es": "%Información opcional%"
-  },  
+  },
 
   "%Officer(s) involved%": {
     "es": "%Oficial(es) involucrado(s)%"
-  },    
-  
+  },
+
   "%What happens next%": {
     "es": "%Qué sucederá ahora%"
   },
@@ -410,7 +422,7 @@
   "%Update page%": {
     "es": "%Actualizar%"
   },
-  
+
   "%Back%": {
     "es": "%Atrás%"
   },
@@ -434,7 +446,7 @@
   ">browse<": {
     "es": ">explorar<"
   },
-  
+
   "%(*Required)%": {
     "es": "%(*Obligatoria)%"
   },
