@@ -44,6 +44,7 @@ const witnessDetailsChapter = {
             viewField: WitnessDetailsDisplayWidget,
             addable: true,
             expandUnder: 'hasWitnessInformation',
+            itemName: 'witness',
           },
           items: {
             name: {

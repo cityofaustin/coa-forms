@@ -78,6 +78,7 @@ const officerDetailsChapter = {
             viewField: OfficerDetailsDisplayWidget,
             addable: true,
             expandUnder: 'hasOfficerDetails',
+            itemName: 'officer',
           },
           items: {
             name: {
