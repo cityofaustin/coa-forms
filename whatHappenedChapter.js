@@ -1,8 +1,6 @@
 import {
   DateTimeWidget,
   DateTimeReviewWidget,
-  LocationPickerWidget,
-  LocationReviewWidget
 } from "@cityofaustin/usfs-components";
 
 
@@ -32,10 +30,6 @@ const whatHappenedChapter = {
           },
           ticket: {
             type: "string"
-          },
-          location: {
-            type: "string",
-            formData: locationJSON
           }
         }
       },
@@ -68,15 +62,6 @@ const whatHappenedChapter = {
           "ui:options" : {
             expandUnder: 'hasTicket',
             expandUnderCondition: true
-          }
-        },
-        location: {
-          "ui:title": "Location",
-          "ui:description": "Type in the location or drag the map to the location.",
-          "ui:widget": LocationPickerWidget,
-          "ui:reviewWidget": LocationReviewWidget,
-          "ui:options": {
-            hideOnReviewIfFalse: true
           }
         }
       }
