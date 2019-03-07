@@ -263,9 +263,9 @@ legend.schemaform-label {
   z-index: 20;
 }
 
-.mapboxgl-ctrl-top-left {
-  max-width: 300px;
-}
+// .mapboxgl-ctrl-top-left {
+//   max-width: 300px;
+// }
 
 .mapboxgl-ctrl-geolocate {
   position: absolute;
@@ -279,9 +279,8 @@ legend.schemaform-label {
   background-color: #fff;
   z-index: 2;
   position: absolute;
-  left: 245px !important;
   top: 10px;
-  width: 50px;
+  width: 20px;
 }
 
 /*
@@ -360,6 +359,10 @@ hacky overrides
   box-shadow: none;
 }
 
+.mapboxgl-ctrl-top-left {
+  width: 55%;
+}
+
 #root
   > div
   > div
@@ -386,11 +389,6 @@ hacky overrides
   left: 280px;
   top: 15px;
   box-shadow: none;
-}
-
-.mapboxgl-ctrl-group {
-  box-shadow: none;
-  width: 300px;
 }
 
 // #root
