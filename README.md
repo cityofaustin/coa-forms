@@ -18,13 +18,13 @@ cd officer-complaint-form
 yarn
 ```
 
-If you're cloning for the first time, you'll need pull in our submodules and update them: 
+If you're cloning for the first time, you'll need pull in our submodules and update them:
 
 ```
 git submodule update --init --recursive
 ```
 
-Then you're ready to go! 
+Then you're ready to go!
 ⌨️ Run
 ```
 yarn start
@@ -39,7 +39,7 @@ The app outputs as a static build.
 yarn build
 ```
 
-Puts a static build in the public folder. You can serve this anywhere you'd deploy static html. 
+Puts a static build in the public folder. You can serve this anywhere you'd deploy static html.
 
 ## Modifying Chapters
 The schema definitions for chapters are in `/js/config/chapters`. This is a gitmodule that pulls from https://github.com/cityofaustin/officer-form-chapters. If you make changes in this directory, you'll need to commit them to this repo. Either `cd` to `/js/config/chapters` and use the git CLI from there, or open the folder in your favorite git GUI.
@@ -75,7 +75,7 @@ By doing this, instead of using the version of the components from npm, your loc
 
 ## Yarn Lock
 
-*Keep the yarn.lock updated for every commit done to the dependency libraries.*  
+*Keep the yarn.lock updated for every commit done to the dependency libraries.*
 
 We encountered some issues of the forms building with outdated components, as a general rule of thumb, when referencing any repo in package.json, it is important to re-render `yarn.lock`. The quickest way to do this is by removing the library and adding it back through the yarn command, for example:
 
@@ -87,3 +87,4 @@ yarn remove "cityofaustin/us-forms-system"
 yarn add "cityofaustin/us-forms-system"
 ```
 
+note about us-forms-system: you can pass in classnames in ui options to allow for styling of particular component stuff. 
