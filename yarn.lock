@@ -723,6 +723,28 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@cityofaustin/usfs-components@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.10.tgz#79b42f453014de4648d2f699093cb12a7b330c61"
+  integrity sha512-Zyq8T7+IE8+9YUlbg9fQTrdQTJuHSrq3NDhOYgGWo3CdMlC5VBSscfdeGioTDblKhQazIAvlsQarby6GkOWJcA==
+  dependencies:
+    "@dump247/storybook-state" "^1.5.2"
+    "@mapbox/mapbox-gl-geocoder" "^3.1.0"
+    classnames "^2.2.6"
+    date-fns "^1.30.1"
+    filepond "^3.6.0"
+    filepond-plugin-file-validate-size "^2.1.1"
+    filepond-plugin-image-exif-orientation "^1.0.3"
+    filepond-plugin-image-preview "^3.1.4"
+    react "15"
+    react-autosuggest "^9.4.2"
+    react-filepond "^5.0.0"
+    react-flatpickr "^3.6.4"
+    react-mapbox-gl "3.9.2"
+    react-query-params "^1.0.9"
+    uswds "^1.6.9"
+    webpack "^4.27.1"
+
 "@cityofaustin/usfs-components@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.2.tgz#b9cbd4f74866c5f75229ab5667c41ed0ea57ee5a"
@@ -735,28 +757,6 @@
     filepond-plugin-image-exif-orientation "^1.0.3"
     filepond-plugin-image-preview "^3.1.4"
     mapbox-gl-geocoder "^2.0.1"
-    react "15"
-    react-autosuggest "^9.4.2"
-    react-filepond "^5.0.0"
-    react-flatpickr "^3.6.4"
-    react-mapbox-gl "3.9.2"
-    react-query-params "^1.0.9"
-    uswds "^1.6.9"
-    webpack "^4.27.1"
-
-"@cityofaustin/usfs-components@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.9.tgz#fad59b72464a5c49d483777401c76d6be29c65be"
-  integrity sha512-uZQL34wvPT+G2qxk/K+YaP/3ABP+T+1roKvNFuEFj5XX/o3gvq4DuoCBKNS8crQ+ffje4bZmk2cnlKWRHBG7gQ==
-  dependencies:
-    "@dump247/storybook-state" "^1.5.2"
-    "@mapbox/mapbox-gl-geocoder" "^3.1.0"
-    classnames "^2.2.6"
-    date-fns "^1.30.1"
-    filepond "^3.6.0"
-    filepond-plugin-file-validate-size "^2.1.1"
-    filepond-plugin-image-exif-orientation "^1.0.3"
-    filepond-plugin-image-preview "^3.1.4"
     react "15"
     react-autosuggest "^9.4.2"
     react-filepond "^5.0.0"
