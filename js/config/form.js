@@ -4,6 +4,7 @@ import Confirmation from '../components/Confirmation.jsx';
 
 import {
   whatHappenedChapter,
+  whereHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
   shareEvidenceChapter,
@@ -76,6 +77,7 @@ const formConfig = {
   hideNavArrows: true,
   chapters: {
     whatHappenedChapter,
+    whereHappenedChapter,
     shareEvidenceChapter,
     officerDetailsChapter,
     witnessDetailsChapter,
