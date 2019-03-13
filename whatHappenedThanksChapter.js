@@ -6,11 +6,6 @@ import {
   } from "@cityofaustin/usfs-components";
   
   
-  const locationJSON = JSON.stringify({
-    address: "800 Guadalupe St, Austin, TX 78701",
-    position: { lat: 30.271272, lng: -97.745934 }
-  });
-  
   const whatHappenedThanksChapter = {
     title: "Tell us what happened",
     pages: {
@@ -26,10 +21,6 @@ import {
             },
             datetime: {
               type: "string"
-            },
-            location: {
-              type: "string",
-              formData: locationJSON
             }
           }
         },
@@ -45,15 +36,6 @@ import {
             "ui:title": "Date and time, if known?",
             "ui:widget": DateTimeWidget,
             "ui:reviewWidget": DateTimeReviewWidget,
-            "ui:options": {
-              hideOnReviewIfFalse: true
-            }
-          },
-          location: {
-            "ui:title": "Location",
-            "ui:description": "Type in the location or drag the map to the location.",
-            "ui:widget": LocationPickerWidget,
-            "ui:reviewWidget": LocationReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true
             }
