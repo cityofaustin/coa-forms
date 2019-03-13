@@ -72,7 +72,7 @@ const aboutYouChapter = {
 
         willingToBeContacted: {
           'ui:title':
-            'I am willing to be contacted by the Office of Police Oversight in two to four business days.',
+            'I am willing to be contacted by the Office of Police Oversight in 2 to 4 business days.',
           'ui:options': {
             hideOnReviewIfFalse: true,
           },
@@ -94,7 +94,7 @@ const aboutYouChapter = {
             'ui:title': 'Your email address',
             'ui:widget': 'email',
             'ui:description':
-              'Required if you want the case number confirmation sent to your email.',
+              'Required if you want the confirmation number sent to your email.',
             'ui:options': {
               inputType: 'email',
             },
