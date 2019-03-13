@@ -221,6 +221,7 @@ class Confirmation extends React.Component {
             <p>You can email us at <a>policeoversight@austintexas.gov</a> or call us at <a>(512) 972-2676</a> with your confirmation number to find where your complaint is in this process.</p>
             <p>If you provided your contact information, a staff person from the Office of Police Oversight will contact you within two to four business days.</p>
             <p>Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.</p>
+            <p><a href="http://alpha.austin.gov/police-oversight/complaint-investigation-process">What happens next</a></p>
           </div>
         );
   }
