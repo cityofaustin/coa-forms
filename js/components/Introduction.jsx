@@ -49,11 +49,11 @@ class Introduction extends React.Component {
                 <h4>Required information</h4>
                 <ul className="accordion-list">
                   <li>What happened</li>
-                  <li>Time</li>
                 </ul>
                 <hr className="accordion-rule" />
                 <h4>Optional information</h4>
                 <ul className="accordion-list">
+                  <li>Date and time</li>
                   <li>Officer(s) involved</li>
                 </ul>
                 <ProgressButton
@@ -98,9 +98,9 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  You can share thanks in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.
+                  You can share thanks in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance.
                 </p>
-                <p>Office hours are Monday through Friday, 8 am to 5 pm. .</p>
+                <p>Office hours are Monday through Friday, 8 am to 5 pm.</p>
               </div>
             </li>
             <li>
