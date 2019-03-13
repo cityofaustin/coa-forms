@@ -1,0 +1,192 @@
+/*
+  Confirmation Page
+*/
+
+$loader-color: white;     // Specifies the color of the three-dots loader animation
+$loader-dotsize: 6px;     // Specifies the size WxH of each dot
+$checkmark-height: 2rem;  // Controls the height of the checkmark drawing
+$checkmark-width: 1rem; // Controls the width of the checkmark drawing
+$checkmark-color: white;  // Specifies the color of the checkmark
+$confirmation-button-color: #0CA900;  // The color of the button on successful submission
+
+div.schemaform-intro > p {
+  font-size: 1.4rem;
+}
+
+div.schemaform-intro > h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  width: 80%;
+  margin-left: 10%;
+}
+
+div.schemaform-intro > h3 {
+  color: #164ED2;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+div.confirmation > p {
+  font-size: 1.4rem;
+}
+
+div.confirmation > span {
+  font-size: 2rem;
+}
+
+div.confirmation__sent-acknowledgement {
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+
+/*
+  Confirmation Block
+*/
+.confirmation {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+// Error Dialog Message
+.confirmation__errorbox {
+  margin-top: 1rem;
+  color: red;
+  padding: 1rem;
+  border: red dotted;
+}
+
+// E-mail Input Field
+.confimation__input {
+  display: inline-block;
+  width: calc(100% - 9rem);
+  max-width: 100%;
+}
+.confimation__input:disabled {
+  color: #757575;
+  background-color: white;
+}
+
+// Block's button, default size.
+.confirmation__button {
+  display: inline-block;
+  height: 4.2rem;
+  max-height: 4.2rem;
+  width: 8rem;
+  padding: 0 !important;
+  margin: 0 0 0 1rem;
+  font-size: 1.2rem;
+  position: relative;
+  top: -2px;
+}
+
+// Block's button, on success
+.confirmation__button--success {
+  cursor: default;
+  background-color: $confirmation-button-color;
+}
+
+// Block's button on success, hover
+.confirmation__button--success:hover {
+  cursor: default;
+  background-color: $confirmation-button-color;
+}
+
+// Block's button, loading state
+.confirmation__button--loading-btn {
+  position: relative;
+  display: inline-block;
+  width: $loader-dotsize;
+  height: $loader-dotsize;
+  border-radius: 50%;
+  margin: -($loader-dotsize*2) ($loader-dotsize*2) ($loader-dotsize*2);
+  animation-fill-mode: both;
+  animation: confirmation__button-loading-btn--animation 1s infinite ease-in-out;
+  animation-delay: -0.16s;
+  color: $loader-color;
+}
+.confirmation__button--loading-btn:before,
+.confirmation__button--loading-btn:after {
+  content: '';
+  position: absolute;
+  width: $loader-dotsize;
+  height: $loader-dotsize;
+  top: 0;
+  animation: confirmation__button-loading-btn--animation 1s infinite ease-in-out;
+  border-radius: 50%;
+}
+.confirmation__button--loading-btn:before {
+  left: -($loader-dotsize*2);
+  animation-delay: -0.32s;
+}
+.confirmation__button--loading-btn:after {
+  left: ($loader-dotsize*2);
+}
+
+
+
+// Confirmation button, checkmark state
+.confirmation__button-checkmark-container {
+  left: -$checkmark-width;
+  top: .8rem;
+  position: relative;
+  padding: 0 !important;
+}
+.confirmation__button-checkmark {}
+.confirmation__button-checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: confirmation__button-checkmark--animation;
+  transform: scaleX(-1) rotate(135deg);
+}
+.confirmation__button-checkmark:after {
+  opacity: 1;
+  height: $checkmark-height;
+  width: $checkmark-width;
+  transform-origin: left top;
+  border-right: 3px solid $checkmark-color;
+  border-top: 3px solid $checkmark-color;
+  content: '';
+  position: absolute;
+}
+
+
+/*
+  Confirmation page submit button, loading three dots animation
+*/
+@keyframes confirmation__button-loading-btn--animation {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 10px 0 -6px;
+  }
+  40% {
+    box-shadow: 0 10px 0 0;
+  }
+}
+
+/*
+  Confirmation page submit button, success checkmark animation
+*/
+@keyframes confirmation__button-checkmark--animation {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: $checkmark-width;
+    opacity: 1;
+  }
+  40% {
+    height: $checkmark-height;
+    width: $checkmark-width;
+    opacity: 1;
+  }
+  100% {
+    height: $checkmark-height;
+    width: $checkmark-width;
+    opacity: 1;
+  }
+}

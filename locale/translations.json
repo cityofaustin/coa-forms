@@ -53,6 +53,10 @@
     "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
 
+  "For a copy of your complaint and confirmation number, enter your email address below": {
+    "es": "Para obtener una copia de su queja y número de confirmación, ingrese su dirección de correo electrónico."
+  },
+
   "Office hours are Monday through Friday, 8 am to 5 pm.": {
     "es": "Horario de oficina de lunes a viernes, de 8 am a 5 pm."
   },
@@ -505,6 +509,22 @@
 
   "Maximum total file size is {filesize}": {
   	"es": "El tamaño máximo total de archivo es {filesize}"
+  },
+
+  "You will receive an email with a copy of your complaint and a confirmation number at": {
+    "es": "Ustéd recibirá un correo electrónico con una copia de su queja y un número de confirmación la dirección "
+  },
+
+  "Please provide a valid email address": {
+    "es": "Por favor, proporcione una dirección de correo electrónico válida"
+  },
+
+  "%Your email%": {
+    "es": "%Su email%"
+  },
+
+  "%dismiss%": {
+    "es": "%entendido%"
   },
 
   "%Remove%": {
