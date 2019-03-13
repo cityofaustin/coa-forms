@@ -200,7 +200,7 @@
     "es": "Su dirección de correo electrónico"
   },
 
-  "Required if you want the case number confirmation sent to your email.": {
+  "Required if you want the confirmation number sent to your email.": {
     "es": "Obligatorio si desea que le enviemos el número de confirmación por correo electrónico."
   },
 
@@ -387,8 +387,8 @@
     "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
 
-  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within two to four business days.": {
-    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de dos a cuatro días laborales."
+  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.": {
+    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
   },
 
   "%Required information%": {
