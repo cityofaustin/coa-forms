@@ -43,8 +43,8 @@
     "es": "Llame a la Oficina de Fiscalización de la Policía al (512) 972-2676. Nos complacerá hablar con usted. "
   },
 
-  "You can share thanks in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.": {
-    "es": "Puede compartir sus agradecimientos en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal. Deberá presentarse con el personal de seguridad en la entrada."
+  "You can share thanks in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance.": {
+    "es": "Puede compartir sus agradecimientos en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal."
   },
 
   "If you need an interpreter, you can call with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
@@ -586,8 +586,8 @@
     "es": ":%Nombre%"
   },
 
-  "%Time %": {
-    "es": "%Hora%"
+  "%Date and time%": {
+    "es": "%Fecha y hora%"
   },
 
   "%Email%": {
