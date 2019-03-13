@@ -16,6 +16,10 @@
       "es": "%que-sucedio%"
     },
 
+    "%where-happened%": {
+      "es": "%donde-sucedio%"
+    },
+
     "%share-evidence%": {
       "es": "%compartir-evidencia%"
     },

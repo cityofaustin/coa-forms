@@ -519,12 +519,32 @@
     "es": "Por favor, proporcione una dirección de correo electrónico válida"
   },
 
+  "We need your name in order to find the ticket you’re referencing": {
+    "es": "Necesitamos tu nombre para encontrar el ticket al que ustéd se refiere"
+  },
+
+  "You can email us at": {
+    "es": "Nos puede enviar un correo electrónico a"
+  },
+
+  "Where were you?": {
+    "es": "¿Dónde estaba usted?"
+  },
+
   "%Your email%": {
     "es": "%Su email%"
   },
 
+  "%Sending...%": {
+    "es": "%Enviando...%"
+  },
+
   "%dismiss%": {
     "es": "%entendido%"
+  },
+
+  "%What happened%": {
+    "es": "%Qué sucedió%"
   },
 
   "%Remove%": {
