@@ -79,17 +79,21 @@ form overrides
   color: #162e51;
 }
 
-.schemaform-intro h2 {
+.schemaform-intro h1 {
   font-size: 24px;
   font-weight: 500;
 }
 
-.schemaform-intro h3 {
+.schemaform-intro h2 {
   font-size: 18px;
 }
 
-.schemaform-intro h4 {
+.schemaform-intro h3 {
   font-size: 16px;
+}
+
+.schemaform-intro a:visited {
+  color: $color-primary;
 }
 
 .schemaform-block-title {
@@ -259,9 +263,9 @@ legend.schemaform-label {
   z-index: 20;
 }
 
-.mapboxgl-ctrl-top-left {
-  max-width: 300px;
-}
+// .mapboxgl-ctrl-top-left {
+//   max-width: 300px;
+// }
 
 .mapboxgl-ctrl-geolocate {
   position: absolute;
@@ -275,9 +279,8 @@ legend.schemaform-label {
   background-color: #fff;
   z-index: 2;
   position: absolute;
-  left: 245px !important;
   top: 10px;
-  width: 50px;
+  width: 20px;
 }
 
 /*
@@ -356,6 +359,10 @@ hacky overrides
   box-shadow: none;
 }
 
+.mapboxgl-ctrl-top-left {
+  width: 55%;
+}
+
 #root
   > div
   > div
@@ -384,16 +391,38 @@ hacky overrides
   box-shadow: none;
 }
 
-.mapboxgl-ctrl-group {
-  box-shadow: none;
-  width: 300px;
-}
+// #root
+//   > div
+//   > div
+//   > div
+//   > div.progress-box.progress-box-schemaform
+//   > div
+//   > div
+//   > form
+//   > fieldset
+//   > div
+//   > div:nth-child(6)
+//   > div
+//   > div
+//   > div.schemaform-widget-wrapper
+//   > div
+//   > div
+//   > div
+//   > div.mapboxgl-control-container
+//   > div.mapboxgl-ctrl-top-left
+//   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+//   > input[type='text'] {
+//   width: 90%;
+//   font-size: 16px;
+//   font-family: $odd-font;
+// }
 
 #root
   > div
   > div
   > div
-  > div.progress-box.progress-box-schemaform
+  > div.usa-width-two-thirds.medium-8.columns.centered-form-two-thirds
+  > div.progress-box.progress-box-schemaform.centered-form-schemaforms
   > div
   > div
   > form
@@ -411,7 +440,7 @@ hacky overrides
   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
   > input[type='text'] {
   width: 90%;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-family: $odd-font;
 }
 
@@ -533,3 +562,46 @@ textarea {
   width: 100% !important;
   max-width: none !important;
 }
+
+.filepond--file-action-button.filepond--file-action-button {
+  font-size: 1em !important;
+  width: 1.625em !important;
+  height: 1.625em !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  will-change: transform, opacity !important;
+}
+
+.filepond--file-action-button {
+  cursor: auto !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-image: none !important;
+  box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0) !important;
+  transition: box-shadow 0.25s ease-in !important;
+}
+
+.geocoder-icon-close {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiPg0KICA8cGF0aCBkPSJtNSA1IDAgMS41IDMuNSAzLjUtMy41IDMuNSAwIDEuNSAxLjUgMCAzLjUtMy41IDMuNSAzLjUgMS41IDAgMC0xLjUtMy41LTMuNSAzLjUtMy41IDAtMS41LTEuNSAwLTMuNSAzLjUtMy41LTMuNS0xLjUgMHoiIGZpbGw9IiMwMDAiLz4NCjwvc3ZnPg==) !important;
+}
+
+.mapboxgl-ctrl-zoom-in {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%0A%20%20%3Cpath%20style%3D%27fill%3A%23333333%3B%27%20d%3D%27M%2010%206%20C%209.446%206%209%206.4459904%209%207%20L%209%209%20L%207%209%20C%206.446%209%206%209.446%206%2010%20C%206%2010.554%206.446%2011%207%2011%20L%209%2011%20L%209%2013%20C%209%2013.55401%209.446%2014%2010%2014%20C%2010.554%2014%2011%2013.55401%2011%2013%20L%2011%2011%20L%2013%2011%20C%2013.554%2011%2014%2010.554%2014%2010%20C%2014%209.446%2013.554%209%2013%209%20L%2011%209%20L%2011%207%20C%2011%206.4459904%2010.554%206%2010%206%20z%27%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+}
+
+.mapboxgl-ctrl-zoom-out {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%0A%20%20%3Cpath%20style%3D%27fill%3A%23333333%3B%27%20d%3D%27m%207%2C9%20c%20-0.554%2C0%20-1%2C0.446%20-1%2C1%200%2C0.554%200.446%2C1%201%2C1%20l%206%2C0%20c%200.554%2C0%201%2C-0.446%201%2C-1%200%2C-0.554%20-0.446%2C-1%20-1%2C-1%20z%27%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+}
+
+// .geocoder-icon.geocoder-icon-close, .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate {
+//   background-color: #fff !important;
+//   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwM…41LTEuNSAwLTMuNSAzLjUtMy41LTMuNS0xLjUgMHoiIGZpbGw9IiMwMDAiLz4NCjwvc3ZnPg==) !important;
+// }
