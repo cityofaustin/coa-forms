@@ -71,7 +71,7 @@ const formConfig = {
   introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},
-  openAllChaptersOnReview: true,
+  openAllChaptersOnReview: false,
   hideNavArrows: true,
   chapters: {
     whatHappenedThanksChapter,
