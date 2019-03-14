@@ -44,7 +44,7 @@ class Introduction extends React.Component {
             <li>
               <button
                 className="usa-accordion-button"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="b-a1"
               >
                 Online
