@@ -57,7 +57,7 @@ class Introduction extends React.Component {
                 <h3>Required information</h3>
                 <ul className="accordion-list">
                   <li>What happened</li>
-                  <li>Time </li>
+                  <li>Date and time</li>
                 </ul>
                 <hr className="accordion-rule" />
                 <h3>Optional information</h3>
@@ -119,8 +119,7 @@ class Introduction extends React.Component {
                   You can complete the form in person at the Office of Police
                   Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in
                   Building 1, on the 2nd floor, Suite 211. Visitor parking is in
-                  front of the main entrance. You will need to check in with
-                  building security at the front desk.
+                  front of the main entrance.
                 </p>
 
                 <p>
