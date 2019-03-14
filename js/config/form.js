@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
 
 import {
-  whatHappenedChapter,
+  whatHappenedTnksChapter,
   whereHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
@@ -77,7 +77,7 @@ const formConfig = {
   introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},
-  openAllChaptersOnReview: true,
+  openAllChaptersOnReview: false,
   hideNavArrows: true,
   chapters: {
     whatHappenedChapter,
