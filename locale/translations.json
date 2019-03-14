@@ -41,8 +41,8 @@
   "Call the Office of Police Oversight at (512) 972-2676. We’d be happy to speak with you.": {
     "es": "Llame a la Oficina de Fiscalización de la Policía al (512) 972-2676. Nos complacerá hablar con usted. "
   },
-  "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance. You will need to check in with building security at the front desk.": {
-    "es": "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal. Deberá presentarse con el personal de seguridad en la entrada."
+  "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance.": {
+    "es": "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal."
   },
 
   "If you need an interpreter, you can call with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
@@ -200,7 +200,7 @@
     "es": "Su dirección de correo electrónico"
   },
 
-  "Required if you want the case number confirmation sent to your email.": {
+  "Required if you want the confirmation number sent to your email.": {
     "es": "Obligatorio si desea que le enviemos el número de confirmación por correo electrónico."
   },
 
@@ -341,11 +341,11 @@
   "Badge Number": {
     "es": "Número de credencial"
   },
-  "%In uniform%": {
+  "%Uniform%": {
     "es": "%Uniforme%"
   },
 
-  "%In regular clothes%": {
+  "%Regular clothes%": {
     "es": "%Ropa regular%"
   },
 
@@ -387,8 +387,8 @@
     "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
 
-  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within two to four business days.": {
-    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de dos a cuatro días laborales."
+  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.": {
+    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
   },
 
   "%Required information%": {
@@ -599,8 +599,8 @@
     "es": ":%Nombre%"
   },
 
-  "%Time %": {
-    "es": "%Hora%"
+  "%Date and time %": {
+    "es": "%Fecha y hora%"
   },
 
   "%Email%": {
