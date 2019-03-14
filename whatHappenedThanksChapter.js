@@ -4,8 +4,8 @@ import {
     LocationPickerWidget,
     LocationReviewWidget
   } from "@cityofaustin/usfs-components";
-  
-  
+
+
   const whatHappenedThanksChapter = {
     title: "Tell us what happened",
     pages: {
@@ -27,9 +27,7 @@ import {
         uiSchema: {
           "ui:title": "Tell us what happened",
           description: {
-            "ui:title": "Description",
-            "ui:description":
-              "Describe your experience with the Austin Police Department.",
+            "ui:title": "Describe your experience with the Austin Police Department.",
             "ui:widget": "textarea"
           },
           datetime: {
@@ -44,6 +42,5 @@ import {
       }
     }
   };
-  
+
   export default whatHappenedThanksChapter;
-  

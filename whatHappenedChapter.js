@@ -36,9 +36,7 @@ const whatHappenedChapter = {
       uiSchema: {
         "ui:title": "Tell us what happened",
         description: {
-          "ui:title": "Description",
-          "ui:description":
-            "Describe your experience with the Austin Police Department.",
+          "ui:title": "Describe your experience with the Austin Police Department.",
           "ui:widget": "textarea"
         },
         datetime: {
