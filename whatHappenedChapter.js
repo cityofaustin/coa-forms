@@ -42,7 +42,7 @@ const whatHappenedChapter = {
           "ui:widget": "textarea"
         },
         datetime: {
-          "ui:title": "Date and time, if known?",
+          "ui:title": "When did it happen?",
           "ui:widget": DateTimeWidget,
           "ui:reviewWidget": DateTimeReviewWidget,
           "ui:options": {
