@@ -1,8 +1,11 @@
 import {
-  DateTimeWidget,
-  DateTimeReviewWidget,
+  DateWidget,
+  DateReviewWidget,
+  TimeWidget,
+  TimeReviewWidget,
+  LocationPickerWidget,
+  LocationReviewWidget
 } from "@cityofaustin/usfs-components";
-
 
 const locationJSON = JSON.stringify({
   address: "800 Guadalupe St, Austin, TX 78701",
@@ -17,12 +20,15 @@ const whatHappenedChapter = {
       title: "Tell us what happened",
       schema: {
         type: "object",
-        required: ["description", "datetime"],
+        required: ["description", "date", "time"],
         properties: {
           description: {
             type: "string"
           },
-          datetime: {
+          date: {
+            type: "string"
+          },
+          time: {
             type: "string"
           },
           hasTicket: {
@@ -39,10 +45,18 @@ const whatHappenedChapter = {
           "ui:title": "Describe your experience with the Austin Police Department.",
           "ui:widget": "textarea"
         },
-        datetime: {
-          "ui:title": "When did it happen?",
-          "ui:widget": DateTimeWidget,
-          "ui:reviewWidget": DateTimeReviewWidget,
+        date: {
+          "ui:title": "What day did it happen?",
+          "ui:widget": DateWidget,
+          "ui:reviewWidget": DateReviewWidget,
+          "ui:options": {
+            hideOnReviewIfFalse: true
+          }
+        },
+        time: {
+          "ui:title": "What time did it happen?",
+          "ui:widget": TimeWidget,
+          "ui:reviewWidget": TimeReviewWidget,
           "ui:options": {
             hideOnReviewIfFalse: true
           }
