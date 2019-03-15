@@ -9151,7 +9151,7 @@ url@^0.11.0, url@~0.11.0:
 
 "us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
   version "1.1.0"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#fae7bb607e2bf70449aad876b7d4dc02e121f10f"
+  resolved "https://github.com/cityofaustin/us-forms-system.git#1c3667fc2b50c5d484a76651d6392c789e81e153"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     classnames "^2.2.6"
