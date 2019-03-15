@@ -7,10 +7,6 @@ import {
   LocationReviewWidget
 } from "@cityofaustin/usfs-components";
 
-// import {
-//   DateWidget
-// } from "us-forms-system/lib/js/widgets/DateWidget";
-
 const locationJSON = JSON.stringify({
   address: "800 Guadalupe St, Austin, TX 78701",
   position: { lat: 30.271272, lng: -97.745934 }
