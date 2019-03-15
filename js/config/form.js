@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
 
 import {
-  whatHappenedTnksChapter,
+  whatHappenedChapter,
   whereHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
