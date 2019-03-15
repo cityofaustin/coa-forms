@@ -28,6 +28,9 @@ const shareEvidenceChapter = {
         awareOfEvidence: {
           "ui:title":
             "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.",
+            'ui:description': () => (
+              <a class="usa-external_link" target="_blank" href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data">How we store and use your information</a>
+            ),
           "ui:widget": "radio",
           "ui:options": {
             hideOnReview: true
@@ -36,9 +39,6 @@ const shareEvidenceChapter = {
         evidenceFiles: {
           "ui:title":
             "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
-            'ui:description': () => (
-              <a class="usa-external_link" target="_blank" href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data">How we store and use your information</a>
-            ),
           "ui:options": {
             expandUnder: "awareOfEvidence",
             hideOnReviewIfFalse: true

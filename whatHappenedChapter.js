@@ -24,7 +24,7 @@ const whatHappenedChapter = {
       title: "Tell us what happened",
       schema: {
         type: "object",
-        required: ["description", "date"],
+        required: ["description", "date", "time"],
         properties: {
           description: {
             type: "string"
@@ -40,23 +40,17 @@ const whatHappenedChapter = {
           },
           ticket: {
             type: "string"
-          },
-          location: {
-            type: "string",
-            formData: locationJSON
           }
         }
       },
       uiSchema: {
         "ui:title": "Tell us what happened",
         description: {
-          "ui:title": "Description",
-          "ui:description":
-            "Describe your experience with the Austin Police Department.",
+          "ui:title": "Describe your experience with the Austin Police Department.",
           "ui:widget": "textarea"
         },
         date: {
-          "ui:title": "Date",
+          "ui:title": "What day did it happen?",
           "ui:widget": DateWidget,
           "ui:reviewWidget": DateReviewWidget,
           "ui:options": {
@@ -64,7 +58,7 @@ const whatHappenedChapter = {
           }
         },
         time: {
-          "ui:title": "Time",
+          "ui:title": "What time did it happen?",
           "ui:widget": TimeWidget,
           "ui:reviewWidget": TimeReviewWidget,
           "ui:options": {
@@ -84,15 +78,6 @@ const whatHappenedChapter = {
           "ui:options" : {
             expandUnder: 'hasTicket',
             expandUnderCondition: true
-          }
-        },
-        location: {
-          "ui:title": "Location",
-          "ui:description": "Type in the location or drag the map to the location.",
-          "ui:widget": LocationPickerWidget,
-          "ui:reviewWidget": LocationReviewWidget,
-          "ui:options": {
-            hideOnReviewIfFalse: true
           }
         }
       }
