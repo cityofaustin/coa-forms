@@ -77,7 +77,7 @@ class Introduction extends React.Component {
                 aria-hidden="true"
               >
                 <p>
-                  Call the Office of Police Oversight at (512) 972-2676. We’d be
+                  Call the Office of Police Oversight at <a href="tel:+1-512-972-2676">(512) 972-2676</a>. We’d be
                   happy to speak with you.
                 </p>
 
