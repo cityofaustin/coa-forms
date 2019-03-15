@@ -38,7 +38,7 @@ const shareEvidenceChapter = {
         },
         evidenceFiles: {
           "ui:title":
-            "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)",
+            "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc.).",
           "ui:options": {
             expandUnder: "awareOfEvidence",
             hideOnReviewIfFalse: true
