@@ -723,10 +723,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cityofaustin/usfs-components@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.10.tgz#79b42f453014de4648d2f699093cb12a7b330c61"
-  integrity sha512-Zyq8T7+IE8+9YUlbg9fQTrdQTJuHSrq3NDhOYgGWo3CdMlC5VBSscfdeGioTDblKhQazIAvlsQarby6GkOWJcA==
+"@cityofaustin/usfs-components@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.11.tgz#d42cd3fd4950cf90dcf56eda6724bd41373b35f2"
+  integrity sha512-Y8W44UIud6vmTHxLeda8sxEqwgl4Dh2Adx23BhHsn02lSxVikSFs6hkwYE3CqQExqwCjOdzUb7Emf2wjx3hZ4w==
   dependencies:
     "@dump247/storybook-state" "^1.5.2"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
@@ -742,6 +742,7 @@
     react-flatpickr "^3.6.4"
     react-mapbox-gl "3.9.2"
     react-query-params "^1.0.9"
+    us-forms-system "https://github.com/cityofaustin/us-forms-system.git"
     uswds "^1.6.9"
     webpack "^4.27.1"
 
@@ -9151,7 +9152,7 @@ url@^0.11.0, url@~0.11.0:
 
 "us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
   version "1.1.0"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#fae7bb607e2bf70449aad876b7d4dc02e121f10f"
+  resolved "https://github.com/cityofaustin/us-forms-system.git#0b8b10f6729de061b8952db2709eb2b40e7bad5b"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     classnames "^2.2.6"
