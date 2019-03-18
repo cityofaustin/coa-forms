@@ -38,9 +38,14 @@
   "Your contact information for us to follow up with you (interpreters available)": {
     "es": "Su información de contacto para poder comunicarnos con usted (hay traductores disponibles)"
   },
-  "Call the Office of Police Oversight at (512) 972-2676. We’d be happy to speak with you.": {
-    "es": "Llame a la Oficina de Fiscalización de la Policía al (512) 972-2676. Nos complacerá hablar con usted. "
+  "Call the Office of Police Oversight at ": {
+    "es": "Llame a la Oficina de Fiscalización de la Policía al "
   },
+  
+  "We’d be happy to speak with you.": {
+    "es": "Nos complacerá hablar con usted. "
+  },  
+  
   "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance.": {
     "es": "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal."
   },
@@ -124,7 +129,7 @@
     "es": "¿Tiene información adicional? Podría ser un video, audio, fotos, reportes de policía, registros de hospital o cualquier cosa que desee compartir."
   },
 
-  "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc)": {
+  "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc.).": {
     "es": "Cargue cualquier evidencia que tenga (archivos de video, audio, reportes de policía, reportes de hospital, etc.)"
   },
 
@@ -149,7 +154,7 @@
   },
 
   "What was the officer wearing?": {
-    "es": "¿Qué ropa tenía puesta el oficial?"
+    "es": "¿Qué ropa tenía puesto el oficial?"
   },
 
   "What kind of car or transportation was the officer using?": {
@@ -184,8 +189,8 @@
     "es": "¿Qué nos puede decir sobre usted?"
   },
 
-  "I am willing to be contacted by the Office of Police Oversight in two to four business days.": {
-    "es": "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre dos y cuatro días laborales."
+  "I am willing to be contacted by the Office of Police Oversight in 2 to 4 business days.": {
+    "es": "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre 2 y 4 días laborales."
   },
 
   "Your name": {
@@ -260,6 +265,10 @@
     "es": "Testigo(s)"
   },
 
+  "witness": {
+    "es": "testigo"
+  },
+  
   "Over the phone": {
     "es": "Por teléfono"
   },
@@ -280,6 +289,10 @@
     "es": "Número de teléfono"
   },
 
+  "%Phone%": {
+    "es": "%Número de teléfono%"
+  },
+  
   "Your gender": {
     "es": "Su sexo"
   },
@@ -532,7 +545,7 @@
   },
 
   "%Your email%": {
-    "es": "%Su email%"
+    "es": "%Su dirección de correo electrónico%"
   },
 
   "%Sending...%": {
@@ -599,7 +612,7 @@
     "es": ":%Nombre%"
   },
 
-  "%Date and time %": {
+  "%Date and time%": {
     "es": "%Fecha y hora%"
   },
 
