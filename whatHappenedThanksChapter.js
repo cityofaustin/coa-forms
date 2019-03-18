@@ -1,9 +1,9 @@
 import {
-    DateTimeWidget,
-    DateTimeReviewWidget,
-    LocationPickerWidget,
-    LocationReviewWidget
-  } from "@cityofaustin/usfs-components";
+  DateWidget,
+  DateReviewWidget,
+  TimeWidget,
+  TimeReviewWidget,
+} from "@cityofaustin/usfs-components";
 
 
   const whatHappenedThanksChapter = {
@@ -20,8 +20,16 @@ import {
               type: "string"
             },
             datetime: {
-              type: "string"
-            }
+              type: "object",
+              properties: {
+                date: {
+                  type: "string"
+                },
+                time: {
+                  type: "string"
+                },
+              }
+            },
           }
         },
         uiSchema: {
@@ -32,12 +40,23 @@ import {
           },
           datetime: {
             "ui:title": "When did it happen?",
-            "ui:widget": DateTimeWidget,
-            "ui:reviewWidget": DateTimeReviewWidget,
-            "ui:options": {
-              hideOnReviewIfFalse: true
-            }
-          }
+            date: {
+              "ui:title": "Date",
+              "ui:widget": DateWidget,
+              "ui:reviewWidget": DateReviewWidget,
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
+            },
+            time: {
+              "ui:title": "Time",
+              "ui:widget": TimeWidget,
+              "ui:reviewWidget": TimeReviewWidget,
+              "ui:options": {
+                hideOnReviewIfFalse: true
+              }
+            },
+          },
         }
       }
     }
