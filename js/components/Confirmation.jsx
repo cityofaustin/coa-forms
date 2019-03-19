@@ -10,10 +10,9 @@ class Confirmation extends React.Component {
       <div className="schemaform-intro">
         <SegmentedProgressBar total={2} current={2}/>
         <h2 style={{textAlign: "center"}}>We’re glad to hear you had a good experience!</h2>
-        <p style={{fontSize: "1.4rem"}}>Thank you for telling us about your experience with the Austin Police Department. This helps us better serve you and your community.</p>
         <hr/>
-        <p style={{fontSize: "1.4rem"}}><b>What happens next</b></p>
-        <p style={{fontSize: "1.4rem"}}>Your thank-you note will go to the Office of Police Oversight and the Austin Police Department’s Internal Affairs division, as well as to the officer’s chain of command. You’ll also receive an email with a copy of your thank-you note.</p>
+        <p style={{fontSize: "1.4rem"}}>Your thank-you note will go to the Office of Police Oversight and the Austin Police Department’s Internal Affairs division, as well as to the officer’s chain of command. </p>
+        <p style={{fontSize: "1.4rem"}}>If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days, and you will receive an email with a copy of your thank-you note.</p>
       </div>
     );
   }
@@ -25,4 +24,3 @@ Confirmation.propTypes = {
 };
 
 export default Confirmation;
-
