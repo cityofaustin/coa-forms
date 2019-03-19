@@ -41,6 +41,20 @@ yarn build
 
 Puts a static build in the public folder. You can serve this anywhere you'd deploy static html.
 
+## How to Deploy
+This form depends on `usfs-components` and `officer-form-chapters`. If either of those dependencies change, you'll need to also update this repo.
+
+If you made changes to `usfs-components`:
+
+1. Merge changes in `usfs-components` into its master branch. Follow the steps to publish your newest version of `usfs-components` to npm.
+2. Update this repo's `package.json` to use the latest `usfs-components` version. Then run `yarn install` to update this repo's `yarn.lock`.
+3. Commit. Push to master.
+
+If you need to made changes to `officer-form-chapters`:
+1. Merge changes in `officer-form-chapters` into its master branch.
+2. In this repo, run `git submodule update --remote`.
+3. Commit. Push to master.
+
 ## Modifying Chapters
 The schema definitions for chapters are in `/js/config/chapters`. This is a gitmodule that pulls from https://github.com/cityofaustin/officer-form-chapters. If you make changes in this directory, you'll need to commit them to this repo. Either `cd` to `/js/config/chapters` and use the git CLI from there, or open the folder in your favorite git GUI.
 
@@ -87,4 +101,4 @@ yarn remove "cityofaustin/us-forms-system"
 yarn add "cityofaustin/us-forms-system"
 ```
 
-note about us-forms-system: you can pass in classnames in ui options to allow for styling of particular component stuff. 
+note about us-forms-system: you can pass in classnames in ui options to allow for styling of particular component stuff.
