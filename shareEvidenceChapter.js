@@ -29,7 +29,7 @@ const shareEvidenceChapter = {
           "ui:title":
             "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.",
             'ui:description': () => (
-              <a class="usa-external_link" target="_blank" href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data">How we store and use your information</a>
+              <a className="usa-external_link" target="_blank" href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data">How we store and use your information</a>
             ),
           "ui:widget": "radio",
           "ui:options": {
