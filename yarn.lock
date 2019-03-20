@@ -723,10 +723,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cityofaustin/usfs-components@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.12.tgz#f63eb1edb816c42fd3d87aac6a6ce99a711bc2bc"
-  integrity sha512-RdayNo5k5bqfQqJpTxm8QZ2VZ+X1i6GxgM/BMFcFyWqpkE8AxwpzoVTWxkItqAke6q1K9SuWmRdyHtuNmWT+Kw==
+"@cityofaustin/usfs-components@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.13.tgz#d71436e9356ce96decfb783c460f6fc73089733b"
+  integrity sha512-pojYyfUNcfhsaZm9OtADjlvbCjHnkjbI0UAzz2nNPjqDpSmVzCrHGS8pvCXe6CLndBqZqKF0tj6d9D6MgMi5XQ==
   dependencies:
     "@dump247/storybook-state" "^1.5.2"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
