@@ -21,25 +21,62 @@ const browserHistory = useRouterHistory(createHistory)({
   basename: '',
 });
 
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            link: "",
+            modalVisible: false
+        };
+
+        this.hideModal = this.hideModal.bind(this);
+    }
+
+    showModal(linkRedirect) {
+        this.setState({
+            link: linkRedirect,
+            modalVisible: true
+        });
+
+        console.log("Link: " + this.state.link);
+        console.log("Visible?: " + this.state.modalVisible);
+    }
+
+    hideModal() {
+        this.setState({
+            modalVisible: false
+        })
+    }
+
+    render() {
+
+        return (
+            <div>
+                <header className="schemaform-block-header site-header" role="banner">
+                    <div className="usa-nav-container form-nav">
+                        <nav className="language-nav">
+                            <a className="active language" href="#" onClick={() => this.showModal("/police-complaint/")}>
+                                English
+                            </a>
+                            <a href="#" className="second" onClick={() => this.showModal("/policia-queja/")}>
+                                Español
+                            </a>
+                        </nav>
+                        <nav className="site-nav">City of Austin</nav>
+                    </div>
+                </header>
+                <Provider store={store}>
+                    <Router history={browserHistory}>{route}</Router>
+                </Provider>
+
+                {this.state.modalVisible ? <Modalbox link={this.state.link} hideModal={this.hideModal} /> : "" }
+            </div>
+        );
+    }
+}
+
 ReactDOM.render(
-  <div>
-    <header className="schemaform-block-header site-header" role="banner">
-      <div className="usa-nav-container form-nav">
-        <nav className="language-nav">
-          <a className="active language" href="/police-complain/">
-            English
-          </a>
-          <a href="/policia-queja/" className="second">
-            Español
-          </a>
-        </nav>
-        <nav className="site-nav">City of Austin</nav>
-      </div>
-    </header>
-    <Provider store={store}>
-      <Router history={browserHistory}>{route}</Router>
-    </Provider>
-    <Modalbox/>
-  </div>,
+  <App/>,
   document.getElementById('root'),
 );
