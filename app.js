@@ -8,6 +8,8 @@ import { createHistory } from 'history';
 import 'us-forms-system/lib/css/styles.css';
 import './css/overrides.scss';
 
+import Modalbox from './js/components/Modalbox'
+
 import route from './js/routes.jsx';
 import reducer from './js/reducers';
 
@@ -37,6 +39,7 @@ ReactDOM.render(
     <Provider store={store}>
       <Router history={browserHistory}>{route}</Router>
     </Provider>
+    <Modalbox/>
   </div>,
   document.getElementById('root'),
 );
