@@ -26,24 +26,28 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            link: "",
             modalVisible: false
         };
 
         this.hideModal = this.hideModal.bind(this);
     }
 
-    showModal(linkRedirect) {
+    // Shows the modal message
+    showModal(linkRedirect, title, message, calltoaction, buttonCancel, buttonProceed) {
         this.setState({
             link: linkRedirect,
+            title: title,
+            message: message,
+            calltoaction: calltoaction,
+            buttonCancel: buttonCancel,
+            buttonProceed: buttonProceed,
             modalVisible: true
         });
-
-        console.log("Link: " + this.state.link);
-        console.log("Visible?: " + this.state.modalVisible);
     }
 
+    // Changes the state to destroy the modal
     hideModal() {
+        console.log("hideModal() Hiding modal ...");
         this.setState({
             modalVisible: false
         })
@@ -56,10 +60,22 @@ class App extends React.Component {
                 <header className="schemaform-block-header site-header" role="banner">
                     <div className="usa-nav-container form-nav">
                         <nav className="language-nav">
-                            <a className="active language" href="#" onClick={() => this.showModal("/police-complaint/")}>
+                            <a className="active language" href="#" onClick={() => this.showModal(
+                                    "/police-complaint/",
+                                    "Start over in English?",
+                                    "Switching to English will erase all the information you have previously entered.",
+                                    "Are you sure you want to switch?",
+                                    "Cancel, stay in this form.",
+                                    "Yes, start over in English.")}>
                                 English
                             </a>
-                            <a href="#" className="second" onClick={() => this.showModal("/policia-queja/")}>
+                            <a href="#" className="second" onClick={() => this.showModal(
+                                "/policia-queja/",
+                                "Start over in Spanish?",
+                                "Switching to Spanish will erase all the information you have previously entered.",
+                                "Are you sure you want to switch?",
+                                "No, proceed in English.",
+                                "Yes, start over in Spanish.")}>
                                 Español
                             </a>
                         </nav>
@@ -70,7 +86,16 @@ class App extends React.Component {
                     <Router history={browserHistory}>{route}</Router>
                 </Provider>
 
-                {this.state.modalVisible ? <Modalbox link={this.state.link} hideModal={this.hideModal} /> : "" }
+                {   this.state.modalVisible ? <Modalbox
+                        link={this.state.link}
+                        title={this.state.title}
+                        message={this.state.message}
+                        calltoaction={this.state.calltoaction}
+                        buttonCancel={this.state.buttonCancel}
+                        buttonProceed={this.state.buttonProceed}
+                        hideModal={this.hideModal} />
+                    : ""
+                }
             </div>
         );
     }
