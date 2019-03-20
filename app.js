@@ -8,7 +8,7 @@ import { createHistory } from 'history';
 import 'us-forms-system/lib/css/styles.css';
 import './css/overrides.scss';
 
-import Modalbox from './js/components/Modalbox'
+import Modalbox from './js/components/Modalbox';
 
 import route from './js/routes.jsx';
 import reducer from './js/reducers';
@@ -22,86 +22,89 @@ const browserHistory = useRouterHistory(createHistory)({
 });
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            modalVisible: false
-        };
+    this.state = {
+      modalVisible: false,
+    };
 
-        this.hideModal = this.hideModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
+  }
+
+  isFormData() {
+    let ourStore = store.getState();
+    for (formValue in ourStore.form.data) {
+      // console.log(Object.values(formData)[value]);
+      // console.log(typeof(Object.values(formData)[value]));
+      if (Object.values(ourStore.form.data)[formValue] == undefined) {
+        console.log(false);
+        return false;
+      } else {
+        return true;
+      }
+    }
+  }
+
+
+  showModal(linkRedirect) {
+
+    if (!this.isFormData()) {
+      return;
     }
 
-    // Shows the modal message
-    showModal(linkRedirect, title, message, calltoaction, buttonCancel, buttonProceed) {
-        this.setState({
-            link: linkRedirect,
-            title: title,
-            message: message,
-            calltoaction: calltoaction,
-            buttonCancel: buttonCancel,
-            buttonProceed: buttonProceed,
-            modalVisible: true
-        });
-    }
+    this.setState({
+      link: linkRedirect,
+      modalVisible: true,
+    });
 
-    // Changes the state to destroy the modal
-    hideModal() {
-        console.log("hideModal() Hiding modal ...");
-        this.setState({
-            modalVisible: false
-        })
-    }
+    console.log('Link: ' + this.state.link);
+    console.log('Visible?: ' + this.state.modalVisible);
 
-    render() {
+  }
 
-        return (
-            <div>
-                <header className="schemaform-block-header site-header" role="banner">
-                    <div className="usa-nav-container form-nav">
-                        <nav className="language-nav">
-                            <a className="active language" href="#" onClick={() => this.showModal(
-                                    "/police-complaint/",
-                                    "Start over in English?",
-                                    "Switching to English will erase all the information you have previously entered.",
-                                    "Are you sure you want to switch?",
-                                    "Cancel, stay in this form.",
-                                    "Yes, start over in English.")}>
-                                English
-                            </a>
-                            <a href="#" className="second" onClick={() => this.showModal(
-                                "/policia-queja/",
-                                "Start over in Spanish?",
-                                "Switching to Spanish will erase all the information you have previously entered.",
-                                "Are you sure you want to switch?",
-                                "No, proceed in English.",
-                                "Yes, start over in Spanish.")}>
-                                Español
-                            </a>
-                        </nav>
-                        <nav className="site-nav">City of Austin</nav>
-                    </div>
-                </header>
-                <Provider store={store}>
-                    <Router history={browserHistory}>{route}</Router>
-                </Provider>
+  hideModal() {
+    this.setState({
+      modalVisible: false,
+    });
+  }
 
-                {   this.state.modalVisible ? <Modalbox
-                        link={this.state.link}
-                        title={this.state.title}
-                        message={this.state.message}
-                        calltoaction={this.state.calltoaction}
-                        buttonCancel={this.state.buttonCancel}
-                        buttonProceed={this.state.buttonProceed}
-                        hideModal={this.hideModal} />
-                    : ""
-                }
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <header className="schemaform-block-header site-header" role="banner">
+          <div className="usa-nav-container form-nav">
+            <nav className="language-nav">
+              <a
+                className="active language"
+                href="#"
+                onClick={() => this.showModal('/police-complaint/')}
+              >
+                English
+              </a>
+              <a
+                href="#"
+                className="second"
+                onClick={() => this.showModal('/policia-queja/')}
+              >
+                Español
+              </a>
+            </nav>
+            <nav className="site-nav">City of Austin</nav>
+          </div>
+        </header>
+        <Provider store={store}>
+          <Router history={browserHistory}>{route}</Router>
+        </Provider>
+
+        {this.state.modalVisible ? (
+          <Modalbox link={this.state.link} hideModal={this.hideModal} />
+        ) : (
+          ''
+        )}
+      </div>
+    );
+  }
 }
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root'),
-);
+ReactDOM.render(<App />, document.getElementById('root'));
