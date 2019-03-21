@@ -717,10 +717,6 @@
   "type:%Minute%": {
     "es": "type:%Minuto%"
   },
-
-  "%Time%": {
-    "es": "%Hora%"
-  },
   
   "%optional%": {
     "es": "%opcional%"
