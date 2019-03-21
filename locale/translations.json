@@ -709,14 +709,6 @@
   "%_Year%},%Year%": {
     "es": "%_Year%},%Año%"
   },
-
-  "type:%Hour%": {
-    "es": "type:%Hora%"
-  },
-
-  "type:%Minute%": {
-    "es": "type:%Minuto%"
-  },
   
   "%optional%": {
     "es": "%opcional%"
