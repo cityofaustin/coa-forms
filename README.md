@@ -90,7 +90,7 @@ By doing this, instead of using the version of the components from npm, your loc
 
 ## Yarn Lock
 
-*Keep the yarn.lock updated for every commit done to the dependency libraries.*  
+*Keep the yarn.lock updated for every commit done to the dependency libraries.*
 
 We encountered some issues of the forms building with outdated components, as a general rule of thumb, when referencing any repo in package.json, it is important to re-render `yarn.lock`. The quickest way to do this is by removing the library and adding it back through the yarn command, for example:
 
@@ -101,3 +101,5 @@ yarn remove "cityofaustin/us-forms-system"
 
 yarn add "cityofaustin/us-forms-system"
 ```
+
+note about us-forms-system: you can pass in classnames in ui options to allow for styling of particular component stuff.

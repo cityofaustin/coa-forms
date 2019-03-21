@@ -69,7 +69,7 @@ class Introduction extends React.Component {
                 aria-expanded="false"
                 aria-controls="b-a2"
               >
-                By phone
+                Over the phone
               </button>
               <div
                 id="b-a2"
@@ -81,6 +81,11 @@ class Introduction extends React.Component {
                   happy to speak with you.
                 </p>
 
+                <p>
+                  If you need an interpreter, you can call with a friend to
+                  interpret for you or ask for an interpreter. Just tell us the
+                  language you prefer.
+                </p>
                 <p>Office hours are Monday through Friday, 8 am to 5 pm.</p>
               </div>
             </li>
@@ -130,12 +135,12 @@ class Introduction extends React.Component {
               </div>
             </li>
           </ul>
-          <h3 className="intro-about">About us</h3>
+          <h2 className="intro-about">About us</h2>
           <p>
             We are the Office of Police Oversight, impartial and separate from
             the Austin Police Department.
           </p>
-          <a href="">Learn more about who we are and what we do.</a>
+          <a href="https://alpha.austin.gov/police-oversight">Learn more about who we are and what we do.</a>
         </div>
       </div>
     );

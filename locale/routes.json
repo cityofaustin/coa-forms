@@ -16,6 +16,10 @@
       "es": "%que-sucedio%"
     },
 
+    "%where-happened%": {
+      "es": "%donde-sucedio%"
+    },
+
     "%share-evidence%": {
       "es": "%compartir-evidencia%"
     },
@@ -34,6 +38,10 @@
 
     "%review-and-submit%": {
       "es": "%revisar-y-enviar%"
+    },
+
+    "%opo_current_language_english%": {
+      "es": "%opo_current_language_spanish%"
     }
   }
 }
