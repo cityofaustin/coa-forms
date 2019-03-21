@@ -84,8 +84,8 @@ class App extends React.Component {
   ) {
     // If the language is the same, then ignore the click...
     if (
-      linkRedirect == '/police-complain/' &&
-      this.currentFormLanguage == 'opo_current_language_english'
+        (linkRedirect + '/') == '/police-complain/' &&
+        this.currentFormLanguage == 'opo_current_language_english'
     ) {
       console.log('Click ignored, same language');
       return;
@@ -129,7 +129,7 @@ class App extends React.Component {
                 className="active language"
                 onClick={() =>
                   this.showModal(
-                    '/police-complain/',
+                    '/police-complain',
                     'Start over in English?',
                     'Switching to English will erase all the information you have previously entered.',
                     'Are you sure you want to switch?',
@@ -145,7 +145,7 @@ class App extends React.Component {
                 className="second"
                 onClick={() =>
                   this.showModal(
-                    '/policia-queja/',
+                    '/policia-queja',
                     'Comenzar de nuevo en Español?',
                     'Al cambiar a Español todos los datos que haya escrito se perderán.',
                     'Desea cambiar el idioma?',

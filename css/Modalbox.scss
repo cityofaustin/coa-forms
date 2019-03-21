@@ -1,6 +1,7 @@
 $dialog-height: 35rem;
 $dialog-button-color: #0049C7;
 $dialog-title-color: #FBC036;
+$dialog-position-bottom: 1rem;
 
 .opo-modalbox {
   position: fixed;
@@ -20,7 +21,7 @@ $dialog-title-color: #FBC036;
 
 .opo-modalbox__container {
   position: fixed;
-  bottom: 1rem;
+  bottom: $dialog-position-bottom;
   background-color: white;
   width: 90vw;
   height: 35rem;
@@ -89,15 +90,20 @@ $dialog-title-color: #FBC036;
 
 @keyframes opo-modalbox__container--animation {
   0% {
-    bottom: -35rem;
+    bottom: -36rem;
   }
 
   100% {
-    bottom: 1rem;
+    bottom: $dialog-position-bottom;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .opo-modalbox__container {
+    position: fixed;
+    bottom: 5rem;
+  }
+
   .opo-modalbox__body{
     padding: 2rem;
     height: 85%;
@@ -105,5 +111,15 @@ $dialog-title-color: #FBC036;
 
   .opo-modalbox__container button {
     float: left !important;
+  }
+
+  @keyframes opo-modalbox__container--animation {
+    0% {
+      bottom: -36rem;
+    }
+
+    100% {
+      bottom: 5rem;
+    }
   }
 }
