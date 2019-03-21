@@ -38,6 +38,10 @@
 
     "%review-and-submit%": {
       "es": "%revisar-y-enviar%"
+    },
+
+    "%opo_current_language_english%": {
+      "es": "%opo_current_language_spanish%"
     }
   }
 }
