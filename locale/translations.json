@@ -680,24 +680,28 @@
     "es": "%ui:title%:%Fecha%"
   },
 
-  "&_Month&},&Month&": {
-    "es": "&_Month&},&Mes&"
+  "%ui:title%:%Time%": {
+    "es": "%ui:title%:%Hora%"
   },
 
-  "&_Day&},&Day&": {
-    "es": "&_Day&},&Día&"
+  "%_Month%},%Month%": {
+    "es": "%_Month%},%Mes%"
   },
 
-  "&_Year&},&Year&": {
-    "es": "&_Year&},&Año&"
+  "%_Day%},%Day%": {
+    "es": "%_Day%},%Día%"
   },
 
-  "type:&Hour&": {
-    "es": "type:&Hora&"
+  "%_Year%},%Year%": {
+    "es": "%_Year%},%Año%"
   },
 
-  "type:&Minute&": {
-    "es": "type:&Minuto&"
+  "type:%Hour%": {
+    "es": "type:%Hora%"
+  },
+
+  "type:%Minute%": {
+    "es": "type:%Minuto%"
   },
 
   "%optional%": {
