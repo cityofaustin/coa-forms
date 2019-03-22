@@ -6,11 +6,11 @@ import {
 } from "@cityofaustin/usfs-components";
 
 const shareEvidenceChapter = {
-  title: "Share your evidence",
+  title: "Share your media",
   pages: {
     shareEvidence: {
       path: "share-evidence",
-      title: "Share your evidence",
+      title: "Share your media",
       schema: {
         type: "object",
         properties: {
@@ -38,7 +38,7 @@ const shareEvidenceChapter = {
         },
         evidenceFiles: {
           "ui:title":
-            "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc.).",
+            "Upload any media that you have (video files, audio files, photos, police report, hospital record, etc.).",
           "ui:options": {
             expandUnder: "awareOfEvidence",
             hideOnReviewIfFalse: true
