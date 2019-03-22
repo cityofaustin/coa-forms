@@ -401,8 +401,12 @@
     "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
 
-  "Your thank-you note will go to the Office of Police Oversight and the Austin Police Department’s Internal Affairs division, as well as to the officer’s chain of command. You’ll also receive an email with a copy of your thank-you note.": {
-    "es": "Su nota de agradecimiento será enviada a la Oficina de Fiscalización de la Policía y a la División de Asuntos Internos del Departamento de Policía de Austin, así como a la cadena de comando del oficial. También recibirá un correo electrónico con una copia de su nota de agradecimiento."
+  "Your thank-you note will go to the Office of Police Oversight and the Austin Police Department’s Internal Affairs division, as well as to the officer’s chain of command.": {
+    "es": "Su nota de agradecimiento será enviada a la Oficina de Fiscalización de la Policía y a la División de Asuntos Internos del Departamento de Policía de Austin, así como a la cadena de comando del oficial."
+  },
+
+  "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days, and you will receive an email with a copy of your thank-you note.": {
+    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales, y ustéd recibirá un correo electrónico con una copia de su queja."
   },
 
   "We’re glad to hear you had a good experience!": {
