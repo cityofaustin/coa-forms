@@ -710,6 +710,14 @@
     "es": "%_Year%},%Año%"
   },
   
+  "label:%Hour%": {
+    "es": "label:%Hora%"
+  },
+
+  "label:%Minute%": {
+    "es": "label:%Minuto%"
+  },
+  
   "%optional%": {
     "es": "%opcional%"
   },
