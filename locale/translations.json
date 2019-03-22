@@ -73,6 +73,10 @@
     "es": "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
   },
 
+  "https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data": {
+    "es": "https://alpha.austin.gov/es/police-oversight/how-we-store-and-use-your-data"
+  },
+
   "%/files/OPO_complaint-form_print_English.pdf%": {
     "es": "%/files/OPO_complaint-form_print_Spanish.pdf%"
   },
@@ -694,6 +698,14 @@
 
   "%_Year%},%Year%": {
     "es": "%_Year%},%Año%"
+  },
+
+  "label:%Hour%": {
+    "es": "label:%Hora%"
+  },
+
+  "label:%Minute%": {
+    "es": "label:%Minuto%"
   },
 
   "%optional%": {
