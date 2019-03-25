@@ -123,3 +123,14 @@ $dialog-position-bottom: 1rem;
     }
   }
 }
+
+/*
+  Rules for Internet Explorer
+*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .opo-modalbox__container {
+    position: relative !important;
+    bottom: -25rem !important;
+  }
+}
