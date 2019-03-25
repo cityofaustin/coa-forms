@@ -133,7 +133,7 @@ class App extends React.Component {
                     'Start over in English?',
                     'Switching to English will erase all the information you have previously entered.',
                     'Are you sure you want to switch?',
-                    'No, proceed in English.',
+                    'No, proceed in Spanish.',
                     'Yes, start over in English.',
                   )
                 }
