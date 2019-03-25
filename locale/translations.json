@@ -726,6 +726,34 @@
     "es": "%opcional%"
   },
 
+  "Start over in English?": {
+    "es": "Comenzar de nuevo en Inglés?"
+  },
+  "Start over in Spanish?": {
+    "es": "Comenzar de nuevo en Español?"
+  },
+  "Switching to English will erase all the information you have previously entered.": {
+    "es": "Cambiar a Inglés borrará toda la información que haya ingresado."
+  },
+  "Switching to Spanish will erase all the information you have previously entered.": {
+    "es": "Cambiar a Español borrará toda la información que haya ingresado."
+  },
+  "Are you sure you want to switch?": {
+    "es": "Está seguro(a) que desea hacer el cambio?"
+  },
+  "No, proceed in Spanish.": {
+    "es": "No, proceda en Español"
+  },
+  "No, proceed in English.": {
+    "es": "No, proceda en Inglés"
+  },
+  "Yes, start over in English.": {
+    "es": "Sí, comenzar en Inglés"
+  },
+  "Yes, start over in Spanish.": {
+    "es": "Sí, comenzar en Español"
+  },
+
   "Office of Police Oversight": {
     "es": "Oficina de Fiscalizacion de la Policia"
   }
