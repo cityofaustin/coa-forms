@@ -133,7 +133,7 @@ class App extends React.Component {
                     'Start over in English?',
                     'Switching to English will erase all the information you have previously entered.',
                     'Are you sure you want to switch?',
-                    'No, proceed in Spanish.',
+                    'No, proceed in English.',
                     'Yes, start over in English.',
                   )
                 }
@@ -146,11 +146,11 @@ class App extends React.Component {
                 onClick={() =>
                   this.showModal(
                     '/policia-queja',
-                    'Comenzar de nuevo en Español?',
-                    'Al cambiar a Español todos los datos que haya escrito se perderán.',
-                    'Desea cambiar el idioma?',
-                    'No, proceder en Inglés.',
-                    'Sí, comenzar en Español.',
+                    'Start over in Spanish?',
+                    'Switching to Spanish will erase all the information you have previously entered.',
+                    'Are you sure you want to switch?',
+                    'No, proceed in English.',
+                    'Yes, start over in Spanish.',
                   )
                 }
               >
