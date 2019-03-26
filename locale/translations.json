@@ -253,12 +253,20 @@
     "es": "No sé"
   },
 
-  "Add Another": {
+  "Add another": {
     "es": "Añadir otro"
   },
 
-  "Add another": {
-    "es": "Añadir otro"
+  "%Add %": {
+    "es": "%Añadir %"
+  },
+
+  "%Update%": {
+    "es": "%Actualizar%"
+  },
+
+  "%officer%": {
+    "es": "%oficial%"
   },
 
   "In person": {
