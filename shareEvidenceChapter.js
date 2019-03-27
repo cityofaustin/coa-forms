@@ -1,9 +1,9 @@
 import React from "react";
 
-import {
-  FileUploadWidget,
-  FileUploadReviewWidget
-} from "@cityofaustin/usfs-components";
+import FileUploadWidget from "us-forms-system/lib/js/widgets/FileUploadWidget";
+import FileUploadReviewWidget from 'us-forms-system/lib/js/review/FileUploadReviewWidget';
+
+console.log("ist there FileUploadWidget?", FileUploadWidget)
 
 const shareEvidenceChapter = {
   title: "Share your media",
