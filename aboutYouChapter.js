@@ -1,5 +1,5 @@
 import React from 'react';
-import { raceBlocks, genderBlocks } from '@cityofaustin/usfs-schema-blocks';
+import { raceBlocks, genderBlocks } from './schemaBlocks';
 
 import PhoneNumberWidget from 'us-forms-system/lib/js/widgets/PhoneNumberWidget';
 import PhoneNumberReviewWidget from 'us-forms-system/lib/js/review/PhoneNumberWidget';
