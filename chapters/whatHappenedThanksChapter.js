@@ -1,67 +1,64 @@
 import {
-    DateTimeWidget,
-    DateTimeReviewWidget,
-    LocationPickerWidget,
-    LocationReviewWidget
-  } from "@cityofaustin/usfs-components";
-  
-  
-  const locationJSON = JSON.stringify({
-    address: "800 Guadalupe St, Austin, TX 78701",
-    position: { lat: 30.271272, lng: -97.745934 }
-  });
-  
-  const whatHappenedThanksChapter = {
-    title: "Tell us what happened",
-    pages: {
-      whatHappened: {
-        path: "what-happened",
-        title: "Tell us what happened",
-        schema: {
-          type: "object",
-          required: ["description"],
-          properties: {
-            description: {
-              type: "string"
-            },
-            datetime: {
-              type: "string"
-            },
-            location: {
-              type: "string",
-              formData: locationJSON
-            }
-          }
-        },
-        uiSchema: {
-          "ui:title": "Tell us what happened",
+  DateWidget,
+  DateReviewWidget,
+  TimeWidget,
+  TimeReviewWidget,
+} from "@cityofaustin/usfs-components";
+
+const whatHappenedThanksChapter = {
+  title: "Tell us what happened",
+  pages: {
+    whatHappened: {
+      path: "what-happened",
+      title: "Tell us what happened",
+      schema: {
+        type: "object",
+        required: ["description"],
+        properties: {
           description: {
-            "ui:title": "Description",
-            "ui:description":
-              "Describe your experience with the Austin Police Department.",
-            "ui:widget": "textarea"
+            type: "string"
           },
           datetime: {
-            "ui:title": "Date and time, if known?",
-            "ui:widget": DateTimeWidget,
-            "ui:reviewWidget": DateTimeReviewWidget,
+            type: "object",
+            properties: {
+              date: {
+                type: "string"
+              },
+              time: {
+                type: "string"
+              },
+            }
+          },
+        }
+      },
+      uiSchema: {
+        "ui:title": "Tell us what happened",
+        description: {
+          "ui:title": "Describe your experience with the Austin Police Department.",
+          "ui:widget": "textarea"
+        },
+        datetime: {
+          "ui:title": "When did it happen?",
+          date: {
+            "ui:title": "Date",
+            "ui:widget": DateWidget,
+            "ui:reviewWidget": DateReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true
             }
           },
-          location: {
-            "ui:title": "Location",
-            "ui:description": "Type in the location or drag the map to the location.",
-            "ui:widget": LocationPickerWidget,
-            "ui:reviewWidget": LocationReviewWidget,
+          time: {
+            "ui:title": "Time",
+            "ui:widget": TimeWidget,
+            "ui:reviewWidget": TimeReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true
             }
-          }
-        }
+          },
+        },
       }
     }
-  };
-  
-  export default whatHappenedThanksChapter;
-  
+  }
+};
+
+export default whatHappenedThanksChapter;

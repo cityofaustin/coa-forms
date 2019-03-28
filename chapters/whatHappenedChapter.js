@@ -1,13 +1,6 @@
-import {
-  DateTimeWidget,
-  DateTimeReviewWidget,
-} from "@cityofaustin/usfs-components";
-
-
-const locationJSON = JSON.stringify({
-  address: "800 Guadalupe St, Austin, TX 78701",
-  position: { lat: 30.271272, lng: -97.745934 }
-});
+import widgets from "us-forms-system/lib/js/widgets";
+const { CalendarDateWidget, TimeWidget } = widgets;
+import { CalendarDateReviewWidget, TimeReviewWidget } from "us-forms-system/lib/js/review/widgets";
 
 const whatHappenedChapter = {
   title: "Tell us what happened",
@@ -23,7 +16,16 @@ const whatHappenedChapter = {
             type: "string"
           },
           datetime: {
-            type: "string"
+            type: "object",
+            required: ["date", "time"],
+            properties: {
+              date: {
+                type: "string"
+              },
+              time: {
+                type: "string"
+              },
+            }
           },
           hasTicket: {
             type: "boolean"
@@ -36,18 +38,27 @@ const whatHappenedChapter = {
       uiSchema: {
         "ui:title": "Tell us what happened",
         description: {
-          "ui:title": "Description",
-          "ui:description":
-            "Describe your experience with the Austin Police Department.",
+          "ui:title": "Describe your experience with the Austin Police Department.",
           "ui:widget": "textarea"
         },
         datetime: {
-          "ui:title": "Date and time, if known?",
-          "ui:widget": DateTimeWidget,
-          "ui:reviewWidget": DateTimeReviewWidget,
-          "ui:options": {
-            hideOnReviewIfFalse: true
-          }
+          "ui:title": "When did it happen?",
+          date: {
+            "ui:title": "Date",
+            "ui:widget": CalendarDateWidget,
+            "ui:reviewWidget": CalendarDateReviewWidget,
+            "ui:options": {
+              hideOnReviewIfFalse: true
+            }
+          },
+          time: {
+            "ui:title": "Time",
+            "ui:widget": TimeWidget,
+            "ui:reviewWidget": TimeReviewWidget,
+            "ui:options": {
+              hideOnReviewIfFalse: true
+            }
+          },
         },
         hasTicket: {
           "ui:title": "I received a ticket during this interaction.",
