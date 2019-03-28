@@ -1,9 +1,8 @@
-import {
-  DateWidget,
-  DateReviewWidget,
-  TimeWidget,
-  TimeReviewWidget,
-} from "@cityofaustin/usfs-components";
+
+import widgets from "us-forms-system/lib/js/widgets";
+const { CalendarDateWidget, TimeWidget } = widgets;
+import { CalendarDateReviewWidget, TimeReviewWidget } from "us-forms-system/lib/js/review/widgets";
+
 
 const whatHappenedThanksChapter = {
   title: "Tell us what happened",

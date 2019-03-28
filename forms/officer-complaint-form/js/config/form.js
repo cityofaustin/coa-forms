@@ -9,7 +9,7 @@ import {
   aboutYouChapter,
   shareEvidenceChapter,
   witnessDetailsChapter,
-} from './chapters';
+} from '../../../chapters';
 
 const formConfig = {
   type: "complaint",
