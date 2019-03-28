@@ -32,7 +32,7 @@ const officerDetailsChapter = {
                 },
                 uniformed: {
                   type: 'boolean',
-                  enumNames: ['In uniform', 'In regular clothes'],
+                  enumNames: ['Uniform', 'Regular clothes'],
                 },
                 transportation: {
                   type: 'string',

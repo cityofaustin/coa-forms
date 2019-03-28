@@ -14,9 +14,10 @@ const whereHappenedChapter = {
     whereHappened: {
       path: 'where-happened',
       title: 'Location',
-      required: ["location"],
+
       schema: {
         type: 'object',
+        required: ["location"],
         properties: {
           location: {
             type: 'string',
