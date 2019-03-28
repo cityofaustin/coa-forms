@@ -5,10 +5,10 @@
 
   "Thank the APD": {
     "es": "Agradezca a APD"
-  },  
-  
+  },
+
   "%File is too large%": {
-  	"es": "%El archivo es demasiado grande%"
+    "es": "%El archivo es demasiado grande%"
   },
 
   "%File is too large to be uploaded%": {
@@ -16,15 +16,15 @@
   },
 
   "%Maximum file size is {filesize}%": {
-  	"es": "%El tamaño máximo de un archivo es {filesize}%"
+    "es": "%El tamaño máximo de un archivo es {filesize}%"
   },
 
   "%Maximum total size exceeded%": {
-  	"es": "%Tamaño total máximo excedido%"
+    "es": "%Tamaño total máximo excedido%"
   },
 
   "%Maximum total file size is {filesize}%": {
-  	"es": "%El tamaño máximo total de archivo es {filesize}%"
+    "es": "%El tamaño máximo total de archivo es {filesize}%"
   },
 
   "%We are the Office of Police Oversight, impartial and separate from the Austin Police Department.%": {
@@ -64,7 +64,7 @@
 
   "%/files/OPO_thanks-form_print_English.pdf%": {
     "es": "%/files/OPO_thanks-form_print_Spanish.pdf%"
-  }, 
+  },
 
   "%Download the thanks form (PDF)%": {
     "es": "%Descargue el formulario de agradecimiento (PDF)%"
@@ -238,10 +238,6 @@
     "es": "No sé"
   },
 
-  "Add Another": {
-    "es": "Añadir otro"
-  },
-
   "Add another": {
     "es": "Añadir otro"
   },
@@ -257,7 +253,7 @@
   "witness": {
     "es": "testigo"
   },
-  
+
   "Over the phone": {
     "es": "Por teléfono"
   },
@@ -281,7 +277,7 @@
   "%Phone%": {
     "es": "%Número de teléfono%"
   },
-  
+
   "Your gender": {
     "es": "Su sexo"
   },
@@ -450,12 +446,16 @@
     "es": "%Introduzca una ubicación aquí%"
   },
 
-  "%Update Page%": {
+  "%Add %": {
+    "es": "%Añadir %"
+  },
+
+  "%Update%": {
     "es": "%Actualizar%"
   },
 
-  "%Update page%": {
-    "es": "%Actualizar%"
+  "%officer%": {
+    "es": "%oficial%"
   },
 
   "%Back%": {
@@ -527,19 +527,19 @@
   },
 
   "File is too large": {
-  	"es": "El archivo es demasiado grande."
+    "es": "El archivo es demasiado grande."
   },
 
   "Maximum file size is {filesize}": {
-  	"es": "El tamaño máximo de un archivo es {filesize}"
+    "es": "El tamaño máximo de un archivo es {filesize}"
   },
 
   "Maximum total size exceeded": {
-  	"es": "Tamaño total máximo excedido."
+    "es": "Tamaño total máximo excedido."
   },
 
   "Maximum total file size is {filesize}": {
-  	"es": "El tamaño máximo total de archivo es {filesize}"
+    "es": "El tamaño máximo total de archivo es {filesize}"
   },
 
   "You will receive an email with a copy of your complaint and a confirmation number at": {
@@ -713,7 +713,7 @@
   "%_Year%},%Year%": {
     "es": "%_Year%},%Año%"
   },
-  
+
   "label:%Hour%": {
     "es": "label:%Hora%"
   },
@@ -721,9 +721,37 @@
   "label:%Minute%": {
     "es": "label:%Minuto%"
   },
-  
+
   "%optional%": {
     "es": "%opcional%"
+  },
+
+  "Start over in English?": {
+    "es": "Comenzar de nuevo en Inglés?"
+  },
+  "Start over in Spanish?": {
+    "es": "Comenzar de nuevo en Español?"
+  },
+  "Switching to English will erase all the information you have previously entered.": {
+    "es": "Cambiar a Inglés borrará toda la información que haya ingresado."
+  },
+  "Switching to Spanish will erase all the information you have previously entered.": {
+    "es": "Cambiar a Español borrará toda la información que haya ingresado."
+  },
+  "Are you sure you want to switch?": {
+    "es": "Está seguro(a) que desea hacer el cambio?"
+  },
+  "No, proceed in Spanish.": {
+    "es": "No, proceda en Español"
+  },
+  "No, proceed in English.": {
+    "es": "No, proceda en Inglés"
+  },
+  "Yes, start over in English.": {
+    "es": "Sí, comenzar en Inglés"
+  },
+  "Yes, start over in Spanish.": {
+    "es": "Sí, comenzar en Español"
   },
 
   "Office of Police Oversight": {
