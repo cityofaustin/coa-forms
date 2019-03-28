@@ -1,4 +1,4 @@
-import raceBlocks from "./blocks/raceBlocks";
-import genderBlocks from "./blocks/genderBlocks";
+import raceBlocks from "./raceBlocks";
+import genderBlocks from "./genderBlocks";
 
 export { raceBlocks, genderBlocks };
