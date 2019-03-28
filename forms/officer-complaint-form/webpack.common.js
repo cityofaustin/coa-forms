@@ -26,10 +26,6 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        include: [
-          path.resolve("../chapters"),
-          path.resolve("./"),
-        ],
         loaders: ["babel-loader"]
       },
       {
