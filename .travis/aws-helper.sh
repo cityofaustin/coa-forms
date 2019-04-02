@@ -263,7 +263,7 @@ function forms_build {
   # Since we do not link or build, we have to inject the API endpoint in
   # the usfs FileUpload component.
   #
-  USFS_NODEMODULE_PATH="node_modules/@cityofaustin/usfs-components"
+  USFS_NODEMODULE_PATH="node_modules/us-forms-system"
   forms_search_replace_file "http://localhost:5000" "${API_URL}" "${USFS_NODEMODULE_PATH}/webpack.config.js";
   forms_search_replace_file "http://localhost:5000" "${API_URL}" "${USFS_NODEMODULE_PATH}/build/index.js";
 
@@ -292,22 +292,22 @@ function forms_build {
 
 function forms_translate {
   print_header "Translating Form"
-  
+
   for LANGUAGE in $(jq -r ".supported_languages[]" "./locale/settings.json");
   do
     echo "Switching back to default directory";
     forms_reset_cwd;
     echo "Directory now: $PWD";
 
-    echo "Current Language code: ${LANGUAGE}"; 
-    ORIGIN_PATH="public"; 
-    TRANSLATION_PATH="${ORIGIN_PATH}_${LANGUAGE}"; 
+    echo "Current Language code: ${LANGUAGE}";
+    ORIGIN_PATH="public";
+    TRANSLATION_PATH="${ORIGIN_PATH}_${LANGUAGE}";
 
-    echo "Copying: ${ORIGIN_PATH} to ${TRANSLATION_PATH}"; 
+    echo "Copying: ${ORIGIN_PATH} to ${TRANSLATION_PATH}";
     echo "cp -r $ORIGIN_PATH $TRANSLATION_PATH;"
     cp -r $ORIGIN_PATH $TRANSLATION_PATH;
 
-    echo "First, let's translate the routes:"; 
+    echo "First, let's translate the routes:";
     python3 "./.travis/translate.py" "./locale/routes.json" "./${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}" --routes
 
     echo "Then, let's translate the rest of the form:"
