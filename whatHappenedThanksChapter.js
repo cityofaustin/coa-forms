@@ -38,8 +38,8 @@ const whatHappenedThanksChapter = {
           "ui:title": "When did it happen?",
           date: {
             "ui:title": "Date",
-            "ui:widget": DateWidget,
-            "ui:reviewWidget": DateReviewWidget,
+            "ui:widget": CalendarDateWidget,
+            "ui:reviewWidget": CalendarDateReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true
             }
