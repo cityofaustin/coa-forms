@@ -1,4 +1,3 @@
-import { OfficerDetailsDisplayWidget } from '@cityofaustin/usfs-components';
 import { raceBlocks, genderBlocks } from './schemaBlocks';
 
 const officerDetailsChapter = {
@@ -75,7 +74,6 @@ const officerDetailsChapter = {
         },
         officers: {
           'ui:options': {
-            viewField: OfficerDetailsDisplayWidget,
             addable: true,
             expandUnder: 'hasOfficerDetails',
             itemName: 'officer',
