@@ -1,9 +1,6 @@
-import {
-  DateWidget,
-  DateReviewWidget,
-  TimeWidget,
-  TimeReviewWidget,
-} from "@cityofaustin/usfs-components";
+import widgets from "us-forms-system/lib/js/widgets";
+const { CalendarDateWidget, TimeWidget } = widgets;
+import { CalendarDateReviewWidget, TimeReviewWidget } from "us-forms-system/lib/js/review/widgets";
 
 const whatHappenedChapter = {
   title: "Tell us what happened",
@@ -48,8 +45,8 @@ const whatHappenedChapter = {
           "ui:title": "When did it happen?",
           date: {
             "ui:title": "Date",
-            "ui:widget": DateWidget,
-            "ui:reviewWidget": DateReviewWidget,
+            "ui:widget": CalendarDateWidget,
+            "ui:reviewWidget": CalendarDateReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true
             }
