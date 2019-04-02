@@ -39,6 +39,7 @@ const witnessDetailsChapter = {
         },
         witnesses: {
           'ui:options': {
+            viewField: () => (<div></div>),
             addable: true,
             expandUnder: 'hasWitnessInformation',
             itemName: 'witness',

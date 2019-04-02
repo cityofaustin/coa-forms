@@ -74,6 +74,7 @@ const officerDetailsChapter = {
         },
         officers: {
           'ui:options': {
+            viewField: () => (<div></div>),
             addable: true,
             expandUnder: 'hasOfficerDetails',
             itemName: 'officer',
