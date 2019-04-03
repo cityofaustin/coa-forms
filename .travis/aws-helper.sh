@@ -313,6 +313,9 @@ function forms_translate {
     echo "Then, let's translate the rest of the form:"
     python3 "./.travis/translate.py" "./locale/translations.json" "./${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
 
+    echo "Now let's translate the index.html file where needed:"
+    python3 "./.travis/translate.py" "./locale/index.json" "./${TRANSLATION_PATH}/index.html" "${LANGUAGE}"
+
     DEPLOYMENT_PATH=$(jq -r ".deployment_path.${LANGUAGE}"  "./locale/routes.json")
 
     forms_change_dir $TRANSLATION_PATH;
