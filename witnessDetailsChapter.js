@@ -1,3 +1,4 @@
+import React from 'react';
 import { phoneConfig } from 'us-forms-system/lib/js/definitions/phone';
 
 const witnessDetailsChapter = {
