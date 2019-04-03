@@ -77,6 +77,10 @@
     "es": "https://alpha.austin.gov/es/police-oversight/how-we-store-and-use-your-data"
   },
 
+  "http://alpha.austin.gov/police-oversight/complaint-investigation-process": {
+    "es": "https://alpha.austin.gov/es/police-oversight/complaint-investigation-process"
+  },
+
   "%/files/OPO_complaint-form_print_English.pdf%": {
     "es": "%/files/OPO_complaint-form_print_Spanish.pdf%"
   },
