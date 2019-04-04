@@ -1,4 +1,5 @@
-import { raceBlocks, genderBlocks } from './schemaBlocks';
+import { OfficerDetailsDisplayWidget } from '@cityofaustin/usfs-components';
+import { raceBlocks, genderBlocks } from '@cityofaustin/usfs-schema-blocks';
 
 const officerDetailsChapter = {
   title: 'Tell us about the officer(s)',
@@ -31,7 +32,7 @@ const officerDetailsChapter = {
                 },
                 uniformed: {
                   type: 'boolean',
-                  enumNames: ['In uniform', 'In regular clothes'],
+                  enumNames: ['Uniform', 'Regular clothes'],
                 },
                 transportation: {
                   type: 'string',
@@ -74,6 +75,7 @@ const officerDetailsChapter = {
         },
         officers: {
           'ui:options': {
+            viewField: OfficerDetailsDisplayWidget,
             addable: true,
             expandUnder: 'hasOfficerDetails',
             itemName: 'officer',
