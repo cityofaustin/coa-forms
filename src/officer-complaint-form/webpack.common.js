@@ -1,0 +1,87 @@
+const path = require("path");
+
+module.exports = {
+  resolve: {
+    modules: ["node_modules"],
+    extensions: [".js", ".jsx"],
+    alias: {
+      chapters: path.resolve(__dirname, '../shared/OPO-chapters/index.js')
+    }
+  },
+  context: process.cwd(),
+  node: { __filename: true },
+  entry: path.resolve(__dirname, "app"),
+  output: {
+    path: path.resolve(__dirname, "public"),
+    publicPath: "/police-complain/",
+    filename: "js/app.bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, '../shared'),
+          path.resolve(__dirname, '.')
+        ],
+        use: {
+          loader: "babel-loader",
+          options: {
+            // Resetting the root directory allows us to transpile jsx code that is
+            // outside of this project. We can transpile shared "chapters" from an
+            // outside directory
+            root: '../..'
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.svg/,
+        loaders: ["svg-url-loader"]
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 4096,
+            name: "images/[name].[ext]"
+          }
+        }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 4096,
+            name: "fonts/[name].[ext]",
+            mimetype: "application/font-woff"
+          }
+        }
+      },
+      {
+        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            limit: 4096,
+            name: "fonts/[name].[ext]"
+          }
+        }
+      }
+    ]
+  }
+};

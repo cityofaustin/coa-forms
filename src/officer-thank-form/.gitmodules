@@ -1,0 +1,3 @@
+[submodule "chapters"]
+  path = js/config/chapters
+  url = https://github.com/cityofaustin/officer-form-chapters.git

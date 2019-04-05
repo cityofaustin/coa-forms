@@ -1,0 +1,136 @@
+$dialog-height: 35rem;
+$dialog-button-color: #0049C7;
+$dialog-title-color: #FBC036;
+$dialog-position-bottom: 1rem;
+
+.opo-modalbox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.75);
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.opo-modalbox__container {
+  position: fixed;
+  bottom: $dialog-position-bottom;
+  background-color: white;
+  width: 90vw;
+  height: 35rem;
+  // border-top: solid #0050d8 1rem;
+  box-shadow: black 0px 0px 4rem;
+  // padding: 2rem;
+  animation: opo-modalbox__container--animation  ease-out .3s 1;
+  max-width: 600px;
+}
+.opo-modalbox__header {
+  background-color: $dialog-title-color;
+  text-align: center;
+  padding: 1rem;
+}
+
+.opo-modalbox__title {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.opo-modalbox__crossbutton {
+  float: right;
+  position: relative;
+  right: 0;
+  cursor: pointer;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  top: -1rem;
+}
+
+.opo-modalbox__crossbutton:after {
+  content:"\d7";
+}
+
+.opo-modalbox__separator {
+  border-top: solid #2d2d2d 2px;
+  margin: 1.5rem 0;
+  height: 0.5rem;
+}
+
+.opo-modalbox__body{
+  padding: 2rem;
+  height: 100%;
+}
+
+.opo-modalbox__message {
+  height: 60%;
+}
+
+.opo-modalbox__rightbutton {
+  float: right;
+}
+
+.opo-modalbox__buttons button {
+  font-size: 1.3rem;
+  background-color: $dialog-button-color;
+}
+
+.opo-modalbox__buttons button:first-child {
+  border: solid $dialog-button-color 1px;
+  background-color: white;
+  color: black;
+}
+
+@keyframes opo-modalbox__container--animation {
+  0% {
+    bottom: -36rem;
+  }
+
+  100% {
+    bottom: $dialog-position-bottom;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .opo-modalbox__container {
+    position: fixed;
+    bottom: 5rem;
+  }
+
+  .opo-modalbox__body{
+    padding: 2rem;
+    height: 85%;
+  }
+
+  .opo-modalbox__container button {
+    float: left !important;
+  }
+
+  @keyframes opo-modalbox__container--animation {
+    0% {
+      bottom: -36rem;
+    }
+
+    100% {
+      bottom: 5rem;
+    }
+  }
+}
+
+/*
+  Rules for Internet Explorer
+*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .opo-modalbox__container {
+    position: relative !important;
+    bottom: -25rem !important;
+  }
+}

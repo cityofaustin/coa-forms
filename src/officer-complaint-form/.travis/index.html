@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://maps.googleapis.com/maps/api/js?&v=3.exp&libraries=geometry,drawing,places"></script>
+  <script src="https://unpkg.com/filepond-polyfill/dist/filepond-polyfill.js"></script>
+  <script src="//unpkg.com/cross-fetch/dist/cross-fetch.js"></script>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <head>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+    .language-nav {
+      padding: 13px 0px 17px 0px;
+      border-bottom: 0.5px solid rgb(179, 217, 232);
+    }
+    .language-nav > a.active {
+      color: #ffffff;
+      margin-right: 22px;
+    }
+    .language-nav > a.second {
+      color: rgb(179, 255, 255);
+    }
+    .form-nav {
+      color: #ffffff;
+    }
+    .site-nav {
+      font-size: 18px;
+      padding: 14px 0px 18px 0px;
+    }
+    .site-header {
+      width: 100%;
+      background-color: #0050d8;
+    }
+    </style>
+    <!--
+      Hotjar Tracking Code for https://opo-form.netlify.com/
+      or change url in their dashboard
+    -->
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function() {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1188991, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <title>File a complaint </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27761834-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-27761834-11');
+</script>
+    <title>Officer Complaint Form</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./js/app.bundle.js"></script>
+  </body>
+</html>
