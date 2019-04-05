@@ -1,2 +1,2 @@
-# Ignore all node_modules in any subfolder
 node_modules/
+local/
