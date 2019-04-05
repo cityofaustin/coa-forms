@@ -3,7 +3,10 @@ const path = require("path");
 module.exports = {
   resolve: {
     modules: ["node_modules"],
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx"],
+    alias: {
+      chapters: path.resolve(__dirname, '../chapters/index.js')
+    }
   },
   context: process.cwd(),
   node: { __filename: true },
@@ -26,7 +29,17 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ["babel-loader"]
+        include: [
+          path.resolve(__dirname, '../chapters'),
+          path.resolve(__dirname, '.')
+        ],
+        use: {
+          loader: "babel-loader",
+          options: {
+            root: '../..',
+            configFile: '../../babel.config.js'
+          }
+        }
       },
       {
         test: /\.css$/,

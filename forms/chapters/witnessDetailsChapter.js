@@ -1,3 +1,5 @@
+import { WitnessDetailsDisplayWidget } from '@cityofaustin/usfs-components';
+
 import { phoneConfig } from 'us-forms-system/lib/js/definitions/phone';
 
 const witnessDetailsChapter = {
@@ -39,6 +41,7 @@ const witnessDetailsChapter = {
         },
         witnesses: {
           'ui:options': {
+            viewField: WitnessDetailsDisplayWidget,
             addable: true,
             expandUnder: 'hasWitnessInformation',
             itemName: 'witness',

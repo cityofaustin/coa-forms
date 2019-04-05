@@ -1,8 +1,7 @@
-import SelectLocationWidget from 'us-forms-system/lib/js/widgets/SelectLocation/SelectLocationWidget';
-
-import ReviewLocationWidget from 'us-forms-system/lib/js/review/ReviewLocationWidget';
-
-
+import {
+  LocationPickerWidget,
+  LocationReviewWidget,
+} from '@cityofaustin/usfs-components';
 
 const locationJSON = JSON.stringify({
   address: '800 Guadalupe St, Austin, TX 78701',
@@ -30,8 +29,8 @@ const whereHappenedChapter = {
         'ui:title': 'Where were you?',
         location: {
           'ui:title': 'Type in the location or drag the map to the location.',
-          'ui:widget': SelectLocationWidget,
-          'ui:reviewWidget': ReviewLocationWidget,
+          'ui:widget': LocationPickerWidget,
+          'ui:reviewWidget': LocationReviewWidget,
           'ui:options': {
             hideOnReviewIfFalse: true,
           },

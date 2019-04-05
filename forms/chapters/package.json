@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@cityofaustin/usfs-components": "^0.0.19",
+    "react": "^16.8.6",
+    "us-forms-system": "https://github.com/cityofaustin/us-forms-system.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-loader": "^8.0.5"
+  }
+}
