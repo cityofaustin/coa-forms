@@ -4,6 +4,8 @@ const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+require('dotenv').config({ path: path.resolve(__dirname, './deployment/vars/prod.sh')});
+
 module.exports = merge(require('./webpack.common.js'), {
   mode: 'production',
   devtool: 'source-map',
@@ -44,8 +46,8 @@ module.exports = merge(require('./webpack.common.js'), {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-        API_URL: JSON.stringify(process.env.API_URL)
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        FORM_API_URL: JSON.stringify(process.env.FORM_API_URL)
       },
     }),
     new BundleAnalyzerPlugin({

@@ -1,10 +1,12 @@
 const path = require('path');
-const webpackCommonFactory = require('../shared/devops/webpackCommonFactory');
+
+require('dotenv').config({ path: path.resolve(__dirname, './deployment/vars/common.sh')});
+const webpackCommonFactory = require('../../tools/webpack/webpackCommonFactory');
 
 module.exports = webpackCommonFactory(__dirname, {
   resolve: {
     alias: {
-      chapters: path.resolve(__dirname, '../shared/OPO-chapters/index.js')
+      chapters: path.resolve(__dirname, `../shared/chapters/${process.env.chaptersDir}/index.js`)
     },
   },
   output: {

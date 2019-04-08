@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 
+require('dotenv').config({ path: path.resolve(__dirname, './deployment/vars/local.sh')});
+
 module.exports = merge(require('./webpack.common.js'), {
   mode: 'development',
   devtool: 'eval-source-map',
@@ -12,8 +14,9 @@ module.exports = merge(require('./webpack.common.js'), {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-        API_URL: JSON.stringify('http://localhost:5000')
+        thing: JSON.stringify(process.env.thing),
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        FORM_API_URL: JSON.stringify(process.env.FORM_API_URL)
       },
     })
   ]

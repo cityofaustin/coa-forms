@@ -4,7 +4,7 @@ const merge = require('webpack-merge');
 /**
   webpackCommonFactory is a factory function that builds webpack.common.js configs that can be used by any form.
   Assuming that each form follows the same conventions
-  (eg: using app.js as the entrypoint, outputting to public/), then
+  (eg: using src/app.js as the entrypoint, outputting to public/), then
   this webpack.common.root.js will work as a common base for every form.
 
   @param __dirname: plug in your form's __dirname to resolve all of the filepaths correctly.
@@ -22,7 +22,7 @@ const webpackCommonFactory = (__dirname, formConfigs={}) => {
     },
     // context: process.cwd(),
     node: { __filename: true },
-    entry: path.resolve(__dirname, "app"),
+    entry: path.resolve(__dirname, "src/app.js"),
     output: {
       path: path.resolve(__dirname, "public"),
       publicPath: "/police-complain/",
