@@ -285,14 +285,10 @@
     "es": "testigo"
   },
 
-  "New officer": {
-    "es": "Nuevo oficial"
+  "%New %": {
+    "es": "%Nuevo %"
   },
 
-  "New witness": {
-    "es": "Nuevo testigo"
-  },
-  
   "Over the phone": {
     "es": "Por teléfono"
   },
