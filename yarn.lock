@@ -917,7 +917,7 @@
     "@sinonjs/commons" "^1"
     "@sinonjs/samsam" "^3.1.0"
 
-"@sinonjs/samsam@^3.1.0", "@sinonjs/samsam@^3.3.0":
+"@sinonjs/samsam@^3.1.0", "@sinonjs/samsam@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-3.3.1.tgz#e88c53fbd9d91ad9f0f2b0140c16c7c107fe0d07"
   integrity sha512-wRSfmyd81swH0hA1bxJZJ57xr22kC07a1N4zuIL47yTS04bDk6AoCkczcqHEjcRPmJ+FruGJ9WBQiJwMtIElFw==
@@ -3964,11 +3964,6 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   integrity sha1-l+gBqgUt8CRU3kawK/YhZCzchQI=
   dependencies:
     homedir-polyfill "^1.0.1"
-
-expect.js@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/expect.js/-/expect.js-0.2.0.tgz#1028533d2c1c363f74a6796ff57ec0520ded2be1"
-  integrity sha1-EChTPSwcNj90pnlv9X7AUg3tK+E=
 
 express@^4.16.2:
   version "4.16.4"
@@ -7967,16 +7962,6 @@ readable-stream@^3.0.6:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-readable-stream@~1.1.0:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
 readable-stream@~2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
@@ -8652,16 +8637,13 @@ shallow-equal@^1.0.0:
   integrity sha512-0SW1nWo1hnabO62SEeHsl8nmTVVEzguVWZCj5gaQrgWAxz/BaCja4OWdJBWLVPDxdtE/WU7c98uUCCXyPHSCvw==
 
 sharkdown@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/sharkdown/-/sharkdown-0.1.0.tgz#61d4fe529e75d02442127cc9234362265099214f"
-  integrity sha1-YdT+Up510CRCEnzJI0NiJlCZIU8=
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/sharkdown/-/sharkdown-0.1.1.tgz#64484bd0f08f347f8319e9ff947a670f6b48b1b2"
+  integrity sha512-exwooSpmo5s45lrexgz6Q0rFQM574wYIX3iDZ7RLLqOb7IAoQZu9nxlZODU972g19sR69OIpKP2cpHTzU+PHIg==
   dependencies:
     cardinal "~0.4.2"
-    expect.js "~0.2.0"
     minimist "0.0.5"
     split "~0.2.10"
-    stream-spigot "~2.1.2"
-    through "~2.3.4"
 
 shasum@^1.0.0:
   version "1.0.2"
@@ -8713,13 +8695,13 @@ simple-concat@^1.0.0:
   integrity sha1-c0TLuLbib7J9ZrL8hvn21Zl1IcY=
 
 sinon@^7.2.3:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/sinon/-/sinon-7.3.0.tgz#fd409432bf2ef8ee6a302cf47ca1b0c95fd4de38"
-  integrity sha512-0pYvgRv46fODzT/PByqb79MVNpyxsxf38WEiXTABOF8RfIMcIARfZ+1ORuxwAmHkreZ/jST3UDBdKCRhUy/e1A==
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-7.3.1.tgz#e8276522104e6c08d1cb52a907270b0e316655c4"
+  integrity sha512-eQKMaeWovtOtYe2xThEvaHmmxf870Di+bim10c3ZPrL5bZhLGtu8cz+rOBTFz0CwBV4Q/7dYwZiqZbGVLZ+vjQ==
   dependencies:
     "@sinonjs/commons" "^1.4.0"
     "@sinonjs/formatio" "^3.2.1"
-    "@sinonjs/samsam" "^3.3.0"
+    "@sinonjs/samsam" "^3.3.1"
     diff "^3.5.0"
     lolex "^3.1.0"
     nise "^1.4.10"
@@ -9025,13 +9007,6 @@ stream-shift@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
   integrity sha1-1cdSgl5TZ+eG944Y5EXqIjoVWVI=
-
-stream-spigot@~2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/stream-spigot/-/stream-spigot-2.1.2.tgz#7de145e819f8dd0db45090d13dcf73a8ed3cc035"
-  integrity sha1-feFF6Bn43Q20UJDRPc9zqO08wDU=
-  dependencies:
-    readable-stream "~1.1.0"
 
 stream-splicer@^2.0.0:
   version "2.0.0"
@@ -9346,7 +9321,7 @@ through2@^2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-through@2, "through@>=2.2.7 <3", through@^2.3.6, through@~2.3.4:
+through@2, "through@>=2.2.7 <3", through@^2.3.6:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
@@ -9697,8 +9672,8 @@ url@^0.11.0, url@~0.11.0:
     querystring "0.2.0"
 
 "us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
-  version "1.1.0"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#9ce4c19c09a357134c144b27a9a6456fe486a1aa"
+  version "1.1.1"
+  resolved "https://github.com/cityofaustin/us-forms-system.git#3e6cc085bddfa405cc9914e408b70a9e5af4abe0"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
