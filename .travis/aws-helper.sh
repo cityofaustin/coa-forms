@@ -188,7 +188,7 @@ function forms_reset_cwd {
 function resolve_form_url {
   IS_PR=$(is_pull_request);
   if [ "${IS_PR}" = "TRUE" ]; then
-    echo "officer-thank-pr-${TRAVIS_PULL_REQUEST}";
+    echo "${FORM_DEPLOYMENT_URI}-pr-${TRAVIS_PULL_REQUEST}";
   else
     echo "${FORM_DEPLOYMENT_URI}";
   fi;
@@ -249,7 +249,7 @@ function forms_build {
   forms_reset_cwd;
 
   FINAL_URL=$(resolve_form_url)
-
+  IS_PR=$(is_pull_request);
 
   echo "URI GENERATED: ${FINAL_URL}"
 
@@ -283,6 +283,15 @@ function forms_build {
 
   forms_change_dir "public";
 
+  # Patches the default slug with the PR's slug for routing...
+  if [[ "${IS_PR}" = "TRUE" ]]; then
+    echo -e "\n\nPatching routing for PR: \n";
+    echo "Default: ${FORM_DEPLOYMENT_URI}";
+    echo "PR's slug: ${FINAL_URL}";
+    forms_search_replace_file "${FORM_DEPLOYMENT_URI}" "${FINAL_URL}" "./js/app.bundle.js"
+    echo -e "\n\nPatching done!\n";
+  fi;
+
   forms_sync_form_aws $FINAL_URL;
 
   forms_sync_fonts;
@@ -292,6 +301,7 @@ function forms_build {
 
 function forms_translate {
   print_header "Translating Form"
+  IS_PR=$(is_pull_request);
 
   for LANGUAGE in $(jq -r ".supported_languages[]" "./locale/settings.json");
   do
@@ -319,6 +329,23 @@ function forms_translate {
     DEPLOYMENT_PATH=$(jq -r ".deployment_path.${LANGUAGE}"  "./locale/routes.json")
 
     forms_change_dir $TRANSLATION_PATH;
+
+    # Patches the default slug with the translation's PR slug for routing...
+    if [[ "${IS_PR}" = "TRUE" ]]; then
+        echo -e "\n\nPatching routing for PR: \n";
+        ORIGINAL_PR_PATH=$(resolve_form_url);
+        TRANS_PR_PATH="${DEPLOYMENT_PATH}-pr-${TRAVIS_PULL_REQUEST}"
+
+         echo "Default: ${ORIGINAL_PR_PATH}";
+        echo "PR's slug: ${TRANS_PR_PATH}";
+
+         forms_search_replace_file "${ORIGINAL_PR_PATH}" "${TRANS_PR_PATH}" "./js/app.bundle.js"
+
+         echo -e "\n\nPatching done!\n";
+        echo "Changing deployment path from '${DEPLOYMENT_PATH}' to '${TRANS_PR_PATH}'";
+        DEPLOYMENT_PATH="${TRANS_PR_PATH}";
+        echo "DEPLOYMENT_PATH: ${DEPLOYMENT_PATH}";
+    fi;
 
     forms_sync_form_aws $DEPLOYMENT_PATH;
   done;
