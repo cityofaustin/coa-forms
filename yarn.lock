@@ -9672,8 +9672,8 @@ url@^0.11.0, url@~0.11.0:
     querystring "0.2.0"
 
 "us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
-  version "1.1.1"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#3e6cc085bddfa405cc9914e408b70a9e5af4abe0"
+  version "1.1.2"
+  resolved "https://github.com/cityofaustin/us-forms-system.git#5507e3f85e01fe6cd1829084f0c72095b41d24e1"
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
