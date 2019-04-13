@@ -1,5 +1,12 @@
 # Documentation for deployment functions
 
+## `deploy.sh`
+Primary deployment script. It is responsible for installing all dependencies, determining which forms should get deployed, and where those forms should be deployed. The script invokes these functions:
+1. `build_form.sh`
+2. `translate_form.sh`
+3. `upload_form.sh`
+
+---
 ## `build_form.sh`
 
 Builds a form for production. Outputted to form's `/public/` directory.
@@ -22,3 +29,7 @@ args:
 + -f [ FORM ] : the name of the form you want to translate; corresponds to the directory name inside of `/src`.
 
 ex: `bash deployment/translate_form.sh -f officer-complaint-form`
+
+---
+## `upload_form.sh`
+Syncs a built form to aws.

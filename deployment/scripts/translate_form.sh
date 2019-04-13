@@ -1,11 +1,20 @@
 #!/bin/bash
 # check deployment/README.md for documentation
 CURRENT_DIR=`dirname $BASH_SOURCE`
+FORM=''
+DEPLOY_ENV=''
+SHOULD_UPLOAD="false"
 
-while getopts "f:" opt; do
+while getopts "f:eu" opt; do
   case $opt in
     f )
       FORM=$OPTARG
+      ;;
+    e )
+      DEPLOY_ENV=$OPTARG
+      ;;
+    u )
+      SHOULD_UPLOAD="true"
       ;;
     \? )
       echo "Invalid option: -$OPTARG" >&2
@@ -18,17 +27,20 @@ while getopts "f:" opt; do
   esac
 done
 
-FORM_PATH="$CURRENT_DIR/../src/$FORM"
+FORM_PATH="$CURRENT_DIR/../../src/$FORM"
 
 if [ -z $FORM ]; then
   echo "ERROR: -f argument is mandatory. Please specify a form to translate."
   exit 1
 elif [ ! -d $FORM_PATH ]; then
-  echo "ERROR: form \"$FORM\" does not exist"
+  echo "ERROR: form \"$FORM_PATH\" does not exist"
+  exit 1
+elif [[ $SHOULD_UPLOAD = "true" ]] && [[ -z $DEPLOY_ENV ]]; then
+  echo "ERROR: -e argument is mandatory with -u. Please specify a DEPLOY_ENV to upload your form to."
   exit 1
 fi
 
-# Begin #
+##### Begin #####
 
 for LANGUAGE in $(jq -r ".supported_languages[]" "$FORM_PATH/src/locale/settings.json");
 do
@@ -46,5 +58,10 @@ do
   echo "Then, let's translate the rest of the form:"
   python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/src/locale/translations.json" "${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
 
-  DEPLOYMENT_PATH=$(jq -r ".deployment_path.${LANGUAGE}"  "$FORM_PATH/src/locale/routes.json")
+  # Optional clause to upload translated form.
+  # Triggered when -u arg is passed with a valid -e $DEPLOY_ENV
+  if [[ $SHOULD_UPLOAD = "true" ]]; then
+    $CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV -l $LANGUAGE
+  fi;
+
 done;

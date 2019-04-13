@@ -7,25 +7,29 @@ const merge = require('webpack-merge');
   (eg: using src/app.js as the entrypoint, outputting to public/), then
   this webpack.common.root.js will work as a common base for every form.
 
+  Source environment variables in your form's webpack.common.js before running webpackCommonFactory.
+  All `process.env.___` variables in this factory function will be plugged in with your form's specific variables.
+
   @param __dirname: plug in your form's __dirname to resolve all of the filepaths correctly.
     Note: the __dirname in this file will not refer to *this* particular directory,
     it will refer to the form-specific __dirname that you plug in.
   @param formConfigs: extra form-specific configs that will get merged in with the base webpack configs.
-    At a minimum, each form should set their own output.publicPath.
 **/
 
 const webpackCommonFactory = (__dirname, formConfigs={}) => {
   const baseWebpackConfig = {
     resolve: {
       modules: ["node_modules"],
-      extensions: [".js", ".jsx"]
+      extensions: [".js", ".jsx"],
+      alias: {
+        chapters: path.resolve(__dirname, `../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
+      }
     },
-    // context: process.cwd(),
     node: { __filename: true },
     entry: path.resolve(__dirname, "src/app.js"),
     output: {
       path: path.resolve(__dirname, "public"),
-      publicPath: "/police-complain/",
+      publicPath: `/${process.env.DEPLOYMENT_PATH_EN}/`,
       filename: "js/app.bundle.js"
     },
     module: {

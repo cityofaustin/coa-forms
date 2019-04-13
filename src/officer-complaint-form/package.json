@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --public http://localhost:8080/police-complain --config webpack.local.js",
     "build": "webpack --config webpack.prod.js",
+    "build:es": "../../deployment/translate_form.sh -f officer-complaint-form",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
     "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
     "postinstall": "git submodule update --init --recursive",

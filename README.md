@@ -16,7 +16,7 @@ Since this used the subtree merge method, cloning this repo gets you all the cod
 
 ## Dependencies
 
-+ Install `jq` if you want to run translations locally.
++ Install `jq` if you want to run translation/deployment scripts locally.
   + Mac users can run: `brew install jq`
 
 ## How to configure Webpack files and Environment Variables

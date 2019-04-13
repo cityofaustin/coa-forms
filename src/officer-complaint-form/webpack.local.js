@@ -14,7 +14,6 @@ module.exports = merge(require('./webpack.common.js'), {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        thing: JSON.stringify(process.env.thing),
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         FORM_API_URL: JSON.stringify(process.env.FORM_API_URL)
       },
