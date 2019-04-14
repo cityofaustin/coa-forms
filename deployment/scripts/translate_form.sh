@@ -63,5 +63,4 @@ do
   if [[ $SHOULD_UPLOAD = "true" ]]; then
     $CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV -l $LANGUAGE
   fi;
-
 done;

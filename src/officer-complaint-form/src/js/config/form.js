@@ -73,7 +73,7 @@ const formConfig = {
       return error;
     });
   },
-  submitUrl: `${process.env.API_URL}/form/submit`,
+  submitUrl: `${process.env.FORM_API_URL}/form/submit`,
   introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},

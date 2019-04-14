@@ -2,7 +2,6 @@
 
 # Keeping this file outside of top level run.sh prevents environment
 # variables from being contaminated between forms.
-
 CURRENT_DIR=`dirname $BASH_SOURCE`
 DEPLOY_ENV=$1
 FORM=$2

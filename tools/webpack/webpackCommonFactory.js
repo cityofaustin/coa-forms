@@ -1,23 +1,25 @@
+const webpack = require("webpack");
 const path = require("path");
-const merge = require('webpack-merge');
 
 /**
-  webpackCommonFactory is a factory function that builds webpack.common.js configs that can be used by any form.
-  Assuming that each form follows the same conventions
-  (eg: using src/app.js as the entrypoint, outputting to public/), then
-  this webpack.common.root.js will work as a common base for every form.
+  webpackCommonFactory is a factory function that builds webpack configs that are common to both local and production builds.
+  It is invoked in each form's webpack.config.js.
+  Assuming that each form follows the same file structure conventions
+  (eg: using src/app.js as the entrypoint, outputting to public/).
 
-  Source environment variables in your form's webpack.common.js before running webpackCommonFactory.
+  You can overwrite or add additional configs specific to your form by plugging them into
+  extraCommonConfigs within your form's webpack.config.js.
+
+  Source environment variables with 'dotenv' library in your form's webpack.config.js before running webpackCommonFactory.
   All `process.env.___` variables in this factory function will be plugged in with your form's specific variables.
 
   @param __dirname: plug in your form's __dirname to resolve all of the filepaths correctly.
     Note: the __dirname in this file will not refer to *this* particular directory,
     it will refer to the form-specific __dirname that you plug in.
-  @param formConfigs: extra form-specific configs that will get merged in with the base webpack configs.
 **/
 
-const webpackCommonFactory = (__dirname, formConfigs={}) => {
-  const baseWebpackConfig = {
+const webpackCommonFactory = (__dirname) => {
+  return {
     resolve: {
       modules: ["node_modules"],
       extensions: [".js", ".jsx"],
@@ -103,8 +105,6 @@ const webpackCommonFactory = (__dirname, formConfigs={}) => {
       ]
     }
   }
-
-  return merge(baseWebpackConfig, formConfigs)
 };
 
 module.exports = webpackCommonFactory

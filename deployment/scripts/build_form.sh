@@ -5,7 +5,7 @@ FORM=''
 DEPLOY_ENV=''
 SHOULD_UPLOAD="false"
 
-while getopts "f:eu" opt; do
+while getopts "f:e:u" opt; do
   case $opt in
     f )
       FORM=$OPTARG
@@ -30,13 +30,13 @@ done
 FORM_PATH="$CURRENT_DIR/../../src/$FORM"
 
 if [ -z $FORM ]; then
-  echo "ERROR: -f argument is mandatory. Please specify a form to translate."
+  echo "ERROR: -f argument is required. Please specify a FORM to translate."
   exit 1
 elif [ ! -d $FORM_PATH ]; then
   echo "ERROR: form \"$FORM\" does not exist"
   exit 1
-elif [[ $SHOULD_UPLOAD = "true" ]] && [[ -z $DEPLOY_ENV ]]; then
-  echo "ERROR: -e argument is mandatory with -u. Please specify a DEPLOY_ENV to upload your form to."
+elif [ -z $DEPLOY_ENV ]; then
+  echo "ERROR: -e argument is required. Please specify a DEPLOY_ENV."
   exit 1
 fi
 

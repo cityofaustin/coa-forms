@@ -5,7 +5,8 @@
   "main": "app.js",
   "directories": {},
   "scripts": {
-    "start": "webpack-dev-server --open --public http://localhost:8080/police-complain --config webpack.local.js",
+    "start": "webpack-dev-server --env local --open --public http://localhost:8080/police-complain",
+    "build:v2": "webpack --env local",
     "build": "webpack --config webpack.prod.js",
     "build:es": "../../deployment/translate_form.sh -f officer-complaint-form",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
@@ -46,10 +47,8 @@
     "skin-deep": "^1.0.0",
     "style-loader": "^0.21.0",
     "svg-url-loader": "^2.3.2",
-    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.0.1",
     "webpack": "^4.10.2",
-    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.1",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.1.3"
