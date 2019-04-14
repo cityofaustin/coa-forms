@@ -16,7 +16,7 @@ The top-level deployment script. It installs all root dependencies, determines w
 args:
 + $1 DEPLOY_ENV: the deployment environment set by `circleci.config.yml` (dev, staging, prod, etc.).
 
-ex: `bash deployment/run.sh dev`
+ex: `bash deployment/scripts/run.sh dev`
 
 ---
 ## `deploy_one_form.sh`
@@ -26,7 +26,7 @@ args:
 + $1 DEPLOY_ENV: the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
 + $2 FORM: the directory of the form to deploy
 
-ex: `bash deployment/run.sh dev officer-complaint-form`
+ex: `bash deployment/scripts/run.sh dev officer-complaint-form`
 
 ---
 ## `build_form.sh`
@@ -38,7 +38,7 @@ args:
 + -e DEPLOY_ENV (required): the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
 + -u (optional flag): including `-u` will upload the form to S3 after the build. The S3 Bucket destination is determined by $DEPLOY_ENV.
 
-ex: `bash deployment/build_form.sh -f officer-complaint-form -e dev`
+ex: `bash deployment/scripts/build_form.sh -f officer-complaint-form -e dev`
 
 ---
 ## `translate_form.sh`
@@ -54,7 +54,7 @@ args:
 + -e DEPLOY_ENV (only required with -u): the deployment environment (dev, staging, prod, etc.). Determines which S3 Bucket to deploy to if -u is passed.
 + -u (optional flag): including `-u` will upload the form to S3 after the build. The S3 Bucket destination is determined by $DEPLOY_ENV.
 
-ex: `bash deployment/translate_form.sh -f officer-complaint-form`
+ex: `bash deployment/scripts/translate_form.sh -f officer-complaint-form`
 
 ---
 ## `upload_form.sh`
@@ -65,4 +65,4 @@ args:
 + -e DEPLOY_ENV (required): the deployment environment (dev, staging, prod, etc.). Determines which S3 Bucket to deploy to.
 + -l LANGUAGE (optional, null defaults to English): Specifies which translation to deploy. Corresponds to the build file suffix.
 
-ex: `bash deployment/upload_form.sh -f officer-complaint-form -e dev -l es` will sync `officer-complaint-form/public_es` to the AWS PR Bucket for your particular branch.
+ex: `bash deployment/scripts/upload_form.sh -f officer-complaint-form -e dev -l es` will sync `officer-complaint-form/public_es` to the AWS PR Bucket for your particular branch.

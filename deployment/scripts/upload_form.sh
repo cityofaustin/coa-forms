@@ -6,7 +6,7 @@ DEPLOY_ENV=''
 LANGUAGE=''
 TRANSLATED="false"
 
-while getopts "f:e:l" opt; do
+while getopts "f:e:l:" opt; do
   case $opt in
     f )
       FORM=$OPTARG
@@ -52,7 +52,7 @@ fi
 ##### Begin #####
 
 # Source environment variables
-# eg: DEPLOYMENT_BUCKET, DEPLOYMENT_PATH_*
+# eg: DEPLOYMENT_BUCKET, DEPLOYMENT_PATH_EN, DEPLOYMENT_PATH_ES
 source $ENV_VAR_PATH
 
 if [[ $TRANSLATED != "true" ]]; then
@@ -65,9 +65,9 @@ else
   DEPLOYMENT_PATH=${!DEPLOYMENT_PATH_FOR_LANG}
 fi
 
-# TODO: determine DEPLOYMENT_PATH based on DEPLOY_ENV
-if [ $DEPLOY_ENV = "staging" ]; then
-  DEPLOYMENT_PATH=$DEPLOYMENT_PATH-pr-x
+# Append branch name to deployment path for a dev feature branch
+if [ $DEPLOY_ENV = "dev" ]; then
+  DEPLOYMENT_PATH=$DEPLOYMENT_PATH-$BUILD_BRANCH
 fi;
 
 S3_DESTINATION="s3://${DEPLOYMENT_BUCKET}/${DEPLOYMENT_PATH}"

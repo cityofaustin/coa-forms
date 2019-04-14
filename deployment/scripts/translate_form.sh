@@ -5,7 +5,7 @@ FORM=''
 DEPLOY_ENV=''
 SHOULD_UPLOAD="false"
 
-while getopts "f:eu" opt; do
+while getopts "f:e:u" opt; do
   case $opt in
     f )
       FORM=$OPTARG
