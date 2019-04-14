@@ -15,7 +15,7 @@ const path = require("path");
 
   @param __dirname: plug in your form's __dirname to resolve all of the filepaths correctly.
     Note: the __dirname in this file will not refer to *this* particular directory,
-    it will refer to the form-specific __dirname that you plug in.
+    it will refer to the form-specific __dirname that you plug in at webpack.config.js.
 **/
 
 const webpackCommonFactory = (__dirname) => {
@@ -27,6 +27,7 @@ const webpackCommonFactory = (__dirname) => {
         chapters: path.resolve(__dirname, `../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
       }
     },
+    context: __dirname,
     node: { __filename: true },
     entry: path.resolve(__dirname, "src/app.js"),
     output: {

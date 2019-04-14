@@ -32,7 +32,7 @@ FORM_PATH="$CURRENT_DIR/../../src/$FORM"
 if [[ ! -z $LANGUAGE ]] && [[ $LANGUAGE != "en" ]]; then
   TRANSLATED="true"
 fi
-ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV"
+ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.env"
 BUILD_PATH="$FORM_PATH/public"
 
 if [ -z $FORM ]; then
@@ -44,7 +44,7 @@ elif [ -z $DEPLOY_ENV ]; then
 elif [ ! -d $FORM_PATH ]; then
   echo "ERROR: form \"$FORM_PATH\" does not exist"
   exit 1
-elif [ ! -d $ENV_VAR_PATH ]; then
+elif [ ! -f $ENV_VAR_PATH ]; then
   echo "ERROR: env variable file \"$ENV_VAR_PATH\" does not exist"
   exit 1
 fi

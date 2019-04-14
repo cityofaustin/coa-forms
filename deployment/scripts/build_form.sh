@@ -28,6 +28,7 @@ while getopts "f:e:u" opt; do
 done
 
 FORM_PATH="$CURRENT_DIR/../../src/$FORM"
+ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.env"
 
 if [ -z $FORM ]; then
   echo "ERROR: -f argument is required. Please specify a FORM to translate."
@@ -38,11 +39,15 @@ elif [ ! -d $FORM_PATH ]; then
 elif [ -z $DEPLOY_ENV ]; then
   echo "ERROR: -e argument is required. Please specify a DEPLOY_ENV."
   exit 1
+elif [ ! -f $ENV_VAR_PATH ]; then
+  echo "ERROR: env variable file \"$ENV_VAR_PATH\" does not exist"
+  exit 1
 fi
 
 ##### Begin #####
 
-yarn --cwd $FORM_PATH build
+# Run "webpack" command in form's directory, pass env variable to webpack.config.js
+yarn --cwd $FORM_PATH webpack --env $DEPLOY_ENV
 
 # Optional clause to upload translated form.
 # Triggered when -u arg is passed with a valid -e $DEPLOY_ENV
