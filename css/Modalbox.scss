@@ -104,8 +104,8 @@ $dialog-position-bottom: 1rem;
 
 @media only screen and (max-width: 480px) {
   .opo-modalbox__container {
-    position: fixed;
-    bottom: 5rem;
+    left: 5vw;
+    bottom: 3.5rem;
   }
 
   .opo-modalbox__body{
@@ -128,43 +128,6 @@ $dialog-position-bottom: 1rem;
   }
 }
 
-/*
-  Rules for iPhone 6/7/8
-*/
-
-@media only screen  and (min-device-width : 375px) and (max-device-width : 667px) {
-  .opo-modalbox__container {
-    position: fixed;
-    left: 5%;
-    width: 90%;
-    bottom: 2rem;
-  }
-
-  .opo-modalbox__body{
-    padding: 2rem;
-    height: 85%;
-  }
-
-  .opo-modalbox__buttons {
-    height: 7rem;
-  }
-
-
-
-  .opo-modalbox__container button {
-    float: left !important;
-  }
-
-  @keyframes opo-modalbox__container--animation {
-    0% {
-      bottom: -36rem;
-    }
-
-    100% {
-      bottom: 5rem;
-    }
-  }
-}
 
 /*
   Rules for Internet Explorer
