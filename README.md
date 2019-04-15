@@ -38,6 +38,7 @@ The `--env` parameter you pass to the webpack cli determines which set of enviro
 + `staging.env` contains environment variables for the staging deployment of the "master" branch.
 + `prod.env` contains environment variables for the deployed production branch.
 
+These are the basic environment variables that should be in every form:
 #### AWS
 + DEPLOYMENT_BUCKET: s3 deployment bucket for a particular stage
 + DEPLOYMENT_PATH_EN: Deployment path for English build
@@ -48,6 +49,8 @@ The `--env` parameter you pass to the webpack cli determines which set of enviro
 #### Structure
 + FORM_DIR: the name of the directory containing the form
 + CHAPTERS_DIR: the name of the directory containing the chapters for your form: `/src/shared/chapters/<<CHAPTERS_DIR>>`
+#### Debug
++ RUN_BUNDLE_ANALYZER: set to `true` if you want to run `webpack-bundle-analyzer`.
 
 If you need to add any new environment variables for your specific form, you must add them:
 1. to the appropriate `deployment/vars/` files

@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 /**
   webpackCommonFactory is a factory function that builds webpack configs that are common to both local and production builds.
@@ -20,7 +21,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 **/
 
 const webpackCommonFactory = (__dirname) => {
-  return {
+  const config = {
     resolve: {
       modules: ["node_modules"],
       extensions: [".js", ".jsx"],
@@ -121,6 +122,20 @@ const webpackCommonFactory = (__dirname) => {
       ]
     }
   }
+
+  if (process.env.RUN_BUNDLE_ANALYZER === "true") {
+    config.plugins.push(
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'static',
+        openAnalyzer: false,
+        reportFilename: 'stats/bundle.html',
+        generateStatsFile: true,
+        statsFilename: 'stats/bundle.json'
+      })
+    )
+  }
+
+  return config;
 };
 
 module.exports = webpackCommonFactory

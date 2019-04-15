@@ -59,15 +59,6 @@ const webpackDeployedFactory = (__dirname) => {
         }
       }
     },
-    plugins: [
-      new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        openAnalyzer: false,
-        reportFilename: 'stats/bundle.html',
-        generateStatsFile: true,
-        statsFilename: 'stats/bundle.json'
-      })
-    ],
   }
 };
 

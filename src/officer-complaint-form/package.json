@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --env local --open --public http://localhost:8080/police-complain",
     "webpack": "webpack",
+    "parallel-webpack": "parallel-webpack",
     "webpack:v2": "source ./deployment/vars/dev.sh; echo \"hi $DEPLOYMENT_PATH_EN\"; webpack --env dev",
     "build": "webpack --env prod",
     "build:es": "../../deployment/scripts/translate_form.sh -f officer-complaint-form",
@@ -42,6 +43,7 @@
     "eslint-stats": "^1.0.0",
     "mocha": "^5.2.0",
     "node-sass": "^4.11.0",
+    "parallel-webpack": "^2.3.0",
     "react-test-renderer": "^15.5.4",
     "sass-loader": "^7.1.0",
     "skin-deep": "^1.0.0",
