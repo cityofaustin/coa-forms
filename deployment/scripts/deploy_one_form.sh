@@ -25,8 +25,14 @@ yarn --cwd $FORM_PATH install --production=false
 CHAPTERS_PATH="$CURRENT_DIR/../../src/shared/chapters/$CHAPTERS_DIR"
 yarn --cwd $CHAPTERS_PATH install --production=false
 
-# Build English Form and Upload to AWS
-bash $CURRENT_DIR/build_form.sh -f $FORM -e $DEPLOY_ENV -u
+# Build all locales for a Form using Webpack
+$CURRENT_DIR/build_form.sh -f $FORM -e $DEPLOY_ENV
 
-# Build all translations for Form and Upload to AWS
-bash $CURRENT_DIR/translate_form.sh -f $FORM -e $DEPLOY_ENV -u
+# Upload English Form to AWS
+$CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV
+
+# Upload all translations for Form to AWS
+for LANGUAGE in $(jq -r ".supported_languages[]" "$FORM_PATH/src/locale/settings.json");
+do
+  $CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV -l $LANGUAGE
+done;

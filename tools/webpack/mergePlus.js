@@ -1,4 +1,5 @@
 const merge = require("webpack-merge");
+const cloneDeep = require("lodash.clonedeep");
 
 /**
   Like webpack-merge, only better.
@@ -17,7 +18,7 @@ const merge = require("webpack-merge");
   ]
 **/
 const mergePlus = (...webpackConfigs) => {
-  const mergedWebpack = merge.apply(null, webpackConfigs);
+  const mergedWebpack = cloneDeep(merge.apply(null, webpackConfigs));
 
   const plugins = mergedWebpack.plugins;
   if (!plugins) {

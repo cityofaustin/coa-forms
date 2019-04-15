@@ -11,7 +11,7 @@ The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument p
 
 ---
 ## `run.sh`
-The top-level deployment script. It installs all root dependencies, determines which forms should get deployed, and runs `deploy_one_form.sh` for each of those forms.
+The top-level deployment script. It installs all root dependencies, determines which forms should get deployed by checking `dev_deploy_options.json`, and runs `deploy_one_form.sh` for each of those forms.
 
 args:
 + $1 DEPLOY_ENV: the deployment environment set by `circleci.config.yml` (dev, staging, prod, etc.).
@@ -20,7 +20,7 @@ ex: `bash deployment/scripts/run.sh dev`
 
 ---
 ## `deploy_one_form.sh`
-Installs dependencies, builds, translates, and uploads all language builds to AWS. Invokes `build_form.sh` and `translate_form.sh`
+Installs dependencies, builds, and uploads all locale builds to AWS. Invokes `build_form.sh` and `upload_form.sh`
 
 args:
 + $1 DEPLOY_ENV: the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
@@ -31,30 +31,27 @@ ex: `bash deployment/scripts/run.sh dev officer-complaint-form`
 ---
 ## `build_form.sh`
 
-Builds a form for production. Outputted to form's `/public/` directory. Also uploads the build to S3 with `upload_form.sh` if a `-u` flag parameter is passed.
+Builds all locales for a Form using webpack. Outputs are saved in Form's `/public*/` directories.
 
 args:
 + -f FORM (required): the name of the form you want to build; corresponds to the directory name inside of `/src`.
 + -e DEPLOY_ENV (required): the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
-+ -u (optional flag): including `-u` will upload the form to S3 after the build. The S3 Bucket destination is determined by $DEPLOY_ENV.
 
 ex: `bash deployment/scripts/build_form.sh -f officer-complaint-form -e dev`
 
 ---
 ## `translate_form.sh`
-Translates a form into each of the languages specified in its `src/locale/settings.json`. Also uploads the build to S3 with `upload_form.sh` if a `-u` flag parameter is passed.
+Translates a form into each of the languages specified in its `src/locale/settings.json`. This script is executed by `webpack` as a plugin.
 
 The resulting translated forms will be saved in their own public folders.
 For example, a Spanish translated form will be saved in `public_es/`.
 
-This program will translate the contents of the present condition of the form's `public/` directory. Whatever is in `public/` at the time of translation is what will be translated.
-
 args:
 + -f FORM (required): the name of the form you want to translate; corresponds to the directory name inside of `/src`.
-+ -e DEPLOY_ENV (only required with -u): the deployment environment (dev, staging, prod, etc.). Determines which S3 Bucket to deploy to if -u is passed.
-+ -u (optional flag): including `-u` will upload the form to S3 after the build. The S3 Bucket destination is determined by $DEPLOY_ENV.
++ -l LANGUAGE (required): Specifies which translation to run (and in which compiled public/ directory to run that translation).
 
-ex: `bash deployment/scripts/translate_form.sh -f officer-complaint-form`
+
+ex: `bash deployment/scripts/translate_form.sh -f officer-complaint-form -l es` will run `translate.py` for `officer-complaint-form/public_es`
 
 ---
 ## `upload_form.sh`

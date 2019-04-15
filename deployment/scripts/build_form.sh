@@ -3,18 +3,14 @@
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''
 DEPLOY_ENV=''
-SHOULD_UPLOAD="false"
 
-while getopts "f:e:u" opt; do
+while getopts "f:e:" opt; do
   case $opt in
     f )
       FORM=$OPTARG
       ;;
     e )
       DEPLOY_ENV=$OPTARG
-      ;;
-    u )
-      SHOULD_UPLOAD="true"
       ;;
     \? )
       echo "Invalid option: -$OPTARG" >&2
@@ -48,9 +44,3 @@ fi
 
 # Run "webpack" command in form's directory, pass env variable to webpack.config.js
 yarn --cwd $FORM_PATH webpack --env $DEPLOY_ENV
-
-# Optional clause to upload translated form.
-# Triggered when -u arg is passed with a valid -e $DEPLOY_ENV
-if [[ $SHOULD_UPLOAD = "true" ]]; then
-  $CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV
-fi;
