@@ -17,7 +17,7 @@ const formConfig = {
   title: 'File a complaint',
   subTitle: '',
   formId: '',
-  urlPrefix: '/police-complain/',
+  urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
   trackingPrefix: 'form-',
   submit: (formData, formConfig) => {
     console.log("Appending formConfig to formData");

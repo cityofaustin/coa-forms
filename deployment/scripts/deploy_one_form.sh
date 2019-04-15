@@ -6,7 +6,7 @@ CURRENT_DIR=`dirname $BASH_SOURCE`
 DEPLOY_ENV=$1
 FORM=$2
 FORM_PATH="$CURRENT_DIR/../../src/$FORM"
-ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.env"
+ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.sh"
 
 if [ ! -d $FORM_PATH ]; then
   echo "ERROR: form \"$FORM\" does not exist"

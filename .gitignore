@@ -1,6 +1,7 @@
 # Directories to ignore
 node_modules/
 local/
+public*/
 
 # Files to ignore
 .DS_Store

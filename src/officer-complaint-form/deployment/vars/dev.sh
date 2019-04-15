@@ -1,7 +1,8 @@
 # AWS
-DEPLOYMENT_BUCKET=police-monitor-website-pr
-DEPLOYMENT_PATH_EN=police-complain
-DEPLOYMENT_PATH_ES=policia-queja
+DEPLOYMENT_BUCKET=nick-feature
+BUILD_BRANCH=consolidate
+DEPLOYMENT_PATH_EN=police-complain-$BUILD_BRANCH
+DEPLOYMENT_PATH_ES=policia-queja-$BUILD_BRANCH
 
 # App
 NODE_ENV=development

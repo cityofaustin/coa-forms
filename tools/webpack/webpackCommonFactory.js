@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const CopyPlugin = require('copy-webpack-plugin');
 
 /**
   webpackCommonFactory is a factory function that builds webpack configs that are common to both local and production builds.
@@ -35,6 +36,20 @@ const webpackCommonFactory = (__dirname) => {
       publicPath: `/${process.env.DEPLOYMENT_PATH_EN}/`,
       filename: "js/app.bundle.js"
     },
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+          FORM_API_URL: JSON.stringify(process.env.FORM_API_URL),
+          DEPLOYMENT_PATH: JSON.stringify(process.env.DEPLOYMENT_PATH_EN),
+          DEPLOYMENT_PATH_EN: JSON.stringify(process.env.DEPLOYMENT_PATH_EN),
+          DEPLOYMENT_PATH_ES: JSON.stringify(process.env.DEPLOYMENT_PATH_ES),
+        },
+      }),
+      new CopyPlugin([
+        {from: `${__dirname}/src/index.html`},
+      ]),
+    ],
     module: {
       rules: [
         {
@@ -53,7 +68,7 @@ const webpackCommonFactory = (__dirname) => {
             path.resolve(__dirname, '.')
           ],
           use: {
-            loader: "babel-loader",
+            loader: "babel-loader?cacheDirectory",
             options: {
               /**
                 Resetting the root directory allows us to transpile jsx code that is

@@ -1,33 +1,41 @@
 const path = require("path");
-const merge = require("webpack-merge");
+const webpack = require('webpack');
 
 const webpackCommonFactory = require('../../tools/webpack/webpackCommonFactory');
 const webpackLocalFactory = require('../../tools/webpack/webpackLocalFactory');
 const webpackDeployedFactory = require('../../tools/webpack/webpackDeployedFactory');
+const webpackSpanishFactory = require('../../tools/webpack/webpackSpanishFactory');
+const mergePlus = require('../../tools/webpack/mergePlus');
 
 module.exports = (env) => {
-  require('dotenv').config({ path: path.resolve(__dirname, `./deployment/vars/${env}.env`)});
+  // Source environment variables
+  require('dotenv-expand')(require('dotenv').config({ path: path.resolve(__dirname, `./deployment/vars/${env}.sh`)}));
 
   // Additional form-specific webpack configs can be entered here
   const extraCommonConfigs = {};
   const extraLocalConfigs = {};
   const extraDeployedConfigs = {};
 
-  const webpackCommon = merge(
+  const webpackCommon = mergePlus(
     webpackCommonFactory(__dirname),
     extraCommonConfigs
   );
 
-  const webpackLocal = merge(
+  const webpackLocal = mergePlus(
     webpackCommon,
     webpackLocalFactory(__dirname),
     extraLocalConfigs
   )
 
-  const webpackDeployed = merge(
+  const webpackDeployed = mergePlus(
     webpackCommon,
     webpackDeployedFactory(__dirname),
     extraDeployedConfigs
+  )
+
+  const webpackDeployedSpanish = mergePlus(
+    webpackDeployed,
+    webpackSpanishFactory(__dirname)
   )
 
   if (env === "local") {
@@ -38,7 +46,10 @@ module.exports = (env) => {
     (env === "uat") ||
     (env === "prod")
   ) {
-    return webpackDeployed
+    return [
+      webpackDeployed,
+      webpackDeployedSpanish
+    ]
   } else {
     return {}
   }

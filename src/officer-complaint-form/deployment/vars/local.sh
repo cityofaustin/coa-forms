@@ -9,3 +9,6 @@ FORM_API_URL=http://localhost:5000
 # Structure
 FORM_DIR=officer-complaint-form
 CHAPTERS_DIR=OPO
+
+# Test
+THING="helllloooooooo"

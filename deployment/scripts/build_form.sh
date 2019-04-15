@@ -28,7 +28,7 @@ while getopts "f:e:u" opt; do
 done
 
 FORM_PATH="$CURRENT_DIR/../../src/$FORM"
-ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.env"
+ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.sh"
 
 if [ -z $FORM ]; then
   echo "ERROR: -f argument is required. Please specify a FORM to translate."

@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const exec = require('child_process').exec;
 
 /**
   webpackLocalFactory is a factory function that builds a webpack config for running a local dev server.
@@ -18,15 +19,31 @@ const path = require("path");
     it will refer to the form-specific __dirname that you plug in.
 **/
 
-const webpackLocalFactory = (__dirname) => {
+const webpackSpanishFactory = (__dirname) => {
   return {
-    mode: 'development',
-    devtool: 'eval-source-map',
-    devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
-      historyApiFallback: true,
-    }
+    output: {
+      path: path.resolve(__dirname, "public_es"),
+      publicPath: `/${process.env.DEPLOYMENT_PATH_ES}/`,
+      filename: "js/app.bundle.js"
+    },
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          DEPLOYMENT_PATH: JSON.stringify(process.env.DEPLOYMENT_PATH_ES),
+        },
+      }),
+      {
+        apply: (compiler) => {
+          compiler.hooks.afterEmit.tap('AfterEmitPlugin', (compilation) => {
+            exec(`${path.resolve(__dirname, "../../deployment/scripts/translate_form.sh")} -f ${process.env.FORM_DIR} -l es`, (err, stdout, stderr) => {
+              if (stdout) process.stdout.write(stdout);
+              if (stderr) process.stderr.write(stderr);
+            });
+          });
+        }
+      }
+    ]
   }
 };
 
-module.exports = webpackLocalFactory
+module.exports = webpackSpanishFactory

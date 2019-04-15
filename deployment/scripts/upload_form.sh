@@ -32,7 +32,7 @@ FORM_PATH="$CURRENT_DIR/../../src/$FORM"
 if [[ ! -z $LANGUAGE ]] && [[ $LANGUAGE != "en" ]]; then
   TRANSLATED="true"
 fi
-ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.env"
+ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.sh"
 BUILD_PATH="$FORM_PATH/public"
 
 if [ -z $FORM ]; then
@@ -64,11 +64,6 @@ else
   DEPLOYMENT_PATH_FOR_LANG="DEPLOYMENT_PATH_$(echo $LANGUAGE | tr a-z A-Z)"
   DEPLOYMENT_PATH=${!DEPLOYMENT_PATH_FOR_LANG}
 fi
-
-# Append branch name to deployment path for a dev feature branch
-if [ $DEPLOY_ENV = "dev" ]; then
-  DEPLOYMENT_PATH=$DEPLOYMENT_PATH-$BUILD_BRANCH
-fi;
 
 S3_DESTINATION="s3://${DEPLOYMENT_BUCKET}/${DEPLOYMENT_PATH}"
 

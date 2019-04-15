@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --env local --open --public http://localhost:8080/police-complain",
     "webpack": "webpack",
+    "webpack:v2": "source ./deployment/vars/dev.sh; echo \"hi $DEPLOYMENT_PATH_EN\"; webpack --env dev",
     "build": "webpack --env prod",
     "build:es": "../../deployment/scripts/translate_form.sh -f officer-complaint-form",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
@@ -31,7 +32,6 @@
     "babel-loader": "^8.0.0",
     "chai": "^4.1.1",
     "css-loader": "^0.28.11",
-    "dotenv": "^7.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
@@ -50,13 +50,14 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.1.3"
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "@cityofaustin/usfs-schema-blocks": "^0.0.4",
     "@ibm/plex": "^1.2.3",
     "date-fns": "^1.30.1",
+    "dotenv": "^7.0.0",
+    "dotenv-expand": "^5.1.0",
     "filepond": "^3.5.0",
     "filepond-plugin-image-exif-orientation": "^1.0.3",
     "filepond-plugin-image-preview": "^3.1.4",

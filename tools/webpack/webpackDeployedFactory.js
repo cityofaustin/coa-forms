@@ -37,6 +37,8 @@ const webpackDeployedFactory = (__dirname) => {
       minimizer: [
         new UglifyJSPlugin({
           sourceMap: true,
+          cache: true,
+          parallel: true,
           uglifyOptions: {
             compress: {
               inline: false
@@ -58,12 +60,6 @@ const webpackDeployedFactory = (__dirname) => {
       }
     },
     plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-          FORM_API_URL: JSON.stringify(process.env.FORM_API_URL)
-        },
-      }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',
         openAnalyzer: false,
