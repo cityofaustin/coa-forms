@@ -135,7 +135,9 @@ $dialog-position-bottom: 1rem;
 @media only screen  and (min-device-width : 375px) and (max-device-width : 667px) {
   .opo-modalbox__container {
     position: fixed;
-    bottom: 5rem;
+    bottom: 1rem !important;
+    left: 1%;
+    width: 98%;
   }
 
   .opo-modalbox__body{
