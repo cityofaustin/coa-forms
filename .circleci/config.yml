@@ -1,0 +1,29 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.8.0a3-node
+    steps:
+      - checkout
+      - run:
+          name: "Install Dependencies"
+          command: |
+            sudo apt-get install jq
+            pip install --user awscli
+  test:
+    docker:
+      - image: circleci/python:3.8.0a3-node
+    steps:
+      - checkout
+      - run: echo "I'm sure this is fine"
+      - run: pwd
+      - run: ls
+
+      # - restore_cache: # special step to restore the dependency cache
+        # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+        # key: dependency-cache-{{ checksum "package.json" }}
+      # - run: # run tests
+      #     name: test
+      #     command: npm test
