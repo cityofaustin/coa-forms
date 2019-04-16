@@ -98,10 +98,14 @@ $dialog-position-bottom: 1rem;
   }
 }
 
+/*
+  Media Query
+*/
+
 @media only screen and (max-width: 480px) {
   .opo-modalbox__container {
-    position: fixed;
-    bottom: 5rem;
+    left: 5vw;
+    bottom: 3.5rem;
   }
 
   .opo-modalbox__body{
