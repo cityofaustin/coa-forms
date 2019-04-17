@@ -23,7 +23,7 @@ while getopts "f:l:" opt; do
   esac
 done
 
-FORM_PATH="$CURRENT_DIR/../../src/$FORM"
+FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 TRANSLATION_PATH="${FORM_PATH}/public_${LANGUAGE}";
 
 if [ -z $FORM ]; then
@@ -43,7 +43,7 @@ fi
 ##### Begin #####
 
 echo "First, let's translate the routes:";
-python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/src/locale/routes.json" "$TRANSLATION_PATH/js/app.bundle.js" "${LANGUAGE}" --routes
+python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/locale/routes.json" "$TRANSLATION_PATH/js/app.bundle.js" "${LANGUAGE}" --routes
 
 echo "Then, let's translate the rest of the form:"
-python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/src/locale/translations.json" "${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
+python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/locale/translations.json" "${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
