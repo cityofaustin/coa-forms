@@ -7,7 +7,7 @@ import {
   whereHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
-} from './chapters';
+} from 'chapters';
 
 const formConfig = {
   type: "thanks",
