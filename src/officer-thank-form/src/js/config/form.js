@@ -15,7 +15,7 @@ const formConfig = {
   title: 'Thank an Austin police officer',
   subTitle: '',
   formId: '',
-  urlPrefix: '/police-thank/',
+  urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
   trackingPrefix: 'form-',
   submit: (formData, formConfig) => {
     console.log("Appending formConfig to formData");
@@ -71,7 +71,7 @@ const formConfig = {
       return error;
     });
   },
-  submitUrl: `${process.env.API_URL}/form/submit`,
+  submitUrl: `${process.env.FORM_API_URL}/form/submit`,
   introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},
