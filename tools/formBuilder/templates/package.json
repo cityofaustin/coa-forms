@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "redux-thunk": "^2.3.0",
+    "us-forms-system": "https://github.com/cityofaustin/us-forms-system.git",
+    "uswds": "^1.6.3"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}

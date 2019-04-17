@@ -1,0 +1,55 @@
+version: 2.1
+
+jobs:
+  test: #TODO: run tests for all forms to deploy
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.8.0a3-node
+    steps:
+      - checkout
+  deploy:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.8.0a3-node
+    parameters:
+      DEPLOY_ENV:
+        description: "Sets $DEPLOY_ENV for run.sh; determines all environment variables; sets S3 Bucket destination"
+        type: string
+    steps:
+      - checkout
+      - run:
+          name: "Install Dependencies"
+          command: |
+            sudo apt-get install jq
+            sudo pip install awscli
+      - run:
+          name: "Deploy to << parameters.DEPLOY_ENV >>"
+          command: bash ./deployment/scripts/run.sh << parameters.DEPLOY_ENV >>
+
+workflows:
+  version: 2.1
+  build-and-deploy:
+    jobs:
+      - deploy:
+          DEPLOY_ENV: dev
+          filters:
+            branches:
+              ignore:
+                - master
+                - production
+                - uat
+      - deploy:
+          DEPLOY_ENV: staging
+          filters:
+            branches:
+              only: master
+      - deploy:
+          DEPLOY_ENV: uat
+          filters:
+            branches:
+              only: uat
+      - deploy:
+          DEPLOY_ENV: prod
+          filters:
+            branches:
+              only: production
