@@ -20,8 +20,8 @@ const witnessDetailsChapter = {
               type: 'object',
               properties: {
                 name: { type: 'string' },
-                email: { type: 'string' },
-                phoneNumber: { type: 'string' },
+                email: { type: 'string', format: 'email' },
+                phoneNumber: phoneConfig.schema(),
                 anythingElse: { type: 'string' },
               },
             },
@@ -40,7 +40,7 @@ const witnessDetailsChapter = {
         },
         witnesses: {
           'ui:options': {
-            viewField: () => (<div></div>),
+            viewField: () => <div />,
             addable: true,
             expandUnder: 'hasWitnessInformation',
             itemName: 'witness',
