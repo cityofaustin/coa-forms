@@ -98,9 +98,13 @@ $dialog-position-bottom: 1rem;
   }
 }
 
+/*
+  Media Queries
+*/
+
 @media only screen and (max-width: 480px) {
   .opo-modalbox__container {
-    position: fixed;
+    left: 5vw;
     bottom: 5rem;
   }
 
@@ -123,6 +127,7 @@ $dialog-position-bottom: 1rem;
     }
   }
 }
+
 
 /*
   Rules for Internet Explorer
