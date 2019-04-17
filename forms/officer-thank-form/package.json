@@ -1,21 +1,14 @@
 {
   "name": "officer-thanks-form",
   "version": "1.0.0",
-  "description": "Officer thanks Form",
+  "description": "Officer Thanks Form",
   "main": "app.js",
   "directories": {},
   "scripts": {
-    "start": "webpack-dev-server --open --public http://localhost:8080/police-thank --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --env local --open --public http://localhost:8080/police-thank",
+    "webpack": "webpack",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
-    "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
-    "postinstall": "git submodule update --init --recursive",
-    "serve-prod": "npx http-server ./public",
-    "heroku-postbuild": "yarn build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/usds/us-forms-system-starter-app.git"
+    "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx"
   },
   "author": "",
   "license": "ISC",
@@ -39,21 +32,18 @@
     "eslint-stats": "^1.0.0",
     "mocha": "^5.2.0",
     "node-sass": "^4.11.0",
+    "parallel-webpack": "^2.3.0",
     "react-test-renderer": "^15.5.4",
     "sass-loader": "^7.1.0",
     "skin-deep": "^1.0.0",
     "style-loader": "^0.21.0",
     "svg-url-loader": "^2.3.2",
-    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.0.1",
     "webpack": "^4.10.2",
-    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.1",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.1.3"
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "@cityofaustin/usfs-schema-blocks": "^0.0.4",
     "@ibm/plex": "^1.2.3",
     "date-fns": "^1.30.1",
     "filepond": "^3.5.0",
