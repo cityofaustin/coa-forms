@@ -1,0 +1,613 @@
+/*
+sass/config/variables stuff
+ */
+$font-prefix: '../node_modules/@ibm/plex/';
+@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+
+$color-primary: #0050d8;
+
+$odd-font: 'IBM Plex Sans', sans-serif;
+$font-sans: $odd-font;
+$font-serif: $odd-font;
+
+// THIS IS IMPORTANT to use SASS
+$asset-path: '../node_modules/uswds/src/';
+@import '../node_modules/us-forms-system/src/scss/styles.scss';
+
+/*
+general/global overrides,
+these might be bad depending where the form ends up
+*/
+
+[class*='usa-button'] {
+  height: 40px;
+}
+
+* {
+  font-family: $odd-font;
+}
+
+.body {
+  font-weight: 400;
+}
+
+/* input style dosen't affect description widget atm */
+input,
+textarea,
+select {
+  border-radius: 4px;
+  border-color: #dbdee1;
+}
+
+[type='checkbox'] + label,
+[type='radio'] + label {
+  padding: 10px 13px 11px 12px;
+}
+
+[type='radio'] + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #dbdee1;
+}
+
+input[type='radio']:checked + label {
+  background-color: #d9e8f6;
+}
+
+label {
+  margin-top: 0px;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+/*
+form overrides
+ */
+.schemaform-title {
+  background-color: #d9e8f6;
+  align-content: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  min-height: 58px;
+  box-shadow: 0px 1px 3px $color-shadow;
+}
+
+// might fight a losing battle here changing the h1 style
+.schemaform-title > h1 {
+  font-size: 14px;
+  padding-top: 17px;
+  font-weight: 400;
+  color: #162e51;
+}
+
+.schemaform-intro h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.schemaform-intro h2 {
+  font-size: 18px;
+}
+
+.schemaform-intro h3 {
+  font-size: 16px;
+}
+
+.schemaform-intro a:visited {
+  color: $color-primary;
+}
+
+.schemaform-block-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #171717;
+}
+
+.schemaform-block-header {
+  text-align: center;
+}
+
+.schemaform-widget-wrapper {
+  border-radius: 4px;
+}
+
+.schemaform-field-template {
+  margin-bottom: 20px;
+}
+
+.site-header {
+  margin-bottom: 0px;
+}
+
+.schemaform-chapter-progress {
+  display: none;
+}
+
+.progress-bar-segmented {
+  padding: 0px 60px 0px 60px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 13px;
+}
+
+.progress-segment:first-child {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.progress-segment:last-child {
+  border-radius: 0px 7px 7px 0px;
+}
+
+// 'de-segment' that progress bar
+.progress-segment {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.form-radio-buttons {
+  box-shadow: 0 0 0 1px #dbdee1;
+  border-radius: 4px;
+  margin-top: 0.5em;
+}
+
+/* intro page */
+
+.form-rule {
+  border-color: $color-primary;
+}
+
+.accordion-rule {
+  border-color: rgba(#005ea2, 0.25);
+}
+
+.accordion-list {
+  list-style-type: disc;
+}
+
+.intro-nav-container,
+.intro-select,
+.intro-about {
+  color: $color-primary;
+}
+
+.intro-nav-container {
+  padding: 20px 14px 20px 14px;
+  height: 65.28px;
+  // padding: 1.5rem 5.5rem 1.5rem 2rem;
+}
+
+.nav-heading {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+
+.arrow_back {
+  color: #adadad;
+  position: relative;
+  top: 5px;
+  padding-right: 16px;
+}
+
+.intro-heading {
+  margin-top: 15.7px;
+}
+
+.usa-alert {
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.usa-alert-info .usa-alert-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.usa-alert-info::before {
+  background-color: #d9e8f6;
+  width: 0px;
+}
+
+.usa-alert-info {
+  padding-left: 0px;
+  padding-top: 70px;
+  background-color: #d9e8f6;
+  background-position: 50% 24px;
+}
+
+.usa-alert-heading {
+  color: #162e51;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.usa-alert-text {
+  color: #162e51;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+legend.schemaform-label {
+  font-size: 18px;
+}
+
+.schemaform-block-subtitle {
+  text-align: left;
+}
+
+.accordion-header.clearfix.schemaform-chapter-accordion-header > button {
+  color: #0050d8;
+  font-weight: 500;
+  height: auto;
+  padding: 1.5rem 4.5rem 1.5rem 1.5rem;
+}
+
+.filepond--root {
+  font-size: 1.6rem !important;
+  margin-top: 0.5em;
+}
+
+#root > div > div > div > div.schemaform-intro > div.usa-grid > ul > li {
+  border-radius: 4px;
+}
+
+.usa-accordion-button {
+  font-weight: 500;
+  border-radius: 4px;
+  min-height: 65.28px;
+}
+
+.usa-accordion-content {
+  border-radius: 4px;
+}
+
+.pin {
+  z-index: 20;
+}
+
+// .mapboxgl-ctrl-top-left {
+//   max-width: 300px;
+// }
+
+.mapboxgl-ctrl-geolocate {
+  position: absolute;
+  z-index: 20;
+  left: 270px;
+  top: 15px;
+  background-color: #ffffff;
+}
+
+.mapboxgl-ctrl-geocoder .geocoder-pin-right * {
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+/*
+hacky overrides
+ */
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div:nth-child(3)
+  > div
+  > div
+  > p {
+  color: #757575;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
+  position: absolute;
+  z-index: 2;
+  left: 210px;
+  top: 15px;
+  box-shadow: none;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.usa-width-two-thirds.medium-8.columns.centered-form-two-thirds
+  > div.progress-box.progress-box-schemaform.centered-form-schemaforms
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+  box-shadow: none;
+}
+
+.mapboxgl-ctrl-top-left {
+  width: 55%;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group
+  > button {
+  position: absolute;
+  z-index: 2;
+  left: 280px;
+  top: 15px;
+  box-shadow: none;
+}
+
+// #root
+//   > div
+//   > div
+//   > div
+//   > div.progress-box.progress-box-schemaform
+//   > div
+//   > div
+//   > form
+//   > fieldset
+//   > div
+//   > div:nth-child(6)
+//   > div
+//   > div
+//   > div.schemaform-widget-wrapper
+//   > div
+//   > div
+//   > div
+//   > div.mapboxgl-control-container
+//   > div.mapboxgl-ctrl-top-left
+//   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+//   > input[type='text'] {
+//   width: 90%;
+//   font-size: 16px;
+//   font-family: $odd-font;
+// }
+
+#root
+  > div
+  > div
+  > div
+  > div.usa-width-two-thirds.medium-8.columns.centered-form-two-thirds
+  > div.progress-box.progress-box-schemaform.centered-form-schemaforms
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > input[type='text'] {
+  width: 90%;
+  font-size: 16px;
+  font-family: $odd-font;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
+  box-shadow: none;
+}
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+  > div
+  > button {
+  display: inline-block;
+  width: 30px;
+  top: 8px;
+  left: 250px;
+  box-shadow: none;
+}
+
+// #root
+//   > div
+//   > div
+//   > div
+//   > div.usa-width-two-thirds.medium-8.columns
+//   > div.progress-box.progress-box-schemaform
+//   > div
+//   > div
+//   > form
+//   > fieldset
+//   > div
+//   > div:nth-child(5)
+//   > div
+//   > div
+//   > div.schemaform-widget-wrapper
+//   > div
+//   > div
+//   > div
+//   > div.mapboxgl-control-container
+//   > div.mapboxgl-ctrl-top-left
+//   > div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl
+//   > div {
+//   display: none;
+// }
+
+#root
+  > div
+  > div
+  > div
+  > div.progress-box.progress-box-schemaform
+  > div
+  > div
+  > form
+  > fieldset
+  > div
+  > div:nth-child(5)
+  > div
+  > div
+  > div.schemaform-widget-wrapper
+  > div
+  > div
+  > div
+  > div.mapboxgl-control-container
+  > div.mapboxgl-ctrl-top-left
+  > div.mapboxgl-ctrl.mapboxgl-ctrl-group {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 520px) {
+  .centered-form-two-thirds {
+    width: 100%;
+  }
+
+  .centered-form-schemaforms {
+    width: 75%;
+    margin: 0 auto 0 auto !important;
+  }
+}
+
+// make textareas full-width within container
+textarea {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.filepond--file-action-button.filepond--file-action-button {
+  font-size: 1em !important;
+  width: 1.625em !important;
+  height: 1.625em !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  will-change: transform, opacity !important;
+}
+
+.filepond--file-action-button {
+  cursor: auto !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-image: none !important;
+  box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0) !important;
+  transition: box-shadow 0.25s ease-in !important;
+}
+
+.geocoder-icon-close {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiPg0KICA8cGF0aCBkPSJtNSA1IDAgMS41IDMuNSAzLjUtMy41IDMuNSAwIDEuNSAxLjUgMCAzLjUtMy41IDMuNSAzLjUgMS41IDAgMC0xLjUtMy41LTMuNSAzLjUtMy41IDAtMS41LTEuNSAwLTMuNSAzLjUtMy41LTMuNS0xLjUgMHoiIGZpbGw9IiMwMDAiLz4NCjwvc3ZnPg==) !important;
+}
+
+.mapboxgl-ctrl-zoom-in {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%0A%20%20%3Cpath%20style%3D%27fill%3A%23333333%3B%27%20d%3D%27M%2010%206%20C%209.446%206%209%206.4459904%209%207%20L%209%209%20L%207%209%20C%206.446%209%206%209.446%206%2010%20C%206%2010.554%206.446%2011%207%2011%20L%209%2011%20L%209%2013%20C%209%2013.55401%209.446%2014%2010%2014%20C%2010.554%2014%2011%2013.55401%2011%2013%20L%2011%2011%20L%2013%2011%20C%2013.554%2011%2014%2010.554%2014%2010%20C%2014%209.446%2013.554%209%2013%209%20L%2011%209%20L%2011%207%20C%2011%206.4459904%2010.554%206%2010%206%20z%27%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+}
+
+.mapboxgl-ctrl-zoom-out {
+  background-color: white !important;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%0A%20%20%3Cpath%20style%3D%27fill%3A%23333333%3B%27%20d%3D%27m%207%2C9%20c%20-0.554%2C0%20-1%2C0.446%20-1%2C1%200%2C0.554%200.446%2C1%201%2C1%20l%206%2C0%20c%200.554%2C0%201%2C-0.446%201%2C-1%200%2C-0.554%20-0.446%2C-1%20-1%2C-1%20z%27%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+}
+
+// .geocoder-icon.geocoder-icon-close, .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate {
+//   background-color: #fff !important;
+//   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwM…41LTEuNSAwLTMuNSAzLjUtMy41LTMuNS0xLjUgMHoiIGZpbGw9IiMwMDAiLz4NCjwvc3ZnPg==) !important;
+// }
+
+.form-review-panel-page-header-row {
+  justify-content: flex-end;
+}
