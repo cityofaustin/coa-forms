@@ -1,15 +1,12 @@
 version: 2.1
 
 jobs:
-  test:
+  test: #TODO: run tests for all forms to deploy
     working_directory: ~/project
     docker:
       - image: circleci/python:3.8.0a3-node
     steps:
       - checkout
-      - run: echo "I'm sure this is fine"
-      - run: pwd
-      - run: ls
   deploy:
     working_directory: ~/project
     docker:
@@ -29,7 +26,6 @@ jobs:
           name: "Deploy to << parameters.DEPLOY_ENV >>"
           command: bash ./deployment/scripts/run.sh << parameters.DEPLOY_ENV >>
 
-
 workflows:
   version: 2.1
   build-and-deploy:
@@ -41,20 +37,19 @@ workflows:
               ignore:
                 - master
                 - production
+                - uat
       - deploy:
           DEPLOY_ENV: staging
           filters:
             branches:
               only: master
       - deploy:
+          DEPLOY_ENV: uat
+          filters:
+            branches:
+              only: uat
+      - deploy:
           DEPLOY_ENV: prod
           filters:
             branches:
               only: production
-
-      # - restore_cache: # special step to restore the dependency cache
-        # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-        # key: dependency-cache-{{ checksum "package.json" }}
-      # - run: # run tests
-      #     name: test
-      #     command: npm test

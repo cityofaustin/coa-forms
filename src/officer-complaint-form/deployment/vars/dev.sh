@@ -1,5 +1,5 @@
 # AWS
-DEPLOYMENT_BUCKET=nick-feature
+DEPLOYMENT_BUCKET=coa-forms-dev
 DEPLOYMENT_PATH_EN=police-complain-$CIRCLE_BRANCH
 DEPLOYMENT_PATH_ES=policia-queja-$CIRCLE_BRANCH
 

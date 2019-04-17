@@ -1,5 +1,5 @@
 # AWS
-DEPLOYMENT_BUCKET=nick-uat # police-monitor-website-uat
+DEPLOYMENT_BUCKET=coa-forms-uat
 DEPLOYMENT_PATH_EN=police-complain
 DEPLOYMENT_PATH_ES=policia-queja
 

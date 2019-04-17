@@ -1,5 +1,5 @@
 # AWS
-DEPLOYMENT_BUCKET=nick-prod # police-monitor-website-production
+DEPLOYMENT_BUCKET=$CI_PROD_BUCKET_OPO
 DEPLOYMENT_PATH_EN=police-complain
 DEPLOYMENT_PATH_ES=policia-queja
 
