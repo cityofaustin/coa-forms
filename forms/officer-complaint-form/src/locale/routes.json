@@ -1,8 +1,4 @@
 {
-  "deployment_path": {
-    "es": "policia-queja"
-  },
-
   "routes":  {
     "%/police-complain/%": {
         "es": "%/policia-queja/%"

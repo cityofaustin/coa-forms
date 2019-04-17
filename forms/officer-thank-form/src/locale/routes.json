@@ -1,8 +1,4 @@
 {
-  "deployment_path": {
-    "es": "policia-agradezca"
-  },
-
   "routes":  {
     "%/police-thank/%": {
         "es": "%/policia-agradezca/%"
