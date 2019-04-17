@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 jobs:
   build:
@@ -11,8 +11,9 @@ jobs:
           name: "Install Dependencies"
           command: |
             sudo apt-get install jq
-            pip install --user awscli
+            sudo pip install awscli
   test:
+    working_directory: ~/project
     docker:
       - image: circleci/python:3.8.0a3-node
     steps:
@@ -20,6 +21,49 @@ jobs:
       - run: echo "I'm sure this is fine"
       - run: pwd
       - run: ls
+  deploy:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.8.0a3-node
+    parameters:
+      DEPLOY_ENV:
+        description: "Sets $DEPLOY_ENV for run.sh; determines all environment variables; sets S3 Bucket destination"
+        type: string
+    steps:
+      - checkout
+      - run:
+          name: "Deploy"
+          command: bash ./deployment/scripts/run.sh << parameters.DEPLOY_ENV >>
+
+
+workflows:
+  version: 2.1
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          DEPLOY_ENV: dev
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - master
+                - production
+      - deploy:
+          DEPLOY_ENV: staging
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - deploy:
+          DEPLOY_ENV: prod
+          requires:
+            - build
+          filters:
+            branches:
+              only: production
 
       # - restore_cache: # special step to restore the dependency cache
         # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
