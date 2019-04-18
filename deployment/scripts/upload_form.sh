@@ -28,7 +28,7 @@ while getopts "f:e:l:" opt; do
   esac
 done
 
-FORM_PATH="$CURRENT_DIR/../../src/$FORM"
+FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 if [[ ! -z $LANGUAGE ]] && [[ $LANGUAGE != "en" ]]; then
   TRANSLATED="true"
 fi

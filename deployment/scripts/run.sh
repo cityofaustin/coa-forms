@@ -5,7 +5,7 @@ CURRENT_DIR=`dirname $BASH_SOURCE`
 # Catch any errors in dev_deploy_options.json
 for FORM in $(jq -r ".forms_to_deploy[]" "$CURRENT_DIR/../dev_deploy_options.json");
 do
-  FORM_PATH="$CURRENT_DIR/../../src/$FORM"
+  FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
   if [ ! -d $FORM_PATH ]; then
     echo "ERROR in dev_deploy_options.json: form \"$FORM\" does not exist"
     exit 1

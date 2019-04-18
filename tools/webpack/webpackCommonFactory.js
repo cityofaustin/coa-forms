@@ -26,7 +26,7 @@ const webpackCommonFactory = (__dirname) => {
       modules: ["node_modules"],
       extensions: [".js", ".jsx"],
       alias: {
-        chapters: path.resolve(__dirname, `../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
+        chapters: path.resolve(__dirname, `../../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
       }
     },
     context: __dirname,
@@ -65,7 +65,7 @@ const webpackCommonFactory = (__dirname) => {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           include: [
-            path.resolve(__dirname, '../shared'),
+            path.resolve(__dirname, '../../shared'),
             path.resolve(__dirname, '.')
           ],
           use: {
