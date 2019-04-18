@@ -84,8 +84,7 @@ class App extends React.Component {
   ) {
     // If the language is the same, then ignore the click...
     if (
-        (linkRedirect + '/') == `/${process.env.DEPLOYMENT_PATH_EN}/` &&
-        this.currentFormLanguage == 'opo_current_language_english'
+        (linkRedirect + '/') == `/${process.env.DEPLOYMENT_PATH}/`
     ) {
       console.log('Click ignored, same language');
       return;
