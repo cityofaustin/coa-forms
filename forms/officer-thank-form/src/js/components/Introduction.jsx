@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ProgressButton from 'us-forms-system/lib/js/components/ProgressButton';
-import FormTitle from 'us-forms-system/lib/js/components/FormTitle';
+import ProgressButton from '@cityofaustin/us-forms-system/lib/js/components/ProgressButton';
+import FormTitle from '@cityofaustin/us-forms-system/lib/js/components/FormTitle';
 import uswds from 'uswds';
 
 class Introduction extends React.Component {

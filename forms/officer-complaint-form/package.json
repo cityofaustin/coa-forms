@@ -44,6 +44,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "@cityofaustin/us-forms-system": "1.1.4",
     "@ibm/plex": "^1.2.3",
     "date-fns": "^1.30.1",
     "dotenv": "^7.0.0",
@@ -59,7 +60,6 @@
     "react-flatpickr": "^3.6.4",
     "react-location-picker": "^1.3.0",
     "redux-thunk": "^2.3.0",
-    "us-forms-system": "https://github.com/cityofaustin/us-forms-system.git",
     "uswds": "^1.6.3"
   },
   "prettier": {

@@ -12,7 +12,7 @@ $font-serif: $odd-font;
 
 // THIS IS IMPORTANT to use SASS
 $asset-path: '../../node_modules/uswds/src/';
-@import '../../node_modules/us-forms-system/src/scss/styles.scss';
+@import '../../node_modules/@cityofaustin/us-forms-system/src/scss/styles.scss';
 
 /*
 general/global overrides,

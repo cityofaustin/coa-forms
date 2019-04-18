@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FormApp from 'us-forms-system/lib/js/containers/FormApp';
+import FormApp from '@cityofaustin/us-forms-system/lib/js/containers/FormApp';
 import formConfig from '../config/form';
 
 export default function Form({ location, children }) {
