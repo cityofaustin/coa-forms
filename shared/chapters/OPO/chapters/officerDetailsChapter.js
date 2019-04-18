@@ -1,5 +1,10 @@
+<<<<<<< HEAD:shared/chapters/OPO/chapters/officerDetailsChapter.js
 import { OfficerDetailsDisplayWidget } from '@cityofaustin/usfs-components';
 import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
+=======
+import React from 'react';
+import { raceBlocks, genderBlocks } from './schemaBlocks';
+>>>>>>> 05b4a38c8c6da9e7dbeba1fe728f0f442a5191c7:shared/officerDetailsChapter.js
 
 const officerDetailsChapter = {
   title: 'Tell us about the officer(s)',
@@ -69,13 +74,13 @@ const officerDetailsChapter = {
             'Do you remember any details about the officer(s) you’d like to share?',
           'ui:widget': 'radio',
           'ui:options': {
-            hideOnReview: true,
+            hideOnReview: false,
             classNames: 'big-button-radio',
           },
         },
         officers: {
           'ui:options': {
-            viewField: OfficerDetailsDisplayWidget,
+            viewField: () => <div />,
             addable: true,
             expandUnder: 'hasOfficerDetails',
             itemName: 'officer',

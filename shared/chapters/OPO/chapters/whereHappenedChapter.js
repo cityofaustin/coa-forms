@@ -1,7 +1,13 @@
+<<<<<<< HEAD:shared/chapters/OPO/chapters/whereHappenedChapter.js
 import {
   LocationPickerWidget,
   LocationReviewWidget,
 } from '@cityofaustin/usfs-components';
+=======
+import SelectLocationWidget from 'us-forms-system/lib/js/widgets/SelectLocation/SelectLocationWidget';
+
+import ReviewLocationWidget from 'us-forms-system/lib/js/review/ReviewLocationWidget';
+>>>>>>> 05b4a38c8c6da9e7dbeba1fe728f0f442a5191c7:shared/whereHappenedChapter.js
 
 const locationJSON = JSON.stringify({
   address: '800 Guadalupe St, Austin, TX 78701',
@@ -17,11 +23,10 @@ const whereHappenedChapter = {
 
       schema: {
         type: 'object',
-        required: ["location"],
+        required: ['location'],
         properties: {
           location: {
             type: 'string',
-            formData: locationJSON,
           },
         },
       },
