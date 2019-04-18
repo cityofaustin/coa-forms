@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createHistory } from 'history';
 
-import 'us-forms-system/lib/css/styles.css';
+import '@cityofaustin/us-forms-system/lib/css/styles.css';
 import './css/overrides.scss';
 
 import Modalbox from './js/components/Modalbox';

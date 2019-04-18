@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ProgressButton from "us-forms-system/lib/js/components/ProgressButton";
-import SegmentedProgressBar from "us-forms-system/lib/js/components/SegmentedProgressBar";
+import ProgressButton from "@cityofaustin/us-forms-system/lib/js/components/ProgressButton";
+import SegmentedProgressBar from "@cityofaustin/us-forms-system/lib/js/components/SegmentedProgressBar";
 
 import "../../css/Confirmation.scss";
 

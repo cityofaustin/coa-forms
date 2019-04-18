@@ -1,6 +1,5 @@
-import { WitnessDetailsDisplayWidget } from '@cityofaustin/usfs-components';
-
-import { phoneConfig } from 'us-forms-system/lib/js/definitions/phone';
+import React from 'react';
+import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
 
 const witnessDetailsChapter = {
   title: 'Tell us about any witnesses',
@@ -21,8 +20,8 @@ const witnessDetailsChapter = {
               type: 'object',
               properties: {
                 name: { type: 'string' },
-                email: { type: 'string' },
-                phoneNumber: { type: 'string' },
+                email: { type: 'string', format: 'email' },
+                phoneNumber: phoneConfig.schema(),
                 anythingElse: { type: 'string' },
               },
             },
@@ -41,7 +40,7 @@ const witnessDetailsChapter = {
         },
         witnesses: {
           'ui:options': {
-            viewField: WitnessDetailsDisplayWidget,
+            viewField: () => <div />,
             addable: true,
             expandUnder: 'hasWitnessInformation',
             itemName: 'witness',

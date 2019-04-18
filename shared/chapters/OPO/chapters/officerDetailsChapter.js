@@ -1,4 +1,4 @@
-import { OfficerDetailsDisplayWidget } from '@cityofaustin/usfs-components';
+import React from 'react';
 import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
 
 const officerDetailsChapter = {
@@ -69,13 +69,13 @@ const officerDetailsChapter = {
             'Do you remember any details about the officer(s) you’d like to share?',
           'ui:widget': 'radio',
           'ui:options': {
-            hideOnReview: true,
+            hideOnReview: false,
             classNames: 'big-button-radio',
           },
         },
         officers: {
           'ui:options': {
-            viewField: OfficerDetailsDisplayWidget,
+            viewField: () => <div />,
             addable: true,
             expandUnder: 'hasOfficerDetails',
             itemName: 'officer',

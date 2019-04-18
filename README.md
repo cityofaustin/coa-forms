@@ -1,18 +1,4 @@
-# what is this?
-
-A first attempt at consolidating some of our repos, for ease of reference/maintenance in the future
-
-# how I did this
-
-After reading/contemplating a couple methods, I settled on this one for the initial merging:
-https://help.github.com/en/articles/about-git-subtree-merges
-
-Another option would be to import via submodules.
-If for some reason we want to keep our current architecture but still have a consolidated repo for reference later that might be better.
-
-# how to use
-
-Since this used the subtree merge method, cloning this repo gets you all the code and history for the past repos.
+# COA Forms
 
 ## Dependencies
 
