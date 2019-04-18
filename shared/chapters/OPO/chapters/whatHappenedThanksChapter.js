@@ -1,6 +1,6 @@
-import widgets from "us-forms-system/lib/js/widgets";
+import widgets from "@cityofaustin/us-forms-system/lib/js/widgets";
 const { CalendarDateWidget, TimeWidget } = widgets;
-import { CalendarDateReviewWidget, TimeReviewWidget } from "us-forms-system/lib/js/review/widgets";
+import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 
 const whatHappenedThanksChapter = {
   title: "Tell us what happened",

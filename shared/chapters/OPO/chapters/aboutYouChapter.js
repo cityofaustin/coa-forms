@@ -1,9 +1,9 @@
 import React from 'react';
 import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
 
-import PhoneNumberWidget from 'us-forms-system/lib/js/widgets/PhoneNumberWidget';
-import PhoneNumberReviewWidget from 'us-forms-system/lib/js/review/PhoneNumberWidget';
-import { phoneConfig } from 'us-forms-system/lib/js/definitions/phone';
+import PhoneNumberWidget from '@cityofaustin/us-forms-system/lib/js/widgets/PhoneNumberWidget';
+import PhoneNumberReviewWidget from '@cityofaustin/us-forms-system/lib/js/review/PhoneNumberWidget';
+import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
 
 // we need to override this for labels, but need to make deep copys hence the JSON stuff
 let yourRace = JSON.parse(JSON.stringify(raceBlocks.ui));

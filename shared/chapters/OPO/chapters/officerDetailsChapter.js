@@ -1,10 +1,5 @@
-<<<<<<< HEAD:shared/chapters/OPO/chapters/officerDetailsChapter.js
-import { OfficerDetailsDisplayWidget } from '@cityofaustin/usfs-components';
-import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
-=======
 import React from 'react';
-import { raceBlocks, genderBlocks } from './schemaBlocks';
->>>>>>> 05b4a38c8c6da9e7dbeba1fe728f0f442a5191c7:shared/officerDetailsChapter.js
+import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
 
 const officerDetailsChapter = {
   title: 'Tell us about the officer(s)',
