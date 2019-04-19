@@ -106,21 +106,21 @@
   },
 
   "Your name as it appears on the ticket": {
-    "es": "Su nombre como aparece en la multa"
+    "es": "Su nombre como aparece en la infracción"
   },
 
   "I received a ticket during this interaction.": {
-    "es": "Recibí una multa durante esta interacción."
+    "es": "Recibí una infracción durante esta interacción."
   },
 
   "Skip this if you prefer to remain anonymous.": {
     "es": "Pase a la siguiente si desea permanecer anónimo."
   },
 
-  "We'll need your name in order to find the ticket you’re referencing.": {
-    "es": "Necesitamos su nombre para encontrar la multa a la que se está refiriendo."
+  "We need your name in order to find the ticket you’re referencing.": {
+    "es": "Necesitamos su nombre para encontrar la infracción a la que se está refiriendo."
   },
-
+  
   "Type in the location or drag the map to the location.": {
     "es": "Escriba el lugar o arrastre el mapa hasta la ubicación."
   },
@@ -413,7 +413,7 @@
 
 
   "How we store and use your information": {
-    "es": "Cómo almacenamos y usamos su información"
+    "es": "Cómo guardamos y usamos su información"
   },
 
   " with your confirmation number to find where your complaint is in this process.": {
@@ -552,10 +552,6 @@
     "es": "Por favor, proporcione una dirección de correo electrónico válida"
   },
 
-  "We need your name in order to find the ticket you’re referencing": {
-    "es": "Necesitamos tu nombre para encontrar el ticket al que ustéd se refiere"
-  },
-
   "You can email us at": {
     "es": "Nos puede enviar un correo electrónico a"
   },
@@ -625,7 +621,7 @@
   },
 
   "%Online%": {
-    "es": "%En línea%"
+    "es": "%Por internet%"
   },
 
   ":%Name%": {
