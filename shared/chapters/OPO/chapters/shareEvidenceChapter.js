@@ -41,7 +41,7 @@ const shareEvidenceChapter = {
             expandUnder: "awareOfEvidence",
             hideOnReviewIfFalse: true
           },
-          "ui:widget": FileUploadWidget,
+          "ui:widget": FileUploadWidget(process.env.FORM_API_URL),
           // "ui:widget": "file" - Using a custom widget instead for added functionality
           "ui:reviewWidget": FileUploadReviewWidget
         }

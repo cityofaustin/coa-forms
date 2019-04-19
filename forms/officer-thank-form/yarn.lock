@@ -723,10 +723,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cityofaustin/us-forms-system@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.1.4.tgz#74c9451530036306a72dde97d6db6e1c71e02cdd"
-  integrity sha512-hicl068VdeDbFM0g+QhuWmgkAzLzv0nBTqBL/9WpVaZExRmz8UOV6cyb3mJXfBKGfE+j1yGvEf75EWQZZsM8OQ==
+"@cityofaustin/us-forms-system@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.1.6.tgz#913eff1feae264187fd1faafc717bff0360f3aef"
+  integrity sha512-/Pn0d4C+qEn4KNPysNks2+qy4STc6jqQpOoVF79VIi9T7rU2TeNS/0WQ6iDGYjo6A8IblXhmRibcqfw4cTTZMw==
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
@@ -753,29 +753,6 @@
     redux "^3.5.2"
     reselect "^2.5.4"
 
-"@cityofaustin/usfs-components@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.19.tgz#7451ee963d39bf7ec639e42b63f0ca47a7936981"
-  integrity sha512-i6nfHiu6BBh/ACKyGMkDXLgU8wWcZjSfXrkW2BpxGCkCDJ56wizFtvNoirMlTgmA5DqQ4+lHf3EvtPDnAfy0Yg==
-  dependencies:
-    "@dump247/storybook-state" "^1.5.2"
-    "@mapbox/mapbox-gl-geocoder" "^3.1.0"
-    classnames "^2.2.6"
-    date-fns "^1.30.1"
-    filepond "^3.6.0"
-    filepond-plugin-file-validate-size "^2.1.1"
-    filepond-plugin-image-exif-orientation "^1.0.3"
-    filepond-plugin-image-preview "^3.1.4"
-    react "15"
-    react-autosuggest "^9.4.2"
-    react-filepond "^5.0.0"
-    react-flatpickr "^3.6.4"
-    react-mapbox-gl "3.9.2"
-    react-query-params "^1.0.9"
-    us-forms-system "https://github.com/cityofaustin/us-forms-system.git"
-    uswds "^1.6.9"
-    webpack "^4.27.1"
-
 "@department-of-veterans-affairs/react-jsonschema-form@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-jsonschema-form/-/react-jsonschema-form-1.0.0.tgz#dc69722f49088edac5a74d9effdf0d118f854703"
@@ -785,14 +762,6 @@
     lodash.topath "^4.5.2"
     prop-types "^15.6.1"
     setimmediate "^1.0.5"
-
-"@dump247/storybook-state@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@dump247/storybook-state/-/storybook-state-1.5.2.tgz#4c7c2f171937309f4a0dcb260be2dc5a3324e8e0"
-  integrity sha512-hhyEXtjFYIPQG5DAD3uVr7kccWfNokH4aZo6kA/ieAPCm551XzirEHXMXvMZLPWWV/8aILdXy6yyiXanFB97aQ==
-  dependencies:
-    react "^16.6.0"
-    react-json-view "^1.13.3"
 
 "@ibm/plex@^1.2.3":
   version "1.2.3"
@@ -1175,7 +1144,7 @@ acorn@^5.0.0, acorn@^5.2.1, acorn@^5.5.0, acorn@^5.6.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
 
-acorn@^6.0.2, acorn@^6.0.5:
+acorn@^6.0.2:
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.7.tgz#490180ce18337270232d9488a44be83d9afb7fd3"
   integrity sha512-HNJNgE60C9eOTgn974Tlp3dpLZdUr+SoxxDwPaY9J/kDNOLQTkaDgwBUXAF4SSsrAwD9RpdxuHK/EbuF+W9Ahw==
@@ -1624,11 +1593,6 @@ base-64@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
   integrity sha1-eAqZyE59YAJgNhURxId2E78k9rs=
-
-base16@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/base16/-/base16-1.0.0.tgz#e297f60d7ec1014a7a971a39ebc8a98c0b681e70"
-  integrity sha1-4pf2DX7BAUp6lxo568ipjAtoHnA=
 
 base64-js@^1.0.2:
   version "1.3.0"
@@ -3916,14 +3880,7 @@ faye-websocket@~0.11.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbemitter@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/fbemitter/-/fbemitter-2.1.1.tgz#523e14fdaf5248805bb02f62efc33be703f51865"
-  integrity sha1-Uj4U/a9SSIBbsC9i78M75wP1GGU=
-  dependencies:
-    fbjs "^0.8.4"
-
-fbjs@^0.8.0, fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -4088,14 +4045,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
-
-flux@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/flux/-/flux-3.1.3.tgz#d23bed515a79a22d933ab53ab4ada19d05b2f08a"
-  integrity sha1-0jvtUVp5oi2TOrU6tK2hnQWy8Io=
-  dependencies:
-    fbemitter "^2.0.0"
-    fbjs "^0.8.0"
 
 follow-redirects@^1.0.0:
   version "1.5.10"
@@ -4590,17 +4539,6 @@ history@3, history@^3.0.0:
     invariant "^2.2.1"
     loose-envify "^1.2.0"
     query-string "^4.2.2"
-    warning "^3.0.0"
-
-history@^4.6.0:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
-  integrity sha512-1zkBRWW6XweO0NBcjiphtVJVsIQ+SXF29z9DVkceeaSLVMFXHool+fdCZD4spDCfZJCILPILc3bm7Bc+HRi0nA==
-  dependencies:
-    invariant "^2.2.1"
-    loose-envify "^1.2.0"
-    resolve-pathname "^2.2.0"
-    value-equal "^0.4.0"
     warning "^3.0.0"
 
 hmac-drbg@^1.0.0:
@@ -5662,11 +5600,6 @@ lodash.clonedeep@^4.3.2:
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
-lodash.curry@^4.0.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.curry/-/lodash.curry-4.1.1.tgz#248e36072ede906501d75966200a86dab8b23170"
-  integrity sha1-JI42By7ekGUB11lmIAqG2riyMXA=
-
 lodash.debounce@^4.0.6, lodash.debounce@^4.0.7, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -5691,11 +5624,6 @@ lodash.flatten@^4.2.0, lodash.flatten@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
-
-lodash.flow@^3.3.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
-  integrity sha1-h79AKSuM+D5OjOGjrkIJ4gBxZ1o=
 
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
@@ -7317,7 +7245,7 @@ prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8,
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -7404,11 +7332,6 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-
-pure-color@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/pure-color/-/pure-color-1.3.0.tgz#1fe064fb0ac851f0de61320a8bf796836422f33e"
-  integrity sha1-H+Bk+wrIUfDeYTIKi/eWg2Qi8z4=
 
 q@^1.1.2:
   version "1.5.1"
@@ -7515,16 +7438,6 @@ react-autowhatever@^10.1.2:
     react-themeable "^1.1.0"
     section-iterator "^2.0.0"
 
-react-base16-styling@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/react-base16-styling/-/react-base16-styling-0.6.0.tgz#ef2156d66cf4139695c8a167886cb69ea660792c"
-  integrity sha1-7yFW1mz0E5aVyKFniGy2nqZgeSw=
-  dependencies:
-    base16 "^1.0.0"
-    lodash.curry "^4.0.1"
-    lodash.flow "^3.3.0"
-    pure-color "^1.2.0"
-
 react-dom@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
@@ -7578,21 +7491,6 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-json-view@^1.13.3:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/react-json-view/-/react-json-view-1.19.1.tgz#95d8e59e024f08a25e5dc8f076ae304eed97cf5c"
-  integrity sha512-u5e0XDLIs9Rj43vWkKvwL8G3JzvXSl6etuS5G42a8klMohZuYFQzSN6ri+/GiBptDqlrXPTdExJVU7x9rrlXhg==
-  dependencies:
-    flux "^3.1.3"
-    react-base16-styling "^0.6.0"
-    react-lifecycles-compat "^3.0.4"
-    react-textarea-autosize "^6.1.0"
-
-react-lifecycles-compat@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
-  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
 react-location-picker@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-location-picker/-/react-location-picker-1.3.0.tgz#768841181a8cdf908be23256e73c50733428cd44"
@@ -7610,13 +7508,6 @@ react-mapbox-gl@3.9.2:
     "@turf/helpers" "4.7.3"
     deep-equal "1.0.1"
     supercluster "3.0.2"
-
-react-query-params@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-query-params/-/react-query-params-1.0.9.tgz#a4359dace3fcea1676dfb7698c1e2e862b72de22"
-  integrity sha512-ByZq0fQgwv22kfeDkX1GDWbNghuKomHbUczmtepOV2WmhjISW91AkM32xzP0BJNcjpM6LwA8pCKzzymAaNdwgQ==
-  dependencies:
-    history "^4.6.0"
 
 react-redux@4.4.8:
   version "4.4.8"
@@ -7659,13 +7550,6 @@ react-test-renderer@^15.5.4:
     fbjs "^0.8.9"
     object-assign "^4.1.0"
 
-react-textarea-autosize@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-6.1.0.tgz#df91387f8a8f22020b77e3833c09829d706a09a5"
-  integrity sha512-F6bI1dgib6fSvG8so1HuArPUv+iVEfPliuLWusLF+gAKz0FbB4jLrWUrTAeq1afnPT2c9toEZYUdz/y1uKMy4A==
-  dependencies:
-    prop-types "^15.6.0"
-
 react-themeable@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-themeable/-/react-themeable-1.1.0.tgz#7d4466dd9b2b5fa75058727825e9f152ba379a0e"
@@ -7684,7 +7568,7 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@15, react@^15.6.2:
+react@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
   integrity sha1-26BDSrQ5z+gvEI8PURZjkIF5qnI=
@@ -7694,16 +7578,6 @@ react@15, react@^15.6.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
-
-react@^16.6.0:
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.8.1.tgz#ae11831f6cb2a05d58603a976afc8a558e852c4a"
-  integrity sha512-wLw5CFGPdo7p/AgteFz7GblI2JPOos0+biSoxf1FPsGxWQZdN/pj6oToJs1crn61DL3Ln7mN86uZ4j74p31ELQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.13.1"
 
 read-only-stream@^2.0.0:
   version "2.0.0"
@@ -8088,11 +7962,6 @@ resolve-id-refs@^0.1.0:
   resolved "https://registry.yarnpkg.com/resolve-id-refs/-/resolve-id-refs-0.1.0.tgz#3126624b887489da8fc0ae889632f8413ac6c3ec"
   integrity sha1-MSZiS4h0idqPwK6IljL4QTrGw+w=
 
-resolve-pathname@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
-  integrity sha512-bAFz9ld18RzJfddgrO2e/0S2O81710++chRMUxHjXOYKF6jTAMrUNZrEZ1PvV0zlhfjidm08iRPdTLPno1FuRg==
-
 resolve-protobuf-schema@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz#9ca9a9e69cf192bbdaf1006ec1973948aa4a3758"
@@ -8267,14 +8136,6 @@ sax@^1.2.4, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
-scheduler@^0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.1.tgz#1a217df1bfaabaf4f1b92a9127d5d732d85a9591"
-  integrity sha512-VJKOkiKIN2/6NOoexuypwSrybx13MY7NSy9RNt8wPvZDMRT1CW6qlpF5jXRToXNHz3uWzbm2elNpZfXfGPqP9A==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 schema-utils@^0.4.4, schema-utils@^0.4.5:
   version "0.4.7"
@@ -9421,35 +9282,6 @@ url@^0.11.0, url@~0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-"us-forms-system@https://github.com/cityofaustin/us-forms-system.git":
-  version "1.1.2"
-  resolved "https://github.com/cityofaustin/us-forms-system.git#5507e3f85e01fe6cd1829084f0c72095b41d24e1"
-  dependencies:
-    "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
-    "@mapbox/mapbox-gl-geocoder" "^3.1.0"
-    classnames "^2.2.6"
-    date-fns "^1.30.1"
-    downshift "^1.31.16"
-    fast-levenshtein "^2.0.6"
-    filepond "^3.6.0"
-    filepond-plugin-file-validate-size "^2.1.1"
-    filepond-plugin-image-exif-orientation "^1.0.3"
-    filepond-plugin-image-preview "^3.1.4"
-    history "3"
-    mapbox-gl "^0.52.0-beta.2"
-    prop-types "^15.6.2"
-    react-autosuggest "^9.4.2"
-    react-filepond "^5.0.0"
-    react-flatpickr "^3.6.4"
-    react-mapbox-gl "3.9.2"
-    react-redux "4.4.8"
-    react-router "3"
-    react-scroll "^1.7.10"
-    react-transition-group "^1.1.2"
-    recompose "^0.21.2"
-    redux "^3.5.2"
-    reselect "^2.5.4"
-
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
@@ -9462,7 +9294,7 @@ user-home@^2.0.0:
   dependencies:
     os-homedir "^1.0.0"
 
-uswds@^1.6.3, uswds@^1.6.9:
+uswds@^1.6.3:
   version "1.6.9"
   resolved "https://registry.yarnpkg.com/uswds/-/uswds-1.6.9.tgz#4227a286b78c89ccb1dad86dba2c503393fb7c64"
   integrity sha512-k4Sai/5X95Mg3VxLJffg9fTynUEhqiC15Rr+PlwZd4MbR8vnq+eBECNi27Iky7WncwMXg/29ubXAg9eli2jUXQ==
@@ -9537,11 +9369,6 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
-
-value-equal@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
-  integrity sha512-x+cYdNnaA3CxvMaTX0INdTCN8m8aF2uY9BvEqmxuYp8bL09cs/kWVQPVGcA35fMktdOsP69IgU7wFj/61dJHEw==
 
 vary@~1.1.2:
   version "1.1.2"
@@ -9704,36 +9531,6 @@ webpack@^4.10.2:
     neo-async "^2.5.0"
     node-libs-browser "^2.0.0"
     schema-utils "^0.4.4"
-    tapable "^1.1.0"
-    terser-webpack-plugin "^1.1.0"
-    watchpack "^1.5.0"
-    webpack-sources "^1.3.0"
-
-webpack@^4.27.1:
-  version "4.29.3"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.29.3.tgz#e0b406a7b4201ed5e4fb4f84fd7359f9a7db4647"
-  integrity sha512-xPJvFeB+8tUflXFq+OgdpiSnsCD5EANyv56co5q8q8+YtEasn5Sj3kzY44mta+csCIEB0vneSxnuaHkOL2h94A==
-  dependencies:
-    "@webassemblyjs/ast" "1.7.11"
-    "@webassemblyjs/helper-module-context" "1.7.11"
-    "@webassemblyjs/wasm-edit" "1.7.11"
-    "@webassemblyjs/wasm-parser" "1.7.11"
-    acorn "^6.0.5"
-    acorn-dynamic-import "^4.0.0"
-    ajv "^6.1.0"
-    ajv-keywords "^3.1.0"
-    chrome-trace-event "^1.0.0"
-    enhanced-resolve "^4.1.0"
-    eslint-scope "^4.0.0"
-    json-parse-better-errors "^1.0.2"
-    loader-runner "^2.3.0"
-    loader-utils "^1.1.0"
-    memory-fs "~0.4.1"
-    micromatch "^3.1.8"
-    mkdirp "~0.5.0"
-    neo-async "^2.5.0"
-    node-libs-browser "^2.0.0"
-    schema-utils "^1.0.0"
     tapable "^1.1.0"
     terser-webpack-plugin "^1.1.0"
     watchpack "^1.5.0"
