@@ -1,9 +1,34 @@
 # COA Forms
 
-## Dependencies
+Welcome to the consolidated forms repo for the City of Austin's alpha.austin.gov project!
 
+Our forms are built using the [US Forms System](https://github.com/usds/us-forms-system-starter-app). Each form located in the `forms/` directory is populated by chapters located in `shared/chapters`. We use a forked version of the us-forms-system located at https://github.com/cityofaustin/us-forms-system.
+
+Learn more about:
+- [Dependencies](#Dependencies)
+- [Modifying Chapters](#Modifying-Chapters)
+- [Deployment](#Deployment)
+- [Webpack](#Webpack)
+- [Environment Variables](#Environment-Variables)
+- [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
+
+## Dependencies
 + Install `jq` if you want to run translation/deployment scripts locally.
   + Mac users can run: `brew install jq`
+
+## Modifying Chapters
+The schema definitions for chapters are in `/shared/chapters/[CHAPTERS_DIR]`, where `$CHAPTERS_DIR` is an environment variable found within all `deployment/var` files of your form.
+
+Multiple forms could share the same chapters if they both refer to the same `$CHAPTERS_DIR`. A reason to keep chapters separated is to allow incremental updates of dependencies like `@cityofaustin/us-form-system` without breaking other forms.
+
+The chapters directory contains a distinct package.json and `@cityofaustin/us-forms-system`. Be sure to remember to update us-forms-system versions in the chapters directory, not just in the form's package.json.
+
+## Deployment
+To deploy a form, add its directory name to `dev_deploy_options.json` under `forms_to_deploy`. When a new commit is pushed to github, CircleCI will deploy all listed forms by running `run.sh`.
+
+The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument passed to `run.sh`. `circleci.config.yml` sets the `DEPLOY_ENV` for each git branch.
+
+See more detailed information in [./deployment/README.md](./deployment/README.md).
 
 ## Webpack
 Webpack configs for all environment are generated in your form's `webpack.config.js`. Compiled files are outputted to your form's `public/` directory.
@@ -18,7 +43,6 @@ Within `webpack.config.js`:
 The `--env` parameter you pass to the webpack cli determines which set of environment variables gets sourced.
 
 ## Environment Variables
-
 + `local.env` contains environment variables for running your local development with `webpack-dev-server`.
 + `dev.env` contains environment variables for deployed dev branches.
 + `staging.env` contains environment variables for the staging deployment of the "master" branch.
