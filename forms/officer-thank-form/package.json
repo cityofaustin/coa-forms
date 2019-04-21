@@ -2,7 +2,7 @@
   "name": "officer-thanks-form",
   "version": "1.0.0",
   "description": "Officer Thanks Form",
-  "main": "app.js",
+  "main": "src/app.js",
   "directories": {},
   "scripts": {
     "start": "webpack-dev-server --env local --open --host 0.0.0.0 --disable-host-check --public http://localhost:8080/police-thank",

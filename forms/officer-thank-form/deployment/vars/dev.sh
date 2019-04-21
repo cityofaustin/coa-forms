@@ -1,7 +1,7 @@
 # AWS
 DEPLOYMENT_BUCKET=coa-forms-dev
-DEPLOYMENT_PATH_EN=police-thank-$CIRCLE_BRANCH
-DEPLOYMENT_PATH_ES=policia-agradezca-$CIRCLE_BRANCH
+DEPLOYMENT_PATH_EN=police-thank/$CIRCLE_BRANCH
+DEPLOYMENT_PATH_ES=policia-agradezca/$CIRCLE_BRANCH
 
 # App
 NODE_ENV=development
