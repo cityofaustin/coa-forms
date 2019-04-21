@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "directories": {},
   "scripts": {
-    "start": "webpack-dev-server --env local --open --host 0.0.0.0 --disable-host-check --public http://localhost:8080/police-thank",
+    "start": "webpack-dev-server --env local",
+    "start:bs": "webpack-dev-server --env local --host 0.0.0.0 --disable-host-check",
     "webpack": "webpack",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
     "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx"

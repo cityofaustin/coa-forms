@@ -25,6 +25,9 @@ const webpackLocalFactory = (__dirname) => {
     devServer: {
       contentBase: path.resolve(__dirname, 'public'),
       historyApiFallback: true,
+      open: true,
+      public: `http://localhost:8080/${process.env.DEPLOYMENT_PATH_EN}`,
+      writeToDisk: true // This allows page refreshes locally
     }
   }
 };
