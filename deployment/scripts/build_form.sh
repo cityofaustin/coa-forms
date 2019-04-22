@@ -1,5 +1,6 @@
 #!/bin/bash
 # check deployment/README.md for documentation
+set -e
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''
 DEPLOY_ENV=''

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 DEPLOY_ENV=$1
 CURRENT_DIR=`dirname $BASH_SOURCE`
 
