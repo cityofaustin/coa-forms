@@ -6,6 +6,7 @@ Our forms are built using the [US Forms System](https://github.com/usds/us-forms
 
 Learn more about:
 - [Dependencies](#Dependencies)
+- [Local Development](#Local-Development)
 - [Modifying Chapters](#Modifying-Chapters)
 - [Deployment](#Deployment)
 - [Webpack](#Webpack)
@@ -15,6 +16,12 @@ Learn more about:
 ## Dependencies
 + Install `jq` if you want to run translation/deployment scripts locally.
   + Mac users can run: `brew install jq`
+
+## Local Development
+
+Run `yarn start` inside of your form's directory to run your form locally. Run `yarn start:bs` if you need to run your form locally with browserstack. Note: `start:bs` contains some configs that make your webpack-dev-server insecure. See: https://webpack.js.org/configuration/dev-server/#devserverdisablehostcheck.
+
+To develop with a local version of us-form-system see: [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
 
 ## Modifying Chapters
 The schema definitions for chapters are in `/shared/chapters/[CHAPTERS_DIR]`, where `$CHAPTERS_DIR` is an environment variable found within all `deployment/var` files of your form.
