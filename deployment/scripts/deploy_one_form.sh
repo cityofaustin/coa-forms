@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Keeping this file outside of top level run.sh prevents environment
 # variables from being contaminated between forms.
