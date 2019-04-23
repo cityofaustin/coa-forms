@@ -9,7 +9,10 @@
     "start:bs": "webpack-dev-server --env local --host 0.0.0.0 --disable-host-check",
     "webpack": "webpack",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
-    "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx"
+    "test": "BABEL_ENV=test mocha --compilers js:@babel/register ./test/**/*.spec.jsx",
+    "install-all": "cd ../..; yarn install-all",
+    "link-all": "cd ../..; yarn link-all",
+    "unlink-all": "cd ../..; yarn unlink-all"
   },
   "author": "",
   "license": "ISC",
