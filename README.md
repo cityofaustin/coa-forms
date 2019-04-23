@@ -16,6 +16,17 @@ Learn more about:
 ## Dependencies
 + Install `jq` if you want to run translation/deployment scripts locally.
   + Mac users can run: `brew install jq`
++ Run `yarn install-all` to install npm dependencies for all directories.
+
+To use a local version of @cityofaustin/us-forms-system:
+1. Clone the repo.
+    + `git clone https://github.com/cityofaustin/us-forms-system`
+2. Within us-forms-system, run
+    + `yarn link`
+3. After making changes to `us-forms-system` locally, run a build (within the `us-forms-system` repo!)
+    + `yarn build`
+4. Back in coa-forms run `yarn link-all` to link all directories to use your local version of @cityofaustin/us-forms-system.
+5. When you're done, run `yarn unlink-all` to unlink all directories from your local version of @cityofaustin/us-forms-system. This script will also reinstall @cityofaustin/us-forms-system from npm based on the version specified by each directories' `package.json`.
 
 ## Local Development
 
@@ -74,23 +85,3 @@ If you need to add any new environment variables for your specific form, you mus
 2. as a `webpack.DefinePlugin({'process.env':{...}})` in the appropriate `extraConfigs` object of `webpack.config.js`.
 
 `deployment/vars` contains the source of truth about all environment variables. The `webpack.[x].js` configs are what actually inject those environment variables into your compiled code.
-
-## Link to a local @cityofaustin/us-forms-system
-Follow these steps to run coa-forms with a local version of `@cityofaustin/us-forms-system`.
-1. Clone the repo.
-    + `git clone https://github.com/cityofaustin/us-forms-system`
-2. In us-forms-system, run
-    + `yarn link`
-3. Link inside of `coa-forms`. Note: you'll most likely want to link to your **chapters** directory, not the form directory itself.
-    + `cd coa-forms/shared/chapters/[CHAPTERS_DIR]`
-    + `yarn link @cityofaustin/us-forms-system`
-4. After making changes to `us-forms-system` locally, run a build (within the `us-forms-system` repo!)
-    + `cd us-forms-system`
-    + `yarn build`
-
-There are a couple of important steps to unlink a local repo.
-1. Unlink inside of coa-forms.
-    + `cd coa-forms/shared/chapters/[CHAPTERS_DIR]`
-    + `yarn unlink`
-2. Reinstall dependencies with the `--force` flag.
-    + `yarn install --force`
