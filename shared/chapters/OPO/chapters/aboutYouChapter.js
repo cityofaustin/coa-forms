@@ -91,8 +91,7 @@ const aboutYouChapter = {
           yourEmail: {
             'ui:title': 'Your email address',
             'ui:widget': 'email',
-            'ui:description':
-              'Required if you want the confirmation number sent to your email.',
+            'ui:description': '',
             'ui:options': {
               inputType: 'email',
             },
