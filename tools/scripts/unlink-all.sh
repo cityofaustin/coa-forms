@@ -8,7 +8,8 @@ function unlink {
   echo "--------------------------------------------------------------"
   echo "##### Unlinking @cityofaustin/us-forms-system from $1 #####"
   echo "--------------------------------------------------------------"
-  yarn unlink --cwd $2
+  yarn unlink @cityofaustin/us-forms-system --cwd $2
+  yarn install --force --cwd $2 # Must reinstall @cityofaustin/us-forms-system dependency because "unlinking" deletes it.
 }
 
 for FORM in $(ls $CURRENT_DIR/../../forms);
