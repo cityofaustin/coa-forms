@@ -18,7 +18,11 @@ Learn more about:
   + Mac users can run: `brew install jq`
 + Run `yarn install-all` to install npm dependencies for all directories.
 
-To use a local version of @cityofaustin/us-forms-system:
+#### Why use the special "install-all" script?
+As of 4/24/19 there are 4 distinct package.json files for different parts of coa-forms.
+There is the the top level `/package.json` file. This is mainly used for webpack factory functions found in `/tools/webpack`. There is a `/package.json` for each of the forms: `/forms/officer-complaint-form` and `/officer-thank-form`. And there is a `/package.json` for the chapters shared by both forms in `/shared/chapters/OPO`.
+
+#### To use a local version of @cityofaustin/us-forms-system:
 1. Clone the repo.
     + `git clone https://github.com/cityofaustin/us-forms-system`
 2. Within us-forms-system, run
