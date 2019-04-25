@@ -70,8 +70,8 @@ Sample Content:
       "es": "%que-sucedio%"
     },
 
-    "%share-evidence%": {
-      "es": "%compartir-evidencia%"
+    "%share-media%": {
+      "es": "%compartir-archivos%"
     },
 
     "%officer-details%": {
@@ -204,7 +204,7 @@ Until we find a better way to translate the website, this is the process I have 
 
 You are encouraged to look at the `public/js/app.bundle.json` you can find it online [here](https://forms.austintexas.io/police-complain/js/app.bundle.js) or [here](https://forms.austin.gov/police-complain/js/app.bundle.js).
 
-1. Find the string in the `app.bundle.json` file you want to translate (in English). For example, you want to translate a phrase `Find us on Facebook`. Open one of the links above in the browser, and find text using the keyboard shortcut [Ctrl]+[F] which will propmt you to enter a string to find in the mangled source code. You would type "Find us on Facebook" with the exact capitalization. 
+1. Find the string in the `app.bundle.json` file you want to translate (in English). For example, you want to translate a phrase `Find us on Facebook`. Open one of the links above in the browser, and find text using the keyboard shortcut [Ctrl]+[F] which will propmt you to enter a string to find in the mangled source code. You would type "Find us on Facebook" with the exact capitalization.
 
 2. If you can find the string, in the mangled code, and it looks like, for instance `scrambled.code("Find us on Facebook")).some(other).scrable(here) `You can see that the string is contained in quotation marks, this would be a great case for us to use  the percentage symbol '%', and this rule:
 
@@ -222,6 +222,3 @@ You are encouraged to look at the `public/js/app.bundle.json` you can find it on
 While this approach is less than ideal, it is very functional and fast. It translates EVERYTHING, including the date-time controls, upload controls, etc. If there is text on the page, it can be translated without needing development skills.
 
 Why the percentage symbol? We cannot use quotation marks in json format. Actually, we can, but it would be a royal mixup (worse than it already is).
-
-
-
