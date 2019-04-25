@@ -1,3 +1,5 @@
+import 'core-js/es/number'; // polyfill for IE 11 number inputs
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, useRouterHistory } from 'react-router';

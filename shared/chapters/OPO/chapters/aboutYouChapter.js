@@ -28,8 +28,7 @@ const aboutYouChapter = {
           ...genderBlocks.schema,
           ...raceBlocks.schema,
           zipCode: {
-            type: 'number',
-            minimum: 5,
+            type: 'number'
           },
           'view:contactHeader': {
             type: 'object',
