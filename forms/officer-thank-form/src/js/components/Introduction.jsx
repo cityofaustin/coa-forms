@@ -28,7 +28,7 @@ class Introduction extends React.Component {
         <hr className="intro-rule" />
         <div className="usa-grid">
           <div className="intro-container">
-            <h2 className="intro-heading"> Thank an Austin police officer </h2>
+            <h1 className="intro-heading"> Thank an Austin police officer </h1>
             <hr className="form-rule" />
             <h4 className="intro-select">Select an option</h4>
           </div>
