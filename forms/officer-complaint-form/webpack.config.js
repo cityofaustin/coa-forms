@@ -9,7 +9,9 @@ const mergePlus = require('../../tools/webpack/mergePlus');
 
 module.exports = (env) => {
   // Source environment variables
-  require('dotenv-expand')(require('dotenv').config({ path: path.resolve(__dirname, `./deployment/vars/${env}.sh`)}));
+  let varPath = env;
+  if (varPath === "local-es") varPath="local";
+  require('dotenv-expand')(require('dotenv').config({ path: path.resolve(__dirname, `./deployment/vars/${varPath}.sh`)}));
 
   // Additional form-specific webpack configs can be entered here
   const extraCommonConfigs = {};
@@ -27,6 +29,11 @@ module.exports = (env) => {
     extraLocalConfigs
   )
 
+  const webpackLocalSpanish = mergePlus(
+    webpackLocal,
+    webpackSpanishFactory(__dirname)
+  )
+
   const webpackDeployed = mergePlus(
     webpackCommon,
     webpackDeployedFactory(__dirname),
@@ -40,6 +47,8 @@ module.exports = (env) => {
 
   if (env === "local") {
     return webpackLocal
+  } else if (env === "local-es") {
+    return webpackLocalSpanish
   } else if (
     (env === "dev") ||
     (env === "staging") ||
