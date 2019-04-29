@@ -1,5 +1,6 @@
 #!/bin/bash
 # check deployment/README.md for documentation
+set -e
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''
 DEPLOY_ENV=''
@@ -23,7 +24,7 @@ while getopts "f:e:" opt; do
   esac
 done
 
-FORM_PATH="$CURRENT_DIR/../../src/$FORM"
+FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.sh"
 
 if [ -z $FORM ]; then

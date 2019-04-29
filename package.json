@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "install-all": "bash ./tools/scripts/install-all.sh",
+    "link-all": "bash ./tools/scripts/link-all.sh",
+    "unlink-all": "bash ./tools/scripts/unlink-all.sh"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",

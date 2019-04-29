@@ -1,23 +1,56 @@
-# what is this?
+# COA Forms
 
-A first attempt at consolidating some of our repos, for ease of reference/maintenance in the future
+Welcome to the consolidated forms repo for the City of Austin's alpha.austin.gov project!
 
-# how I did this
+Our forms are built using the [US Forms System](https://github.com/usds/us-forms-system-starter-app). Each form located in the `forms/` directory is populated by chapters located in `shared/chapters`. We use a forked version of the us-forms-system located at https://github.com/cityofaustin/us-forms-system.
 
-After reading/contemplating a couple methods, I settled on this one for the initial merging:
-https://help.github.com/en/articles/about-git-subtree-merges
-
-Another option would be to import via submodules.
-If for some reason we want to keep our current architecture but still have a consolidated repo for reference later that might be better.
-
-# how to use
-
-Since this used the subtree merge method, cloning this repo gets you all the code and history for the past repos.
+Learn more about:
+- [Dependencies](#Dependencies)
+- [Local Development](#Local-Development)
+- [Modifying Chapters](#Modifying-Chapters)
+- [Deployment](#Deployment)
+- [Webpack](#Webpack)
+- [Environment Variables](#Environment-Variables)
+- [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
 
 ## Dependencies
-
 + Install `jq` if you want to run translation/deployment scripts locally.
   + Mac users can run: `brew install jq`
++ Run `yarn install-all` to install npm dependencies for all directories.
+
+#### Why use the special "install-all" script?
+As of 4/24/19 there are 4 distinct package.json files for different parts of coa-forms.
+There is the the top level `/package.json` file. This is mainly used for webpack factory functions found in `/tools/webpack`. There is a `/package.json` for each of the forms: `/forms/officer-complaint-form` and `/officer-thank-form`. And there is a `/package.json` for the chapters shared by both forms in `/shared/chapters/OPO`.
+
+#### To use a local version of @cityofaustin/us-forms-system:
+1. Clone the repo.
+    + `git clone https://github.com/cityofaustin/us-forms-system`
+2. Within us-forms-system, run
+    + `yarn link`
+3. After making changes to `us-forms-system` locally, run a build (within the `us-forms-system` repo!)
+    + `yarn build`
+4. Back in coa-forms run `yarn link-all` to link all directories to use your local version of @cityofaustin/us-forms-system.
+5. When you're done, run `yarn unlink-all` to unlink all directories from your local version of @cityofaustin/us-forms-system. This script will also reinstall @cityofaustin/us-forms-system from npm based on the version specified by each directories' `package.json`.
+
+## Local Development
+
+Run `yarn start` inside of your form's directory to run your form locally. Run `yarn start:bs` if you need to run your form locally with browserstack. Note: `start:bs` contains some configs that make your webpack-dev-server insecure. See: https://webpack.js.org/configuration/dev-server/#devserverdisablehostcheck.
+
+To develop with a local version of us-form-system see: [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
+
+## Modifying Chapters
+The schema definitions for chapters are in `/shared/chapters/[CHAPTERS_DIR]`, where `$CHAPTERS_DIR` is an environment variable found within all `deployment/var` files of your form.
+
+Multiple forms could share the same chapters if they both refer to the same `$CHAPTERS_DIR`. A reason to keep chapters separated is to allow incremental updates of dependencies like `@cityofaustin/us-form-system` without breaking other forms.
+
+The chapters directory contains a distinct package.json and `@cityofaustin/us-forms-system`. Be sure to remember to update us-forms-system versions in the chapters directory, not just in the form's package.json.
+
+## Deployment
+To deploy a form, add its directory name to `dev_deploy_options.json` under `forms_to_deploy`. When a new commit is pushed to github, CircleCI will deploy all listed forms by running `run.sh`.
+
+The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument passed to `run.sh`. `circleci.config.yml` sets the `DEPLOY_ENV` for each git branch.
+
+See more detailed information in [./deployment/README.md](./deployment/README.md).
 
 ## Webpack
 Webpack configs for all environment are generated in your form's `webpack.config.js`. Compiled files are outputted to your form's `public/` directory.
@@ -32,7 +65,6 @@ Within `webpack.config.js`:
 The `--env` parameter you pass to the webpack cli determines which set of environment variables gets sourced.
 
 ## Environment Variables
-
 + `local.env` contains environment variables for running your local development with `webpack-dev-server`.
 + `dev.env` contains environment variables for deployed dev branches.
 + `staging.env` contains environment variables for the staging deployment of the "master" branch.
