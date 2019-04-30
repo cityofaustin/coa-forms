@@ -1,13 +1,13 @@
 $dialog-height: 35rem;
-$dialog-button-color: #0049C7;
-$dialog-title-color: #FBC036;
+$dialog-button-color: #0049c7;
+$dialog-title-color: #fbc036;
 $dialog-position-bottom: 1rem;
 
 .opo-modalbox {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 9999999;
   top: 0;
   left: 0;
@@ -21,14 +21,14 @@ $dialog-position-bottom: 1rem;
 
 .opo-modalbox__container {
   position: fixed;
-  bottom: $dialog-position-bottom;
+  // bottom: $dialog-position-bottom;
   background-color: white;
   width: 90vw;
   height: 35rem;
   // border-top: solid #0050d8 1rem;
   box-shadow: black 0px 0px 4rem;
   // padding: 2rem;
-  animation: opo-modalbox__container--animation  ease-out .3s 1;
+  animation: opo-modalbox__container--animation ease-out 0.3s 1;
   max-width: 600px;
 }
 .opo-modalbox__header {
@@ -55,7 +55,7 @@ $dialog-position-bottom: 1rem;
 }
 
 .opo-modalbox__crossbutton:after {
-  content:"\d7";
+  content: '\d7';
 }
 
 .opo-modalbox__separator {
@@ -64,7 +64,7 @@ $dialog-position-bottom: 1rem;
   height: 0.5rem;
 }
 
-.opo-modalbox__body{
+.opo-modalbox__body {
   padding: 2rem;
   height: 100%;
 }
@@ -105,10 +105,10 @@ $dialog-position-bottom: 1rem;
 @media only screen and (max-width: 480px) {
   .opo-modalbox__container {
     left: 5vw;
-    bottom: 5rem;
+    // bottom: 5rem;
   }
 
-  .opo-modalbox__body{
+  .opo-modalbox__body {
     padding: 2rem;
     height: 85%;
   }
@@ -128,7 +128,6 @@ $dialog-position-bottom: 1rem;
   }
 }
 
-
 /*
   Rules for Internet Explorer
 */
@@ -136,6 +135,6 @@ $dialog-position-bottom: 1rem;
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .opo-modalbox__container {
     position: relative !important;
-    bottom: -25rem !important;
+    // bottom: -25rem !important;
   }
 }
