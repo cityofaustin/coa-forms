@@ -494,10 +494,6 @@
     "es": "%(*Obligatoria)%"
   },
 
-  "%required%": {
-    "es": "%obligatoria%"
-  },
-
   "%Yes%": {
     "es": "%Sí%"
   },

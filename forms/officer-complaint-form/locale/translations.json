@@ -488,10 +488,6 @@
     "es": "%(*Obligatoria)%"
   },
 
-  "%required%": {
-    "es": "%obligatoria%"
-  },
-
   "%Yes%": {
     "es": "%Sí%"
   },
@@ -550,6 +546,14 @@
 
   "Please provide a valid email address": {
     "es": "Por favor, proporcione una dirección de correo electrónico válida"
+  },
+
+  "%Please enter a valid email address%": {
+    "es": "%Por favor provea una dirección válida%"
+  },
+
+  "%Please enter a valid value%": {
+    "es": "%Por favor provea un valor válido%"
   },
 
   "You can email us at": {
