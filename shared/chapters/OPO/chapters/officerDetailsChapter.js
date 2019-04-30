@@ -22,11 +22,7 @@ const officerDetailsChapter = {
                 name: { type: 'string' },
                 physicalDescription: { type: 'string' },
                 ...raceBlocks.schema,
-                gender: {
-                  type: 'string',
-                  enum: ['male', 'female'],
-                  enumNames: ['Male', 'Female'],
-                },
+                ...genderBlocks.schema,
                 badgeNumber: {
                   type: 'number',
                 },
@@ -96,13 +92,7 @@ const officerDetailsChapter = {
               },
             },
             ...raceBlocks.ui,
-            gender: {
-              'ui:title': 'Gender',
-              'ui:widget': 'radio',
-              'ui:options': {
-                hideOnReviewIfFalse: true,
-              },
-            },
+            ...genderBlocks.ui,
             badgeNumber: {
               'ui:title': 'Badge number',
               'ui:options': {
