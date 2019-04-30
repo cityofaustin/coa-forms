@@ -4,9 +4,12 @@ import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
 const officerDetailsChapter = {
   title: 'Tell us about the officer(s)',
   pages: {
-    officerDetails: {
-      path: 'officer-details',
+    hasOfficerDetails: {
+      path: 'has-officer-details',
       title: 'Tell us about the officer(s)',
+      depends: (formData) => {
+        return !window.location.pathname.includes("review-and-submit");
+      },
       schema: {
         type: 'object',
         properties: {
@@ -14,6 +17,29 @@ const officerDetailsChapter = {
             type: 'boolean',
             enumNames: ['Yes', 'No'],
           },
+        },
+      },
+      uiSchema: {
+        'ui:title': 'Tell us about the officer(s)',
+        hasOfficerDetails: {
+          'ui:title':
+            'Do you remember any details about the officer(s) you’d like to share?',
+          'ui:widget': 'radio',
+          'ui:options': {
+            classNames: 'big-button-radio',
+          },
+        },
+      },
+    },    
+    officerDetails: {
+      path: 'officer-details',
+      title: 'Tell us about the officer(s)',
+      depends: {
+        hasOfficerDetails: true
+      },
+      schema: {
+        type: 'object',
+        properties: {
           officers: {
             type: 'array',
             items: {
@@ -73,7 +99,6 @@ const officerDetailsChapter = {
           'ui:options': {
             viewField: () => <div />,
             addable: true,
-            expandUnder: 'hasOfficerDetails',
             itemName: 'officer',
           },
           items: {
