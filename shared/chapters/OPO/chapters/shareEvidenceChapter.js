@@ -22,7 +22,7 @@ const shareEvidenceChapter = {
         }
       },
       uiSchema: {
-        "ui:title": "Share your photos or video",
+        "ui:title": "Share your media",
         awareOfEvidence: {
           "ui:title":
             "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.",
