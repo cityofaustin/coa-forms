@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@cityofaustin/us-forms-system": "1.1.7",
+    "@cityofaustin/us-forms-system": "1.1.8",
     "react": "^15.6.2",
     "react-dom": "^15.6.2"
   }
