@@ -48,3 +48,6 @@ python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/locale/routes.json" "$TRANSLATIO
 
 echo "Then, let's translate the rest of the form:"
 python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/locale/translations.json" "${TRANSLATION_PATH}/js/app.bundle.js" "${LANGUAGE}"
+
+echo "Now let's translate the index.html file where needed:"
+python3 "$CURRENT_DIR/translate.py" "$FORM_PATH/locale/index.json" "${TRANSLATION_PATH}/index.html" "${LANGUAGE}"
