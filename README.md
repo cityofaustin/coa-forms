@@ -38,6 +38,12 @@ Run `yarn start` inside of your form's directory to run your form locally. Run `
 
 To develop with a local version of us-form-system see: [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
 
+#### (WIP) Run Spanish Forms Locally
+Not synced with webpack-dev-server yet, but we have an experimental way to work around this.
+1. Install node module http-server globally with `yarn global add http-server`
+2. run `yarn start:es` This triggers a the start-es.sh script found in tools/scripts.
+
+
 ## Modifying Chapters
 The schema definitions for chapters are in `/shared/chapters/[CHAPTERS_DIR]`, where `$CHAPTERS_DIR` is an environment variable found within all `deployment/var` files of your form.
 
