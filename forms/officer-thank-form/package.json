@@ -6,6 +6,7 @@
   "directories": {},
   "scripts": {
     "start": "webpack-dev-server --env local",
+    "start:es": "bash ../../tools/scripts/start-es.sh -f officer-thank-form",
     "start:bs": "webpack-dev-server --env local --host 0.0.0.0 --disable-host-check",
     "webpack": "webpack",
     "lint": "eslint --quiet --ext .js --ext .jsx .",
@@ -33,6 +34,7 @@
     "eslint-plugin-react": "^7.2.1",
     "eslint-plugin-scanjs-rules": "^0.1.4",
     "eslint-stats": "^1.0.0",
+    "http-server": "^0.11.1",
     "mocha": "^5.2.0",
     "node-sass": "^4.11.0",
     "parallel-webpack": "^2.3.0",

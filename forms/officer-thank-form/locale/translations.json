@@ -118,16 +118,16 @@
     "es": "Comparta fotos o videos"
   },
 
-  "Share your evidence": {
-    "es": "Comparta su evidencia"
+  "Share your media": {
+    "es": "Comparta sus archivos"
   },
 
   "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.": {
     "es": "¿Tiene información adicional? Podría ser un video, audio, fotos, reportes de policía, registros de hospital o cualquier cosa que desee compartir."
   },
 
-  "Upload any evidence that you have (video files, audio files, photos, police report, hospital record, etc.).": {
-    "es": "Cargue cualquier evidencia que tenga (archivos de video, audio, reportes de policía, reportes de hospital, etc.)"
+  "Upload any media that you have (video files, audio files, photos, police report, hospital record, etc.).": {
+    "es": "Cargue cualquier archivo que tenga (archivos de video, audio, reportes de policía, reportes de hospital, etc.)"
   },
 
   "Drag & Drop your files or ": {
@@ -488,10 +488,6 @@
 
   "%(*Required)%": {
     "es": "%(*Obligatoria)%"
-  },
-
-  "%required%": {
-    "es": "%obligatoria%"
   },
 
   "%Yes%": {
