@@ -462,6 +462,10 @@
     "es": "%oficial%"
   },
 
+  "%New %": {
+    "es": "%Nuevo %"
+  },
+  
   "%Back%": {
     "es": "%Atrás%"
   },
@@ -639,7 +643,7 @@
   },
 
   "%True%": {
-    "es": "%Si%"
+    "es": "%Sí%"
   },
 
   "language:%en%": {
@@ -724,6 +728,10 @@
 
   "%optional%": {
     "es": "%opcional%"
+  },
+  
+  "%Optional%": {
+    "es": "%Opcional%"
   },
 
   "Start over in English?": {

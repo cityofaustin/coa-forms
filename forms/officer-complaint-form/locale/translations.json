@@ -59,7 +59,7 @@
   },
 
   "For a copy of your complaint and confirmation number, enter your email address below": {
-    "es": "Para obtener una copia de su queja y número de confirmación, ingrese su dirección de correo electrónico."
+    "es": "Para obtener una copia de su queja y número de confirmación, ingrese su dirección de correo electrónico"
   },
 
   "Office hours are Monday through Friday, 8 am to 5 pm.": {
@@ -637,7 +637,7 @@
   },
 
   "%True%": {
-    "es": "%Si%"
+    "es": "%Sí%"
   },
 
   "language:%en%": {
@@ -722,6 +722,10 @@
 
   "%optional%": {
     "es": "%opcional%"
+  },
+  
+  "%Optional%": {
+    "es": "%Opcional%"
   },
 
   "Start over in English?": {
