@@ -68,5 +68,17 @@ fi
 
 S3_DESTINATION="s3://${DEPLOYMENT_BUCKET}/${DEPLOYMENT_PATH}"
 
+#
+# One step is to make sure we patch the hotjar code for prod only.
+#
+echo "Patching HotJar to index.html"
+if [[ "${DEPLOY_ENV}" = "prod" ]]; then
+    HOTJAR_CODE="<!-- Hotjar Tracking Code for https://opo-form.netlify.com/ or change url in their dashboard --> <script>(function(h, o, t, j, a, r){h.hj=h.hj || function(){(h.hj.q=h.hj.q || []).push(arguments);}; h._hjSettings={hjid: 1188991, hjsv: 6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script'); r.async=1; r.src=t + h._hjSettings.hjid + j + h._hjSettings.hjsv; a.appendChild(r);})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv='); </script>"
+    HOTJAR_SNIPPET_MARKER="<!--HotJarSnippet-->"
+    sed -i'' -e "s%${HOTJAR_SNIPPET_MARKER}%${HOTJAR_CODE}%g" "${BUILD_PATH}/index.html"
+else
+    echo "Skipping, the current environment is '${DEPLOY_ENV}', and we only need it for prod.";
+fi;
+
 echo "Syncing ${BUILD_PATH} into ${S3_DESTINATION}"
 aws s3 sync $BUILD_PATH $S3_DESTINATION --delete
