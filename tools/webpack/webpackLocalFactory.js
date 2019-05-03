@@ -21,7 +21,7 @@ const path = require("path");
 const webpackLocalFactory = (__dirname) => {
   return {
     mode: 'development',
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     devServer: {
       contentBase: path.resolve(__dirname, 'public'),
       historyApiFallback: true,

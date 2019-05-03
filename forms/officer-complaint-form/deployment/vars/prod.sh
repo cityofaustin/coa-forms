@@ -10,3 +10,5 @@ FORM_API_URL=$CI_PROD_API_OPO
 # Structure
 FORM_DIR=officer-complaint-form
 CHAPTERS_DIR=OPO
+
+RUN_BUNDLE_ANALYZER=true

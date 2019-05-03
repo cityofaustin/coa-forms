@@ -1,6 +1,6 @@
 import widgets from "@cityofaustin/us-forms-system/lib/js/widgets";
-const { CalendarDateWidget, TimeWidget } = widgets;
-import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
+const { /* webpackPrefetch: true */ CalendarDateWidget, TimeWidget } = widgets;
+import { /* webpackPrefetch: true */ CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 
 const whatHappenedChapter = {
   title: "Tell us what happened",

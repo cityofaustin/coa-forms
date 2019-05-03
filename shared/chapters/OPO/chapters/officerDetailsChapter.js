@@ -1,5 +1,5 @@
 import React from 'react';
-import { raceBlocks, genderBlocks } from '../../../schemaBlocks';
+import { /* webpackPrefetch: true */ raceBlocks, genderBlocks } from '../../../schemaBlocks';
 
 const officerDetailsChapter = {
   title: 'Tell us about the officer(s)',

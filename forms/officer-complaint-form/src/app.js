@@ -2,10 +2,10 @@ import 'core-js/es/number'; // polyfill for IE 11 number inputs
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, useRouterHistory } from 'react-router';
-import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { createHistory } from 'history';
+import { /* webpackPrefetch: true */ Router, useRouterHistory } from 'react-router';
+import { /* webpackPrefetch: true */ Provider } from 'react-redux';
+import { /* webpackPrefetch: true */ createStore, combineReducers, applyMiddleware } from 'redux';
+import { /* webpackPrefetch: true */ createHistory } from 'history';
 
 import '@cityofaustin/us-forms-system/lib/css/styles.css';
 import './css/overrides.scss';

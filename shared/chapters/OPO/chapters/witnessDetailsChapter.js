@@ -1,5 +1,5 @@
 import React from 'react';
-import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
+import { /* webpackPrefetch: true */ phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
 
 const witnessDetailsChapter = {
   title: 'Tell us about any witnesses',

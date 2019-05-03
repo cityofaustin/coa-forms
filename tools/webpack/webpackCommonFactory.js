@@ -54,7 +54,7 @@ const webpackCommonFactory = (__dirname) => {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.(s*)css$/,
           use: [
             "style-loader", // creates style nodes from JS strings
             "css-loader", // translates CSS into CommonJS
@@ -79,10 +79,6 @@ const webpackCommonFactory = (__dirname) => {
               root: '../..'
             }
           }
-        },
-        {
-          test: /\.css$/,
-          loaders: ["style-loader", "css-loader"]
         },
         {
           test: /\.svg/,
