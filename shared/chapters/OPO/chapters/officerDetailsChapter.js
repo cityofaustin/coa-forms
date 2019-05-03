@@ -60,6 +60,7 @@ const officerDetailsChapter = {
       },
       uiSchema: {
         'ui:title': 'Tell us about the officer(s)',
+        'ui:removeFieldFromReview': 'hasOfficerDetails',
         hasOfficerDetails: {
           'ui:title':
             'Do you remember any details about the officer(s) you’d like to share?',
