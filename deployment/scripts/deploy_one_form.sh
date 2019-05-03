@@ -29,6 +29,9 @@ yarn --cwd $CHAPTERS_PATH install --production=false
 # Build all locales for a Form using Webpack
 $CURRENT_DIR/build_form.sh -f $FORM -e $DEPLOY_ENV
 
+# Prepare our index.html file
+$CURRENT_DIR/prepare_index.sh -f $FORM -e $DEPLOY_ENV
+
 # Upload English Form to AWS
 $CURRENT_DIR/upload_form.sh -f $FORM -e $DEPLOY_ENV
 
