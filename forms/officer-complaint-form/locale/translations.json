@@ -281,6 +281,10 @@
     "es": "Testigo(s)"
   },
 
+  "%witness%": {
+    "es": "%testigo%"
+  },
+
   "%New %": {
     "es": "%Nuevo %"
   },
