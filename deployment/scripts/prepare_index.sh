@@ -3,6 +3,7 @@
 set -e
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''
+FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 DEPLOY_ENV=''
 
 while getopts "f:e:" opt; do
