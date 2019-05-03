@@ -3,7 +3,6 @@
 set -e
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''
-FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 DEPLOY_ENV=''
 
 while getopts "f:e:" opt; do
@@ -33,7 +32,7 @@ elif [ -z $DEPLOY_ENV ]; then
   exit 1
 fi
 
-
+FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 #
 # One step is to make sure we patch the hotjar code for prod only.
 #
