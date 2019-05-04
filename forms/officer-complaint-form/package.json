@@ -49,9 +49,9 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "@cityofaustin/us-forms-system": "1.2.0",
     "@ibm/plex": "^1.2.3",
-    "core-js": "^3.0.1",
     "dotenv": "^7.0.0",
     "dotenv-expand": "^5.1.0",
     "foundation-sites": "^5.5.3",
