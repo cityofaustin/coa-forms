@@ -1,5 +1,4 @@
-// import 'core-js/es/number'; // polyfill for IE 11 number inputs
-import "@babel/polyfill";
+import "@babel/polyfill"; // polyfill for IE
 
 import React from 'react';
 import ReactDOM from 'react-dom';

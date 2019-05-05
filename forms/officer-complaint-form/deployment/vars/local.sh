@@ -11,4 +11,4 @@ FORM_DIR=officer-complaint-form
 CHAPTERS_DIR=OPO
 
 # Debug
-RUN_BUNDLE_ANALYZER=true
+# RUN_BUNDLE_ANALYZER=true
