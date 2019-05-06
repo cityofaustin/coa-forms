@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CompressionPlugin = require('compression-webpack-plugin');
 
 /**
   webpackDeployedFactory is a factory function that builds a webpack config for a deployed build.
@@ -22,7 +22,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const webpackDeployedFactory = (__dirname) => {
   return {
     mode: 'production',
-    devtool: 'source-map',
+    // devtool: 'source-map',
     stats: {
       colors: false,
       hash: true,
@@ -49,16 +49,23 @@ const webpackDeployedFactory = (__dirname) => {
       runtimeChunk: false,
       splitChunks: {
         cacheGroups: {
-          default: false,
+          // default: false,
           commons: {
             test: /[\\/]node_modules[\\/]/,
-            name: 'vendor_app',
+            name: 'vendors',
             chunks: 'all',
-            minChunks: 2
+            // minChunks: 2
           }
         }
       }
     },
+    plugins: [
+      new CompressionPlugin({
+        cache: true,
+        algorithm: 'gzip',
+  			// test: /\.(js|css|html|svg)$/,
+  		})
+    ]
   }
 };
 
