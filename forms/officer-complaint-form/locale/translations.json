@@ -130,7 +130,7 @@
   },
 
   "Share your media": {
-    "es": "Comparta su archivos"
+    "es": "Comparta sus archivos"
   },
 
   "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.": {
@@ -484,10 +484,6 @@
     "es": "%(*Obligatoria)%"
   },
 
-  "%required%": {
-    "es": "%obligatoria%"
-  },
-
   "%Yes%": {
     "es": "%Sí%"
   },
@@ -546,6 +542,14 @@
 
   "Please provide a valid email address": {
     "es": "Por favor, proporcione una dirección de correo electrónico válida"
+  },
+
+  "%Please enter a valid email address%": {
+    "es": "%Por favor provea una dirección válida%"
+  },
+
+  "%Please enter a valid value%": {
+    "es": "%Por favor provea un valor válido%"
   },
 
   "You can email us at": {
@@ -720,8 +724,8 @@
     "es": "%opcional%"
   },
 
-  "%(optional)%": {
-    "es": "%(opcional)%"
+  "(optional)": {
+    "es": "(opcional)"
   },
 
   "%Optional%": {
