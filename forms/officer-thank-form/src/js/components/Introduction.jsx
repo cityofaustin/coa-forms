@@ -49,6 +49,7 @@ class Introduction extends React.Component {
                 <h4>Required information</h4>
                 <ul className="accordion-list">
                   <li>What happened</li>
+                  <li>Location</li>
                 </ul>
                 <hr className="accordion-rule" />
                 <h4>Optional information</h4>
