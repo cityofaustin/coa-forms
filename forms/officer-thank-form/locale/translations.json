@@ -257,7 +257,7 @@
   "Witness(es) ": {
     "es": "Testigo(s)"
   },
-  
+
   "Over the phone": {
     "es": "Por teléfono"
   },
@@ -465,7 +465,7 @@
   "%New %": {
     "es": "%Nuevo %"
   },
-  
+
   "%Back%": {
     "es": "%Atrás%"
   },
@@ -733,7 +733,11 @@
   "%optional%": {
     "es": "%opcional%"
   },
-  
+
+  "%(optional)%": {
+    "es": "%(opcional)%"
+  },
+
   "%Optional%": {
     "es": "%Opcional%"
   },
