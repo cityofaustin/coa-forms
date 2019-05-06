@@ -727,7 +727,10 @@
   "%optional%": {
     "es": "%opcional%"
   },
-
+  
+  "(optional)": {
+    "es": "(opcional)"
+  },
   "%Optional%": {
     "es": "%Opcional%"
   },
