@@ -257,7 +257,7 @@
   "Witness(es) ": {
     "es": "Testigo(s)"
   },
-  
+
   "Over the phone": {
     "es": "Por teléfono"
   },
@@ -465,7 +465,7 @@
   "%New %": {
     "es": "%Nuevo %"
   },
-  
+
   "%Back%": {
     "es": "%Atrás%"
   },
@@ -560,6 +560,14 @@
 
   "You can email us at": {
     "es": "Nos puede enviar un correo electrónico a"
+  },
+
+  "This field should be at least": {
+    "es": "Este campo debe tener por lo menos"
+  },
+
+  "characters": {
+    "es": "caracteres"
   },
 
   "Where were you?": {
@@ -729,7 +737,7 @@
   "%optional%": {
     "es": "%opcional%"
   },
-  
+
   "%Optional%": {
     "es": "%Opcional%"
   },

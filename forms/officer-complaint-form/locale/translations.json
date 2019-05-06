@@ -727,9 +727,17 @@
   "%optional%": {
     "es": "%opcional%"
   },
-  
+
   "%Optional%": {
     "es": "%Opcional%"
+  },
+
+  "This field should be at least": {
+    "es": "Este campo debe tener por lo menos"
+  },
+
+  "characters": {
+    "es": "caracteres"
   },
 
   "Start over in English?": {
