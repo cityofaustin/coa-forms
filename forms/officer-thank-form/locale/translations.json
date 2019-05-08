@@ -186,6 +186,14 @@
     "es": "¿Qué nos puede decir sobre usted?"
   },
 
+  "We’re sorry. Some information in your application is missing or not valid.": {
+    "es": "Lo sentimos. Algo en su aplicación está perdido o no es válido."
+  },
+
+  "Please check each section of your application to make sure you’ve filled out all the information that is required.": {
+    "es": "Por favor revise cada sección de la aplicación para asegurar que haya llenado toda la información requerida"
+  },
+
   "I am willing to be contacted by the Office of Police Oversight in 2 to 4 business days.": {
     "es": "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre 2 y 4 días laborales."
   },
@@ -562,6 +570,14 @@
     "es": "Nos puede enviar un correo electrónico a"
   },
 
+  "This field should be at least": {
+    "es": "Este campo debe tener por lo menos"
+  },
+
+  "character(s)": {
+    "es": "caracteres"
+  },
+
   "Where were you?": {
     "es": "¿Dónde estaba usted?"
   },
@@ -729,11 +745,9 @@
   "%optional%": {
     "es": "%opcional%"
   },
-
   "(optional)": {
     "es": "(opcional)"
   },
-
   "%Optional%": {
     "es": "%Opcional%"
   },
