@@ -1,7 +1,7 @@
 import React from "react";
 
 import FileUploadWidget from "@cityofaustin/us-forms-system/lib/js/widgets/FileUploadWidget";
-import FileUploadReviewWidget from '@cityofaustin/us-forms-system/lib/js/review/FileUploadReviewWidget';
+import FileUploadReviewWidget from "@cityofaustin/us-forms-system/lib/js/review/FileUploadReviewWidget";
 
 const shareMediaChapter = {
   title: "Share your media",
@@ -18,16 +18,23 @@ const shareMediaChapter = {
           },
           mediaFiles: {
             type: "string"
-          },
+          }
         }
       },
       uiSchema: {
+        "ui:title": "Share your media",
         awareOfMedia: {
           "ui:title":
             "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.",
-            'ui:description': () => (
-              <a className="usa-external_link" target="_blank" href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data">How we store and use your information</a>
-            ),
+          "ui:description": () => (
+            <a
+              className="usa-external_link"
+              target="_blank"
+              href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data"
+            >
+              How we store and use your information
+            </a>
+          ),
           "ui:widget": "radio",
           "ui:options": {
             hideOnReview: true
