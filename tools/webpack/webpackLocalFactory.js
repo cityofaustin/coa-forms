@@ -18,18 +18,18 @@ const path = require("path");
     it will refer to the form-specific __dirname that you plug in.
 **/
 
-const webpackLocalFactory = (__dirname) => {
+const webpackLocalFactory = __dirname => {
   return {
-    mode: 'development',
-    devtool: 'eval-source-map',
+    mode: "production",
+    devtool: "source-map",
     devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
+      contentBase: path.resolve(__dirname, "public"),
       historyApiFallback: true,
       open: true,
       public: `http://localhost:8080/${process.env.DEPLOYMENT_PATH_EN}`,
       writeToDisk: true // This allows page refreshes locally
     }
-  }
+  };
 };
 
-module.exports = webpackLocalFactory
+module.exports = webpackLocalFactory;

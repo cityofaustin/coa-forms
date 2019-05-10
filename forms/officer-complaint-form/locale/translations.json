@@ -809,6 +809,9 @@
   "Office of Police Oversight": {
     "es": "Oficina de Fiscalizacion de la Policia"
   },
+  "%englishMap%": {
+    "es": "%spanishMap%"
+  },
   "englishMap": {
     "es": "spanishMap"
   }
