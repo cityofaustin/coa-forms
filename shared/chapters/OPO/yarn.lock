@@ -9,13 +9,14 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@cityofaustin/us-forms-system@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.2.0.tgz#0cb73b0e2cf27db87a3fca5adfd0c308c9c68b79"
-  integrity sha512-QL94SdRd+/BIT9+VZppT9MjwvyOCPYEnVXxWah2iQeYsxOTaabxLr2YiP7oGK2SGcnqeYMOk0twFck6u+EqpDw==
+"@cityofaustin/us-forms-system@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.3.0.tgz#da6af8772e0c64b68fbff0b0f6aa624461ffe50c"
+  integrity sha512-ORShSwdTdiA3+LZOpjSMH2bC2TzYX3oRD23eDvsCdrJRtPQKtvvJibzjCX0NmFSzcsFGVGMg2lKWtBqpDCWTGQ==
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"
+    "@mapbox/mapbox-gl-language" "^0.10.0"
     classnames "^2.2.6"
     date-fns "^1.30.1"
     downshift "^1.31.16"
@@ -85,6 +86,11 @@
     sinon "^7.2.3"
     suggestions "^1.3.2"
     xtend "^4.0.1"
+
+"@mapbox/mapbox-gl-language@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-language/-/mapbox-gl-language-0.10.0.tgz#f93fb05cde7a8c092c29ff393c51b54e2e26611d"
+  integrity sha512-BBJ6CQStZbGKfARPOcVol97J5PLaLEbm6ya/PzzhC4Aw7f7a3cBiV5p6SYQFGhyAh2Z8MxjFaXH18xyB8KgrkA==
 
 "@mapbox/mapbox-gl-supported@^1.4.0":
   version "1.4.0"
