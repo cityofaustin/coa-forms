@@ -1,14 +1,16 @@
 {
   "You DO NOT have to give personal information in order to file a complaint.": {
-    "es": "NO tiene que proveer su información personal para presentar una queja."
+    "es":
+      "NO tiene que proveer su información personal para presentar una queja."
   },
 
   "By telling us about your experience, you help us better serve you and your community. Thank you.": {
-    "es": "Al contarnos su experiencia, nos está ayudando a servirles mejor a usted y a su comunidad. Muchas gracias."
+    "es":
+      "Al contarnos su experiencia, nos está ayudando a servirles mejor a usted y a su comunidad. Muchas gracias."
   },
 
   "%File is too large%": {
-  	"es": "%El archivo es demasiado grande%"
+    "es": "%El archivo es demasiado grande%"
   },
 
   "%File is too large to be uploaded%": {
@@ -16,19 +18,20 @@
   },
 
   "%Maximum file size is {filesize}%": {
-  	"es": "%El tamaño máximo de un archivo es {filesize}%"
+    "es": "%El tamaño máximo de un archivo es {filesize}%"
   },
 
   "%Maximum total size exceeded%": {
-  	"es": "%Tamaño total máximo excedido%"
+    "es": "%Tamaño total máximo excedido%"
   },
 
   "%Maximum total file size is {filesize}%": {
-  	"es": "%El tamaño máximo total de archivo es {filesize}%"
+    "es": "%El tamaño máximo total de archivo es {filesize}%"
   },
 
   "%We are the Office of Police Oversight, impartial and separate from the Austin Police Department.%": {
-    "es": "%Somos la Oficina de Fiscalización de la Policía, imparcial y separada del Departamento de Policía de Austin.%"
+    "es":
+      "%Somos la Oficina de Fiscalización de la Policía, imparcial y separada del Departamento de Policía de Austin.%"
   },
 
   "Learn more about who we are and what we do.": {
@@ -36,7 +39,8 @@
   },
 
   "Your contact information for us to follow up with you (interpreters available)": {
-    "es": "Su información de contacto para poder comunicarnos con usted (hay traductores disponibles)"
+    "es":
+      "Su información de contacto para poder comunicarnos con usted (hay traductores disponibles)"
   },
   "Call the Office of Police Oversight at ": {
     "es": "Llame a la Oficina de Fiscalización de la Policía al "
@@ -47,19 +51,23 @@
   },
 
   "You can complete the form in person at the Office of Police Oversight at 1520 Rutherford Lane, Austin, TX 78754. We are in Building 1, on the 2nd floor, Suite 211. Visitor parking is in front of the main entrance.": {
-    "es": "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal."
+    "es":
+      "Puede presentar una queja en persona en la Oficina de Fiscalización de la Policía en 1520 Rutherford Lane, Austin, TX 78754. Estamos en el edificio 1, segundo piso, oficina 211. El estacionamiento para visitantes es frente a la entrada principal."
   },
 
   "If you need an interpreter, you can call with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
-    "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
+    "es":
+      "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
 
   "If you need an interpreter, you can come with a friend to interpret for you or ask for an interpreter. Just tell us the language you prefer.": {
-    "es": "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
+    "es":
+      "Si necesita asistencia de traducción, puede pedirle a un amigo o solicitar un intérprete."
   },
 
   "For a copy of your complaint and confirmation number, enter your email address below": {
-    "es": "Para obtener una copia de su queja y número de confirmación, ingrese su dirección de correo electrónico."
+    "es":
+      "Para obtener una copia de su queja y número de confirmación, ingrese su dirección de correo electrónico"
   },
 
   "Office hours are Monday through Friday, 8 am to 5 pm.": {
@@ -70,15 +78,18 @@
   },
 
   "Download the complaint form (PDF). Print and fill out the form, then mail it to:": {
-    "es": "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
+    "es":
+      "Descargue el formulario de queja (PDF). Imprima y llene el formulario, luego envíelo por correo a:"
   },
 
   "https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data": {
-    "es": "https://alpha.austin.gov/es/police-oversight/how-we-store-and-use-your-data"
+    "es":
+      "https://alpha.austin.gov/es/police-oversight/how-we-store-and-use-your-data"
   },
 
   "http://alpha.austin.gov/police-oversight/complaint-investigation-process": {
-    "es": "https://alpha.austin.gov/es/police-oversight/complaint-investigation-process"
+    "es":
+      "https://alpha.austin.gov/es/police-oversight/complaint-investigation-process"
   },
 
   "%/files/OPO_complaint-form_print_English.pdf%": {
@@ -90,7 +101,8 @@
   },
 
   "Print and fill out the form, then mail it to:": {
-    "es": "Imprima y llene el formulario, luego envíelo por correo a la Oficina de Fiscalización de la Policía a:"
+    "es":
+      "Imprima y llene el formulario, luego envíelo por correo a la Oficina de Fiscalización de la Policía a:"
   },
 
   "Tell us what happened": {
@@ -118,9 +130,10 @@
   },
 
   "We need your name in order to find the ticket you’re referencing.": {
-    "es": "Necesitamos su nombre para encontrar la infracción a la que se está refiriendo."
+    "es":
+      "Necesitamos su nombre para encontrar la infracción a la que se está refiriendo."
   },
-  
+
   "Type in the location or drag the map to the location.": {
     "es": "Escriba el lugar o arrastre el mapa hasta la ubicación."
   },
@@ -130,15 +143,17 @@
   },
 
   "Share your media": {
-    "es": "Comparta su archivos"
+    "es": "Comparta sus archivos"
   },
 
   "Do you have additional information? This could include video, audio, photos, police reports, hospital records, or anything else you want to share.": {
-    "es": "¿Tiene información adicional? Podría ser un video, audio, fotos, reportes de policía, registros de hospital o cualquier cosa que desee compartir."
+    "es":
+      "¿Tiene información adicional? Podría ser un video, audio, fotos, reportes de policía, registros de hospital o cualquier cosa que desee compartir."
   },
 
   "Upload any media that you have (video files, audio files, photos, police report, hospital record, etc.).": {
-    "es": "Cargue cualquier archivo que tenga (archivos de video, audio, reportes de policía, reportes de hospital, etc.)"
+    "es":
+      "Cargue cualquier archivo que tenga (archivos de video, audio, reportes de policía, reportes de hospital, etc.)"
   },
 
   "Drag & Drop your files or ": {
@@ -154,11 +169,13 @@
   },
 
   "Do you remember any details about the officer(s) you’d like to share?": {
-    "es": "¿Recuerda algún detalle sobre el(los) oficial(es) que desee compartir?"
+    "es":
+      "¿Recuerda algún detalle sobre el(los) oficial(es) que desee compartir?"
   },
 
   "Examples: hair color, eye color, weight, height, facial hair, tattoos, scars, etc.": {
-    "es": "Ejemplos: color de cabello, color de ojos, peso, estatura, vello facial, tatuajes, cicatrices, etc."
+    "es":
+      "Ejemplos: color de cabello, color de ojos, peso, estatura, vello facial, tatuajes, cicatrices, etc."
   },
 
   "What was the officer wearing?": {
@@ -178,7 +195,8 @@
   },
 
   "Do you remember any details about witness(es) you’d like to share?": {
-    "es": "¿Recuerda algún detalle sobre el(los) testigo(s) que desee compartir?"
+    "es":
+      "¿Recuerda algún detalle sobre el(los) testigo(s) que desee compartir?"
   },
 
   "Is there anything we should know about this witness?": {
@@ -198,7 +216,8 @@
   },
 
   "I am willing to be contacted by the Office of Police Oversight in 2 to 4 business days.": {
-    "es": "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre 2 y 4 días laborales."
+    "es":
+      "Me gustaría que la Oficina de Fiscalización de la Policía se comunicara conmigo entre 2 y 4 días laborales."
   },
 
   "Your name": {
@@ -214,7 +233,8 @@
   },
 
   "Required if you want the confirmation number sent to your email.": {
-    "es": "Obligatorio si desea que le enviemos el número de confirmación por correo electrónico."
+    "es":
+      "Obligatorio si desea que le enviemos el número de confirmación por correo electrónico."
   },
 
   "I would like an interpreter for all my future interactions.": {
@@ -281,8 +301,8 @@
     "es": "Testigo(s)"
   },
 
-  "witness": {
-    "es": "testigo"
+  "%witness%": {
+    "es": "%testigo%"
   },
 
   "%New %": {
@@ -349,7 +369,8 @@
   },
 
   "This information helps us recognize trends across the City that lead to policy and training recommendations.": {
-    "es": "Esta información nos ayuda a reconocer las tendencias en toda la ciudad para presentar recomendaciones a las políticas y entrenamientos."
+    "es":
+      "Esta información nos ayuda a reconocer las tendencias en toda la ciudad para presentar recomendaciones a las políticas y entrenamientos."
   },
 
   "%Race%": {
@@ -390,7 +411,6 @@
     "es": "%Descripción%"
   },
 
-
   "We have received your complaint": {
     "es": "Hemos recibido su queja"
   },
@@ -400,28 +420,31 @@
   },
 
   "Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.": {
-    "es": "Nuestro trabajo es asegurarnos de que su queja sea investigada justa y completamente. Muchas gracias por compartir su experiencia con nosotros, esto nos ayuda a servirles mejor a usted y a su comunidad."
+    "es":
+      "Nuestro trabajo es asegurarnos de que su queja sea investigada justa y completamente. Muchas gracias por compartir su experiencia con nosotros, esto nos ayuda a servirles mejor a usted y a su comunidad."
   },
 
   "You will receive an email with a copy of your complaint and a confirmation number. You can email us at ": {
-    "es": "Recibirá un correo electrónico con una copia de su queja y un número de confirmación. Nos puede enviar un correo electrónico a "
+    "es":
+      "Recibirá un correo electrónico con una copia de su queja y un número de confirmación. Nos puede enviar un correo electrónico a "
   },
 
   " or call us at ": {
     "es": " o llamarnos al "
   },
 
-
   "How we store and use your information": {
     "es": "Cómo guardamos y usamos su información"
   },
 
   " with your confirmation number to find where your complaint is in this process.": {
-    "es": " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
+    "es":
+      " con su número de confirmación para averiguar en qué parte del proceso se encuentra su queja."
   },
 
   "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.": {
-    "es": "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
+    "es":
+      "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
   },
 
   "%Required information%": {
@@ -488,10 +511,6 @@
     "es": "%(*Obligatoria)%"
   },
 
-  "%required%": {
-    "es": "%obligatoria%"
-  },
-
   "%Yes%": {
     "es": "%Sí%"
   },
@@ -529,27 +548,36 @@
   },
 
   "File is too large": {
-  	"es": "El archivo es demasiado grande."
+    "es": "El archivo es demasiado grande."
   },
 
   "Maximum file size is {filesize}": {
-  	"es": "El tamaño máximo de un archivo es {filesize}"
+    "es": "El tamaño máximo de un archivo es {filesize}"
   },
 
   "Maximum total size exceeded": {
-  	"es": "Tamaño total máximo excedido."
+    "es": "Tamaño total máximo excedido."
   },
 
   "Maximum total file size is {filesize}": {
-  	"es": "El tamaño máximo total de archivo es {filesize}"
+    "es": "El tamaño máximo total de archivo es {filesize}"
   },
 
   "You will receive an email with a copy of your complaint and a confirmation number at": {
-    "es": "Ustéd recibirá un correo electrónico con una copia de su queja y un número de confirmación la dirección "
+    "es":
+      "Ustéd recibirá un correo electrónico con una copia de su queja y un número de confirmación la dirección "
   },
 
   "Please provide a valid email address": {
     "es": "Por favor, proporcione una dirección de correo electrónico válida"
+  },
+
+  "%Please enter a valid email address%": {
+    "es": "%Por favor, ingrese una dirección de correo electrónico válida%"
+  },
+
+  "%Please enter a valid value%": {
+    "es": "%Por favor provea un valor válido%"
   },
 
   "You can email us at": {
@@ -637,7 +665,7 @@
   },
 
   "%True%": {
-    "es": "%Si%"
+    "es": "%Sí%"
   },
 
   "language:%en%": {
@@ -677,11 +705,13 @@
   },
 
   "%January%,%February%,%March%,%April%,%May%,%June%,%July%,%August%,%September%,%October%,%November%,%December%": {
-    "es": "%Enero%,%Febrero%,%Marzo%,%Abril%,%Mayo%,%Junio%,%Julio%,%Agosto%,%Septiembre%,%Octubre%,%Noviembre%,%Diciembre%"
+    "es":
+      "%Enero%,%Febrero%,%Marzo%,%Abril%,%Mayo%,%Junio%,%Julio%,%Agosto%,%Septiembre%,%Octubre%,%Noviembre%,%Diciembre%"
   },
 
   "%Jan%,%Feb%,%Mar%,%Apr%,%May%,%Jun%,%Jul%,%Aug%,%Sep%,%Oct%,%Nov%,%Dec%": {
-    "es": "%Ene%,%Feb%,%Mar%,%Abr%,%May%,%Jun%,%Jul%,%Ago%,%Sep%,%Oct%,%Nov%,%Dic%"
+    "es":
+      "%Ene%,%Feb%,%Mar%,%Abr%,%May%,%Jun%,%Jul%,%Ago%,%Sep%,%Oct%,%Nov%,%Dic%"
   },
 
   "%Sunday%,%Monday%,%Tuesday%,%Wednesday%,%Thursday%,%Friday%,%Saturday%": {
@@ -724,6 +754,34 @@
     "es": "%opcional%"
   },
 
+  "(optional)": {
+    "es": "(opcional)"
+  },
+  "%Optional%": {
+    "es": "%Opcional%"
+  },
+
+  "This field should be at least": {
+    "es": "Este campo debe tener por lo menos"
+  },
+
+  "characters": {
+    "es": "caracteres"
+  },
+
+  "character(s)": {
+    "es": "caracteres"
+  },
+
+  "We’re sorry. Some information in your application is missing or not valid.": {
+    "es": "Lo sentimos. Algo en su aplicación está perdido o no es válido."
+  },
+
+  "Please check each section of your application to make sure you’ve filled out all the information that is required.": {
+    "es":
+      "Por favor revise cada sección de la aplicación para asegurar que haya llenado toda la información requerida"
+  },
+
   "Start over in English?": {
     "es": "¿Comenzar de nuevo en inglés?"
   },
@@ -754,5 +812,11 @@
 
   "Office of Police Oversight": {
     "es": "Oficina de Fiscalizacion de la Policia"
+  },
+  "%englishMap%": {
+    "es": "%spanishMap%"
+  },
+  "englishMap": {
+    "es": "spanishMap"
   }
 }

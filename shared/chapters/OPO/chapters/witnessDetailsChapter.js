@@ -30,6 +30,7 @@ const witnessDetailsChapter = {
       },
       uiSchema: {
         'ui:title': 'Tell us about any witnesses',
+        'ui:removeFieldFromReview': 'hasWitnessInformation',
         hasWitnessInformation: {
           'ui:title':
             'Do you remember any details about witness(es) you’d like to share?',

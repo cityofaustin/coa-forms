@@ -2,6 +2,7 @@
 node_modules/
 local/
 public*/
+.idea/
 
 # Files to ignore
 .DS_Store

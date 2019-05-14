@@ -4,5 +4,5 @@ export { default as whatHappenedThanksChapter } from "./chapters/whatHappenedTha
 export { default as officerDetailsChapter } from "./chapters/officerDetailsChapter";
 export { default as aboutYouChapter } from "./chapters/aboutYouChapter";
 export { default as howYouFoundUsChapter } from "./chapters/howYouFoundUsChapter";
-export { default as shareEvidenceChapter } from "./chapters/shareEvidenceChapter";
+export { default as shareMediaChapter } from "./chapters/shareMediaChapter";
 export { default as witnessDetailsChapter } from "./chapters/witnessDetailsChapter";

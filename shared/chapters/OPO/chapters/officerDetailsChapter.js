@@ -22,11 +22,7 @@ const officerDetailsChapter = {
                 name: { type: 'string' },
                 physicalDescription: { type: 'string' },
                 ...raceBlocks.schema,
-                gender: {
-                  type: 'string',
-                  enum: ['male', 'female'],
-                  enumNames: ['Male', 'Female'],
-                },
+                ...genderBlocks.schema,
                 badgeNumber: {
                   type: 'number',
                 },
@@ -64,6 +60,7 @@ const officerDetailsChapter = {
       },
       uiSchema: {
         'ui:title': 'Tell us about the officer(s)',
+        'ui:removeFieldFromReview': 'hasOfficerDetails',
         hasOfficerDetails: {
           'ui:title':
             'Do you remember any details about the officer(s) you’d like to share?',
@@ -96,13 +93,7 @@ const officerDetailsChapter = {
               },
             },
             ...raceBlocks.ui,
-            gender: {
-              'ui:title': 'Gender',
-              'ui:widget': 'radio',
-              'ui:options': {
-                hideOnReviewIfFalse: true,
-              },
-            },
+            ...genderBlocks.ui,
             badgeNumber: {
               'ui:title': 'Badge number',
               'ui:options': {
