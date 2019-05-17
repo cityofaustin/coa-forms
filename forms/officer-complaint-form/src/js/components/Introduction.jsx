@@ -32,7 +32,7 @@ class Introduction extends React.Component {
             <hr className="form-rule" />
             <p>
               You DO NOT have to give personal information in order to file a
-              complaint.
+              complaint. <a href='http://alpha.austin.gov/police-oversight/complaint-investigation-process'>Learn about the complaint investigation process.</a>
             </p>
             <p>
               By telling us about your experience, you help us better serve you
