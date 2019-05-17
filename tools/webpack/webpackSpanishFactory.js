@@ -38,7 +38,7 @@ const webpackSpanishFactory = (__dirname) => {
             exec(`${path.resolve(__dirname, "../../deployment/scripts/translate_form.sh")} -f ${process.env.FORM_DIR} -l es`, (err, stdout, stderr) => {
               if (stdout) process.stdout.write(stdout);
               if (stderr) process.stderr.write(stderr);
-              if (err.code !== 0) process.exit(1);
+              if (err && err.code == 1) process.exit(1);
             });
           });
         }
