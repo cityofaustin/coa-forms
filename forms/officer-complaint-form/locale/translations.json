@@ -437,9 +437,9 @@
     "es": "Cómo guardamos y usamos su información"
   },
 
-  " with your confirmation number to find where your complaint is in %,o.a.createElement(%a%,{href:%https://alpha.austin.gov/police-oversight/complaint-investigation-process%},%the process.": {
+  " with your confirmation number to find where your complaint is in %,o.a.createElement(%a%,{href:%https://alpha.austin.gov/police-oversight/complaint-investigation-process%},%the process.%))": {
     "es":
-      " con su número de confirmación para averiguar en qué parte del %,o.a.createElement(%a%,{href:%https://alpha.austin.gov/es/police-oversight/complaint-investigation-process%},%proceso%),% se encuentra su queja."
+      " con su número de confirmación para averiguar en qué parte del %,o.a.createElement(%a%,{href:%https://alpha.austin.gov/es/police-oversight/complaint-investigation-process%},%proceso%),% se encuentra su queja.%)"
   },
 
   "If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.": {
