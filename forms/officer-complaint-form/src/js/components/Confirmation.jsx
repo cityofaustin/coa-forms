@@ -214,7 +214,6 @@ class Confirmation extends React.Component {
 
         return (
           <div className="schemaform-intro">
-            <SegmentedProgressBar total={2} current={2}/>
             <h2>We have received your complaint.</h2>
             <h3>Your confirmation number: {confirmationCaseNumber}</h3>
             {confirmation_content}
