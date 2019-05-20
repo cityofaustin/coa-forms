@@ -44,6 +44,9 @@ def halt_translation(message):
 def key_length(key_str):
     return len(key_str)
 
+# Sorts translations so that longer translations are translated first.
+# This is important because smaller phrases can occur inside larger ones.
+# If those smaller phrases are translated first, then the large translation won't happen, because the strings won't match.
 def sort_dictionary(language_dict):
     return sorted(language_dict, key=key_length, reverse=True)
 
