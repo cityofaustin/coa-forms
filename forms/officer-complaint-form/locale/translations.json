@@ -774,12 +774,12 @@
   },
 
   "We’re sorry. Some information in your application is missing or not valid.": {
-    "es": "Lo sentimos. Algo en su aplicación está perdido o no es válido."
+    "es": "Lo sentimos. Falta información o parte de la información en su solicitud no es válida."
   },
 
   "Please check each section of your application to make sure you’ve filled out all the information that is required.": {
     "es":
-      "Por favor revise cada sección de la aplicación para asegurar que haya llenado toda la información requerida"
+      "Por favor revise cada sección de su solicitud para asegurarse de que haya llenado toda la información requerida."
   },
 
   "Start over in English?": {
