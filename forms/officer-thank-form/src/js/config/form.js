@@ -4,7 +4,7 @@ import Confirmation from '../components/Confirmation.jsx';
 
 import {
   whatHappenedThanksChapter,
-  whereHappenedChapter,
+  whereHappenedThanksChapter,
   officerDetailsChapter,
   aboutYouChapter,
 } from 'chapters';
@@ -79,7 +79,7 @@ const formConfig = {
   hideNavArrows: true,
   chapters: {
     whatHappenedThanksChapter,
-    whereHappenedChapter,
+    whereHappenedThanksChapter,
     officerDetailsChapter,
     aboutYouChapter,
   },
