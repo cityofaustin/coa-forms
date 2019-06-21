@@ -56,19 +56,10 @@ class Confirmation extends React.Component {
             // Let's change the form data prior to submission ...
             // console.log("submitForm() No email present, reassigning...");
 
-            // Try to reassign the email, or set up the value.
-            try {
-                // console.log("submitForm() view:contactPreferences['yourEmail'] : " + this.state.userEmail);
-                formData["view:contactPreferences"] = {
-                    "yourEmail": this.state.userEmail
-                };
-                console.log(formData);
-            } catch {
-                // console.log("Could not set up the email address.");
-                // console.log(formData);
-                return;
-            }
-
+            // Reassign the email, or set up the value.
+            formData["view:contactPreferences"] = formData["view:contactPreferences"] || {};
+            formData["view:contactPreferences"].yourEmail = this.state.userEmail;
+            console.log(formData);
 
             // Append two needed fields for the backend...
             formData.userConfirmationOnly = true;
