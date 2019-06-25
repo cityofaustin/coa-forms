@@ -2,15 +2,19 @@ import React from 'react';
 
 import widgets from "@cityofaustin/us-forms-system/lib/js/widgets";
 import PhoneNumberWidget from '@cityofaustin/us-forms-system/lib/js/widgets/PhoneNumberWidget';
+import CurrencyWidget from '@cityofaustin/us-forms-system/lib/js/widgets/CurrencyWidget';
 const { CalendarDateWidget, TimeWidget } = widgets;
+import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
+import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/currency';
+
 
 const chapters = {
   dayLabor: {
     title: "Day Labor",
     pages: {
       dayLabor: {
-        path: 'day-labor',
+        path: 'form',
         title: "FIRST WORKERS' DAY LABOR JOB REQUEST",
         schema: {
           type: "object",
@@ -18,7 +22,9 @@ const chapters = {
           properties: {
             employerInformation: {
               type: "object",
-              required: [],
+              required: [
+                "name", "address", "city", "zipCode", "phone"
+              ],
               properties: {
                 name: { type: "string" },
                 address: { type: "string" },
@@ -30,24 +36,24 @@ const chapters = {
             },
             jobInformation: {
               type: "object",
-              required: [],
+              required: [
+                "date", "time", "numberWorkers", "numberHours", "hourlyRate", "transportation", "description",
+              ],
               properties: {
-                datetime: {
-                  type: "object",
-                  required: ["date", "time"],
-                  properties: {
-                    date: { type: "string" },
-                    time: { type: "string" },
-                  }
-                },
+                date: { type: "string" },
+                time: { type: "string" },
                 numberWorkers: { type: "number" },
                 numberHours: { type: "number" },
-                hourlyRate: { type: "number" },
+                hourlyRate: currencyConfig.schema(),
                 transportation: {
                   type: "string",
                   enum: [
-                    'Employer-provided',
-                    'Worker-provided',
+                    'employerProvided',
+                    'workerProvided',
+                  ],
+                  enumNames: [
+                    'Employer provided',
+                    'Worker provided'
                   ],
                 },
                 description: { type: "string" },
@@ -85,35 +91,35 @@ const chapters = {
             }
           },
           jobInformation: {
-            datetime: {
-              "ui:title": "Date and time for this job",
-              date: {
-                "ui:title": "Date",
-                "ui:widget": CalendarDateWidget,
-              },
-              time: {
-                "ui:title": "Time",
-                "ui:widget": TimeWidget,
-              },
-              numberWorkers: {
-                "ui:title": "Number of workers needed"
-              },
-              numberHours: {
-                "ui:title": "Number of hours you expect they'll work"
-              },
-              hourlyRate: {
-                "ui:title": "Hourly pay rate",
-                "ui:description": "We recommend that you offer at least $12 an hour",
-              },
-              transportation: {
-                "ui:title": "Transporation",
-                'ui:widget': 'radio',
-              },
-              description: {
-                "ui:title": "Describe the job",
-                "ui:description": "Carpentry? Installing windows? Landscaping? Give us a sense of the job and what skillsets you're looking for.",
-                "ui:widget": "textarea"
-              }
+            "ui:title": "Job Information",
+            date: {
+              "ui:title": "Date for this job",
+              "ui:widget": CalendarDateWidget,
+              "ui:reviewWidget": CalendarDateReviewWidget,
+            },
+            time: {
+              "ui:title": "Time for this job",
+              "ui:widget": TimeWidget,
+              "ui:reviewWidget": TimeReviewWidget,
+            },
+            numberWorkers: {
+              "ui:title": "Number of workers needed"
+            },
+            numberHours: {
+              "ui:title": "Number of hours you expect they'll work"
+            },
+            hourlyRate: {
+              ...currencyConfig.uiSchema("Hourly pay rate"),
+              "ui:description": "We recommend that you offer at least $12 an hour",
+            },
+            transportation: {
+              "ui:title": "Transporation",
+              'ui:widget': 'radio',
+            },
+            description: {
+              "ui:title": "Describe the job",
+              "ui:description": "Carpentry? Installing windows? Landscaping? Give us a sense of the job and what skillsets you're looking for.",
+              "ui:widget": "textarea"
             }
           }
         }
