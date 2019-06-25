@@ -15,5 +15,5 @@ FORM_DIR=day-labor
 # RUN_BUNDLE_ANALYZER=true
 
 if [ "$CIRCLE_BRANCH" == "2309-day-labor" ]; then
-  FORM_API_URL=https://k747e3g5yb.execute-api.us-east-1.amazonaws.com/pr_2309_day_labor
+  FORM_API_URL=https://7rn6ue7x09.execute-api.us-east-1.amazonaws.com/pr_2309_day_labor
 fi
