@@ -4,7 +4,7 @@ import Confirmation from '../components/Confirmation.jsx';
 import chapters from '../chapters';
 
 const formConfig = {
-  type: "complaint",
+  type: "day_labor",
   language: "en",
   title: 'Day Labor',
   subTitle: '',
@@ -23,8 +23,8 @@ const formConfig = {
     console.log(formData.data);
 
     // Let's store the data in case we need to re-submit later.
-    localStorage.setItem("opo_form_day_labor_data", JSON.stringify(formData.data));
-    localStorage.setItem("opo_form_day_labor_submiturl", formConfig.submitUrl);
+    localStorage.setItem("coa_forms_day_labor_data", JSON.stringify(formData.data));
+    localStorage.setItem("coa_forms_day_labor_submiturl", formConfig.submitUrl);
 
     // Create the XHR request
     var request = new XMLHttpRequest();
@@ -56,7 +56,7 @@ const formConfig = {
       console.log(response.response);
       let respObj = JSON.parse(response.response);
       console.log(respObj.case_number);
-      localStorage.setItem("day_labor_confirmation_case_number", respObj.case_number);
+      localStorage.setItem("coa_forms_day_labor_confirmation_number", respObj.case_number);
       return response;
     })
     .catch(function (error) {
@@ -67,7 +67,7 @@ const formConfig = {
   },
   submitUrl: `${process.env.FORM_API_URL}/forms/day_labor/submit`,
   // introduction: Introduction,
-  // confirmation: Confirmation,
+  confirmation: Confirmation,
   defaultDefinitions: {},
   openAllChaptersOnReview: false,
   hideNavArrows: true,

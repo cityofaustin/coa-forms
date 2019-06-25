@@ -11,9 +11,9 @@ class Confirmation extends React.Component {
     constructor(props) {
         super(props);
 
-        let formData = JSON.parse(localStorage.getItem("opo_form_data"));
-        let confirmationNumber = localStorage.getItem("opo_confirmation_case_number") || "N/A";
-        let submitUrl = localStorage.getItem("opo_form_submiturl") || "";
+        let formData = JSON.parse(localStorage.getItem("coa_forms_day_labor_data"));
+        let confirmationNumber = localStorage.getItem("coa_forms_day_labor_confirmation_number") || "N/A";
+        let submitUrl = localStorage.getItem("coa_forms_day_labor_submiturl") || "";
         let userEmail = "";
         try {
             userEmail = formData["view:contactPreferences"].yourEmail;
@@ -205,13 +205,8 @@ class Confirmation extends React.Component {
 
         return (
           <div className="schemaform-intro">
-            <h2>We have received your complaint.</h2>
+            <h2>You submitted a day labor request, great job.</h2>
             <h3>Your confirmation number: {confirmationCaseNumber}</h3>
-            {confirmation_content}
-            <p>You can email us at <a>policeoversight@austintexas.gov</a> or call us at <a>(512) 972-2676</a> with your confirmation number to find where your complaint is in <a href="https://alpha.austin.gov/police-oversight/complaint-investigation-process">the process.</a></p>
-            <p>If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.</p>
-            <p>Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.</p>
-            <p><a href="http://alpha.austin.gov/police-oversight/complaint-investigation-process">What happens next</a></p>
           </div>
         );
   }
