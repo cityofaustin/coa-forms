@@ -1,12 +1,12 @@
 # AWS
 DEPLOYMENT_BUCKET=$CI_PROD_BUCKET_OPO
-DEPLOYMENT_PATH_EN=police-complain
-DEPLOYMENT_PATH_ES=policia-queja
+DEPLOYMENT_PATH_EN=day-labor
+DEPLOYMENT_PATH_ES=day-labor-es
 
 # App
 NODE_ENV=production
 FORM_API_URL=$CI_PROD_API_OPO
 
 # Structure
-FORM_DIR=officer-complaint-form
-CHAPTERS_DIR=OPO
+FORM_DIR=day-labor
+CHAPTERS_DIR=day-labor

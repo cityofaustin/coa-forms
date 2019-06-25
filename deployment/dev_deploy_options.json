@@ -1,6 +1,5 @@
 {
   "forms_to_deploy": [
-    "officer-complaint-form",
-    "officer-thank-form"
+    "day-labor"
   ]
 }

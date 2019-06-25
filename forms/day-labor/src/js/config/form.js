@@ -1,20 +1,12 @@
 import React from 'react';
 import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
-
-import {
-  whatHappenedChapter,
-  whereHappenedChapter,
-  officerDetailsChapter,
-  aboutYouChapter,
-  shareMediaChapter,
-  witnessDetailsChapter,
-} from 'chapters';
+import chapters from '../chapters';
 
 const formConfig = {
   type: "complaint",
   language: "en",
-  title: 'File a complaint',
+  title: 'Day Labor',
   subTitle: '',
   formId: '',
   urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
@@ -31,8 +23,8 @@ const formConfig = {
     console.log(formData.data);
 
     // Let's store the data in case we need to re-submit later.
-    localStorage.setItem("opo_form_data", JSON.stringify(formData.data));
-    localStorage.setItem("opo_form_submiturl", formConfig.submitUrl);
+    localStorage.setItem("opo_form_day_labor_data", JSON.stringify(formData.data));
+    localStorage.setItem("opo_form_day_labor_submiturl", formConfig.submitUrl);
 
     // Create the XHR request
     var request = new XMLHttpRequest();
@@ -64,7 +56,7 @@ const formConfig = {
       console.log(response.response);
       let respObj = JSON.parse(response.response);
       console.log(respObj.case_number);
-      localStorage.setItem("opo_confirmation_case_number", respObj.case_number);
+      localStorage.setItem("day_labor_confirmation_case_number", respObj.case_number);
       return response;
     })
     .catch(function (error) {
@@ -73,19 +65,14 @@ const formConfig = {
       return error;
     });
   },
-  submitUrl: `${process.env.FORM_API_URL}/forms/opo/submit`,
-  introduction: Introduction,
-  confirmation: Confirmation,
+  submitUrl: `${process.env.FORM_API_URL}/forms/day_labor/submit`,
+  // introduction: Introduction,
+  // confirmation: Confirmation,
   defaultDefinitions: {},
   openAllChaptersOnReview: false,
   hideNavArrows: true,
   chapters: {
-    whatHappenedChapter,
-    whereHappenedChapter,
-    shareMediaChapter,
-    officerDetailsChapter,
-    witnessDetailsChapter,
-    aboutYouChapter,
+    ...chapters
   },
 };
 
