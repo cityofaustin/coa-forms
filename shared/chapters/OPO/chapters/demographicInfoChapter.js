@@ -33,7 +33,7 @@ const demographicInfoChapter = {
         }
       },
       uiSchema: {
-        "ui:title": "Tell us about you",
+        "ui:title": "Demographic information",
         "view:infoObject": {
           "ui:description": () => (
             <div className="usa-alert  usa-alert-info">
