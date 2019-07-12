@@ -215,9 +215,7 @@ class Confirmation extends React.Component {
         return (
           <div className="schemaform-intro">
             <h2>We have received your complaint.</h2>
-            <h3>Your confirmation number: {confirmationCaseNumber}</h3>
-            {confirmation_content}
-            <p>You can email us at <a>policeoversight@austintexas.gov</a> or call us at <a>(512) 972-2676</a> with your confirmation number to find where your complaint is in <a href="https://alpha.austin.gov/police-oversight/complaint-investigation-process">the process.</a></p>
+            <p>If you provided your email, you will receive a copy of your complaint. You can email us at <a>policeoversight@austintexas.gov</a> or call us at <a>(512) 972-2676</a> to find where your complaint is in <a href="https://alpha.austin.gov/police-oversight/complaint-investigation-process">the process.</a></p>
             <p>If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.</p>
             <p>Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.</p>
             <p><a href="http://alpha.austin.gov/police-oversight/complaint-investigation-process">What happens next</a></p>

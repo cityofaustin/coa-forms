@@ -13,11 +13,11 @@ yourRace.race["ui:title"] = "Your race";
 yourGender.gender["ui:title"] = "Your gender";
 
 const demographicInfoChapter = {
-  title: "Tell us about you (optional)",
+  title: "Demographic information",
   pages: {
     demographicInfo: {
-      path: "about-you",
-      title: "Tell us about you",
+      path: "demographic-information",
+      title: "Demographic information",
       schema: {
         type: "object",
         properties: {
@@ -38,7 +38,6 @@ const demographicInfoChapter = {
           "ui:description": () => (
             <div className="usa-alert  usa-alert-info">
               <div className="usa-alert-body">
-                <h2 className="usa-alert-heading">Demographic information</h2>
                 <p className="usa-alert-text">
                   This information helps us recognize trends across the City
                   that lead to policy and training recommendations.
