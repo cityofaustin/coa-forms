@@ -7,6 +7,7 @@ import {
   whereHappenedChapter,
   officerDetailsChapter,
   aboutYouChapter,
+  followUpChapter,
   shareMediaChapter,
   witnessDetailsChapter,
 } from 'chapters';
@@ -86,6 +87,7 @@ const formConfig = {
     officerDetailsChapter,
     witnessDetailsChapter,
     aboutYouChapter,
+    followUpChapter,
   },
 };
 
