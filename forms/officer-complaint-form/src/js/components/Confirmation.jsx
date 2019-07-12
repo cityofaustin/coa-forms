@@ -191,12 +191,13 @@ class Confirmation extends React.Component {
         let confirmation_content = null;
 
         // If the email was already sent (-1), then no need for the form.
-        if(this.state.formSubmissionState === -1) {
+        if(this.state.formSubmissionState === -1 && this.state.formData.remainAnonymous === "followUp") {
             console.log("renderConfirmation() The email looks valid, so no need to render form");
             confirmation_content = <div className="confirmation__sent-acknowledgement">
                 <p>You will receive an email with a copy of your complaint at <b>{this.state.userEmail}</b></p>
+                <p>A staff person from the Office of Police Oversight will contact you within 2 to 4 business days.</p>
+                <p>You can email us at policeoversight@austintexas.gov or call us at (512) 972-2676 to find where your complaint is in this process.</p>
             </div>;
-
             // Clear the stored data
             this.clearLocalStorage();
 
@@ -205,8 +206,7 @@ class Confirmation extends React.Component {
         return (
           <div className="schemaform-intro">
             <h2>We have received your complaint.</h2>
-            <p>If you provided your email, you will receive a copy of your complaint. You can email us at <a>policeoversight@austintexas.gov</a> or call us at <a>(512) 972-2676</a> to find where your complaint is in <a href="https://alpha.austin.gov/police-oversight/complaint-investigation-process">the process.</a></p>
-            <p>If you provided your contact information, a staff person from the Office of Police Oversight will contact you within 2 to 4 business days.</p>
+            {confirmation_content}
             <p>Our job is to make sure your complaint is investigated fairly and thoroughly. Thank you for sharing your experience with us. This helps us better serve you and your community.</p>
             <p><a href="http://alpha.austin.gov/police-oversight/complaint-investigation-process">What happens next</a></p>
           </div>
