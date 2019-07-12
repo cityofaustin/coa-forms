@@ -1,7 +1,7 @@
 # Documentation for Deployment Functions
 
 ## Summary of How Deployment Works
-To deploy a form, add its directory name to `dev_deploy_options.json` under `forms_to_deploy`. When a new commit is pushed to github, CircleCI will deploy all listed forms by running `run.sh`.
+To deploy a form, add its directory name as a FORM parameter in new job in .circleci/config.yml.
 
 Dev Branch/PR Builds are available at https://opo.austintexas.io/police-complain/[branch-name]
 
@@ -12,23 +12,13 @@ The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument p
 + All other dev/feature/pull-request branches use DEPLOY_ENV="dev". This will source environment variables from your form's `deployment/vars/dev.env` and deploy to the pr S3 Bucket (as set in `dev.env`).
 
 ---
-## `run.sh`
-The top-level deployment script. It installs all root dependencies, determines which forms should get deployed by checking `dev_deploy_options.json`, and runs `deploy_one_form.sh` for each of those forms.
-
-args:
-+ $1 DEPLOY_ENV: the deployment environment set by `circleci.config.yml` (dev, staging, prod, etc.).
-
-ex: `bash deployment/scripts/run.sh dev`
-
----
 ## `deploy_one_form.sh`
 Installs dependencies, builds, and uploads all locale builds to AWS. Invokes `build_form.sh` and `upload_form.sh`
 
 args:
-+ $1 DEPLOY_ENV: the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
-+ $2 FORM: the directory of the form to deploy
++ $1 FORM: the directory of the form to deploy
 
-ex: `bash deployment/scripts/run.sh dev officer-complaint-form`
+ex: `bash deployment/scripts/run.sh officer-complaint-form`
 
 ---
 ## `build_form.sh`

@@ -25,9 +25,7 @@ const webpackCommonFactory = (__dirname) => {
     resolve: {
       modules: ["node_modules"],
       extensions: [".js", ".jsx"],
-      alias: {
-        chapters: path.resolve(__dirname, `../../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
-      }
+      alias: {}
     },
     context: __dirname,
     node: { __filename: true },
@@ -133,6 +131,9 @@ const webpackCommonFactory = (__dirname) => {
         statsFilename: 'stats/bundle.json'
       })
     )
+  }
+  if (process.env.CHAPTERS_DIR) {
+    config.resolve.alias.chapters = path.resolve(__dirname, `../../shared/chapters/${process.env.CHAPTERS_DIR}/index.js`)
   }
 
   return config;

@@ -1,18 +1,12 @@
-import React from "react";
+import React from 'react';
 import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
-
-import {
-  whatHappenedThanksChapter,
-  whereHappenedThanksChapter,
-  officerDetailsChapter,
-  aboutYouChapter,
-} from 'chapters';
+import chapters from '../chapters';
 
 const formConfig = {
-  type: "thanks",
+  type: "day_labor",
   language: "en",
-  title: 'Thank an Austin police officer',
+  title: 'Day Labor',
   subTitle: '',
   formId: '',
   urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
@@ -29,8 +23,8 @@ const formConfig = {
     console.log(formData.data);
 
     // Let's store the data in case we need to re-submit later.
-    localStorage.setItem("opo_form_data", JSON.stringify(formData.data));
-    localStorage.setItem("opo_form_submiturl", formConfig.submitUrl);
+    localStorage.setItem("coa_forms_day_labor_data", JSON.stringify(formData.data));
+    localStorage.setItem("coa_forms_day_labor_submiturl", formConfig.submitUrl);
 
     // Create the XHR request
     var request = new XMLHttpRequest();
@@ -62,7 +56,7 @@ const formConfig = {
       console.log(response.response);
       let respObj = JSON.parse(response.response);
       console.log(respObj.case_number);
-      localStorage.setItem("opo_confirmation_case_number", respObj.case_number);
+      localStorage.setItem("coa_forms_day_labor_confirmation_number", respObj.case_number);
       return response;
     })
     .catch(function (error) {
@@ -71,17 +65,14 @@ const formConfig = {
       return error;
     });
   },
-  submitUrl: `${process.env.FORM_API_URL}/forms/opo/submit`,
-  introduction: Introduction,
+  submitUrl: `${process.env.FORM_API_URL}/forms/day_labor/submit`,
+  // introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},
   openAllChaptersOnReview: false,
   hideNavArrows: true,
   chapters: {
-    whatHappenedThanksChapter,
-    whereHappenedThanksChapter,
-    officerDetailsChapter,
-    aboutYouChapter,
+    ...chapters
   },
 };
 
