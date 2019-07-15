@@ -1,16 +1,8 @@
 import React from "react";
-import { raceBlocks, genderBlocks } from "../../../schemaBlocks";
 
 import PhoneNumberWidget from "@cityofaustin/us-forms-system/lib/js/widgets/PhoneNumberWidget";
 import PhoneNumberReviewWidget from "@cityofaustin/us-forms-system/lib/js/review/PhoneNumberWidget";
 import { phoneConfig } from "@cityofaustin/us-forms-system/lib/js/definitions/phone";
-
-// we need to override this for labels, but need to make deep copys hence the JSON stuff
-let yourRace = JSON.parse(JSON.stringify(raceBlocks.ui));
-let yourGender = JSON.parse(JSON.stringify(genderBlocks.ui));
-debugger;
-yourRace.race["ui:title"] = "Your race";
-yourGender.gender["ui:title"] = "Your gender";
 
 const followUpChoice = {
   schema: {
@@ -69,9 +61,27 @@ const followUpChapter = {
             expandUnder: "remainAnonymous",
             expandUnderCondition: "followUp"
           },
-          yourName: { "ui:title": "Your name" },
-          yourPhone: phoneConfig.uiSchema("Your phone number"),
-
+          yourName: {
+            "ui:title": "Your name",
+            // conditionally require field
+            "ui:required": formData => formData.remainAnonymous === "followUp"
+          },
+          // Note: i couldn't think of a way to use the previous function from
+          // phoneConfig while also adding the required option, so that would be
+          // a nice future improvement
+          yourPhone: {
+            "ui:widget": PhoneNumberWidget,
+            "ui:reviewWidget": PhoneNumberReviewWidget,
+            "ui:title": "Your phone number",
+            "ui:required": formData => formData.remainAnonymous === "followUp",
+            "ui:errorMessages": {
+              pattern: "Phone numbers must be 10 digits"
+            },
+            "ui:options": {
+              widgetClassNames: "home-phone usfs-input-medium-large",
+              inputType: "tel"
+            }
+          },
           yourEmail: {
             "ui:title": "Your email address",
             "ui:widget": "email",
