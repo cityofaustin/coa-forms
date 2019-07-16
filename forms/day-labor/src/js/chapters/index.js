@@ -62,12 +62,8 @@ const chapters = {
                 transportation: {
                   type: "string",
                   enum: [
-                    'employerProvided',
-                    'workerProvided',
-                  ],
-                  enumNames: [
                     "I’ll provide transportation from the Day Labor Center to the worksite.",
-                    "Workers will need their own transportation."
+                    "Workers will need their own transportation.",
                   ],
                 },
               }
@@ -122,7 +118,7 @@ const chapters = {
             },
             date: {
               "ui:title": "Date",
-              "ui:widget": CalendarDateWidget({validation: "pastOnly"}),
+              "ui:widget": CalendarDateWidget({validation: "futureOnly"}),
               "ui:errorMessages": {
                 required: 'Please enter a valid future date'
               },
