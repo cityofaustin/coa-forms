@@ -9,8 +9,8 @@ import { phoneConfig } from "@cityofaustin/us-forms-system/lib/js/definitions/ph
 let yourRace = JSON.parse(JSON.stringify(raceBlocks.ui));
 let yourGender = JSON.parse(JSON.stringify(genderBlocks.ui));
 
-yourRace.race["ui:title"] = "Your race (optional)";
-yourGender.gender["ui:title"] = "Your gender (optional)";
+yourRace.race["ui:title"] = "Your race (Optional)";
+yourGender.gender["ui:title"] = "Your gender (Optional)";
 
 const demographicInfoChapter = {
   title: "Demographic information",
@@ -49,7 +49,7 @@ const demographicInfoChapter = {
         ...yourGender,
         ...yourRace,
         zipCode: {
-          "ui:title": "Your zip code (optional)",
+          "ui:title": "Your zip code (Optional)",
           "ui:options": {
             hideOnReviewIfFalse: true
           }

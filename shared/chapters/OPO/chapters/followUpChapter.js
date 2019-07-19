@@ -83,9 +83,9 @@ const followUpChapter = {
             }
           },
           yourEmail: {
-            "ui:title": "Your email address",
+            "ui:title": "Your email address (Optional)",
             "ui:widget": "email",
-            "ui:description": "",
+            "ui:description": "We need your email address to send you a copy of the complaint, but this is optional.",
             "ui:options": {
               inputType: "email"
             }
@@ -97,7 +97,7 @@ const followUpChapter = {
         },
         "view:infoObject": {
           "ui:description": () => (
-            <p className="usa-font-lead">
+            <p className="usa-font-lead" style={{textAlign: 'left'}}>
               Your complaint will be reviewed even if you remain anonymous.
               However, we will not be able to contact you with any follow-up
               questions or give you any information about the case.
