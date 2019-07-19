@@ -227,6 +227,7 @@ class Confirmation extends React.Component {
       );
       confirmation_content = (
         <div className="confirmation__sent-acknowledgement">
+          {email_content}
           <p>
             A staff person from the Office of Police Oversight will contact you
             within 2 to 4 business days.
@@ -244,7 +245,6 @@ class Confirmation extends React.Component {
     return (
       <div className="schemaform-intro">
         <h2>We have received your complaint.</h2>
-        {email_content}
         {confirmation_content}
         <p>
           Our job is to make sure your complaint is investigated fairly and
