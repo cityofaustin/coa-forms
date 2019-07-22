@@ -1,6 +1,6 @@
 # AWS
-DEPLOYMENT_PATH_EN=day-labor
-DEPLOYMENT_PATH_ES=day-labor-es
+DEPLOYMENT_PATH_EN=request-day-laborer
+DEPLOYMENT_PATH_ES=request-day-laborer-es
 
 # App
 NODE_ENV=development

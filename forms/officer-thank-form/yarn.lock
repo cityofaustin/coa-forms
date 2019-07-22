@@ -731,10 +731,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cityofaustin/us-forms-system@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.3.1.tgz#c141245c6de3917135738b9e885df1a6d21e8922"
-  integrity sha512-Mzdynhse5ccFfhIqrO25fT01B23BT008p201Q6Hzxcc/uMxLK7SexP3SGwDF/I6jkDbuouyYVDUDm7RUa6M+lQ==
+"@cityofaustin/us-forms-system@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/us-forms-system/-/us-forms-system-1.3.2.tgz#b9c3e9799958bd09f7b0157d3def93c44d00a917"
+  integrity sha512-+T3k2E8pGBe5/JYXUfrlrMZd7y9pZ7VxMjPj52Jp0E5Hw6GqGt7QVwxTpOwz+UUTQ9z9ZGa/yRqQmuSusSY4Ew==
   dependencies:
     "@department-of-veterans-affairs/react-jsonschema-form" "^1.0.0"
     "@mapbox/mapbox-gl-geocoder" "^3.1.0"

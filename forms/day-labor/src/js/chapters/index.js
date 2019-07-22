@@ -23,13 +23,26 @@ const chapters = {
             employerInformation: {
               type: "object",
               required: [
-                "name", "address", "city", "zipCode", "phone"
+                "name", "address", "city", "state", "zipCode", "phone"
               ],
               properties: {
                 name: { type: "string" },
+                organization: { type: "string" },
                 address: { type: "string" },
                 city: { type: "string" },
-                zipCode: { type: "number" },
+                state: {
+                  type: "string",
+                  enum: [
+                    'AL', 'AK', 'AS', 'AZ', 'AR', 'AA', 'AE', 'AP', 'CA', 'CO',
+                    'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL',
+                    'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI',
+                    'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY',
+                    'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI',
+                    'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV',
+                    'WI', 'WY'
+                  ]
+                },
+                zipCode: { type: "string", pattern: '[0-9]{5}((-)?[0-9]{4})?' },
                 phone: phoneConfig.schema(),
                 email: { type: 'string', format: 'email' },
               }
@@ -40,6 +53,7 @@ const chapters = {
                 "date", "time", "numberWorkers", "numberHours", "hourlyRate", "transportation", "description",
               ],
               properties: {
+                description: { type: "string" },
                 date: { type: "string" },
                 time: { type: "string" },
                 numberWorkers: { type: "number" },
@@ -48,15 +62,10 @@ const chapters = {
                 transportation: {
                   type: "string",
                   enum: [
-                    'employerProvided',
-                    'workerProvided',
-                  ],
-                  enumNames: [
-                    'Employer provided',
-                    'Worker provided'
+                    "I’ll provide transportation from the Day Labor Center to the worksite.",
+                    "Workers will need their own transportation.",
                   ],
                 },
-                description: { type: "string" },
               }
             }
           }
@@ -68,59 +77,72 @@ const chapters = {
             name: {
               "ui:title": "Your name"
             },
+            organization: {
+              "ui:title": "Organization"
+            },
             address: {
-              "ui:title": "Work site address"
+              "ui:title": "Worksite address"
             },
             city: {
               "ui:title": "City"
             },
+            state: {
+              "ui:title": "State"
+            },
             zipCode: {
-              "ui:title": "Zip code"
+              "ui:title": "Zip code",
+              "ui:errorMessages": {
+                pattern: 'Please enter a 5-digit zip code or 9-digit zip+4 code'
+              }
             },
             phone: {
               ...phoneConfig.uiSchema('Your phone number'),
               "ui:title": "Phone Number",
-              "ui:description": "We'll use this number to contact you if we have any questions.",
+              "ui:description": "We’ll call you at this number if we have questions.",
             },
             email: {
               'ui:title': 'Email address',
               'ui:widget': 'email',
+              'ui:description': "We’ll send you a copy of your request to this email address.",
               'ui:options': {
                 inputType: 'email',
               },
-            }
+            },
           },
           jobInformation: {
             "ui:title": "Job Information",
+            description: {
+              "ui:title": "Describe the job",
+              "ui:description": "Explain what the workers will do and the skill sets they’ll need for the job.",
+              "ui:widget": "textarea"
+            },
             date: {
-              "ui:title": "Date for this job",
-              "ui:widget": CalendarDateWidget,
+              "ui:title": "Date",
+              "ui:widget": CalendarDateWidget({validation: "futureOnly"}),
+              "ui:errorMessages": {
+                required: 'Please enter a valid future date'
+              },
               "ui:reviewWidget": CalendarDateReviewWidget,
             },
             time: {
-              "ui:title": "Time for this job",
+              "ui:title": "Start Time",
               "ui:widget": TimeWidget,
               "ui:reviewWidget": TimeReviewWidget,
             },
             numberWorkers: {
-              "ui:title": "Number of workers needed"
+              "ui:title": "How many workers do you need?"
             },
             numberHours: {
-              "ui:title": "Number of hours you expect they'll work"
+              "ui:title": "How many hours do you expect each person to work, per day?"
             },
             hourlyRate: {
               ...currencyConfig.uiSchema("Hourly pay rate"),
-              "ui:description": "We recommend that you offer at least $12 an hour",
+              "ui:description": "We recommend paying at least $12 an hour.",
             },
             transportation: {
               "ui:title": "Transporation",
               'ui:widget': 'radio',
             },
-            description: {
-              "ui:title": "Describe the job",
-              "ui:description": "Carpentry? Installing windows? Landscaping? Give us a sense of the job and what skillsets you're looking for.",
-              "ui:widget": "textarea"
-            }
           }
         }
       }

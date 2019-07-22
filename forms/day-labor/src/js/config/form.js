@@ -71,6 +71,7 @@ const formConfig = {
   defaultDefinitions: {},
   openAllChaptersOnReview: false,
   hideNavArrows: true,
+  hideProgressBar: true,
   chapters: {
     ...chapters
   },
