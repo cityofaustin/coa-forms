@@ -215,7 +215,7 @@ class Confirmation extends React.Component {
       email_content = (
         <p>
           You will receive an email with a copy of your complaint at{' '}
-          <b>{this.state.userEmail}</b>
+          <b>{this.state.userEmail}</b>.
         </p>
       );
     }
@@ -233,7 +233,7 @@ class Confirmation extends React.Component {
             within 2 to 4 business days.
           </p>
           <p>
-            You can email us at policeoversight@austintexas.gov or call us at
+            You can email us at <a href="mailto:policeoversight@austintexas.gov">policeoversight@austintexas.gov</a> or call us at
             (512) 972-2676 to find where your complaint is in this process.
           </p>
         </div>
