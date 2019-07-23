@@ -433,7 +433,7 @@
     "es": " o llamarnos al "
   },
 
-  "How we store and use your information": {
+  "How we store and use your data": {
     "es": "Cómo guardamos y usamos su información"
   },
 
@@ -446,7 +446,42 @@
     "es":
       "Si usted provee su información de contacto, un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
   },
+  
+  "A staff person from the Oficina de Fiscalizacion de la Policia will contact you within 2 to 4 business days": {
+    "es":
+      "Un empleado de la Oficina de Fiscalización de la Policía se comunicará con usted en un periodo de 2 a 4 días laborales."
+  },  
+  
+  "Do you want the Oficina de Fiscalizacion de la Policia to follow up with you or would you like to remain anonymous?": {
+    "es":
+      "¿Desea que la Oficina de Fiscalización de la Policía se comunique con usted para dar seguimiento o le gustaría permanecer anónimo?"
+  },  
+  
+  "Follow up with me": {
+    "es":
+      "Seguimiento"
+  },   
 
+  "Remain anonymous": {
+    "es":
+      "Permanecer anónimo"
+  },  
+  
+  "We need your email address to send you a copy of the complaint, but this is optional.": {
+    "es":
+      "Necesitamos su dirección de correo electrónico para enviarle una copia de su queja, pero esto es opcional."
+  },    
+  
+  "Your complaint will be reviewed even if you remain anonymous. However, we will not be able to contact you with any follow-up questions or give you any information about the case.": {
+    "es":
+      "Su queja será revisada incluso si permanece anónimo. Sin embargo, no podremos comunicarnos con usted si tenemos alguna pregunta de seguimiento ni para darle información sobre su caso."
+  },    
+  
+  "You will receive an email with a copy of your complaint at": {
+    "es":
+      "Recibirá un correo electrónico con una copia de su queja a "
+  },  
+  
   "%Required information%": {
     "es": "%Información requerida%"
   },
@@ -561,11 +596,6 @@
 
   "Maximum total file size is {filesize}": {
     "es": "El tamaño máximo total de archivo es {filesize}"
-  },
-
-  "You will receive an email with a copy of your complaint and a confirmation number at": {
-    "es":
-      "Ustéd recibirá un correo electrónico con una copia de su queja y un número de confirmación la dirección "
   },
 
   "Please provide a valid email address": {
@@ -755,8 +785,13 @@
   },
 
   "(Optional)": {
-    "es": "(opcional)"
+    "es": "(Opcional)"
   },
+  
+  "Follow up": {
+    "es": "Comunicación de seguimiento"
+  },
+  
   "%Optional%": {
     "es": "%Opcional%"
   },
