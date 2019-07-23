@@ -18,6 +18,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Print App Environment Variables"
+          command: bash ./.circleci/scripts/print_vars.sh
+      - run:
           name: "Install Linux Dependencies"
           command: |
             sudo apt-get install jq

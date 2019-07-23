@@ -3,8 +3,6 @@ set -e
 
 if [ "$CIRCLE_BRANCH" == "master" ]; then
   DEPLOY_ENV=staging
-elif [ "$CIRCLE_BRANCH" == "uat" ]; then
-  DEPLOY_ENV=uat
 elif [ "$CIRCLE_BRANCH" == "production" ]; then
   DEPLOY_ENV=prod
 else

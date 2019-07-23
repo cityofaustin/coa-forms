@@ -52,7 +52,6 @@ module.exports = (env) => {
   } else if (
     (env === "dev") ||
     (env === "staging") ||
-    (env === "uat") ||
     (env === "prod")
   ) {
     return [
