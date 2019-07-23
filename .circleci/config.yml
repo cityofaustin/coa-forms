@@ -28,7 +28,7 @@ jobs:
             yarn install --production=false
       - run:
           name: "Deploy << parameters.FORM >> form"
-          command: bash ./deployment/scripts/deploy_one_form.sh << parameters.FORM >>
+          command: bash ./.circleci/scripts/deploy_one_form.sh << parameters.FORM >>
 
 workflows:
   version: 2.1
