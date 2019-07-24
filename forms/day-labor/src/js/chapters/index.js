@@ -128,7 +128,7 @@ const chapters = {
               "ui:reviewWidget": CalendarDateReviewWidget,
             },
             time: {
-              "ui:title": "Start Time",
+              "ui:title": "Start time",
               "ui:widget": TimeWidget,
               "ui:reviewWidget": TimeReviewWidget,
             },
