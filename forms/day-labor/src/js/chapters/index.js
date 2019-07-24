@@ -11,7 +11,6 @@ import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions
 
 const chapters = {
   dayLabor: {
-    title: "Day Labor",
     pages: {
       dayLabor: {
         path: 'form',
@@ -71,9 +70,8 @@ const chapters = {
           }
         },
         uiSchema: {
-          "ui:title": "Looking to hire day labor? Fill out this form and we'll get back to you as soon as possible.",
           employerInformation: {
-            "ui:title": "Employer Information",
+            "ui:title": "Employer information",
             name: {
               "ui:title": "Your name"
             },
@@ -97,7 +95,7 @@ const chapters = {
             },
             phone: {
               ...phoneConfig.uiSchema('Your phone number'),
-              "ui:title": "Phone Number",
+              "ui:title": "Phone number",
               "ui:description": "We’ll call you at this number if we have questions.",
             },
             email: {
@@ -110,7 +108,7 @@ const chapters = {
             },
           },
           jobInformation: {
-            "ui:title": "Job Information",
+            "ui:title": "Job information",
             description: {
               "ui:title": "Describe the job",
               "ui:description": "Explain what the workers will do and the skill sets they’ll need for the job.",

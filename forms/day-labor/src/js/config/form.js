@@ -6,7 +6,7 @@ import chapters from '../chapters';
 const formConfig = {
   type: "day_labor",
   language: "en",
-  title: 'Day Labor',
+  title: "Request a day laborer",
   subTitle: '',
   formId: '',
   urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
