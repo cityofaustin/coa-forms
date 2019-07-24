@@ -13,3 +13,7 @@ CHAPTERS_DIR=OPO
 
 # Debug
 # RUN_BUNDLE_ANALYZER=true
+
+if [ "$CIRCLE_BRANCH" == "2411-OPO-anon" ]; then
+  FORM_API_URL=https://uwpchcncag.execute-api.us-east-1.amazonaws.com/pr_2411_complaint_email_update
+fi
