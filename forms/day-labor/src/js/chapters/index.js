@@ -2,7 +2,6 @@ import React from 'react';
 
 import widgets from "@cityofaustin/us-forms-system/lib/js/widgets";
 import PhoneNumberWidget from '@cityofaustin/us-forms-system/lib/js/widgets/PhoneNumberWidget';
-import CurrencyWidget from '@cityofaustin/us-forms-system/lib/js/widgets/CurrencyWidget';
 const { CalendarDateWidget, TimeWidget } = widgets;
 import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
@@ -57,7 +56,13 @@ const chapters = {
                 time: { type: "string" },
                 numberWorkers: { type: "number" },
                 numberHours: { type: "number" },
-                hourlyRate: currencyConfig.schema(),
+                hourlyRate: {
+                  type: "object",
+                  properties: {
+                    hourlyRate: currencyConfig.schema(),
+                    recommendRate: { type: "boolean" },
+                  }
+                },
                 transportation: {
                   type: "string",
                   enum: [
@@ -134,8 +139,12 @@ const chapters = {
               "ui:title": "How many hours do you expect each person to work, per day?"
             },
             hourlyRate: {
-              ...currencyConfig.uiSchema("Hourly pay rate"),
-              "ui:description": "We recommend paying at least $12 an hour.",
+              hourlyRate: {
+                ...currencyConfig.uiSchema("Hourly pay rate"),
+              },
+              recommendRate: {
+                'ui:title': "I'd like a suggestion from First Workers’ staff.",
+              },
             },
             transportation: {
               "ui:title": "Transporation",
