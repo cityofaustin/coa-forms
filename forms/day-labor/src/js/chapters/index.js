@@ -10,10 +10,10 @@ import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions
 
 const chapters = {
   dayLabor: {
+    reviewTitle: "Test REview title",
     pages: {
       dayLabor: {
         path: 'form',
-        title: "FIRST WORKERS' DAY LABOR JOB REQUEST",
         schema: {
           type: "object",
           required: [],
