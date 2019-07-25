@@ -59,7 +59,7 @@ To deploy a form, add its directory name as a FORM parameter in new job in .circ
 
 The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument passed to `run.sh`. `circleci.config.yml` sets the `DEPLOY_ENV` for each git branch.
 
-See more detailed information in [./deployment/README.md](./deployment/README.md).
+See more detailed information in [.circleci/README.md](./.circleci/README.md).
 
 ## Webpack
 

@@ -18,7 +18,7 @@ Installs dependencies, builds, and uploads all locale builds to AWS. Invokes `bu
 args:
 + $1 FORM: the directory of the form to deploy
 
-ex: `bash deployment/scripts/run.sh officer-complaint-form`
+ex: `bash .circleci/scripts/run.sh officer-complaint-form`
 
 ---
 ## `build_form.sh`
@@ -29,7 +29,7 @@ args:
 + -f FORM (required): the name of the form you want to build; corresponds to the directory name inside of `/src`.
 + -e DEPLOY_ENV (required): the deployment environment (dev, staging, prod, etc.). Determines which environment variables to use and the S3 Bucket to deploy to.
 
-ex: `bash deployment/scripts/build_form.sh -f officer-complaint-form -e dev`
+ex: `bash .circleci/scripts/build_form.sh -f officer-complaint-form -e dev`
 
 ---
 ## `translate_form.sh`
@@ -43,7 +43,7 @@ args:
 + -l LANGUAGE (required): Specifies which translation to run (and in which compiled public/ directory to run that translation).
 
 
-ex: `bash deployment/scripts/translate_form.sh -f officer-complaint-form -l es` will run `translate.py` for `officer-complaint-form/public_es`
+ex: `bash .circleci/scripts/translate_form.sh -f officer-complaint-form -l es` will run `translate.py` for `officer-complaint-form/public_es`
 
 ---
 ## `upload_form.sh`
@@ -54,4 +54,4 @@ args:
 + -e DEPLOY_ENV (required): the deployment environment (dev, staging, prod, etc.). Determines which S3 Bucket to deploy to.
 + -l LANGUAGE (optional, null defaults to English): Specifies which translation to deploy. Corresponds to the build file suffix.
 
-ex: `bash deployment/scripts/upload_form.sh -f officer-complaint-form -e dev -l es` will sync `officer-complaint-form/public_es` to the AWS PR Bucket for your particular branch.
+ex: `bash .circleci/scripts/upload_form.sh -f officer-complaint-form -e dev -l es` will sync `officer-complaint-form/public_es` to the AWS PR Bucket for your particular branch.
