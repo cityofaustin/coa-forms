@@ -1,5 +1,5 @@
 #!/bin/bash
-# check deployment/README.md for documentation
+# check .circleci/README.md for documentation
 set -e
 CURRENT_DIR=`dirname $BASH_SOURCE`
 FORM=''

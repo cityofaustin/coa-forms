@@ -80,7 +80,7 @@ const formConfig = {
         return error;
       });
   },
-  submitUrl: `${process.env.FORM_API_URL}/form/submit`,
+  submitUrl: `${process.env.FORM_API_URL}/forms/opo/submit`,
   introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},

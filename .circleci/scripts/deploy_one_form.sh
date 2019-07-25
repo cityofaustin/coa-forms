@@ -1,11 +1,16 @@
 #!/bin/bash
 set -e
 
-# Keeping this file outside of top level run.sh prevents environment
-# variables from being contaminated between forms.
+if [ "$CIRCLE_BRANCH" == "master" ]; then
+  DEPLOY_ENV=staging
+elif [ "$CIRCLE_BRANCH" == "production" ]; then
+  DEPLOY_ENV=prod
+else
+  DEPLOY_ENV=dev
+fi
+
 CURRENT_DIR=`dirname $BASH_SOURCE`
-DEPLOY_ENV=$1
-FORM=$2
+FORM=$1
 FORM_PATH="$CURRENT_DIR/../../forms/$FORM"
 ENV_VAR_PATH="$FORM_PATH/deployment/vars/$DEPLOY_ENV.sh"
 

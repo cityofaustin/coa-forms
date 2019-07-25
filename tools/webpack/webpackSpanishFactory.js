@@ -35,7 +35,7 @@ const webpackSpanishFactory = (__dirname) => {
       {
         apply: (compiler) => {
           compiler.hooks.afterEmit.tap('AfterEmitPlugin', (compilation) => {
-            exec(`${path.resolve(__dirname, "../../deployment/scripts/translate_form.sh")} -f ${process.env.FORM_DIR} -l es`, (err, stdout, stderr) => {
+            exec(`${path.resolve(__dirname, "../../.circleci/scripts/translate_form.sh")} -f ${process.env.FORM_DIR} -l es`, (err, stdout, stderr) => {
               if (stdout) process.stdout.write(stdout);
               if (stderr) process.stderr.write(stderr);
               if (err && err.code == 1) process.exit(1);

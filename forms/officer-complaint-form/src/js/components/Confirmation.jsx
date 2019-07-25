@@ -55,23 +55,12 @@ class Confirmation extends React.Component {
       });
     } else {
       // Let's change the form data prior to submission ...
-      // console.log("submitForm() No email present, reassigning...");
+      // Reassign the email, or set up the value.
 
-      // Try to reassign the email, or set up the value.
-      try {
-        // console.log("submitForm() view:contactPreferences['yourEmail'] : " + this.state.userEmail);
-        formData['view:contactPreferences'] = {
-          yourEmail: this.state.userEmail,
-        };
-        console.log(formData);
-      } catch {
-        // console.log("Could not set up the email address.");
-        // console.log(formData);
-        return;
-      }
+      formData["view:contactPreferences"] = formData["view:contactPreferences"] || {};
+      formData["view:contactPreferences"].yourEmail = this.state.userEmail;
 
       // Append two needed fields for the backend...
-      formData.userConfirmationOnly = true;
       formData.confirmationCaseNumber = this.state.confirmationCaseNumber;
 
       // Let's move forward...
@@ -222,9 +211,6 @@ class Confirmation extends React.Component {
 
     // If user request follow up and provided info, show this messages
     if (this.state.formData.remainAnonymous === 'followUp') {
-      console.log(
-        'renderConfirmation() The email looks valid, so no need to render form',
-      );
       confirmation_content = (
         <div className="confirmation__sent-acknowledgement">
           {email_content}
