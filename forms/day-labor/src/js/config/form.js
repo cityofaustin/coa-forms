@@ -69,7 +69,7 @@ const formConfig = {
   // introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},
-  openAllChaptersOnReview: false,
+  openAllChaptersOnReview: true,
   hideNavArrows: true,
   hideProgressBar: true,
   chapters: {
