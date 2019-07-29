@@ -43,3 +43,5 @@ workflows:
           FORM: officer-thank-form
       - deploy:
           FORM: day-labor
+      - deploy:
+          FORM: compost_class
