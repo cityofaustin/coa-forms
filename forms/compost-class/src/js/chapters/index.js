@@ -15,41 +15,62 @@ const chapters = {
   compostClass: {
     title: 'Request a composting class',
     pages: {
-      classDetails: {
+      classRequest: {
         path: 'form',
-        title: 'Class details',
+        title: 'Class request',
         schema: {
-          title: 'A list of tasks',
           type: 'object',
-          required: ['title'],
+          required: [],
           properties: {
-            title: {
-              type: 'string',
-              title: 'Task list title',
-            },
-            tasks: {
-              type: 'array',
-              title: 'Tasks',
-              items: {
-                type: 'object',
-                required: ['title'],
-                properties: {
-                  title: {
-                    type: 'string',
-                    title: 'Title',
-                    description: 'A sample title',
-                  },
-                  details: {
-                    type: 'string',
-                    title: 'Task details',
-                    description: 'Enter the task details',
-                  },
-                  done: {
-                    type: 'boolean',
-                    title: 'Done?',
-                    default: false,
+            classInformation: {
+              type: 'object',
+              required: [],
+              properties: {
+                name: { type: 'string' },
+                bestDateTime: {
+                  type: 'object',
+                  required: ['date', 'time'],
+                  properties: {
+                    date: {
+                      type: 'string',
+                    },
+                    time: {
+                      type: 'string',
+                    },
                   },
                 },
+                secondBestDateTime: {
+                  type: 'object',
+                  required: ['date', 'time'],
+                  properties: {
+                    date: {
+                      type: 'string',
+                    },
+                    time: {
+                      type: 'string',
+                    },
+                  },
+                },
+                venueType: {
+                  type: 'radio',
+                  enum: [
+                    'indoor',
+                    'outdoor',
+                  ]
+                },
+                attendanceGoal: {
+                  type: 'number',
+                },
+
+                isPublicEvent: {
+                  type: 'boolean',
+                },
+
+                organization: { type: 'string' },
+                address: { type: 'string' },
+                city: { type: 'string' },
+                phone: phoneConfig.schema(),
+                email: { type: 'string', format: 'email' },
               },
             },
           },
@@ -58,5 +79,79 @@ const chapters = {
     },
   },
 };
+
+// const chapters = {
+//   compostClass: {
+//     title: 'Request a composting class',
+//     pages: {
+//       classRequest: {
+//         path: 'form',
+//         title: 'Class details',
+//         schema: {
+//           type: 'object',
+//           required: [],
+//           properties: {
+//             classDetails: {
+//               type: 'object',
+//               required: [],
+//               properties: {
+//                 bestDateTime: {
+//                   type: 'object',
+//                   required: ['date', 'time'],
+//                   properties: {
+//                     date: {
+//                       type: 'string',
+//                     },
+//                     time: {
+//                       type: 'string',
+//                     },
+//                   },
+//                 },
+//                 secondBestDateTime: {
+//                   type: 'object',
+//                   required: ['date', 'time'],
+//                   properties: {
+//                     date: {
+//                       type: 'string',
+//                     },
+//                     time: {
+//                       type: 'string',
+//                     },
+//                   },
+//                 },
+//                 address: {
+//                   type: 'string',
+//                 },
+//                 venueType: {
+//                   type: 'boolean',
+//                 },
+//                 attendanceGoal: {
+//                   type: 'number',
+//                 },
+//                 availableEquipment: {
+//                   type: 'array',
+//                   items: {
+//                     type: 'string',
+//                     enum: ['projector', 'screen', 'laptop', 'none'],
+//                   },
+//                 },
+//                 isPublicEvent: {
+//                   type: 'boolean',
+//                 },
+//                 classLanguages: {
+//                   type: 'array',
+//                   items: {
+//                     type: 'string',
+//                     enum: ['English', 'Spanish', 'Bilingual'],
+//                   },
+//                 },
+//               },
+//             },
+//           },
+//         },
+//       },
+//     },
+//   },
+// };
 
 export default chapters;
