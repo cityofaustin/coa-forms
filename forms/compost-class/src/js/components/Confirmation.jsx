@@ -206,9 +206,7 @@ class Confirmation extends React.Component {
         return (
           <div className="schemaform-intro">
             <h2>We have received your request</h2>
-            <p>Thank you for submitting your request to hire a day laborer! We’ll contact you soon to confirm. You can also call us at (512) 972-4100.</p>
-            <p>If you provided your email, you’ll receive a copy of your request.</p>
-            <p><a href="https://docs.google.com/document/d/16siLTqjO5klJpgUt5P4UABnFR2k4ed6NUtyMqkm61Vs">Learn more about hiring a day laborer through the First Workers Day Labor Center.</a></p>
+            <p>Thank you! We received your composting class request and will respond soon. A copy of your request will be delivered to your email, if shared.</p>
           </div>
         );
   }
