@@ -6,7 +6,6 @@ import CurrencyWidget from '@cityofaustin/us-forms-system/lib/js/widgets/Currenc
 const { CalendarDateWidget, TimeWidget } = widgets;
 import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
-import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/currency';
 
 
 const chapters = {
