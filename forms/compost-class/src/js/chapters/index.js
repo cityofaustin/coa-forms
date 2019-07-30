@@ -83,20 +83,66 @@ const chapters = {
                         enum: ['English', 'Spanish', 'Bilingual'],
                       },
                     },
-                  }
-                }
+                  },
+                },
               },
             },
             hostInformation: {
               type: 'object',
               title: 'Contact details',
-              required: ['organizationName', 'phone', ],
+              required: ['organizationName', 'phone'],
               properties: {
                 organizationName: { type: 'string' },
                 organizationWebsite: { type: 'string' },
                 contactName: { type: 'string' },
                 phone: phoneConfig.schema(),
                 email: { type: 'string', format: 'email' },
+              },
+            },
+          },
+        },
+        uiSchema: {
+          classInformation: {
+            bestDateTime: {
+              date: {
+                'ui:title': 'Date',
+                'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
+                'ui:errorMessages': {
+                  required: 'Please enter a valid future date',
+                },
+                'ui:reviewWidget': CalendarDateReviewWidget,
+                'ui:options': {
+                  hideOnReviewIfFalse: true,
+                },
+              },
+              time: {
+                'ui:title': 'Time',
+                'ui:widget': TimeWidget,
+                'ui:reviewWidget': TimeReviewWidget,
+                'ui:options': {
+                  hideOnReviewIfFalse: true,
+                },
+              },
+            },
+            secondBestDateTime: {
+              date: {
+                'ui:title': 'Date',
+                'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
+                'ui:errorMessages': {
+                  required: 'Please enter a valid future date',
+                },
+                'ui:reviewWidget': CalendarDateReviewWidget,
+                'ui:options': {
+                  hideOnReviewIfFalse: true,
+                },
+              },
+              time: {
+                'ui:title': 'Time',
+                'ui:widget': TimeWidget,
+                'ui:reviewWidget': TimeReviewWidget,
+                'ui:options': {
+                  hideOnReviewIfFalse: true,
+                },
               },
             },
           },
