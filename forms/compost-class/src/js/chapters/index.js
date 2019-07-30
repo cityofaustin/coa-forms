@@ -66,21 +66,25 @@ const chapters = {
                     attendanceGoal: {
                       type: 'number',
                     },
-                    availableEquipment: {
-                      type: 'string',
-                      items: {
-                        type: 'string',
-                        enum: ['projector', 'screen', 'laptop', 'none'],
+                    'view:availableEquipment': {
+                      type: 'object',
+                      properties: {
+                        hasProjector: { type: 'boolean' },
+                        hasScreem: { type: 'boolean' },
+                        hasLaptop: { type: 'boolean' },
                       },
                     },
                     isPublicEvent: {
                       type: 'boolean',
                     },
-                    classLanguages: {
-                      type: 'string',
-                      items: {
-                        type: 'string',
-                        enum: ['English', 'Spanish', 'Bilingual'],
+                    'view:classLanguages': {
+                      type: 'object',
+                      properties: {
+                        English: { type: 'boolean' },
+                        Spanish: { type: 'boolean' },
+                        Chinese: { type: 'boolean' },
+                        Arabic: { type: 'boolean' },
+                        Vietnamese: { type: 'boolean' },
                       },
                     },
                   },
@@ -90,7 +94,7 @@ const chapters = {
             hostInformation: {
               type: 'object',
               title: 'Contact details',
-              required: ['organizationName', 'phone'],
+              required: ['contactName', 'phone'],
               properties: {
                 organizationName: { type: 'string' },
                 organizationWebsite: { type: 'string' },
@@ -143,6 +147,14 @@ const chapters = {
                 'ui:options': {
                   hideOnReviewIfFalse: true,
                 },
+              },
+            },
+            venueInformation: {
+              venueType: {
+                'ui:widget': 'radio',
+              },
+              isPublicEvent: {
+                'ui:widget': 'yesNo',
               },
             },
           },
