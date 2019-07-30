@@ -44,4 +44,4 @@ workflows:
       - deploy:
           FORM: day-labor
       - deploy:
-          FORM: compost_class
+          FORM: compost-class
