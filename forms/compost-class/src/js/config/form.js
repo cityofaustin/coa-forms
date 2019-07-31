@@ -6,7 +6,7 @@ import chapters from '../chapters';
 const formConfig = {
   type: "compost_class",
   language: "en",
-  title: 'Compost class',
+  title: 'Request a compost class',
   subTitle: '',
   formId: '',
   urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,

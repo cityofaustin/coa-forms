@@ -29,63 +29,76 @@ const chapters = {
               properties: {
                 bestDateTime: {
                   type: 'object',
-                  title: 'Best date & time',
                   required: ['date', 'time'],
                   properties: {
                     date: {
                       type: 'string',
+                      title: 'Best date',
                     },
                     time: {
                       type: 'string',
+                      title: 'Best time',
                     },
                   },
                 },
                 secondBestDateTime: {
                   type: 'object',
-                  title: 'Second choice date & time',
                   required: ['date', 'time'],
                   properties: {
                     date: {
                       type: 'string',
+                      title: 'Backup date',
                     },
                     time: {
                       type: 'string',
+                      title: 'Backup time',
                     },
                   },
                 },
                 venueInformation: {
                   type: 'object',
-                  title: 'Venue information',
                   required: ['address', 'classLanguages'],
                   properties: {
                     address: { type: 'string' },
                     venueType: {
                       type: 'string',
+                      title: 'Please select whether the class is: ',
                       enum: ['indoor', 'outdoor'],
-                    },
-                    attendanceGoal: {
-                      type: 'number',
-                    },
-                    'view:availableEquipment': {
-                      type: 'object',
-                      properties: {
-                        hasProjector: { type: 'boolean' },
-                        hasScreem: { type: 'boolean' },
-                        hasLaptop: { type: 'boolean' },
-                      },
                     },
                     isPublicEvent: {
                       type: 'boolean',
+                      title: 'Is this class open to the public?',
+                    },
+                    attendanceGoal: {
+                      type: 'number',
+                      title: 'Attendance goal',
+                    },
+                    availableEquipment: {
+                      type: 'object',
+                      properties: {
+                        Projector: { type: 'boolean' },
+                        Screen: { type: 'boolean' },
+                        Laptop: { type: 'boolean' },
+                      },
                     },
                     'view:classLanguages': {
                       type: 'object',
                       properties: {
                         English: { type: 'boolean' },
                         Spanish: { type: 'boolean' },
-                        Chinese: { type: 'boolean' },
-                        Arabic: { type: 'boolean' },
-                        Vietnamese: { type: 'boolean' },
+                        AmericanSignLanguage: {
+                          type: 'boolean',
+                          title: 'American Sign Language',
+                        },
                       },
+                    },
+                    otherLanguage: {
+                      type: 'string',
+                      title: 'Other',
+                    },
+                    anythingElse: {
+                      type: 'string',
+                      title: 'Any questions or comments?',
                     },
                   },
                 },
@@ -96,11 +109,18 @@ const chapters = {
               title: 'Contact details',
               required: ['contactName', 'phone'],
               properties: {
+                contactName: {
+                  type: 'string',
+                  title: 'Your name',
+                },
+                phone: phoneConfig.schema(),
+                email: {
+                  type: 'string',
+                  format: 'email',
+                  title: 'Email',
+                },
                 organizationName: { type: 'string' },
                 organizationWebsite: { type: 'string' },
-                contactName: { type: 'string' },
-                phone: phoneConfig.schema(),
-                email: { type: 'string', format: 'email' },
               },
             },
           },
@@ -109,7 +129,6 @@ const chapters = {
           classInformation: {
             bestDateTime: {
               date: {
-                'ui:title': 'Date',
                 'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
                 'ui:errorMessages': {
                   required: 'Please enter a valid future date',
@@ -120,7 +139,6 @@ const chapters = {
                 },
               },
               time: {
-                'ui:title': 'Time',
                 'ui:widget': TimeWidget,
                 'ui:reviewWidget': TimeReviewWidget,
                 'ui:options': {
@@ -129,8 +147,12 @@ const chapters = {
               },
             },
             secondBestDateTime: {
+              'ui:title': (
+                <label className="schemaform-label">
+                  In case we need to reschedule
+                </label>
+              ),
               date: {
-                'ui:title': 'Date',
                 'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
                 'ui:errorMessages': {
                   required: 'Please enter a valid future date',
@@ -141,7 +163,6 @@ const chapters = {
                 },
               },
               time: {
-                'ui:title': 'Time',
                 'ui:widget': TimeWidget,
                 'ui:reviewWidget': TimeReviewWidget,
                 'ui:options': {
@@ -150,12 +171,65 @@ const chapters = {
               },
             },
             venueInformation: {
+              availableEquipment: {
+                'ui:title': (
+                  <label className="schemaform-label">
+                    Available equipment
+                  </label>
+                ),
+                'ui:options': {
+                  classNames: 'schemaform-label wee',
+                  widgetClassNames: 'schemaform-label waa',
+                },
+              },
+              'view:classLanguages': {
+                'ui:title': (
+                  <label className="schemaform-label">Language</label>
+                ),
+                'ui:description': '(check any that apply)',
+                'ui:options': {
+                  classNames: 'schemaform-label',
+                  widgetClassNames: 'schemaform-label',
+                },
+                otherLanguage: {
+                  'ui:title': 'Other',
+                },
+              },
+              address: {
+                'ui:title': 'Class location address',
+              },
               venueType: {
                 'ui:widget': 'radio',
               },
               isPublicEvent: {
                 'ui:widget': 'yesNo',
               },
+              anythingElse: {
+                'ui:title': 'Any questions or comments?',
+                'ui:widget': 'textarea',
+              },
+            },
+          },
+          hostInformation: {
+            email: {
+              'ui:title': 'Email address',
+              'ui:widget': 'email',
+              'ui:description':
+                'We’ll send you a copy of your request to this email address.',
+              'ui:options': {
+                inputType: 'email',
+              },
+            },
+            phone: {
+              'ui:title': 'Phone',
+            },
+            organizationName: {
+              'ui:title': 'Organization',
+              'ui:description':
+                'If you’re requesting a class on an organization’s behalf, please tell us more',
+            },
+            organizationWebsite: {
+              'ui:title': 'Organization website',
             },
           },
         },
