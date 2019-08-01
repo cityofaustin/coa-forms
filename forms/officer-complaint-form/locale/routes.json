@@ -44,6 +44,9 @@
     },
     "%demographic-information%": {
       "es": "%informacion-demografica%"
+    },
+    "%follow-up%": {
+      "es": "%seguimiento%"
     }
   }
 }
