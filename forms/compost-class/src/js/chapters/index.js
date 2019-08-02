@@ -73,7 +73,7 @@ const chapters = {
             },
             hostInformation: {
               type: 'object',
-              title: 'Contact details',
+              title: 'Contact information',
               required: ['contactName', 'phone'],
               properties: {
                 contactName: {
