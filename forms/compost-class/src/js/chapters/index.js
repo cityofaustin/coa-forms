@@ -13,7 +13,7 @@ import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions
 
 const chapters = {
   compostClass: {
-    title: 'Request a composting class',
+    title: 'Request a compost class',
     pages: {
       classRequest: {
         path: 'form',
@@ -24,7 +24,9 @@ const chapters = {
           properties: {
             classInformation: {
               type: 'object',
-              title: 'Class details',
+              title: 'Class information',
+              description:
+                'Please select the best date and time for your compost class. If there’s a schedule conflict, we’ll get in touch to reschedule.',
               required: [],
               properties: {
                 bestDateTime: {
@@ -33,25 +35,11 @@ const chapters = {
                   properties: {
                     date: {
                       type: 'string',
-                      title: 'Best date',
+                      title: 'Date',
                     },
                     time: {
                       type: 'string',
-                      title: 'Best time',
-                    },
-                  },
-                },
-                secondBestDateTime: {
-                  type: 'object',
-                  required: ['date', 'time'],
-                  properties: {
-                    date: {
-                      type: 'string',
-                      title: 'Backup date',
-                    },
-                    time: {
-                      type: 'string',
-                      title: 'Backup time',
+                      title: 'Time',
                     },
                   },
                 },
@@ -60,26 +48,9 @@ const chapters = {
                   required: ['address', 'classLanguages'],
                   properties: {
                     address: { type: 'string' },
-                    venueType: {
-                      type: 'string',
-                      title: 'Please select whether the class is: ',
-                      enum: ['indoor', 'outdoor'],
-                    },
                     isPublicEvent: {
                       type: 'boolean',
-                      title: 'Is this class open to the public?',
-                    },
-                    attendanceGoal: {
-                      type: 'number',
-                      title: 'Attendance goal',
-                    },
-                    availableEquipment: {
-                      type: 'object',
-                      properties: {
-                        Projector: { type: 'boolean' },
-                        Screen: { type: 'boolean' },
-                        Laptop: { type: 'boolean' },
-                      },
+                      title: 'This class will be open to the public.',
                     },
                     'view:classLanguages': {
                       type: 'object',
@@ -95,10 +66,6 @@ const chapters = {
                     otherLanguage: {
                       type: 'string',
                       title: 'Other',
-                    },
-                    anythingElse: {
-                      type: 'string',
-                      title: 'Any questions or comments?',
                     },
                   },
                 },
@@ -119,7 +86,11 @@ const chapters = {
                   format: 'email',
                   title: 'Email',
                 },
-                organizationName: { type: 'string' },
+                organizationName: {
+                  type: 'string',
+                  description:
+                    'Please fill in if you’re requesting a class on behalf of an organization.',
+                },
                 organizationWebsite: { type: 'string' },
               },
             },
@@ -127,30 +98,10 @@ const chapters = {
         },
         uiSchema: {
           classInformation: {
+            'ui:description': 'Please select the best date and time for your compost class. If there’s a schedule conflict, we’ll get in touch to reschedule.',
             bestDateTime: {
-              date: {
-                'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
-                'ui:errorMessages': {
-                  required: 'Please enter a valid future date',
-                },
-                'ui:reviewWidget': CalendarDateReviewWidget,
-                'ui:options': {
-                  hideOnReviewIfFalse: true,
-                },
-              },
-              time: {
-                'ui:widget': TimeWidget,
-                'ui:reviewWidget': TimeReviewWidget,
-                'ui:options': {
-                  hideOnReviewIfFalse: true,
-                },
-              },
-            },
-            secondBestDateTime: {
               'ui:title': (
-                <label className="schemaform-label">
-                  In case we need to reschedule
-                </label>
+                <label className="schemaform-label">Best class date and time</label>
               ),
               date: {
                 'ui:widget': CalendarDateWidget({ validation: 'futureOnly' }),
@@ -186,7 +137,7 @@ const chapters = {
                 'ui:title': (
                   <label className="schemaform-label">Language</label>
                 ),
-                'ui:description': '(check any that apply)',
+                'ui:description': 'Check any that apply. If our staff is not fluent in your preferred language, we can provide interpreters.',
                 'ui:options': {
                   classNames: 'schemaform-label',
                   widgetClassNames: 'schemaform-label',
@@ -200,9 +151,6 @@ const chapters = {
               },
               venueType: {
                 'ui:widget': 'radio',
-              },
-              isPublicEvent: {
-                'ui:widget': 'yesNo',
               },
               anythingElse: {
                 'ui:title': 'Any questions or comments?',
@@ -225,8 +173,7 @@ const chapters = {
             },
             organizationName: {
               'ui:title': 'Organization',
-              'ui:description':
-                'If you’re requesting a class on an organization’s behalf, please tell us more',
+              'ui:description': 'Please fill in if you’re requesting a class on behalf of an organization.',
             },
             organizationWebsite: {
               'ui:title': 'Organization website',
