@@ -1,0 +1,12 @@
+# AWS
+DEPLOYMENT_BUCKET=$DEPLOYMENT_BUCKET_DAY_LABOR_PROD
+DEPLOYMENT_PATH_EN=request-day-laborer
+DEPLOYMENT_PATH_ES=request-day-laborer-es
+
+# App
+NODE_ENV=production
+FORM_API_URL=$FORM_API_URL_PROD
+
+# Structure
+FORM_DIR=day-labor
+CHAPTERS_DIR=day-labor

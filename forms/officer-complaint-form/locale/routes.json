@@ -38,6 +38,15 @@
 
     "%opo_current_language_english%": {
       "es": "%opo_current_language_spanish%"
+    },
+    "%confirmation%": {
+      "es": "%confirmacion%"
+    },
+    "%demographic-information%": {
+      "es": "%informacion-demografica%"
+    },
+    "%follow-up%": {
+      "es": "%seguimiento%"
     }
   }
 }

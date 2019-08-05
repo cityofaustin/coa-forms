@@ -55,11 +55,11 @@ The chapters directory contains a distinct package.json and `@cityofaustin/us-fo
 
 Dev Branch/PR Builds are deployed to https://opo.austintexas.io/police-complain/[branch-name]
 
-To deploy a form, add its directory name to `dev_deploy_options.json` under `forms_to_deploy`. When a new commit is pushed to github, CircleCI will deploy all listed forms by running `deployment/scripts/run.sh`.
+To deploy a form, add its directory name as a FORM parameter in new job in .circleci/config.yml.
 
 The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument passed to `run.sh`. `circleci.config.yml` sets the `DEPLOY_ENV` for each git branch.
 
-See more detailed information in [./deployment/README.md](./deployment/README.md).
+See more detailed information in [.circleci/README.md](./.circleci/README.md).
 
 ## Webpack
 

@@ -45,7 +45,10 @@ const whatHappenedChapter = {
           "ui:title": "When did it happen?",
           date: {
             "ui:title": "Date",
-            "ui:widget": CalendarDateWidget,
+            "ui:widget": CalendarDateWidget({validation: "pastOnly"}),
+            "ui:errorMessages": {
+              required: 'Please enter a valid past date'
+            },
             "ui:reviewWidget": CalendarDateReviewWidget,
             "ui:options": {
               hideOnReviewIfFalse: true

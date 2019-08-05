@@ -13,7 +13,7 @@ yourRace.race['ui:title'] = 'Your race';
 yourGender.gender['ui:title'] = 'Your gender';
 
 const aboutYouChapter = {
-  title: 'Tell us about you (optional)',
+  title: 'Tell us about you (Optional)',
   pages: {
     aboutYou: {
       path: 'about-you',

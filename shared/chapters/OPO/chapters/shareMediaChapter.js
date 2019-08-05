@@ -32,7 +32,7 @@ const shareMediaChapter = {
               target="_blank"
               href="https://alpha.austin.gov/police-oversight/how-we-store-and-use-your-data"
             >
-              How we store and use your information
+              How we store and use your data
             </a>
           ),
           "ui:widget": "radio",
