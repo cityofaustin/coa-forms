@@ -2,7 +2,6 @@ import React from 'react';
 
 import widgets from "@cityofaustin/us-forms-system/lib/js/widgets";
 import PhoneNumberWidget from '@cityofaustin/us-forms-system/lib/js/widgets/PhoneNumberWidget';
-import CurrencyWidget from '@cityofaustin/us-forms-system/lib/js/widgets/CurrencyWidget';
 const { CalendarDateWidget, TimeWidget } = widgets;
 import { CalendarDateReviewWidget, TimeReviewWidget } from "@cityofaustin/us-forms-system/lib/js/review/widgets";
 import { phoneConfig } from '@cityofaustin/us-forms-system/lib/js/definitions/phone';
@@ -11,11 +10,10 @@ import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions
 
 const chapters = {
   dayLabor: {
-    title: "Day Labor",
+    reviewTitle: "Test REview title",
     pages: {
       dayLabor: {
         path: 'form',
-        title: "FIRST WORKERS' DAY LABOR JOB REQUEST",
         schema: {
           type: "object",
           required: [],
@@ -58,7 +56,13 @@ const chapters = {
                 time: { type: "string" },
                 numberWorkers: { type: "number" },
                 numberHours: { type: "number" },
-                hourlyRate: currencyConfig.schema(),
+                hourlyRate: {
+                  type: "object",
+                  properties: {
+                    hourlyRate: currencyConfig.schema(),
+                    recommendRate: { type: "boolean" },
+                  }
+                },
                 transportation: {
                   type: "string",
                   enum: [
@@ -71,9 +75,8 @@ const chapters = {
           }
         },
         uiSchema: {
-          "ui:title": "Looking to hire day labor? Fill out this form and we'll get back to you as soon as possible.",
           employerInformation: {
-            "ui:title": "Employer Information",
+            "ui:title": "Employer information",
             name: {
               "ui:title": "Your name"
             },
@@ -97,7 +100,7 @@ const chapters = {
             },
             phone: {
               ...phoneConfig.uiSchema('Your phone number'),
-              "ui:title": "Phone Number",
+              "ui:title": "Phone number",
               "ui:description": "We’ll call you at this number if we have questions.",
             },
             email: {
@@ -110,7 +113,7 @@ const chapters = {
             },
           },
           jobInformation: {
-            "ui:title": "Job Information",
+            "ui:title": "Job information",
             description: {
               "ui:title": "Describe the job",
               "ui:description": "Explain what the workers will do and the skill sets they’ll need for the job.",
@@ -125,7 +128,7 @@ const chapters = {
               "ui:reviewWidget": CalendarDateReviewWidget,
             },
             time: {
-              "ui:title": "Start Time",
+              "ui:title": "Start time",
               "ui:widget": TimeWidget,
               "ui:reviewWidget": TimeReviewWidget,
             },
@@ -136,8 +139,12 @@ const chapters = {
               "ui:title": "How many hours do you expect each person to work, per day?"
             },
             hourlyRate: {
-              ...currencyConfig.uiSchema("Hourly pay rate"),
-              "ui:description": "We recommend paying at least $12 an hour.",
+              hourlyRate: {
+                ...currencyConfig.uiSchema("Hourly pay rate"),
+              },
+              recommendRate: {
+                'ui:title': "I'd like a suggestion from First Workers’ staff.",
+              },
             },
             transportation: {
               "ui:title": "Transporation",
