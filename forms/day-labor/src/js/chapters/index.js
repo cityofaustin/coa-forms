@@ -10,7 +10,7 @@ import { currencyConfig } from '@cityofaustin/us-forms-system/lib/js/definitions
 
 const chapters = {
   dayLabor: {
-    reviewTitle: "Test REview title",
+    reviewTitle: "Review Form Submission",
     pages: {
       dayLabor: {
         path: 'form',
@@ -115,7 +115,7 @@ const chapters = {
           jobInformation: {
             "ui:title": "Job information",
             description: {
-              "ui:title": "Describe the job",
+              "ui:title": "Describe the job.",
               "ui:description": "Explain what the workers will do and the skill sets they’ll need for the job.",
               "ui:widget": "textarea"
             },
@@ -143,11 +143,11 @@ const chapters = {
                 ...currencyConfig.uiSchema("Hourly pay rate"),
               },
               recommendRate: {
-                'ui:title': "I'd like a suggestion from First Workers’ staff.",
+                'ui:title': "I'd like a suggestion from the Day Labor Center's staff.",
               },
             },
             transportation: {
-              "ui:title": "Transporation",
+              "ui:title": "Transportation",
               'ui:widget': 'radio',
             },
           }
