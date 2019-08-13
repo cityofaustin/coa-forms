@@ -3,6 +3,7 @@ const path = require("path");
 const CopyPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+const { transformHtml } = require('./helpers');
 /**
   webpackCommonFactory is a factory function that builds webpack configs that are common to both local and production builds.
   It is invoked in each form's webpack.config.js.
@@ -46,7 +47,12 @@ const webpackCommonFactory = (__dirname) => {
         },
       }),
       new CopyPlugin([
-        {from: `${__dirname}/src/index.html`},
+        {
+          from: `${__dirname}/src/index.html`,
+          transform(content, path) {
+            return transformHtml(content)
+          }
+        },
       ]),
     ],
     module: {
