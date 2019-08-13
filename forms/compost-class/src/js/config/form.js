@@ -1,11 +1,12 @@
 import React from 'react';
+import Introduction from '../components/Introduction.jsx';
 import Confirmation from '../components/Confirmation.jsx';
 import chapters from '../chapters';
 
 const formConfig = {
-  type: "day_labor",
+  type: "compost_class",
   language: "en",
-  title: 'Day Labor',
+  title: 'Request a compost class',
   subTitle: '',
   formId: '',
   urlPrefix: `/${process.env.DEPLOYMENT_PATH}/`,
@@ -22,8 +23,8 @@ const formConfig = {
     console.log(formData.data);
 
     // Let's store the data in case we need to re-submit later.
-    localStorage.setItem("coa_forms_day_labor_data", JSON.stringify(formData.data));
-    localStorage.setItem("coa_forms_day_labor_submiturl", formConfig.submitUrl);
+    localStorage.setItem("coa_forms_compost_class_data", JSON.stringify(formData.data));
+    localStorage.setItem("coa_forms_compost_class_submiturl", formConfig.submitUrl);
 
     // Create the XHR request
     var request = new XMLHttpRequest();
@@ -55,7 +56,7 @@ const formConfig = {
       console.log(response.response);
       let respObj = JSON.parse(response.response);
       console.log(respObj.case_number);
-      localStorage.setItem("coa_forms_day_labor_confirmation_number", respObj.case_number);
+      localStorage.setItem("coa_forms_compost_class_confirmation_number", respObj.case_number);
       return response;
     })
     .catch(function (error) {
@@ -64,7 +65,7 @@ const formConfig = {
       return error;
     });
   },
-  submitUrl: `${process.env.FORM_API_URL}/forms/day_labor/submit`,
+  submitUrl: `${process.env.FORM_API_URL}/forms/compost_class/submit`,
   // introduction: Introduction,
   confirmation: Confirmation,
   defaultDefinitions: {},

@@ -1,0 +1,43 @@
+{
+  "routes":  {
+    "%/police-complain/%": {
+        "es": "%/policia-queja/%"
+    },
+
+    "%introduction%": {
+      "es": "%introduccion%"
+    },
+
+    "%what-happened%": {
+      "es": "%que-sucedio%"
+    },
+
+    "%where-happened%": {
+      "es": "%donde-sucedio%"
+    },
+
+    "%share-media%": {
+      "es": "%compartir-archivos%"
+    },
+
+    "%officer-details%": {
+      "es": "%detalles-oficial%"
+    },
+
+    "%witness-details%": {
+      "es": "%detalles-testigos%"
+    },
+
+    "%about-you%": {
+      "es": "%acerca-de-usted%"
+    },
+
+    "%review-and-submit%": {
+      "es": "%revisar-y-enviar%"
+    },
+
+    "%opo_current_language_english%": {
+      "es": "%opo_current_language_spanish%"
+    }
+  }
+}
