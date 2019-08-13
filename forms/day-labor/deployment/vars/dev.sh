@@ -17,4 +17,3 @@ FORM_DIR=day-labor
 if [ "$CIRCLE_BRANCH" == "2626-day-labor-content" ]; then
   FORM_API_URL=https://urz68t6uk8.execute-api.us-east-1.amazonaws.com/pr_2626_day_labor_email
 fi
-2626-day-labor-email
