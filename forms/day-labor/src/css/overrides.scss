@@ -269,3 +269,19 @@ legend.schemaform-label {
   max-width: 100% !important;
   margin-bottom: 2rem;
 }
+
+@media only screen and (min-width: 520px) {
+  .centered-form-two-thirds {
+    width: 100%;
+  }
+
+  .centered-form-schemaforms {
+    width: 75%;
+    margin: 0 auto 0 auto !important;
+  }
+}
+
+textarea {
+  width: 100% !important;
+  max-width: none !important;
+}
