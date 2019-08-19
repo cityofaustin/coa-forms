@@ -845,5 +845,21 @@
   },
   "If you provided your email, you’ll receive a copy of your request.": {
     "es": "Si nos suministró su correo electrónico, recibirá una copia de su solicitud."
+  },
+  "%Your name%": {
+    "es": "%Su nombre%"
+  },
+  "We’ll call you at this number if we have questions.": {
+    "es": "Le llamaremos a este número si tenemos alguna pregunta."
+  },
+  "%City%": {
+    "es": "%Ciudad%"
+  },
+  "%State%": {
+    "es": "%Estado%"
+  },
+  "%Email address%": {
+    "es": "%Correo electrónico%"
   }
+
 }
