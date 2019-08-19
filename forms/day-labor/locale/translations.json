@@ -860,6 +860,9 @@
   },
   "%Email address%": {
     "es": "%Correo electrónico%"
+  },
+  "%Zip code%": {
+    "es": "%Código postal%"
   }
 
 }
