@@ -863,6 +863,9 @@
   },
   "%Zip code%": {
     "es": "%Código postal%"
+  },
+  "%Day labor request%": {
+    "es": "%Solicitud de jornalero%"
   }
 
 }
