@@ -101,16 +101,6 @@ class Confirmation extends React.Component {
         })
     }
 
-    // Clears all the keys used during the form...
-    clearLocalStorage() {
-        // console.log("clearLocalStorage() Clearing opo_form_submiturl");
-        localStorage.removeItem("opo_form_submiturl");
-        // console.log("clearLocalStorage() Clearing opo_confirmation_case_number");
-        localStorage.removeItem("opo_confirmation_case_number");
-        // console.log("clearLocalStorage() Clearing opo_form_data");
-        localStorage.removeItem("opo_form_data");
-    }
-
     // Instantiates an XHR request, then submits to submitUrl
     make_xhr_request(formData, submitUrl, formContext = null) {
         // console.log("API_URL: " + submitUrl);
@@ -146,7 +136,6 @@ class Confirmation extends React.Component {
             })
             .then(function (response) {
                 formContext.formDone(formContext);
-                formContext.clearLocalStorage();
                 return response;
             })
             .catch(function (error) {
@@ -206,9 +195,9 @@ class Confirmation extends React.Component {
         return (
           <div className="schemaform-intro">
             <h2>We have received your request</h2>
-            <p>Thank you for submitting your request to hire a day laborer! We’ll contact you soon to confirm. You can also call us at (512) 972-4100.</p>
+            <p>Thank you for submitting your request to hire a day laborer! We’ll contact you within 24 hours to confirm. You can also call us at (512) 972-4100.</p>
             <p>If you provided your email, you’ll receive a copy of your request.</p>
-            <p><a href="https://docs.google.com/document/d/16siLTqjO5klJpgUt5P4UABnFR2k4ed6NUtyMqkm61Vs">Learn more about hiring a day laborer through the First Workers Day Labor Center.</a></p>
+            {/*<p><a href="https://docs.google.com/document/d/16siLTqjO5klJpgUt5P4UABnFR2k4ed6NUtyMqkm61Vs">Learn more about hiring a day laborer through the First Workers Day Labor Center.</a></p>*/}
           </div>
         );
   }
