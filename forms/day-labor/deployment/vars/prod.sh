@@ -1,7 +1,7 @@
 # AWS
 DEPLOYMENT_BUCKET=$DEPLOYMENT_BUCKET_DAY_LABOR_PROD
 DEPLOYMENT_PATH_EN=request-day-laborer
-DEPLOYMENT_PATH_ES=request-day-laborer-es
+DEPLOYMENT_PATH_ES=solicite-un-jornalero
 
 # App
 NODE_ENV=production

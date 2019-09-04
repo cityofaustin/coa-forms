@@ -1,7 +1,7 @@
 # AWS
 DEPLOYMENT_BUCKET=coa-forms-staging
 DEPLOYMENT_PATH_EN=request-day-laborer
-DEPLOYMENT_PATH_ES=request-day-laborer-es
+DEPLOYMENT_PATH_ES=solicite-un-jornalero
 
 # App
 NODE_ENV=development
