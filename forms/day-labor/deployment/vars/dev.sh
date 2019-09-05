@@ -1,7 +1,7 @@
 # AWS
 DEPLOYMENT_BUCKET=coa-forms-dev
 DEPLOYMENT_PATH_EN=request-day-laborer/$CIRCLE_BRANCH
-DEPLOYMENT_PATH_ES=request-day-laborer-es/$CIRCLE_BRANCH
+DEPLOYMENT_PATH_ES=solicite-un-jornalero/$CIRCLE_BRANCH
 
 # App
 NODE_ENV=development
