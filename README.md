@@ -34,7 +34,7 @@ There is the the top level `/package.json` file. This is mainly used for webpack
 
 ## Local Development
 
-Run `yarn start` inside of your form's directory to run your form locally. Run `yarn start:bs` if you need to run your form locally with browserstack. Note: `start:bs` contains some configs that make your webpack-dev-server insecure. See: https://webpack.js.org/configuration/dev-server/#devserverdisablehostcheck.
+Run `yarn start` inside of your form's directory (ex: `cd forms/officer-thank-form`) to run your form locally. Run `yarn start:bs` if you need to run your form locally with browserstack. Note: `start:bs` contains some configs that make your webpack-dev-server insecure. See: https://webpack.js.org/configuration/dev-server/#devserverdisablehostcheck.
 
 To develop with a local version of us-form-system see: [Linking to a local @cityofaustin/us-forms-system](#Link-to-a-local-@cityofaustin/us-forms-system)
 
@@ -53,9 +53,11 @@ The chapters directory contains a distinct package.json and `@cityofaustin/us-fo
 
 ## Deployment
 
-Dev Branch/PR Builds are deployed to https://opo.austintexas.io/police-complain/[branch-name]
+Dev Branch/PR Builds are deployed to https://opo.austintexas.io/[form-name]/[branch-name]
+  - https://opo.austintexas.io/police-complain/[branch-name]
+  - https://opo.austintexas.io/police-thank/[branch-name]
 
-To deploy a form, add its directory name as a FORM parameter in new job in .circleci/config.yml.
+To deploy a new form, add its directory name as a FORM parameter in new job in .circleci/config.yml.
 
 The S3 bucket destination for your form is determined by `DEPLOY_ENV` argument passed to `run.sh`. `circleci.config.yml` sets the `DEPLOY_ENV` for each git branch.
 
