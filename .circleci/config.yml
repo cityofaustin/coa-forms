@@ -4,7 +4,7 @@ jobs:
   test: #TODO: run tests for all forms to deploy
     working_directory: ~/project
     docker:
-      - image: circleci/python:3.8.0a3-node
+      - image: circleci/python:3.8.10-node
     steps:
       - checkout
   deploy:
