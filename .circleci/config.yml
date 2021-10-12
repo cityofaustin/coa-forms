@@ -24,7 +24,7 @@ jobs:
           name: "Install Linux Dependencies"
           command: |
             sudo apt-get update
-            sudo apt-get install jq
+            sudo apt-get install jq python3-pip
             sudo pip3 install --upgrade pip3
             sudo pip3 install awscli
       - run:
