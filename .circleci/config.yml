@@ -23,9 +23,7 @@ jobs:
       - run:
           name: "Install Linux Dependencies"
           command: |
-            sudo pip install --upgrade pip
-            sudo apt-get install jq
-            sudo pip install awscli
+            sudo apt-get install jq awscli
       - run:
           name: "Install top-level yarn dependencies"
           command: |
