@@ -69,4 +69,4 @@ fi
 S3_DESTINATION="s3://${DEPLOYMENT_BUCKET}/${DEPLOYMENT_PATH}"
 
 echo "Syncing ${BUILD_PATH} into ${S3_DESTINATION}"
-aws s3 sync $BUILD_PATH $S3_DESTINATION --delete
+aws s3 sync --region "us-east-1" $BUILD_PATH $S3_DESTINATION --delete
