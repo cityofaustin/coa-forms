@@ -38,6 +38,10 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if(window.location.href.endsWith("/policia-agradezca") || window.location.href.endsWith("/police-thank"))
+        window.location.href = window.location.href + "/";
+    </script>
     <script src="./js/app.bundle.js"></script>
   </body>
 </html>

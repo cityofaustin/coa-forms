@@ -4,7 +4,7 @@ jobs:
   test: #TODO: run tests for all forms to deploy
     working_directory: ~/project
     docker:
-      - image: circleci/python:3.8.0a3-node
+      - image: circleci/python:3.8.10-node
     steps:
       - checkout
   deploy:
@@ -23,8 +23,11 @@ jobs:
       - run:
           name: "Install Linux Dependencies"
           command: |
+            sudo apt-get update
             sudo apt-get install jq
-            sudo pip install awscli
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
       - run:
           name: "Install top-level yarn dependencies"
           command: |
@@ -41,5 +44,3 @@ workflows:
           FORM: officer-complaint-form
       - deploy:
           FORM: officer-thank-form
-      - deploy:
-          FORM: day-labor

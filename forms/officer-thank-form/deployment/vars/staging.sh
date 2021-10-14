@@ -1,5 +1,5 @@
 # AWS
-DEPLOYMENT_BUCKET=coa-forms-staging
+DEPLOYMENT_BUCKET=coa-opo-forms-staging
 DEPLOYMENT_PATH_EN=police-thank
 DEPLOYMENT_PATH_ES=policia-agradezca
 
