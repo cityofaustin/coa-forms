@@ -44,5 +44,3 @@ workflows:
           FORM: officer-complaint-form
       - deploy:
           FORM: officer-thank-form
-      - deploy:
-          FORM: day-labor
