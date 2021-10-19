@@ -1,12 +1,10 @@
 #!/bin/bash
 set -e
 
-if [ "$CIRCLE_BRANCH" == "master" ]; then
-  DEPLOY_ENV=staging
-elif [ "$CIRCLE_BRANCH" == "production" ]; then
+if [ "$CIRCLE_BRANCH" == "production" ]; then
   DEPLOY_ENV=prod
 else
-  DEPLOY_ENV=dev
+  DEPLOY_ENV=staging
 fi
 
 CURRENT_DIR=`dirname $BASH_SOURCE`
