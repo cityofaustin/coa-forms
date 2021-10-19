@@ -5,7 +5,7 @@ DEPLOYMENT_PATH_ES=solicite-un-jornalero
 
 # App
 NODE_ENV=development
-FORM_API_URL=https://qn4qdnpw9c.execute-api.us-east-1.amazonaws.com/staging
+FORM_API_URL=https://7p7ja2j59b.execute-api.us-west-2.amazonaws.com/staging
 
 # Structure
 FORM_DIR=day-labor
