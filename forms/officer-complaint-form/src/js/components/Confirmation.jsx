@@ -230,17 +230,10 @@ class Confirmation extends React.Component {
 
     return (
       <div className="schemaform-intro">
-        <h2>We have received your complaint.</h2>
-        {confirmation_content}
         <p>
-          Our job is to make sure your complaint is investigated fairly and
-          thoroughly. Thank you for sharing your experience with us. This helps
-          us better serve you and your community.
-        </p>
-        <p>
-          <a href="http://alpha.austin.gov/police-oversight/complaint-investigation-process">
-            What happens next
-          </a>
+          Thank you for submitting your complaint. If you provided your contact 
+          information a staff person with the Office of Police Oversight will 
+          contact you within 5 business days.
         </p>
       </div>
     );
