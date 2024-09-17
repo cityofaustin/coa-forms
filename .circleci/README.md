@@ -1,7 +1,7 @@
 # Documentation for Deployment Functions
 
 ## Summary of How Deployment Works
-To deploy a form, add its directory name as a FORM parameter in new job in .circleci/config.yml.
+To add a new form to the deployment, add its directory name as a FORM parameter in new job in .circleci/config.yml.
 
 Dev Branch/PR Builds are available at https://opo.austintexas.io/police-complain/[branch-name]
 
